@@ -1,0 +1,15 @@
+baseURL = ""
+RelativeURLs=true
+languageCode = "zh-cn"
+theme = "kitab"
+title = "demo for amaki"
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+pluralizelisttitles = false
+
+[params]
+  author = "Yrr0r"
+  description = "Sample"
+  dateFormat = "2006-01-02"
+  footer1 = "Awesome Books"
+  footer2 = "COPYLEFT:)"
