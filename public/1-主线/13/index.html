@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>demo for amaki</title>
+  <meta name="description" content="Sample" />
+  <meta name="author" content="Yrr0r" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.60.0" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/kitab.css" />
+
+  <script src="../../js/myFunctions.js"></script>
+  <script src="../../js/clipboard.min.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="../../"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+	
+	
+	
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="../../pride_and_prejudice/">
+            Pride <em>and</em> Prejudice
+          </a>
+          by Jane Austen
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/">
+            1 - 主线
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../2-%E6%94%AF%E7%BA%BF/">
+            2 - 支线
+          </a>
+          by 
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Chapters"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        1 - 主线
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/1/">01</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/0/">00 - 序</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/10/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/11/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/12/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/13/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/14/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/15/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/16/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/2/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/3/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/4/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/5/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/6/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/7/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/8/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/9/"></a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    1 - 主线
+  </small>
+  <h2></h2>
+  <div class="rounded">
+    <p><a href="https://github.com/SCLeoX/Wearable-Technology/issues/20">评论</a></p>
+<h1 id="13">13.</h1>
+<p>十分钟后，晴梦慧依然完全没有要停下来的迹象。在这过程中，我陆陆续续高潮了五六次。喷涌而出的爱液顺着大腿留了下来，在地上形成了一大滩水。</p>
+<p>我：“&hellip;我不行啦&hellip; 停一下吧&hellip;”</p>
+<p>苏：“骗人，学姐明明很享受的样子♪~”</p>
+<p>就这样，时间又过了大概十分钟。</p>
+<p>苏：“唔&hellip; 我有点累啦&hellip;”</p>
+<p>我：“&hellip;所以放过我吧&hellip;”</p>
+<p>苏：“那可不行，学姐等我下&hellip;”</p>
+<p>只见这家伙跑向了餐厅，然后搬了一把椅子出来，同时她的手里还拿着一台三脚架和一根黑色按摩棒。按摩棒的侧面伸出来一个小爪子，似乎是用来按摩阴蒂的。</p>
+<p>我：“欸&hellip;”</p>
+<p>晴梦慧把椅子摆在我的身旁，然后她把按摩棒装在了三脚架的顶端。随后，她把三脚架放在我的正下方，并开始调节侧面的旋钮。按摩棒迅速升高，直到顶到了我的阴道口。</p>
+<p>苏：“既然已经湿成这样了，就不用润滑了吧。”</p>
+<p>我：“&hellip;”</p>
+<p>晴梦慧继续提高按摩棒，直到侧面的小爪子碰在我的阴蒂上。晴梦慧转了一下按摩棒底端的开关。突然，小爪子紧紧地夹住了我的阴蒂，然后开始高速震动起来。与此同时，按摩棒似乎分成了两段。底下那一段不动，而顶上那一段则开始抽插起来。</p>
+<p>我：“啊&hellip;. 呼&hellip;. 嗯啊&hellip; 呼&hellip;. 呀&hellip;”</p>
+<p>苏：“嗯，看上去仙女棒已经开始正常工作了呢。我在这坐着陪学姐好了。”</p>
+<p>说着，晴梦慧坐在了刚搬来的椅子上，同时她拿出了平板电脑，然后开始阅读什么文本。</p>
+<p>我：“嗯&hellip; 等&hellip; 等一下&hellip; 啊&hellip; 让我先&hellip; 啊&hellip; 先休息一下&hellip;”</p>
+<p>按摩棒的抽插让我的话语不断被情不自禁的呻吟打断。</p>
+<p>苏：“学姐话有点多哦，用下那个好了。来，张嘴♪~”</p>
+<p>晴梦慧站了起来，把一个直径约 3cm 的金属小球抵在我的嘴唇上。知道无法反抗的我张开了嘴。晴梦慧顺势把小球放了进去。刚放进去，小球就“展开来了”。小球周围伸展出四根杆子，分别抵在我的臼齿上，把我的嘴撑开。随后，小球的底部又一前一后伸出两根杆子，杆子的顶部有个向下的圆弧，把我的舌头牢牢地按在了嘴巴底部。</p>
+<p>我：“诶——”</p>
+<p>苏：“这是‘自觉开口器’。当我松手后，它就会开始检测学姐施加给它的压力。如果学姐试图闭合嘴巴，那么它就会用学姐舌头上的电极给学姐施以‘善意的提醒’。”</p>
+<p>我：“欸！——”</p>
+<p>苏：“那么就请学姐‘自觉地’张开嘴吧。”</p>
+<p>说着，晴梦慧松开了手。突然，一股剧烈的疼痛从我的舌头顶部传来。</p>
+<p>我：  “啊————”</p>
+<p>我试图将我的舌头移开，可是电极牢牢地按住了我的舌头，使它动弹不得。我很快发现，挣扎是徒劳的。我越挣扎，牙咬得越紧，电击越强烈。我只得“自觉地”把嘴巴张到最大。果然，电击变弱了很多，我的舌头上现在只是感觉稍微有点麻麻的。</p>
+<p>见我安静了下来，晴梦慧也便坐下继续阅读平板电脑上不知道是什么的文章。在按摩棒的刺激下，我很快也达到了下一次高潮。</p>
+<p>我：“啊~”</p>
+<p>因为高潮的原因，我情不自禁地低了一下头。忽然，一股口水从我嘴中流出，刚好落在了晴梦慧的平板上。</p>
+<p>我：“啊、啊、——（对不起）”</p>
+<p>苏：“看样子是学姐还不够舒服呢，让学姐在舒服一点就一定能管好口水吧。”</p>
+<p>我：“啊啊、、（不用了&hellip;）”</p>
+<p>晴梦慧再一次把手伸向了按摩棒底部的旋钮并将其转了一大截。突然间，阴蒂上的按摩装置的震动强度显著提升。与此同时，下体按摩棒的抽插速度也快了起来。</p>
+<p>我：“啊、啊啊~（不行啦&hellip; 又要去了&hellip;）”</p>
+<p>晴梦慧没有理睬，而是继续坐着看平板电脑。在这样的状态下，我很快又达到了数次高潮。在炮机的持续抽插下，我的爱液溅得遍地都是。</p>
+<p>此时的我，因为片足缚和持续高潮的原因，已经精疲力竭了。看到我颤抖的腿，晴梦慧总算看上去想要放过我了。</p>
+<p>苏：“好啦，我玩够啦，我们可以继续啦。”</p>
+<p>她站了起来，将手伸到我身下的按摩棒上，按下了一个什么开关。然而按摩棒和阴蒂爪子的运动强度并没有发生变化。正当我准备提出抗议，她把头凑了过来，一边用右手伸到我的嘴中将“自觉开口器”取了出来，一边解释着。</p>
+<p>苏：“不过，在最后还是想试一下这个仙女棒的声控高潮功能。如果不出问题的话，我每打一个响指，学姐就会高潮一次。所以，先来试一下&hellip;”</p>
+<p>我：“等~、一下——”</p>
+<p>刚取下开口器的我并不能流利说话。不过已经晚了，晴梦慧在我眼前打了一个响指。</p>
+<p>啪！</p>
+<p>突然，一股电流穿过我的阴蒂。</p>
+<p>我：“呀！”</p>
+<p>几乎是一瞬间，没等我反应过来，我就又一次高潮了。</p>
+<p>苏：“看上去起作用了呢，那再来一次好了&hellip;”</p>
+<p>我：“别、、、”</p>
+<p>啪！</p>
+<p>晴梦慧又打了一个响指，我也随着突如其来的电流高潮了一次。尽管被强制抽插的按摩棒搞到高潮很痛苦，被电流直接带来的高潮却更难以忍受。仅仅是两下，我感觉受到的快感和之前十几次高潮加起来一样强烈。</p>
+<p>苏：“好极啦。我们最后接个吻吧❤~”</p>
+<p>我：“？？？”</p>
+<p>晴梦慧站在我面前，在用右手包住我的后被，左手托住了我的头后，把头凑了过来。我想要反抗（其实不），但是因为双手被吊在空中，无奈只能配合地张开了嘴。晴梦慧毫不犹豫地把嘴凑了上来，并把舌头伸进了我的嘴里。我的舌头很快也本能地伸了出去，和她地舌头纠缠在一起。我感到她柔软舌头在我地嘴里滑动，与此同时，我们的口水也在慢慢地混合&hellip;</p>
+<p>啪！</p>
+<p>突然，在这关键时刻，晴梦慧用右手在我身后打了一个响指。随着我的一声哀鸣，我达到了高潮。正当我准备抗议&hellip;</p>
+<p>啪！啪！啪！啪！啪！啪！&hellip;</p>
+<p>因为电流的刺激和不断地高潮，我的身体情不自禁地颤抖了起来。然而晴梦慧却用她的双臂将我牢牢抱住，并且毫不停止地与我进行着舌吻。</p>
+<p>在这激烈的刺激下，我很快感到大脑一片空白，只是模糊地感觉到晴梦慧的舌头依然在我的嘴里，身后的响指声也是一刻不停地传来。</p>
+<p>等我清醒过来时，我又恢复了站立的状态，而晴梦慧已经在为我穿新的贞操带了。因为我依然被束缚且双腿已经穿进去了，我并不能看到贞操带的外部。不过我注意到新的贞操带的内部和之前那一条有很大不同。最主要的不同是，阴道按摩棒和肛门按摩棒是用金属做的，并且非常的细。不过尿道按摩棒依然和原先一样。</p>
+<p>苏：“学姐终于醒啦？”</p>
+<p>我：“嗯&hellip;”</p>
+<p>晴梦慧继续帮我穿贞操带。她把金属细棒们对准了之后，慢慢地把贞操带往上提着。</p>
+<p>经过调教的我，毫不费力地让金属细棒们进入了我的体内。完全插入后，除了尿道依然感觉饱和外，和之前相比，阴道和肛门感觉很是空旷。</p>
+<p>我：“&hellip;那个&hellip; 为什么这次的按摩棒那么小啊&hellip;”</p>
+<p>苏：“嗯？噢，你说那个啊，现在插入学姐体内的不是按摩棒噢，而是扩张器。”</p>
+<p>我：“扩张器？”</p>
+<p>苏：“啊，还没跟学姐说嘛？这次学姐要换上的中央控制系统是模块化的呢。”</p>
+<p>我：“模块化？”</p>
+<p>苏：“是的。模块化的中控支持更换插入体内的仙女棒或其他组件。为了方便更换，学姐的阴道和肛门里都被插入了这个扩张器。当需要插入新的组件时，扩张器会分开成 8 根细棒并朝外平移，将入口打开。组件插入完成后，扩张器就会抽出，并藏于中控内部，以免影响组件运作。”</p>
+<p>我：“&hellip;”</p>
+<p>晴梦慧继续帮我安装着贞操带。很快，她把腰带锁在了我的身上，把丝袜重新连接在了贞操带的底端，并把胸罩和颈饰重新用通用连接线和贞操带连接在了一起。安装完成后，晴梦慧又在贞操带上按了一下。随着一声“滴”，贞操带的前侧似乎亮了起来。但是因为角度原因，我并不能看到显示的内容。</p>
+<p>晴梦慧快速地在贞操带前侧上点按了几下。很快我感觉到原先盖在阴蒂上的金属被移除了。我的阴蒂就暴露在了空气中。晴梦慧随手抚摸了一下我的阴蒂，然后抬起头来。</p>
+<p>苏：“好啦，要装组件了。学姐要自己选吗？”</p>
+<p>我：“选什么？&hellip;”</p>
+<p>苏：“学姐等我一下噢。”</p>
+<p>晴梦慧快速跑向了卧室。很快，她不知道从哪里推出来了一个带轮子的金属箱子。她把金属箱子推到了我的面前。然后她在金属箱子的侧面按了几下。突然，金属箱子的侧面打开了，里面的架子上放了十来个金属圆柱体。</p>
+<p>苏：“这些都是装在阴蒂上的组件噢。其中大部分都是用来按摩的，不过也有用来施加痛苦的。学姐要选来选一个吧。”</p>
+<p>我：“可是它们看起来都一模一样&hellip;”</p>
+<p>苏：“所以要学姐选嘛&hellip;”</p>
+<p>我：“&hellip;那&hellip; 我选第二排第三个&hellip;”</p>
+<p>我随便选了一个。晴梦慧拿起来我选的组件。她把组件翻了过来，看了一下，然后朝我笑了笑。</p>
+<p>苏：“学姐运气不错呢，这只是个施加电击和震动的阴蒂夹。学姐肯定会很享受的。”</p>
+<p>说着晴梦慧拿着我选的组件走到了我的面前。她蹲了了下来，并把组件对准了我暴露在外的阴蒂装了上去。随着咔嚓一声，这个组件就被扣在了贞操带上。晴梦慧又在贞操带上按了几下。很快，我感到两个冰凉的物体夹在了我的阴蒂上。</p>
+<p>苏：“其实光靠这个就可以达到高潮了呢。”</p>
+<p>我：“&hellip;”</p>
+<p>苏：“那么来安装剩下的组件吧。”</p>
+<p>晴梦慧回到金属箱子边上。这次她打开了另一个隔间。这次的隔间里面放的是整整一排按摩棒。和阴蒂按摩器不同的是，这些按摩棒的结构都是都是暴露出来的，所以我能大概猜出其中许多个的用法。</p>
+<p>苏：“这次我帮学姐选好了。”</p>
+<p>我：“&hellip;”</p>
+<p>苏：“刚刚学姐好像对炮机反应特别强烈呢。所以就用这个好了。”</p>
+<p>晴梦慧拿起了一个表面有许多凸起的按摩棒。</p>
+<p>苏：“这个和刚刚的炮机一样。启动后，它的上半部分会分离，然后实行抽插。”</p>
+<p>她拿着按摩棒走到我的身边。按了两下贞操带后，我突然感觉到阴道内的金属细棒张开了。随后，晴梦慧非常轻松地就把这“炮机”塞了进去。很快，按摩棒的底座就和贞操带装在了一起，扩张器也如图晴梦慧所说撤了出来。</p>
+<p>苏：“好了，装好了。考虑今天是第一天，就不在学姐的菊花里装东西啦。不过基本的扩张训练还是要的。”</p>
+<p>说着，晴梦慧又操作了一下贞操带上的按钮。随即，我肛门内的扩张器便展开了。晴梦慧不知道从哪里拿出来了一个圆形盖片，并将其装在贞操带对应的孔上。</p>
+<p>苏：“如果不装组件的话，就要装一个盖子。不然的话，灰尘之类的飘进直肠就不好了。”</p>
+<p>我：“哦&hellip;”</p>
+<p>做完这些，她抬起头来，朝我露出了一个诡异的笑容。她用手指在屏幕上按了几下。突然，我感觉阴蒂上传来了震动。与此同时，阴道内的按摩棒也开始了抽插。一阵快感从我的下体传来 —— 想必在接下来的时间里，我都要和这这感觉做斗争吧。</p>
+<p>随后，晴梦慧拿起了平板，按了几下后，我手上的手铐被打开了。被长时间半吊着得我累得一下子跪坐到了地上。我这才发现，新的贞操带的前侧是一个屏幕。此时现在上面正用蓝色写着一行字和一串数字 —— “高潮边缘控制进行中&hellip; 剩余时间 7:59:28&hellip;”。</p>
+<p>苏：“对啦，看在学姐刚刚不得不被强制高潮的份上，我给学姐设了 8 个小时的高潮边缘控制。接下来的 8 个小时内学姐就不用忍受持续高潮带来的折磨啦~”</p>
+<p>我：“&hellip;”</p>
+<p>我本能地去触摸了一下屏幕。忽然，一行红字打印在了屏幕上 —— “拒绝访问”。紧接着，一股剧痛穿过了我的全身。</p>
+<p>我：“哇啊啊啊”</p>
+<p>苏：“啊，忘记说啦。这个控制面板装有屏下指纹检测。只有我才能更改学姐的设置哦。如果学姐想要偷偷地改的话，结果是什么学姐刚刚也已经感受到了吧~”</p>
+<p>我：“&hellip;可是&hellip;”</p>
+<p>苏：“好了，快去冲个澡吧。学姐留下的这滩水就由我来清理好了。”</p>
+<p>我走到了浴室。“水平窒息室”依然在房间的一侧。我进了淋浴房，快速冲了一个澡。身体里的炮机有规律地抽着，缓缓地把我推向高潮的边缘。不过似乎是因为我已经适应了这种感觉，我并没有之前那样强烈的饥渴感。出了淋浴房，不出所料，丝袜的自动烘干功能就启动了。</p>
+<p>我从浴室走了出来。此时，晴梦慧正一个人跪在地上用纸巾擦着我之前留下的水渍。看起来我之前确实出了很多水呢。看见我出来了，晴梦慧也站了起来。</p>
+<p>苏：“好啦睡觉啦。”</p>
+<p>我：“欸&hellip; 现在才 7 点欸&hellip; 作业还没有&hellip;”</p>
+<p>苏：“明天早上起来写啦~”</p>
+<p>说着，晴梦慧就领着我进了我的卧室。卧室里出了天花板上多了导轨以外，并没有什么变化。四肢用的拘束具依然摆在我的床上。我配合地躺在了床上并展开了四肢。晴梦慧也顺势将我的四肢用拘束具固定了起来。然而，她并没有立刻要走的意思。她缓缓地摸了摸我的皮肤。然后，她用手指轻轻地摸了一下我的贞操带上的显示屏。</p>
+<p>苏：“说起来，我好像忘记调节学姐的高潮边缘控制敏感度了。”</p>
+<p>我：“&hellip;还能调节敏感度吗&hellip;（难怪这次感觉并没有那么强烈）”</p>
+<p>晴梦慧继续触摸着贞操带。我挣扎着将头慢慢抬起，看到她调出来了一个滑块条。</p>
+<p>苏：“果然欸，现在设置的灵敏度是默认的 5%。这点对学姐来说肯定不够吧。”</p>
+<p>我：“够了啦&hellip;”</p>
+<p>苏：“学姐不诚实呢。”</p>
+<p>说着晴梦慧把手指按在了滑条上，然后缓缓地向右侧移动。很快，我感觉体内的按摩棒速度越来越快。</p>
+<p>我：“啊&hellip; 哈&hellip;”</p>
+<p>苏：“这个反应才正常嘛&hellip;”</p>
+<p>说着，晴梦慧继续调高灵敏度。很快，我感觉到浑身发热，那个熟悉的感觉又来了。晴梦慧把滑块拉到了大概七成的位置。</p>
+<p>苏：“学姐感觉舒服吗？”</p>
+<p>我：“哈&hellip; 嗯&hellip; 舒服&hellip;”</p>
+<p>晴梦慧缓缓地爬上了床，她将身体压在我的身上，并用右手缓缓地抚摸我的脸颊。随后，她把她的嘴凑到了我的面前，用手指轻轻将我的嘴唇分开并亲了上去。她的舌头在我嘴中慢慢地转了一圈后，她把舌头抽了出来，并抬起了头。</p>
+<p>此时的我，早已被下体的按摩棒和她的强吻搞得异常性奋。然而，晴梦慧似乎完全没有继续的意思。她站了起来，走到了我床头柜边。</p>
+<p>我：“&hellip;那个&hellip; 不继续吗&hellip;”</p>
+<p>苏：“刚刚的接吻只是为了让学姐更快进入状态，好享受接下来这七个半小时的高潮边缘控制呢。没想到学姐居然当真了，还这么配合。”</p>
+<p>我：“欸？！”</p>
+<p>我这才意识到我中计了。然而已经晚了 —— 我的身体已经处在高潮边缘，下体的设备们精确地控制着强度，将我保持在这个状态。这还不够，晴梦慧从我的床头柜里拿出了之前用过的假阴茎口塞，并将其顶在了我的嘴边。</p>
+<p>苏：“请学姐张开嘴。”</p>
+<p>尽管不情愿，我还是张开了嘴，让她把这巨大的的假阴茎塞进了我的嘴里。随后，她快速将假阴茎的固定带们锁在了我的脑后。</p>
+<p>苏：“啊，突然想起来了，学姐的晚饭还没吃呢&hellip;”</p>
+<p>显然她不是“突然想起来”的。</p>
+<p>苏：“那就再给学姐喝一点仿制精液好了。”</p>
+<p>我：“唔&hellip; 唔——”</p>
+<p>不顾我的反对，晴梦慧在我的床头柜边的墙壁上按了几下。突然，一股有着熟悉味道的温热粘稠液体缓缓地从假阴茎的顶部流了出来。</p>
+<p>苏：“为了防止太快呛到学姐，我给学姐设置了 1cc 每分钟，持续 7 小时。所以就请好好享受吧~”</p>
+<p>明显慢慢灌比迅速灌好要痛苦得多。晴梦慧显然是明白这个道理的。想必她选择慢速灌就是为了让我彻夜难眠吧。</p>
+<p>苏：“好了，那么我走啦，学姐晚安—— 哦对了，走之前&hellip;”</p>
+<p>晴梦慧快步走到我的床前，一股不祥的预感油然而生。只见她用手指快速在我的贞操带上按了几下，调出了之前的灵敏度调节条，并一口气将滑块移到了末端。我瞬间感到下体的按摩设备的力度再次显著提升。</p>
+<p>我：“唔！———— 咳、咳、、”</p>
+<p>我忍不住叫了出来。然而没等我叫完，我就被从假阴茎顶部渗出的仿制精液呛着了。</p>
+<p>苏：“既然学姐没有别的事了，我走了，拜拜~”</p>
+<p>说着，晴梦慧走出了房间并关上了门，留我一人在床上挣扎着。</p>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../1-%E4%B8%BB%E7%BA%BF/14/"
+    title=""
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../1-%E4%B8%BB%E7%BA%BF/12/"
+    title=""
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <p class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      title="Scroll to top"
+      onclick="scrollToTop()"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "\/1-%E4%B8%BB%E7%BA%BF\/13\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Awesome Books
+      &middot;
+      COPYLEFT:)
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">
+      kitab
+    </a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+  
+</footer>
+
+  </body>
+</html>

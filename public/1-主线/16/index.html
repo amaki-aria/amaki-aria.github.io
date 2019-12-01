@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>demo for amaki</title>
+  <meta name="description" content="Sample" />
+  <meta name="author" content="Yrr0r" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.60.0" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/kitab.css" />
+
+  <script src="../../js/myFunctions.js"></script>
+  <script src="../../js/clipboard.min.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="../../"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+	
+	
+	
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="../../pride_and_prejudice/">
+            Pride <em>and</em> Prejudice
+          </a>
+          by Jane Austen
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/">
+            1 - 主线
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../2-%E6%94%AF%E7%BA%BF/">
+            2 - 支线
+          </a>
+          by 
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Chapters"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        1 - 主线
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/1/">01</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/0/">00 - 序</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/10/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/11/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/12/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/13/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/14/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/15/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/16/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/2/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/3/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/4/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/5/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/6/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/7/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/8/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/9/"></a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    1 - 主线
+  </small>
+  <h2></h2>
+  <div class="rounded">
+    <p><a href="https://github.com/SCLeoX/Wearable-Technology/issues/79">评论</a></p>
+<h1 id="16">16.</h1>
+<p>好的，我是不会上当的。晴梦慧要送我礼物，那么就有精确的 0.0% 的几率那是个真的礼物。不过事实是，就算我知道那个“礼物”可能是假的，我并不能拒绝。</p>
+<p>我跟着晴梦慧穿过了走廊，来到一个储物柜旁边。晴梦慧在储物柜的控制屏上按了几下，突然，一个侧面的隔间被打开了。晴梦慧走到隔间前，取出了一双透明的高跟鞋。</p>
+<p>因为这双鞋子的材质完全是透明的，我可以清楚地看到这个鞋子的内部结构。这双鞋子后跟高约 10cm，在脚腕的地方有一个锁扣。除此之外，最让我感到担心的是，在鞋子底部有一个白色的布满柔软触须状凸起的转轮。</p>
+<p>苏：“学姐请穿上吧~”</p>
+<p>说着，晴梦慧蹲下身来，将我脚上的鞋子解了开来。尽管非常不情愿，我还是将脚放进了透明鞋子。还没努力踩，我就感觉转轮上的凸起按在了我的脚心上，给我带来微微的瘙痒感。</p>
+<p>在晴梦慧的“帮助”下，我把两只透明鞋子都穿上了。尽管转轮并没有动，其带来的微微刺激伴随着体内固体春药带来的炽热感使我不得不扶着墙来维持平衡。</p>
+<p>晴梦慧见我穿好了，她很快趴在了地上，从后面注视着我的鞋子。</p>
+<p>苏：“呐，有了这双鞋子我就可以随时看到学姐的脚底了呢~”</p>
+<p>我：“&hellip;有什么好看的嘛&hellip;”</p>
+<p>苏：“哦对了，不知道学姐的脚心是否怕痒呢~”</p>
+<p>我：“欸&hellip;”</p>
+<p>这时，晴梦慧在她的平板电脑上按了几下。突然，我感觉脚底的轮子动了起来。尽管隔着丝袜，一股瘙痒感顿时划过了我的身体。</p>
+<p>我：“呀！”</p>
+<p>我的脚情不自禁地踮起试图躲避转轮，这使得我一下子失去了平衡，摔倒在了地上。然而，由于转轮是在鞋子内部，而鞋子依然穿在我的脚上，尽管我摔倒了，转轮依然不停地旋转着，带给我刺激。</p>
+<p>我试图去脱鞋子，然而脚踝上的锁将其牢牢地固定在了我的脚上。我尝试性地拉扯了几次后，只得隔着透明的鞋子眼睁睁地看着转轮蹂躏我的脚底，给我带来一阵一阵尖刻的瘙痒感。</p>
+<p>苏：“嘻、看上去是挺怕痒的呢~”</p>
+<p>这无情的晴梦慧一脸得意地看着我。</p>
+<p>我：“能不能、哈、能、先—— 呼、停、停一下——”</p>
+<p>在转轮地折磨下，我连话也说不连贯了。</p>
+<p>苏：“欸，那怎么行呢~ 这可是专门给学姐的礼物呢~ 而且现在可是最弱的模式呢~ 好啦快站起来吧~”</p>
+<p>我：“可是、哈、这个怎么&hellip;”</p>
+<p>别说站起来了，在这刺激下，我连勉强克制住自己的脚不乱踢都已经是很困难了。</p>
+<p>我：“我、我站不起来&hellip;”</p>
+<p>苏：“欸，站不起来可不行呢。看样子要给学姐脚下的按摩器加大点力度来鼓励学姐了呢~”</p>
+<p>我：“欸、别！”</p>
+<p>受到了晴梦慧明摆着的威胁，我连忙扶着墙勉强地蹲站了起来。尽管这样，我感觉到瘙痒感顿时是放大了好几倍，一遍遍冲击着我的全身，使我的双腿不住地颤抖着。</p>
+<p>晴梦慧明显是察觉到了在这种程度的刺激下，保持站立确实很困难。</p>
+<p>苏：“这样的话我来扶着学姐吧。”</p>
+<p>说着，晴梦慧走到了我的身旁，用手臂抱住了我。然而，尽管有晴梦慧的搀扶，当我尝试迈出我的左腿时，我全身的重量都压在了右脚上。突如其来的刺激使我再次险些摔倒。</p>
+<p>苏：“唉&hellip; 学姐好弱啊~ 这么一个小转轮就已经走不动路了吗？”</p>
+<p>我：“可、可是&hellip;”</p>
+<p>苏：“走了啦!”</p>
+<p>就算是这么说了，我依然只得一瘸一拐地向前走着。我们穿过了最初的圆形房间，走进了电梯，并被带到了最初的停车场。晴梦慧继续搀扶我上了车的副驾驶座。然而，还没等我坐稳，晴梦慧迅速从四周拉出了几根链条，然后铐住了我的脚和手腕。随后，她坐到了驾驶座位上，然后顺势把头凑到了我的面前。</p>
+<p>显然，体内的“仙女棒”又是融化了许多。全身涌起的性欲使我满脸通红。</p>
+<p>大脑的分支预测让我下意识的张开了嘴，和晴梦慧凑上来的嘴巴对接在了一起。嘴里的温热感似乎让我顿时忘却了脚下那一阵阵的折磨。</p>
+<p>然而，当我还在享受接吻的浪漫时，晴梦慧忽然用空出来的右手在平板电脑上按了几下。忽然，我脚底的转轮开始加速，稍微有点适应的我一下子又开始挣扎了起来。</p>
+<p>我：“唔、唔——”</p>
+<p>我的脚开始不受控制地乱踢 —— 我这时候才知道为什么我一上车晴梦慧就要先把我的四肢铐起来了。</p>
+<p>晴梦慧继续和我热吻了一会儿，只不过此时的我已经没有什么精力体验了 —— 我不得不费劲全力抵御这脚底传来的瘙痒。</p>
+<p>晴梦慧显然也是意识到了我的注意力转移，她很快移开了头，回到自己的座位上坐正，拨动了下操纵杆。</p>
+<p>我的双手被拷在椅子的两侧，我只能再次眼睁睁地看着那透明的高跟鞋里旋转着的转轮虐待着我那毫无保护的脚。</p>
+<p>苏：“学姐加油适应噢~”</p>
+<p>我：“&hellip;”</p>
+<p>&hellip;</p>
+<p>2 个小时后，晴梦慧总算是把车开到了我家楼下。然而此时的我早已是被体内的春药和脚底的转轮折磨得语无伦次了。</p>
+<p>我：“快、快停&hellip;”</p>
+<p>我无力地求饶着。</p>
+<p>苏：“下车啦。”</p>
+<p>晴梦慧领着我大摇大摆地穿过了一楼大堂。然而周围的人显然都注意到了我脚下踩着的透明虐足高跟鞋。我感觉到他们的注意力全部都集中在了我的身上。</p>
+<p>然后，我真的是能有多不巧就有多不巧。这时，陈变态不知道为什么从远处走了过来。不知道是不是因为看见了晴梦慧大摇大摆的走路姿势，他也跟着大摇大摆了起来。</p>
+<p>只见他走到我面前，仔细端详了一下我满脸红晕的脸颊，然后蹲了下来注视了一会儿我那透明的高跟鞋，然后说了一句话。</p>
+<p>陈：“Nice boot.”</p>
+<p>什么鬼啊，这根本不是 boot 好吗。我恨不得一脚踢在这昨天还是英语学霸的变态的脸上。</p>
+<p>我没有理会他，继续向前走着。</p>
+<p>好不容易走到了电梯里。此时的我已经完全站不住了，我下意识地靠在了晴梦慧的身上。她也顺势搂住了我。</p>
+<p>不知道过了多久，电梯总算是到了 42 楼。我在晴梦慧的搀扶下走到了房间。正当我准备拿钥匙卡，突然，门被打开了一条缝。</p>
+<p>一个声音从门里传了出来：</p>
+<p>“欢迎回来，主人大人。”</p>
+<p>欸！</p>
+<p>顾不上脚底的刺激，我一把完全推开了房门 —— 只见一个身穿女仆装的比我矮一个头女生站在门前满脸微笑地看着我们。</p>
+<p>然而，因为刚刚一激动，没站稳，我顺势朝前摔了过去。那女仆一下子抱住了我，我顿时感到她身体内的温暖传递到了我的身上。</p>
+<p>我：“你、你是？”</p>
+<p>苏：“她是石倚，今后也住你家。她会负责所有的家务。”</p>
+<p>我：“欸？可是&hellip;”</p>
+<p>我非常想问，晴梦慧也好，石倚也好，为什么一个个没经过我同意就住到了我家来。</p>
+<p>苏：“哦对了，说明一下，石倚是男孩子哦~”</p>
+<p>我：“噢，男孩&hellip; 欸？？？？你说什么？”</p>
+<p>我赶紧开始端详石倚的脸庞 —— 完全看不出任何男生的感觉。</p>
+<p>石：“是这样的呢，不过不把我当成男生也是可以的。”</p>
+<p>石倚依然保持着原有的微笑。尽管她的身体散发着令人舒适温暖，她的表情让我稍稍有些紧张。</p>
+<p>我：“这&hellip;”</p>
+<p>我一时半会儿完全找不到话说。</p>
+<p>石：“这位大人看上去身体有些不适呢，要不要休息一下？”</p>
+<p>我：“这、不用了吧、、”</p>
+<p>尽管我全身都被晴梦慧的鬼玩意折磨着，我依然拒绝了石倚的请求。</p>
+<p>苏：“学姐是因为这按摩高跟鞋爽翻了呢~ 不过说起来现在可以先暂时停一会儿了。”</p>
+<p>说着晴梦慧按了下平板电脑。顿时，我感觉脚下的转轮停了下来。晴梦慧蹲了下来，帮我把高跟鞋解了下来。在连续受了 2 个多小时的折磨后，我总算是长舒了一口气。</p>
+<p>突然，晴梦慧似乎是想起来了什么。</p>
+<p>苏：“石倚啊，贵宾到了吗？”</p>
+<p>石：“快到了，石倚现在就去接他们。”</p>
+<p>我：“欸，什么贵宾？”</p>
+<p>苏：“没什么，两个抖 M 罢了。不过倒是之后可能需要我们做点事情&hellip;”</p>
+<p>我：“什么事情？”</p>
+<p>苏：“踩他们的脸。”</p>
+<p>我：“？？？”</p>
+<p>正当我疑惑之际，石倚从我身边走过，离开了房间。</p>
+<p>我：“所以我们要做什么？&hellip;”</p>
+<p>苏：“别急嘛，等下学姐就知道了啦~ 先穿衣服吧~”</p>
+<p>说着，晴梦慧丢来了白天穿的校服。尽管不明白为什么需要穿校服，我还是按照指令穿上了白天的制服和裙子。</p>
+<p>大概 5 分钟后，门开了。石倚从门缝中探出头来，说道。</p>
+<p>石：“走吧。”</p>
+<p>晴梦慧朝我使了个眼神，我便和她一起站了起来，然后跟着她朝房门走去。走出房门后，我看见石倚推着一台手推车，手推车上放着一个巨大的长方体箱子。我的直觉告诉我，刚刚所谓的“贵宾”就在这个箱子里。</p>
+<p>我：“我们要去哪&hellip;”</p>
+<p>没等我问完，晴梦慧已经打开了我邻居家的门。</p>
+<p>我：“欸，那是&hellip; 你们怎么&hellip;”</p>
+<p>晴梦慧没有理会我，而是领着石倚走进了邻居的房间。我也只得跟了进去。</p>
+<p>邻居家的房间里面只有顶上一盏很弱的灯。</p>
+<p>待我进入房间后，石倚把我身后的门关上了。</p>
+<p>苏：“嘛，那我就打开隔音箱咯。”</p>
+<p>说着，晴梦慧按下了箱子侧面的按钮。突然，箱子展开了。不出所料，里面果然关着两个男生。他们的眼睛被蒙着，双手被绑在背后，嘴里都含着口球。不知道为啥，这两个人的样子非常眼熟 —— 好像最近刚刚见过。</p>
+<p>他们显然是注意到箱子被打开了。他们很快开始挣扎起来，并隔着口球发出“唔唔”的求救声。</p>
+<p>见状，石倚快速蹲了下来，用两个锁将两个男生的脖子上的环都固定在了地板上。发现自己脖子被固定住，两个男生的挣扎更激烈了。这时，石倚拿出了她的小型平板电脑，在快速翻阅了一下以后，向我们说道。</p>
+<p>石：“这两位分别都是实验中学的高二学生。左边这一位叫‘如年’，右边这一位叫‘樊坤’。有证据显示，他们都曾性幻想被女生踩踏。为了实现他们的幻想，就把他们带到这里了。”</p>
+<p>苏：“好哒明白了。我和学姐一人一个就是了。学姐想选哪一个啊？”</p>
+<p>我：“啊&hellip; 我&hellip;”</p>
+<p>苏：“好啦学姐既然那么犹豫的话我先选好了。我就要这边这个个子矮一点的好了，叫什么来着、如&hellip;？”</p>
+<p>石：“如年。”</p>
+<p>苏：“OK~”</p>
+<p>说着，晴梦慧蹲下身来，将左边那位的眼罩解了下来。左边的男生一看见晴梦慧的脸，一开始疑惑了一下，然后很快开始挣扎了起来。</p>
+<p>苏：“学姐也来帮另外一位把眼罩解开吧。”</p>
+<p>听了晴梦慧的命令，我也蹲下身来。没等我解开樊坤的眼罩，如年显然已经先是看到了我。他突然露出了震惊的表情，然后开始更大声地叫了起来。</p>
+<p>苏：“石倚，让他安静点。”</p>
+<p>石：“好的主人。”</p>
+<p>说着，石倚在小平板上按了一下。突然，如年发出了一声惨叫，然后不再发出声音。不过他依然牢牢地盯着我。</p>
+<p>到底是谁呢&hellip; 绝对这两天才见过啊&hellip;</p>
+<p>一边疑惑，我一边解开了樊坤的眼罩。樊坤看到我以后，表情简直和如年一模一样 —— 他惊讶地看着我，似乎想要说什么。</p>
+<p>这时候，我突然想起来他们是谁了 —— 他们是我之前跑步上学时在旁边指指点点的路人。想到这儿，我一下子脸就涨的通红。</p>
+<p>苏：“怎么啦？”</p>
+<p>我：“没、没什么&hellip;”</p>
+<p>苏：“那么，开始咯。”</p>
+<p>说着，晴梦慧站了起来，然后抬起了她那穿着过膝袜的脚，然后轻轻地踩在了如年的脸上。</p>
+<p>如年一开始先是挣扎了几下，但是很快就停止挣扎了。我远远地望见如年的裤裆位置稍微有点鼓了起来。见到那个，我原本稍稍发红的脸更红了。</p>
+<p>苏：“学姐还在等什么，快开始啊。”</p>
+<p>我：“啊、、&hellip; 那样、”</p>
+<p>我模仿晴梦慧的样子，把右脚先抬起来，悬在半空中。丝袜从昨天开始就一只穿在身上，因此上面沾着积累了许久的脚汗。空气划过时，使我稍稍感到了一丝凉意。我犹豫了一下，然后缓缓地把脚按在了樊坤的脸上。顿时一股温暖的感觉，充满了我的脚底。</p>
+<p>我继续学习晴梦慧的动作，开始微微移动我的脚，使丝袜在樊坤的脸上微微摩擦。</p>
+<p>就这样踩了一会儿以后。晴梦慧停了下来。</p>
+<p>苏：“呐，我想听听这位抖 M 有什么想说的了。”</p>
+<p>说着，晴梦慧再次蹲了下来，然后将如年的口球解了下来。</p>
+<p>出乎意料的，如年并没有立刻开始呼救。相反，他一脸愉悦地看着晴梦慧。晴梦慧笑了笑。</p>
+<p>苏：“舒服吧？还想要吗？”</p>
+<p>如年没有说话，只是点了点头。</p>
+<p>苏：“嗯？我没听见？”</p>
+<p>如年顿时脸红了，他结结巴巴地说道。</p>
+<p>如年：“嗯、、还、还想要&hellip;”</p>
+<p>苏：“呐、可是我的脚被你的脸弄脏了，怎么办呢？”</p>
+<p>如年先是愣了一下，然后很快回答道。</p>
+<p>如年：“让、让我来帮你舔干净好了&hellip;”</p>
+<p>苏：“嗯、这个回答好。”</p>
+<p>说着，晴梦慧从门旁拉来了一把椅子，并坐在了椅子上，随后，她同时把两只脚都抬了起来，并把右脚覆盖在如年的鼻子上，然后将左脚塞进了如年的嘴中。如年非常配合地开始吮吸晴梦慧的脚趾。晴梦慧则也露出了享受的表情。</p>
+<p>苏：“学姐快也来试一试吧，可舒服了呢。”</p>
+<p>我：“欸？&hellip;”</p>
+<p>不知道为什么，尽管刚开始还觉得踩别人的脸非常羞耻，被晴梦慧这么一说，我还稍稍有点享受做这件事了呢。</p>
+<p>我蹲下身去，轻轻说道。</p>
+<p>我：“那、那个&hellip; 你介意吗&hellip;’</p>
+<p>尽管戴着口球，听到我的问题后，樊坤立刻回应道。</p>
+<p>“唔、、诶、、he ——（不介意）”</p>
+<p>听到樊坤给出的同意后，我也效仿晴梦慧的样子，将樊坤的口球解了下来，然后坐在椅子上，把左脚送进了樊坤的嘴中。</p>
+<p>真不愧是变态。</p>
+<p>我那我自己都嫌脏的脚到了樊坤那似乎就变成了美食。他贪婪地舔并吮吸着我的左脚。口水的温暖和牙齿轻轻触碰带来的瘙痒感给我带来了一种独特的快感。</p>
+<p>我：“啊&hellip;”</p>
+<p>等我反应过来我不小心发出了奇怪的声音时，晴梦慧已经微笑着看着我了。</p>
+<p>我：“欸、那个我是打哈欠&hellip;”</p>
+<p>苏：“学姐别装啦、”</p>
+<p>晴梦慧一边笑着说，一边继续用脚揉捏着如年的脸。</p>
+<p>我尴尬地笑了笑，把左脚从樊坤的嘴中抽了出来，并把右脚放了进去。</p>
+<p>&hellip;</p>
+<p>就这样，我们大概一共给这两个男生踩了一个小时的脸。直到我的脚都酸了，被我的丝袜践踏了一个小时的樊坤丝毫没有表现出厌倦的迹象。最后倒是晴梦慧叫了停。</p>
+<p>苏：“好啦，今天就这样吧。”</p>
+<p>如年：“但是我还、”</p>
+<p>没等如年说完，晴梦慧就灵活地用脚捂住了如年的嘴。</p>
+<p>苏：“乖、听话的话还有下次哦~”</p>
+<p>如年一听立刻开始点头。</p>
+<p>见到晴梦慧要结束，我也干净最后用力踩了两下，然后站了起来。</p>
+<p>苏：“帮他们把眼罩和口球戴上。”</p>
+<p>我弯下腰，准备将之前解下的口球和眼罩重新装在樊坤的脸上。</p>
+<p>出乎意料的是，樊坤丝毫没有挣扎。相反，他甚至在我为他佩戴上口球前，对我说了一声谢谢。</p>
+<p>将道具安装完成后，在石倚的帮助下，我们将二人重新放回了箱子。</p>
+<p>苏：“好了，我把他们送回去吧。”</p>
+<p>石：“主人不需要我送吗？”</p>
+<p>苏：“石倚帮学姐洗个澡吧。”</p>
+<p>我：“欸？这个&hellip; 我自己也可以洗吧&hellip;”</p>
+<p>我显然并不希望男生帮我洗澡。然而，石倚已经站了起来，并且扶着我走向浴室。</p>
+<p>我：“等、等一下&hellip;”</p>
+<p>石倚并没有理会我的请求，而是继续带我并走进了淋浴室。</p>
+<p>石：“大人请把手抬起来一下。”</p>
+<p>我：“啊、这个我也可以自己&hellip;”</p>
+<p>石：“晴梦慧主人已经下令由石倚来帮您清洗了。”</p>
+<p>尽管我十分不愿意让一个男生接触我的身体，我还是服从地举起了我的双手。石倚迅速帮我脱掉了上衣和裙子。突然，没等我反应过来，石倚拉下了天花板上的链条，将我的双手铐了起来。</p>
+<p>我：“欸这是、”</p>
+<p>石：“石倚正在为大人清洗身体。”</p>
+<p>我不敢多说话 —— 好在我身上穿着贞操带和上锁的胸罩 —— 至少他不能把我看光了。</p>
+<p>然而，正当我这么想着，石倚从口袋中掏出来一个超小的平板电脑，然后一按 —— 忽然，我的听到开锁的声音，随后我的胸罩被解了下来。</p>
+<p>我：“啊啊啊—————— 你干嘛！”</p>
+<p>我大声抗议道。</p>
+<p>石：“为您清洗身体。不过，石倚的权限只能解开您的胸罩。下半身的清洗石倚就无能为力了。”</p>
+<p>我：“呀、可是我没让你、”</p>
+<p>石：“对不起，但是这恐怕不是您决定的。”</p>
+<p>我：“唔、哇，但是&hellip; 你怎么能直接把我的&hellip;”</p>
+<p>石倚没有理会我的请求。她拿起了莲蓬头开始为我冲洗。</p>
+<p>&hellip;</p>
+<p>尽管石倚是个男孩子，但是面对我半赤裸的身体，不知是克制还是什么，她并没有做出任何出格的行为，而是非常认真地帮我清洗了干净。随后她将胸罩锁在我的身上后，将我放了下来。</p>
+<p>石：“现在请您前往卧室。”</p>
+<p>我：“&hellip;这又是要做什么&hellip;”</p>
+<p>石：“我的主人还下令让我对您做另一件事情。所以现在请前往卧室。”</p>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../1-%E4%B8%BB%E7%BA%BF/2/"
+    title=""
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../1-%E4%B8%BB%E7%BA%BF/15/"
+    title=""
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <p class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      title="Scroll to top"
+      onclick="scrollToTop()"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "\/1-%E4%B8%BB%E7%BA%BF\/16\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Awesome Books
+      &middot;
+      COPYLEFT:)
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">
+      kitab
+    </a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+  
+</footer>
+
+  </body>
+</html>

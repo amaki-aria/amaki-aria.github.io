@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>demo for amaki</title>
+  <meta name="description" content="Sample" />
+  <meta name="author" content="Yrr0r" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.60.0" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/kitab.css" />
+
+  <script src="../../js/myFunctions.js"></script>
+  <script src="../../js/clipboard.min.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="../../"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+	
+	
+	
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="../../pride_and_prejudice/">
+            Pride <em>and</em> Prejudice
+          </a>
+          by Jane Austen
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/">
+            1 - 主线
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../2-%E6%94%AF%E7%BA%BF/">
+            2 - 支线
+          </a>
+          by 
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Chapters"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        1 - 主线
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/1/">01</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/0/">00 - 序</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/10/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/11/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/12/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/13/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/14/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/15/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/16/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/2/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/3/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/4/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/5/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/6/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/7/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/8/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/9/"></a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    1 - 主线
+  </small>
+  <h2></h2>
+  <div class="rounded">
+    <p><a href="https://github.com/SCLeoX/Wearable-Technology/issues/10">评论</a></p>
+<h1 id="3">3.</h1>
+<p>“现在执行第三步：安装强制穿戴式鞋子。”</p>
+<p>什么？难道鞋子也要锁在脚上嘛？不过因为对于高潮的渴望，我并不打算质疑。我只想赶紧完成这一步然后能得到奖励。再一次，又一个蓝色方框亮起，展开。这次，摆在架子上的是一双棕色平底皮鞋。</p>
+<p>“请取下强制穿戴式鞋子。”</p>
+<p>我颤抖着从架子上取下了这双皮鞋。估计是因为脚部的丝袜已经有电击的功能，皮鞋的内部并没有电极。鞋子的顶端没有鞋带，取而代之的是一条顶上带着金属插片的皮革带子 —— 估计是用来上锁的。鞋子的底面有一个可折叠的金属棒，我估计展开后会使这双鞋子变成高跟鞋。鞋底的后部有一个和贞操带上的接口形状类似的孔，似乎是用来和中央控制系统连接的。</p>
+<p>“请穿戴强制穿戴式鞋子。”</p>
+<p>我将两只脚分别伸入了两只鞋子。显然，鞋子的尺寸和形状也是定制的，穿上以后非常舒服。</p>
+<p>“请将缩紧带插入对应插孔。”</p>
+<p>我照做了。一声咔嚓后，鞋子就被锁在我的脚上了。</p>
+<p>“强制穿戴式鞋子安装完成，因为本步骤简单，将不提供阶段性奖励。”</p>
+<p>“什么？&hellip; 不&hellip;”</p>
+<p>听到没有阶段性奖励的消息后，我十分沮丧。</p>
+<p>“那下一步执行完有奖励吗？”</p>
+<p>“对不起，您没有读取此信息的权限。”</p>
+<p>“那&hellip; 开始下一步吧…”</p>
+<p>“好的，现在执行第四步：安装胸部按摩装置。”</p>
+<p>蓝色方框亮起，展开，一幅金属胸罩出现在我的眼前。由于我是 A 罩杯，这为我量身定制的胸罩也几乎是平的。与此同时，在乳头对应的位置各有一个类似榨乳器的吸盘。每个吸盘内都有一个和阴蒂按摩器类似的小爪子，爪子中心有一个小金属片。和之前的那些装置一样，所有的搭扣全部换成了金属插口 —— 一旦被锁上，将无法自己移除。除此之外，环绕后背的带子在咯吱窝的部位有两个朝下的和贞操带上接口一致的口子。</p>
+<p>“请取下胸部按摩装置。”</p>
+<p>我将这独特的胸罩取下来。虽然是由金属制成的，但是其质量远比我估计的要小。</p>
+<p>“请穿戴胸部按摩装置。”</p>
+<p>我用左手将其按在我扁平的胸上。我感觉到两个吸盘牢牢地按在我的乳头上。我用右手将横向的带子从背后绕过，扣进了胸罩的前侧。然后我将两根肩带从肩上跨过，也扣进了对应的插槽。</p>
+<p>再一次，尺寸是完美的。长度非常合适，完全不需要调节 —— 也无法调节。</p>
+<p>这时，铁箱子上又打开了一个空间。这次里面放的是两根直径约有一厘米的黑线。</p>
+<p>“请取下通用连接线。”</p>
+<p>什么，居然还没有安装完。迫不及待想要高潮的我稍微有点沮丧了。但是为了能尽早完成，我还是迅速将这两根连接线拿了下来。连接线的金属接头上有两个孔，看上去允许液体通过。因为两根线的头部和贞操带/胸罩/鞋子上的接口很像，很明显，这两根线是用来连接贞操带和胸罩的。</p>
+<p>“请将连接线一头插入中央控制系统两侧顶部的插孔上。”</p>
+<p>出乎意料的时，这个连接线居然也是带有锁的。熟悉的咔嚓声响起，连接头就被锁在了贞操带上。</p>
+<p>“请将连接线的另一头插入胸部按摩装置两侧底部的插孔上。”</p>
+<p>不出所料，果然连接线是用来连接胸罩和贞操带的。线的长度非常合适，不长也不短。一样的，当我把连接头插入胸罩上对应的口子后就被锁在里面拔不出来了。</p>
+<p>“胸部按摩装置安装完成，现执行阶段性奖励。奖励内容：胸部按——”</p>
+<p>“能达到高潮吗？”</p>
+<p>突然，一股和之前惩罚时一样强烈的电流穿过了我的肛门，我失去了平衡倒在地上。</p>
+<p>“啊！————”</p>
+<p>“请不要打断我说话。已执行惩罚：一级电击。”</p>
+<p>“对&hellip; 对不起&hellip;”</p>
+<p>我痛苦地跪倒在地上。</p>
+<p>“现在回答您之前的提问：不能。本奖励会通过刺激乳头的方式产生快感，但是您没有获得高潮的权限。”</p>
+<p>“求&hellip; 求你了&hellip; 让我去吧&hellip; 我&hellip; 我受不了了&hellip; 让我做什么&hellip;. 都可以&hellip; 为了高&hellip; 高潮&hellip;”</p>
+<p>人工智能停顿了一下，似乎是在思考我的请求。</p>
+<p>“如果您能在接下来的一小时内，在穿着高跟鞋站立并保持平衡的状态下，分泌 100cc 的乳汁，您将获得奖励高潮一次，如果失败，将会进行高潮边缘控制 6 小时——”</p>
+<p>“等、等一下，乳汁要在分娩后才会分泌啊。”</p>
+<p>“特效催乳药会通过肛门注入，您准备好后，请用提供的手铐将双手固定在身后，并踮起双脚。”</p>
+<p>话音刚落，一个格子被打开，里面放着一副链子只有不到 2 厘米的手铐。我努力地站了起来，拿起手铐，把自己的双手拷在了身后。然后，我踮起了双脚。的脚后跟刚离地，平底皮鞋底部的折叠起来的高跟就展开了。然而，出乎意料的是，当这跟棒子完全展开后，居然还开始变长了。最后，这后跟有超过 15 厘米。再加上双手固定在背后以及按摩棒的不断刺激，别说坚持一小时了，连坚持一分钟都困难。</p>
+<p>“计时开始。”</p>
+<p>没等我能掌握平衡，一股凉意出现在了我的肛门内 —— 这个贞操带里居然还有存储催乳药。胸罩里的吸盘压强也开始下降，我早已勃起的乳头被牢牢地吸在了吸盘内的爪子上。</p>
+<p>催乳药的效果来得很快，我已经开始觉得乳头部位开始发热了。这时，吸盘内的爪子动了起来 —— 它们抓住了我的乳头并开始震动。</p>
+<p>随着乳头的按摩变强，快感也在我的体内越堆越高。这时，吸盘的力度突然增大了一下，然后又变小，再增大，之后又变小，以此往复。我明白，榨乳正式开始了。我缓缓地感到胸部内的那股热量开始往前移动。终于，我感到乳头一热 —— 有液体出来了。我低头看去，并没有乳汁从胸罩中流出来。难道这是错觉？</p>
+<p>“时间已过 5 分钟，已采集乳汁 1cc。”</p>
+<p>咦？明明没有流出来，为什么会采集到呢？我突然间反应过来，刚刚榨出来的乳汁沿着连接线，被送到了贞操带内的液体存储。</p>
+<p>我感觉吸盘每吸一次，就有一些乳汁被榨了出来。</p>
+<p>“时间已过 10 分钟，已采集乳汁 10cc。”</p>
+<p>嗯，我确实在分泌乳汁。然而这并不够快，这样下去 60 分钟只能分泌 60cc… 不对，这 10cc 中的 9cc 都是在刚刚的 5 分钟内分泌的，所以在接下来的 50 分钟内，应该还能再榨出 90cc 来&hellip; 所以如果能一直以这个速度采集，最后能刚好达标？</p>
+<p>但是还有一个更严重的问题，那就是我现在脚已经站得发痛了 —— 15 厘米的高跟鞋不是闹着玩的。再加上按摩棒的刺激，我已经在失去平衡的边缘了。</p>
+<p>为了缓解脚尖的疼痛，我决定稍微把腿分开一点。可是，当我刚把脚抬起来一点，我就失去了平衡。因为双手被铐在身后，我无法用手来维持平衡，而只能使用腿。然而，由于高跟鞋的原因，这也变得异常困难。在一通小碎步后，我总算是没有摔倒 —— 那将直接使我的任务失败。同时我发现，若要保持平衡，我唯一可以采取的姿势是将膝盖并拢，而把小腿分开 —— 因为这样可以稍微减少一点按摩棒带来的刺激。</p>
+<p>“时间已过 20 分钟，已采集乳汁 27cc。”</p>
+<p>不妙不妙。这艰难的 10 分钟乳汁分泌速度下降了。这样一来一小时后将无法达标。更关键的问题是，我现在的姿势要求我处在一种半蹲的状态，才没几分钟，我的大腿就很酸了。我只能冒着摔倒的危险继续寻找比较稳的姿势。我缓缓地站直了起来。然而，每动一下，按摩棒带来的快感就会增强一下，使我更难保持平衡。同时，我开始尝试使用我的胳膊挤压我的肋骨 —— 感觉这样就能多多少少增加一点分泌的量。</p>
+<p>我开始在房间内走走停停，就这样度过了漫长的 20 分钟。</p>
+<p>“时间已过 40 分钟，已采集乳汁 60cc。”</p>
+<p>不但这次的产量更低了，我的两条腿从大腿根到脚尖都已经通得发麻了。尽管这样，由于我已经持续处于高潮边缘近 2 个小时了，我对于高潮的渴望使得我选择继续坚持下去。</p>
+<p>“能&hellip; 呼&hellip; 能不能&hellip; 把榨乳器的&hellip; 呼&hellip; 的力度&hellip; 调&hellip; 调大一点&hellip;”</p>
+<p>“已调节。”</p>
+<p>突然，我感觉乳头上的吸力增大了很多，同样变大的还有爪子的按摩力度。在新的强度下，我很快感觉乳头发痛，但是为了高潮，我只能坚持。</p>
+<p>“时间已过 50 分钟，已采集乳汁 79cc。”</p>
+<p>我已经筋疲力尽了。我的两条腿在颤抖着。而且，由于长时间处于高潮边缘，我开始情不自禁地呻吟了。</p>
+<p>“啊&hellip; 呼&hellip; 要去了&hellip; 嗯&hellip; 继续&hellip; 呼&hellip; 我要&hellip; 要高潮&hellip; 坚持&hellip; 呼&hellip;”</p>
+<p>最后这十分钟我也不知道是怎么过的，总之就是在这迷迷糊糊的状态又坚持了很久。</p>
+<p>“恭喜您，成功采集乳汁 100cc，现在——”</p>
+<p>“求你了！让我高潮吧！”</p>
+<p>我哭着喊了出来，同时因为腿上的剧痛跪倒在地上。由于手依然被靠在身后，我无法用手支撑，于是我又侧倒了下来。</p>
+<p>“请不要打断&hellip; 行吧，现在执行奖励：高潮一次。”</p>
+<p>一直缓慢旋转着的阴道按摩棒瞬间加速。一阵快感涌向我的大脑。由于我真的就处在高潮的边缘，很快我脸上一片潮红，双腿夹紧，穿着高跟鞋的脚绷得笔直。</p>
+<p>“嗯.. 哈.. 嗯&hellip; 嗯——”</p>
+<p>我终于高潮了。</p>
+<p>这次高潮比我人生中所有别的高潮 —— 包括上一次 —— 都要激烈得多。我不知道这次高潮到底持续了多久，但是我感觉还没有结束我就又晕了过去 —— 由这种按摩棒强制造成的高潮实在太强了以至于我还并不能完全适应。但我可算是明白了，只要我还被锁在这贞操带里，高潮将是我最渴望的奖励。</p>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../1-%E4%B8%BB%E7%BA%BF/4/"
+    title=""
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../1-%E4%B8%BB%E7%BA%BF/2/"
+    title=""
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <p class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      title="Scroll to top"
+      onclick="scrollToTop()"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "\/1-%E4%B8%BB%E7%BA%BF\/3\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Awesome Books
+      &middot;
+      COPYLEFT:)
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">
+      kitab
+    </a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+  
+</footer>
+
+  </body>
+</html>

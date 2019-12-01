@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>demo for amaki</title>
+  <meta name="description" content="Sample" />
+  <meta name="author" content="Yrr0r" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.60.0" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/kitab.css" />
+
+  <script src="../../js/myFunctions.js"></script>
+  <script src="../../js/clipboard.min.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="../../"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+	
+	
+	
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="../../pride_and_prejudice/">
+            Pride <em>and</em> Prejudice
+          </a>
+          by Jane Austen
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/">
+            1 - 主线
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../2-%E6%94%AF%E7%BA%BF/">
+            2 - 支线
+          </a>
+          by 
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Chapters"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        1 - 主线
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/1/">01</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/0/">00 - 序</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/10/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/11/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/12/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/13/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/14/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/15/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/16/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/2/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/3/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/4/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/5/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/6/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/7/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/8/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/9/"></a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    1 - 主线
+  </small>
+  <h2></h2>
+  <div class="rounded">
+    <p><a href="https://github.com/SCLeoX/Wearable-Technology/issues/16">评论</a></p>
+<h1 id="9">9.</h1>
+<p>显然，我是低估了罐子里乳汁的含量。我大概喝了一个小时才把乳汁喝完。好在乳汁稍微有一股甜味，并没有仿制精液那么恶心。</p>
+<p>等我喝完以后，我手腕上的拘束就打开了。</p>
+<p>“你可以给自己松绑了。”</p>
+<p>我解开了假阴茎口塞的带子并将其从我嘴中拔了出来。我将其放在一旁的桌子上。假阴茎上的残留口水流下来把桌子表面也打湿了一片。</p>
+<p>“刚刚那个学姐的贞操带也是主人控制的吗？”</p>
+<p>好不容易获得说话能力的我赶紧问道。</p>
+<p>“不是。每套可穿戴自慰系统都是由独立 AI 操作的。”</p>
+<p>“哦，这样啊…”</p>
+<p>我用手解开了脖子上，腰上的拘束，坐了起来，并解开了腿上的拘束。</p>
+<p>“请打开最左侧的柜子，取出其中的口球并佩戴。”</p>
+<p>看上去我能自由发言的时间并不会持续。</p>
+<p>我起身，踩着丝袜走到柜子旁，并将其打开。柜子里面放着一副口球，一副口罩，和一个黑色薄片。</p>
+<p>我其实从来没有戴过口球，只是在色情影片中了解到了其用法。我将口球从架子上取下。口球本身和连接的带子都是黑色的。透过口球上的孔，我注意到其内部似乎有一个更小的可以自由活动的粉色球。带子连接处用的也是可供人工智能远程操纵的连接口。</p>
+<p>我张开嘴，将口球含了进去。随后，我把带子在脑后锁了起来。这样一来，我就无法取下口球了。由于嘴巴被迫张开，很快我就感到有口水流了出来。</p>
+<p>“请佩戴提供的口罩。”</p>
+<p>放在架子上的还有一幅普通的白色棉质口罩。我将其取下并上。这样一来，起码外人是看不到我戴着口球了。然而，随着我晃动头部，口球内部的小球和外壁撞击发出了清脆的声音。这声音很小，显然不是用来让别人听的。</p>
+<p>“嗯嗯&hellip;？（这个小球是做什么的？）”</p>
+<p>“哦，口球里的那个是催情片。”</p>
+<p>“嗯嗯——？（催情片？）”</p>
+<p>“春药含片是将高浓度的春药压缩成固体的类似硬糖的催情药物。理论上来说吸收速度没有直接注入肠道效果好，但是因为浓度高，含着的时间长了效果也会很强。”</p>
+<p>“嗯嗯&hellip; 嗯——（哇，好过分啊&hellip;）”</p>
+<p>“总之，它现在在你的口球里已经开始融化了。如果不想被快感烧坏大脑的话，请进行下一步吧。”</p>
+<p>“嗯。（嗯。）”</p>
+<p>“请取下快感远程控制器。”</p>
+<p>这个 “快感远程控制器” 显然指的是那个黑色薄片。我将其拿了下来。这个控制器是一个宽约 5 厘米，长约 10 厘米，厚度在半厘米左右的黑色长方体。其外表是软塑料的材质。其侧面有一个耳机孔。尽管叫做控制器，其表面除了顶部有一盏红灯有点控制器的样子以外，连一个按钮都没有。</p>
+<p>“唔&hellip; 嗯&hellip;？（这是什么？）”</p>
+<p>“正如你所见，这是 ‘快感远程控制器’。”</p>
+<p>“&hellip;”</p>
+<p>人工智能的回答简直完美地抵消了我的疑问。</p>
+<p>“请将控制器放入上衣口袋。”</p>
+<p>我照做了。</p>
+<p>“请穿上鞋。”</p>
+<p>我坐到了拘束床上，将之前脱下来的鞋子重新锁在了脚上。</p>
+<p>“可以出门晨跑了。”</p>
+<p>看样子人工智能打算是让我每天要晨跑了。我站了起来，打开门，穿过走廊，坐电梯下楼。刚进入大堂，按摩设备的运动速度就加快了 —— 我又进入他人的视线了。此时，前台的接待已经是换了成个男人了。他看我离开，向我招了招手，我向他点了点头。人工智能没有命令我去退房，所以我径直走出了酒店大门。</p>
+<p>“今天的晨跑距离是 6 公里，目标速度依然是 8kmh-1。请沿着当前道路跑到城市公园。你将在那有短暂的休息时间。您可以开始跑了。”</p>
+<p>于是，我再次穿着这性感的衣服在众目睽睽下跑了起来。然而这些旁观者一定不会想到，我的口罩下锁着一个内含春药的口球，我的下体里插着三根量身打造的按摩棒 —— 其中两根拜他们所赐正高速旋转着。</p>
+<p>由于春药的原因，我很快感到我的唾液变得粘稠，脸也开始发热了。</p>
+<p>“嗯嗯&hellip; 嗯嗯&hellip; 嗯？（今天有高潮数量限制吗？）”</p>
+<p>我并没有受到电击，看上去带着口球的嘟囔并不算说话。</p>
+<p>“没有，今天你可以尽情在<strong>公开</strong>场合高潮哦。”</p>
+<p>确实，即使没有高潮限制，在这马路上达到高潮依然是很尴尬的事。</p>
+<p>我继续向前跑着。就在我快要迎来第一次高潮之时，两个熟悉的身影出现在了我面前。</p>
+<p>“欸，你看是那个抖 M。”</p>
+<p>拜托，你们对行人发表色色的言论时能不能小声一点。</p>
+<p>“她肯定是暗恋我们，所以每天跟着我们。”</p>
+<p>暗恋你们个鬼啊。幸好这次我是迎着他们跑的，我很快就能把他们甩开。</p>
+<p>“哇，你看她的腿好棒啊&hellip;”</p>
+<p>“就是啊，真的好想被她穿着丝袜踩&hellip;”</p>
+<p>“我也是&hellip; 欸你看，她高潮了！”</p>
+<p>他们说的没错，我确实是高潮了。在这种色狼面前高潮简直是晦气。</p>
+<p>“哈哈，你居然被两个小鬼夸到了高潮。”</p>
+<p>看上去人工智能都忍不住调侃我了。</p>
+<p>“嗯嗯&hellip;. 嗯嗯嗯嗯嗯&hellip;（鬼啦，高潮完全是因为春药和按摩器啦！）”</p>
+<p>“那要不要给你安排一个任务就是专门去踩他们的脸。”</p>
+<p>“嗯！嗯嗯嗯嗯&hellip;（哼，那我一定要踩爆他们的脸。）”</p>
+<p>…</p>
+<p>在唾液的浸泡下，催情片快速融化着。随着这些春药进入我的身体，我的敏感度显然是显著提升了。我能清楚地感觉到阴蒂上的爪子的每一个动作。我甚至能感受到按摩棒上的凸起，和那些凸起在高速旋转时完成的每一个周期。</p>
+<p>在高潮了大概十次后，我总算是跑到了城市公园。我的口罩早已被流出来的唾液浸湿，甚至还有部分唾液沿着下巴流了出来。</p>
+<p>“请停止奔跑并进入城市公园。”</p>
+<p>在高潮和长跑的作用下，我早已精疲力竭。得到停止奔跑的命令后，我欣喜地停了下来，并走进了公园。公园里的人不多，但是我周围至少有十余人。因为我的打扮，我感觉到很多人都把注意力转移向了我。</p>
+<p>“请取出快感远程控制器。”</p>
+<p>我从上衣口袋中拿出了黑色薄片。正在疑惑怎么用时，薄片上的灯突然变绿了，与此同时我体内的按摩棒和阴蒂爪子都彻底停了下来。</p>
+<p>“请使用控制器在公园内达到 3 次高潮。触摸以开始。”</p>
+<p>我并不知道人工智能所说的 “触摸以开始” 是什么意思。这个黑色薄片显然没有触摸屏 —— 其外表是不透明的塑料。我半信半疑地用手指在薄片上划了一下。然而，我瞬间感觉到一股电流划过我的身体。与此同时，控制器上的灯也闪了一下黄色。我本能地叫出声来，所幸周围并没有人听到。我突然反应过来，虽然这个控制器不能显示，但是它依然能读取触摸信息。</p>
+<p>为了搞清楚这个控制器到底是怎么工作的，我用手指轻轻按在了控制器中偏上的位置。黄灯亮起，我感觉到一股酥麻的电流穿过我的胸部，与此同时，乳头上的榨乳器也开始了工作。在刺激下，我感觉我的身体越来越舒服。</p>
+<p>我开始缓缓地下移触摸的位置。不出所料，电击的位置开始朝着下体移动，按摩棒也开始旋转了。电击和按摩棒的配合非常完美，在加上春药，我的身体越来越兴奋。我双颊发热，本能地准备抬头迎接高潮。然而头抬了一半，我就立刻把手指从控制器上移开了 —— 周围的人都看着我 —— 他们一定觉得我是一个毫无任何节操，在公开场合拿着跳蛋遥控器自慰的女生 —— 不过他们这么想并没有完全错，我确实是拿着遥控器在自慰。</p>
+<p>看到我注意到了他们，周围的人很快把视线别开了，玩手机的玩手机，聊天的聊天，只不过我依然能感觉到他们时不时用余光看我。</p>
+<p>为了减小尴尬，我决定找一个人少的地方做这事。我快步沿着小路走了一会儿，然后穿进了一片树林。简单地确认了一下周围没有人以后，我再次取出了控制器，并开始用手指在上面滑动。因为过于舒服，我本能地闭上了眼睛，沉浸在快感里。</p>
+<p>我很快注意到，不但触摸的位置决定了刺激的位置，触摸的强度还会改变刺激的强度。我按的力度越来越大，随着电流越来越强，痛感也逐渐增加。但是不知道为什么，在这痛感中，我反而越来越性奋。我很快支持不住身体，于是我本能地用手搀扶着树干，才没有跌倒。即使这样，我依然没有松开我那牢牢按在控制器上的大拇指。在这刺激下，我很快达到了高潮。显然，有着电击配合的高潮要比光是按摩棒旋转所获得的高潮强很多。尽管双腿发软，为了不弄脏丝袜，我依然扶着树干勉强站着。</p>
+<p>第一次高潮的余温还没有散去，我已经开始准备迎接下一轮高潮了 —— 这和以前用手自慰相比，实在是太舒服了。此时，我的口水已经顺着上衣流到了裙子上。我并没有管口水，而是再一次用手指在控制器上滑动。我感受着这酥麻的感觉从脚底一直传到脖子。这种动动手指就能制造快感的感觉实在是太愉悦了。</p>
+<p>就这样，我又达到了两次高潮。当第二次高潮结束后，控制器上的黄灯（因为我一直按着所以一直是黄灯）变成了红灯。与此同时，酥麻的电流停止了。按摩棒的运动速度也恢复成了检测周围人关注度的模式。突然我心中一惊 —— 按摩棒依然在旋转，说明有人正看着我。我再次环顾了一下周围，并没有看到人，同时按摩棒的速度下降了 —— 刚刚确实有人在看。</p>
+<p>我一边担心着刚刚发生的事情被人看到，一边惋惜愉悦的时间这么快就结束了 —— 早知道用低强度多享受一会儿了。</p>
+<p>“好了，跑回家吧。”</p>
+<p>“嗯嗯&hellip; 嗯嗯&hellip;（我刚高潮完，很累啊&hellip;）”</p>
+<p>“你还会再高潮的。请在 3 秒钟内开始跑步。”</p>
+<p>“&hellip;（&hellip;）”</p>
+<p>尽管感觉很累，我依然跑了起来。不出意料，很快按摩棒的速度又加快了 —— 我再一次成为了注意力的中心。</p>
+<p>…</p>
+<p>返程要比预计的顺利得多。或许是因为之前高潮太多次了，尽管药效应该继续在堆积，我大概只高潮了一两次就跑到家楼下了。突然，另一个熟悉的身影出现在眼前。我赶紧转过头去避免和他沟通 —— 我也无法和他沟通。然而已经晚了。他已经注意到我了。</p>
+<p>“琳！又见到你了，好巧啊。”</p>
+<p>成为沟通目标的条件被触发，我感到乳头上的榨乳器开始工作了。真是见了鬼了。住在同一栋楼里面，互相见到有什么巧的。我转过头去，发现他正在朝我走来 —— 好消息，他是在离开，所以不会需要和我一起坐电梯；坏消息，他正在朝我走来。是的没错，那个朝我走来的就是那个姓陈的沙雕。</p>
+<p>“之前说太多话惹恼了你真是抱歉啊。”</p>
+<p>然而你现在依然在说很多的话。我点点头表示原谅。</p>
+<p>“我现在要去奶奶家，所以先走了，拜拜。”</p>
+<p>我赶紧再次点了点头，然后快步走向了电梯。</p>
+<p>…</p>
+<p>刚走进家门，我就意识到似乎有人来过我家 —— 原来地上散落的连接线，手铐，和换下的湿衣服都不见了。同时桌子上还放着一份外卖。</p>
+<p>这时，我感觉口球的锁解开了。</p>
+<p>“请取下口罩和口球，并将它们放入载体内。”</p>
+<p>我迫不及待地将彻底浸湿的口罩摘了下来。在取下口球时，我遇到了一些小困难 —— 我的嘴巴已经麻痹，我用力一拉才将牢牢被咬在嘴里的口球拉了出来。随后，我根据指令将口球和口罩放进了载体。</p>
+<p>然而，即使现在已经没有含着催情片了，之前消化的剂量使我依然处于高度敏感状态。</p>
+<p>“请将快感远程控制器放在桌子上，这之后就可以吃饭了。这次可以用手。”</p>
+<p>我顶着快感坐了下来，取出遥控器，打开了外卖。出乎意料的是，这只是非常正常的中餐。然而，我一边吃，一边因刺激慢慢接近高潮。不出所料，在到达高潮的前一刻，按摩棒减速，我又一次卡在了高潮边缘地狱。不过应该问题不大 —— 催情片的作用迟早会消退。</p>
+<p>然而，处于高潮边缘的我并没有办法好好吃饭 —— 我一边心不在焉地把食物送入口中，一边细心感受着按摩棒带来的快感。</p>
+<p>“怎么样，想高潮吧？”</p>
+<p>我满脸通红的点了点头。</p>
+<p>“加油忍着吧。”</p>
+<p>&hellip;</p>
+<p>我把饭吃完以后，人工智能又让我做了日常维护。我在等充电的同时，继续感受着这无法阻挡的一波又一波的快感。</p>
+<p>充电完成后，尽管我再三求情，人工智能决定让我再次窒息。无法违抗命令，我只得走进了卫生间。我惊讶地发现浴缸里的水已经换过了。不知为何，此时的水泛着一股蓝色。</p>
+<p>“今天的水里面掺有了催情药物。”</p>
+<p>看样子人工智能早就料到我会盼着催情片的药效褪去，所以给我准备了这一缸子春药。</p>
+<p>我脱下鞋子穿着衣服步入了窒息室。关上舱门后，窒息开始了。</p>
+<p>体内的按摩棒依然在缓慢旋转着，把我保持在高潮边缘。与上次一样，换气口交叉着打开，使我不得不在这狭小的空间内转身。</p>
+<p>这次窒息的强度要比上次弱。我并没有到很痛苦就可以换气了 —— 当然痛苦还是有的，只是相对而言轻一点。然而，我的身体却在这一缸子春药的浸泡下感到越来越热。与此同时，高潮的边缘控制似乎也越来越精确，我感觉我时时刻刻都要高潮，但是却怎么也到不了。</p>
+<p>这次窒息的总时长也远比上次长。尽管单次时间短，等我被放出来时，我依旧已是奄奄一息了。然后我被命令脱下衣服，擦干身体，然后把鞋子带到卧室并上床睡觉。</p>
+<p>擦干身体后，我禁不住问道。</p>
+<p>“可是&hellip; 主人我还没吃晚饭呢。”</p>
+<p>尽管我知道吃晚饭意味着灌精液，但是在长时间的窒息下，我肚子已经开始叫了。</p>
+<p>人工智能没有回答我的问题，于是我只得走进我的卧室。然而我再一次惊讶地发现，我的卧室也被改造了。床的四个角上伸出了四根顶端有镣铐的锁链。与此同时，枕头位置放着之前那个假阴茎面具式口塞，口塞已经接上了通用连接线，通用连接线的另一头连在墙上一个新出现的似乎是专门用来接通用连接线的插座上。</p>
+<p>“知道该怎么做吧？”</p>
+<p>我点点头。我自觉地坐上了床，将假阴茎含住扣好。与之前一样，假阴茎的头部牢牢顶着我的喉咙口使我感到十分不适。随后，我将四肢也用链条上的镣铐铐住，然后便仰躺在床上。刚一躺下，灯就熄灭了。紧接着，链条开始收紧，我的身体很快就被迫在床上展开，形成一个 “大” 字。</p>
+<p>不出所料，仿制精液的灌输很快开始了。大量的粘稠液体涌入我的食道使我不得不暂时停止呼吸。此时，人工智能开口了。</p>
+<p>“其实这次催情片和浴缸水里的春药成分和之前的春药成分并不一样。这次的春药并不会被大肠吸收，所以无法从肛门注入。然而一旦进入体内，只有人高潮时产生的 ‘多巴胺’ 才能使其失活。”</p>
+<p>仿制精液的灌输和人工智能的话语停了一下，让我喘了口气。下一轮灌输很快又开始了。</p>
+<p>“因为从到家到现在你一直没有高潮，所以你体内的这种春药含量已经很高了。不但如此，现在给你灌输的仿制精液里也掺有了这种催情药物。所以你将会越来越敏感。”</p>
+<p>人工智能又给了我短暂的休息时间。</p>
+<p>“等到这一批药灌完，你的身体将会变得异常敏感。到时候估计就算按摩棒完全不旋转，仅仅是它们插在你体内，你就会维持在高潮边缘了吧。不过呢，身体越敏感，高潮越强烈。期待明天早上被你有史以来最强的高潮唤醒吧，晚安~（笑）”</p>
+<p>仿制精液的灌输停了一下后，又开始如同之前一样进行着一阵一阵的输送。黑暗中，我情不自禁地努力挣扎着。然而铁链子使我全身上下完全无法移动。</p>
+<p>不知过了多久，仿制精液的输送停了。不出人工智能所料，按摩棒的活动也完全停了下来。即使这样，我依然能感觉到我下体内三根棒子上的每一个细节。即使它们完全静止，我依然感觉被它们刺激着。</p>
+<p>不知在这无尽的高潮边缘控制里过了多久，早已疲惫的我总算是勉勉强强睡着了，只不过&hellip;</p>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <i class="nav-menu-disabled fas fa-chevron-circle-right"></i>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../1-%E4%B8%BB%E7%BA%BF/8/"
+    title=""
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <p class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      title="Scroll to top"
+      onclick="scrollToTop()"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "\/1-%E4%B8%BB%E7%BA%BF\/9\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Awesome Books
+      &middot;
+      COPYLEFT:)
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">
+      kitab
+    </a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+  
+</footer>
+
+  </body>
+</html>

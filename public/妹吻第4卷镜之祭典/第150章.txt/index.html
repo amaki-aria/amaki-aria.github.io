@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>demo for amaki</title>
+  <meta name="description" content="Sample" />
+  <meta name="author" content="Yrr0r" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.60.0" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/kitab.css" />
+
+  <script src="../../js/myFunctions.js"></script>
+  <script src="../../js/clipboard.min.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="../../"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+	
+	
+	
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="../../pride_and_prejudice/">
+            Pride <em>and</em> Prejudice
+          </a>
+          by Jane Austen
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/">
+            妹吻第4卷：镜之祭典
+          </a>
+          by 
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Chapters"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        妹吻第4卷：镜之祭典
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC122%E7%AB%A0.txt/">第一百二十二章 公主的假日（1）【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC123%E7%AB%A0.txt/">第一百二十三章 公主的假日（2）【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC124%E7%AB%A0.txt/">第一百二十四章 夏日的惊喜</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC125%E7%AB%A0.txt/">第一百二十五章 神社的巫女</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC126%E7%AB%A0.txt/">第一百二十六章 镜之神社</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC127%E7%AB%A0.txt/">第一百二十七章 在神社的夜晚【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC128%E7%AB%A0.txt/">第一百二十八章 现实与幻觉</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC129%E7%AB%A0.txt/">第一百二十九章 幽灵存在的可能性</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC130%E7%AB%A0.txt/">第一百三十章 我的小萝莉，谁敢动？</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC131%E7%AB%A0.txt/">第一百三十一章 跪下！</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC132%E7%AB%A0.txt/">第一百三十二章 逢魔之时的黑影</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC133%E7%AB%A0.txt/">第一百三十三章 试胆大会（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC134%E7%AB%A0.txt/">第一百三十四章 试胆大会（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC135%E7%AB%A0.txt/">第一百三十五章 试胆大会（3）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC136%E7%AB%A0.txt/">第一百三十六章 你吓到幽灵了！</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC137%E7%AB%A0.txt/">第一百三十七章 幽灵少女</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC138%E7%AB%A0.txt/">第一百三十八章 不解之缘</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC139%E7%AB%A0.txt/">第一百三十九章 消失的幽灵小姐</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC140%E7%AB%A0.txt/">第一百四十章 镜子之中的幽灵小姐【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC141%E7%AB%A0.txt/">第一百四十一章 上升气流</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC142%E7%AB%A0.txt/">第一百四十二章 赠予你的爱恋</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC143%E7%AB%A0.txt/">第一百四十三章 交织的思念</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC144%E7%AB%A0.txt/">第一百四十四章 补～魔～</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC145%E7%AB%A0.txt/">第一百四十五章 尤菲米娅保卫战（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC146%E7%AB%A0.txt/">第一百四十六章 尤菲米娅保卫战（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC147%E7%AB%A0.txt/">第一百四十七章 尤菲米娅保卫战（3）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC148%E7%AB%A0.txt/">第一百四十八章 神社的早晨</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC149%E7%AB%A0.txt/">第一百四十九章 令人向往的梦（1）【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC150%E7%AB%A0.txt/">第一百五十章 令人向往的梦（2）【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC151%E7%AB%A0.txt/">第一百五十一章 Daydreaming Love</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC152%E7%AB%A0.txt/">第一百五十二章 祭典的准备</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC153%E7%AB%A0.txt/">第一百五十三章 魔镜魔镜告诉我（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC154%E7%AB%A0.txt/">第一百五十四章 魔镜魔镜告诉我（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC155%E7%AB%A0.txt/">第一百五十五章 魔镜魔镜告诉我（3）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC156%E7%AB%A0.txt/">第一百五十六章 空想主义者</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC157%E7%AB%A0.txt/">第一百五十七章 Forbidden Key（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC158%E7%AB%A0.txt/">第一百五十八章 Forbidden Key（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC159%E7%AB%A0.txt/">第一百五十九章 Forbidden Key（3）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC160%E7%AB%A0.txt/">第一百六十章 魔镜的故事</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC161%E7%AB%A0.txt/">第一百六十一章 醉酒的小霖</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC162%E7%AB%A0.txt/">第一百六十二章 夏日祭（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC163%E7%AB%A0.txt/">第一百六十三章 夏日祭（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC164%E7%AB%A0.txt/">第一百六十四章 夏日祭（3）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC165%E7%AB%A0.txt/">第一百六十五章 夏日祭（4）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC166%E7%AB%A0.txt/">第一百六十六章 夏日祭（5）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC167%E7%AB%A0.txt/">第一百六十七章 夏日祭（6）</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    妹吻第4卷：镜之祭典
+  </small>
+  <h2>第一百五十章 令人向往的梦（2）【诺霖视角】</h2>
+  <div class="rounded">
+    <p>第四卷：镜之祭典 第150章</p>
+<p>　　第一百五十章 令人向往的梦（2）【诺霖视角】</p>
+<p>　　“之前咱们说到哪里来着了？”</p>
+<p>　　在被姐姐大人打断之后，原先的思绪也都乱了，一时间就连优奈学姐也都忘记了我们原先的话题。“哦，还有最后一类的梦境魔术没有介绍，幻象结界魔术，又称为广义幻象魔术。这种幻象魔术的本质上制造一个幻象的结界，并将让对方进入到你的结界之中。”</p>
+<p>　　“听起来很复杂的样子呢。”</p>
+<p>　　我不禁吐槽了一句。</p>
+<p>　　“好，接下来让我们进行一个总结，梦境魔术分为三类，狭义幻象魔术的本质是对人制造幻象；梦境潜入魔术是与精神世界相连接，潜入到对方的梦境之中；幻象结界魔术是以自己为中心制造出幻象的结界。三者的用途都不一样，难度也是逐渐上升。”</p>
+<p>　　“可是，我已经学会梦境潜入了呀……”</p>
+<p>　　只不过只能对诺汐用而已，不过，既然都可以对我那具有魔术免疫的姐姐使用了，对其他人理论上来说也是完全没问题的！</p>
+<p>　　“你，你大概算比较奇怪的吧。具体的事情，还是让我问问菲娅阿姨吧……”优奈学姐已经被我的问题给问倒了。想想也是，优奈学姐并非专精于梦境魔术，却还要前来指导我这些，也未免有点为难她的说。</p>
+<p>　　“欸，好吧……”</p>
+<p>　　总感觉有点遗憾的说。具体的事情还是得依靠着我自己才行呢。没事的诺霖，你可是拥有着罕见魔术才华的大魔女，才不能因为这种小事而感觉到挫折。</p>
+<p>　　“先从最简单的狭义幻象魔术开始练习吧。就拿我当练习对象好了，来，对着我制造出幻觉吧！”优奈学姐微笑着站在我的面前，张开双臂站在了树下，看起来就像是要迎接着我的样子。</p>
+<p>　　“幻象魔术吗……”我闭上眼睛，感受着体内Novia因子在魔术回路之中的流动，宛若着一条条河流一般流经着全身的各处。体内的魔力是足够的，但是又该如何操控着魔力形成幻象……</p>
+<p>　　想象，想象将其作用于优奈学姐的大脑之中。</p>
+<p>　　又该生成怎么样的幻象呢？</p>
+<p>　　有了，就在优奈学姐的面前制造出优佳学姐的幻象吧！</p>
+<p>　　“还不行吗？”优奈学姐说道。</p>
+<p>　　“我，我正在尝试！”</p>
+<p>　　脑海中想象出优佳学姐的样貌，试图着用着自己的Novia因子进行着复现。描绘，构建，逐渐将其稳定下来！可行，心中仿佛有着一个声音在对我指导着一般，我顺从着自己的感觉，逐渐将其稳定下来。</p>
+<p>　　“可以了，睁开眼睛看看吧。”听着优奈学姐的话，我缓缓睁开了双眼，优奈学姐的身前缓缓站着一个人的样子，虽然细节上略有点粗糙，但是大概可以辨认出来的确是优佳学姐的样子。</p>
+<p>　　接着，刚想对着优奈学姐说什么，眼前的幻影便是瞬间消失不见了，体内突然感觉到魔力上涌，脑袋也开始隐隐作痛。</p>
+<p>　　“唔……算，算失败了吗？”</p>
+<p>　　“还行吧，对于第一次使用幻象魔术的人来说还算成功吧，大概……”优奈学姐的脸上带着一丝苦笑，总感觉我刚刚制造出的幻象似乎很失败的样子呢。</p>
+<p>　　“果然还是不行嘛……”</p>
+<p>　　“魔术的事情果然还是不能操之过急呢，下一次还是让菲娅阿姨来指导诺霖一下吧。”优奈学姐的脸上露出了困惑的表情，看得出来对我似乎有点失望。</p>
+<p>　　“对不起……优奈学姐，我，我又是这么没用。”</p>
+<p>　　“不不不，没事的，本来梦境魔术就是一种极其复杂的魔术。学不会也不要气馁，要相信自己，诺霖你可是有着很强的潜力的，明白了吗？”</p>
+<p>　　“嗯……知，知道了。”</p>
+<p>　　鼻子不由得一酸，一时间不禁有点想哭。</p>
+<p>　　优奈学姐说过，梦境魔术就是起源于我们卡蕾娜一家的，而我竟然连本家的魔术都学不好，总感觉十分丢Mum和先祖们的脸面。</p>
+<p>　　“接下来进行另一项训练吧，诺霖，你之前说过你能够潜入梦境，对吧？”优奈学姐摸了摸我的脑袋，对着我露出了温柔的笑容。</p>
+<p>　　“嗯没错。”</p>
+<p>　　“那你现在能在梦境之中保持自我意识吗？就是所谓的明晰梦。”</p>
+<p>　　“想做的话是可以做到的。”</p>
+<p>　　只不过大部分时间我还是会让自己的意识沉入到梦境的深处，保持清醒的意识的话会消耗掉我不少的魔力，到最后休息都休息的不好。</p>
+<p>　　“那么，你能试着去构建梦境吗？”</p>
+<p>　　“构建梦境？可是那不是那个所谓的……广义幻象魔术范畴的吗？”就连普通的幻象都制造不好的我去试着构建梦境？那简直是天方夜谭吧！</p>
+<p>　　“还是有点区别的，幻象结界是基于现实来制造出幻象的结界，而构建梦境属于比较简单的，基于精神世界而操作的。”</p>
+<p>　　“我觉得，大概可以吧……”</p>
+<p>　　我看了看自己的手心，体内的Novia因子仿佛在告诉着我构建梦境的方法。</p>
+<p>　　“在对方睡眠的时候，直接利用Novia因子来干涉她的潜意识活动，在用梦境潜入进入到她的潜意识深处，就可以达成构建梦境的效果。”</p>
+<p>　　“原理倒是很懂的嘛。”</p>
+<p>　　怎么说也是梦之魔女，如果连操控构建梦境都做不到的话，我可真的无颜再去面对着Mum和先祖们了。</p>
+<p>　　“那么，现在去实验一下如何呢？”优奈学姐的脸上露出了神秘的笑容。</p>
+<p>　　实验？可是现在是大白天吧，构建梦境什么的，难道说白日做梦？</p>
+<p>　　仿佛就像是看穿了我的内心一般，优奈学姐微笑着对我说道：“可是现在，不就是有个需要做白日梦的小白鼠吗？”</p>
+<p>　　她手指的方向指向了神社的方向，难道说，优奈学姐口中的那个小白鼠是……纱雪学姐？</p>
+<p>　　“幽灵本身没有实体，是残留思念，或者说意识与魔力的结合。是不是觉得和梦中的我们有点相似呢？”优奈学姐笑着对我说道。</p>
+<p>　　“让我构建梦境，让纱雪学姐和赤音酱在梦里结合，对吧？”没想到这一切的关键竟然是我吗？</p>
+<p>　　“况且，由于你是梦境的操控者，所以嘛……”</p>
+<p>　　“我可以用梦境来小小报复一下赤音！”脸上不禁露出了微笑，东云赤音，现在你的命运掌握在我的手中。</p>
+<p>　　我诺霖·卡蕾娜，也不是什么魔鬼，但是小小的捉弄一下你，还是做得到的。</p>
+<p>　　“期待我的表现吧，优奈学姐！”</p>
+<p>　　攥紧了自己的拳头，体内的Novia因子也仿佛变得更加活跃了起来，我快步地跑了起来，朝向着神社的方向跑了过去。</p>
+<p>　　途径门口的时候，恰好又看到了诺汐正在被优佳学姐暴打的场景。只见我可怜的姐姐诺汐就连站立都已经站不稳了，朝着优佳学姐挥下的剑也变得越来越无力了起来。相比之下，优佳学姐则显得十分轻松。她轻轻躲开了诺汐的剑，用手抓住了诺汐的手臂后，再是直接将她拉到了身旁，紧接着，只听“咔嚓”一声，诺汐直接被重重的摔在了地上。</p>
+<p>　　“姐姐！”</p>
+<p>　　一时间，在旁边看着的我都被惊呆了。这样的攻击，姐姐一个普通人怎么可能承受的住！</p>
+<p>　　“优佳学姐你在干什么啊！”</p>
+<p>　　我立刻快步地跑到了优佳学姐的身旁，看着被摔在地上的姐姐，心中不由得感觉到难受。</p>
+<p>　　姐姐那件白色的连衣裙上都沾满了灰尘，甚至都被划破了好几道伤痕，看得我都感觉到心疼了。</p>
+<p>　　“安心啦，诺汐的身体应该还没这么脆弱，还站得起来吗？诺汐·卡蕾娜！”</p>
+<p>　　“没、没事。”</p>
+<p>　　然而，奇迹的是，姐姐她竟然还真的站了起来。缓缓地拿起了落在地上的那把长剑，“问题，不大。”</p>
+<p>　　“诶？姐姐……你……”</p>
+<p>　　“让霖担心了啊……没事没事，姐姐我还没有那么脆弱。”</p>
+<p>　　“还能再来吗？”优佳学姐再一次架起了双剑。</p>
+<p>　　“嗯……没问题。”姐姐的身体有点摇摇欲坠的样子，看起来就好像是要到达极限了，我本来还想上去搀扶她，但是看到她那坚毅的眼神之后，我还是选择了离开。</p>
+<p>　　“姐姐，加油！”</p>
+<p>　　姐姐想要靠着自己的方法去努力，那我作为着姐姐的妹妹，自然也要无条件的支持着她。</p>
+<p>　　一边想着，一边走进了神社里，走到书房里的时候恰好又与衣冠不整的纱雪学姐撞了个正着。</p>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC151%E7%AB%A0.txt/"
+    title="第一百五十一章 Daydreaming Love"
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC149%E7%AB%A0.txt/"
+    title="第一百四十九章 令人向往的梦（1）【诺霖视角】"
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <p class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      title="Scroll to top"
+      onclick="scrollToTop()"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "\/%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8\/%E7%AC%AC150%E7%AB%A0.txt\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Awesome Books
+      &middot;
+      COPYLEFT:)
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">
+      kitab
+    </a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+  
+</footer>
+
+  </body>
+</html>

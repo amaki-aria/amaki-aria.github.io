@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>demo for amaki</title>
+  <meta name="description" content="Sample" />
+  <meta name="author" content="Yrr0r" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.60.0" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/kitab.css" />
+
+  <script src="../../js/myFunctions.js"></script>
+  <script src="../../js/clipboard.min.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="../../"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+	
+	
+	
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="../../pride_and_prejudice/">
+            Pride <em>and</em> Prejudice
+          </a>
+          by Jane Austen
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/">
+            1 - 主线
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../2-%E6%94%AF%E7%BA%BF/">
+            2 - 支线
+          </a>
+          by 
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Chapters"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        1 - 主线
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/1/">01</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/0/">00 - 序</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/10/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/11/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/12/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/13/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/14/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/15/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/16/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/2/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/3/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/4/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/5/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/6/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/7/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/8/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/9/"></a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    1 - 主线
+  </small>
+  <h2></h2>
+  <div class="rounded">
+    <p><a href="https://github.com/SCLeoX/Wearable-Technology/issues/11">评论</a></p>
+<h1 id="4">4.</h1>
+<p>等我醒过来时，手铐已经打开了。不出所料，体内的按摩棒又恢复了缓慢旋转的状态。</p>
+<p>“检测到意识恢复，因为时间原因，本设备的安装进程将在明天继续，现在执行排泄物释放及每日维护。”</p>
+<p>说到排泄物，我才意识到一个问题，戴着这贞操带我并没有办法自己上厕所。</p>
+<p>“请取下通用连接线。”</p>
+<p>我扶着墙站了起来。我发现高跟鞋的后跟缩短了，大概现在只有 10 厘米长。与此同时，我还注意到铁箱子上已经开了一个新的格子，里面放着一根和之前类似，但是更长的连接线。我取出了这根连接线。</p>
+<p>“请将连接线一头插入 ‘载体’ 的接口上。接口位置已用绿色圆圈标出。”</p>
+<p>载体 —— 铁箱子 —— 上一圈绿灯亮起，圆的中心陷了进去，变成了一个接口。我把连接线的一头插入了这个接口。不出所料，连接头被锁住了。</p>
+<p>“请将连接线另一头插入中央控制系统上任意一个空余接口上。”</p>
+<p>我照做了。这样一来，我就被这连接线栓在了载体的周围。</p>
+<p>“开始执行排泄物释放。”</p>
+<p>虽然我完全没有用力，我感觉我膀胱里的尿液被抽了出来。与此同时，我感到有液体被注入了我的肛门，我下意识伸手去摸，可是摸到的只是贞操带的金属外壳。</p>
+<p>“现在注入的是固体排泄物溶剂。这样，原先固体的排泄物在溶解后就可以通过肛门按摩棒顶部的小孔排出了。”</p>
+<p>果然，我开始感到肚子里的压抑感变轻了。就这样，排泄物释放大概持续了一分钟。</p>
+<p>“排泄物释放完成，现在开始执行流体交换。”</p>
+<p>我什么都没有感觉到。</p>
+<p>“流体交换是什么？”</p>
+<p>“流体交换会把储存在中央控制系统中暂时用不到的流体，例如乳汁，转移到载体中；以及补充中央控制系统中可能会被使用的流体，例如春药。”</p>
+<p>“春&hellip; 春药？”</p>
+<p>不知道为什么，我性趣被这个词吊了起来。可惜人工智能并没有接我的话。</p>
+<p>“流体交换完成，现在开始充电。”</p>
+<p>同样的，我没有任何感觉。不过这次，载体上展开了一个小平台。</p>
+<p>“请将本耳机取下，放置于充电台上。与此同时，中央控制系统会通过通用连接线充电。充电过程约为半小时。为了不给邻居造成困扰，充电完成后将使用轻微电击提示，届时，请取下耳机并佩戴。”</p>
+<p>“充电的时候有什么我必须要做的事情吗？”</p>
+<p>“没有，您可以躺在沙发上。”</p>
+<p>我将耳机取下，放在了展开的台子上。一盏红灯亮起，示意开始充电了。然而我并没有办法得知贞操带是否在充电 —— 我只能估计它在充电，因为如果没在充的话，这系统肯定有办法让我知道的吧。</p>
+<p>连接线的长度刚好足够让我走到沙发旁。我趴倒在了沙发上。两根按摩棒依然在运动着，而我，现在终于可以静下心来感受一下这两根按摩棒带来的刺激了。然而，我一把心思放在它们上，快感很快就堆积起来了。为了防止卡在高潮边缘，我只得开始思考别的问题。</p>
+<p>但是在这时候，无论想什么，都是和这贞操带相关的内容。所以，现在可以公开的情报有很多。首先，这个贞操带在完成功能前都无法被取下，但是我并不知道什么才算完成功能。其次，这个贞操带内置了电池和一个能存储多种液体的液体存储罐。再则，这通用连接线不但可以输送液体和电力，而且还可以用来把我拴在某一个地方 —— 比如现在我就被拴在了这载体的四周。最后，所有我现在穿上的东西都是带锁的，我都无法自己取下，而且他们能够互相合作，一起给我带来快感。</p>
+<p>然而，一想到快感，我的注意力又情不自禁地放到了我的私处。所以我不得不完全想些和这并没有关系的东西 —— 比如电脑游戏。</p>
+<p>就这样，没过多久，我的阴道麻了一下 —— 充电完成了。</p>
+<p>我站了起来，踩着高跟鞋，走到了载体边上，取下并再一次带上了耳机。</p>
+<p>“充电完成，现在开始执行每日清洁。请前往浴室。请注意，您不需要携带换洗衣物。”</p>
+<p>我正准备问连接线怎么还锁着怎么办，只听 “咔” 一声，连接头被安全地弹了出来。我踩着高跟鞋走进了浴室。虽然现在高跟鞋只有 10 厘米了，但是穿着依然痛。想到马上能洗澡脱掉高跟鞋了，我还是有一点小激动的。</p>
+<p>“请进入淋浴房。”</p>
+<p>“什么，高跟鞋、丝袜、和胸罩不脱吗？”</p>
+<p>我并没有问贞操带，因为我知道这系统肯定不会轻易让这能把我治得服服帖帖的工具失去效果。</p>
+<p>“您目前身上穿戴的设备是长期的，除非特殊情况，不然都不会被脱下。”</p>
+<p>这是我第一次穿着丝袜和鞋子并戴着耳机洗澡，总感觉很奇怪。</p>
+<p>“我就像正常洗澡一样洗吗？”</p>
+<p>我还是忍不住确认了一下。</p>
+<p>“是的。”</p>
+<p>我伸手取来一顶浴帽，把我黑色的长发套在了里面。然后我打开了水龙头，调节好了水温，就把水导向了淋浴头。我取下了淋浴头，开始冲洗身体。</p>
+<p>很快我全身上下都打湿了。同样打湿的还有丝袜。很明显，尽管是由纳米纤维制成的，这丝袜依然会被打湿，而且打湿后和别的丝袜遇水很像 —— 看上去有一种水灵灵的反光，并且包裹感显著增强。</p>
+<p>我挤了一点沐浴露，均匀地涂抹在了没有被这些设备遮挡的肌肤上，然而我依然能感觉到有液体流入被覆盖的区域。很快，我把澡洗完了，我从柜子里拿出来一件浴衣，披在身上。这样尽管是擦干了那些露出来的皮肤，被盖住的部分依然是湿的。与此同时，尽管我尝试了擦干丝袜，但是其依然是潮湿的。鞋子中的水倒是似乎自动排了出去，可是感觉还是湿的。</p>
+<p>“我下半身和胸胸罩里面的我擦不干…”</p>
+<p>“不用担心，会烘干的。”</p>
+<p>话音刚落，我感觉胸罩、贞操带、丝袜、鞋子同时开始加热了，感觉超舒服。</p>
+<p>这时候我肚子叫了一声 —— 我才反应过来 —— 我还没吃晚饭。</p>
+<p>“我能去弄点方便面当晚饭吗… 我还没吃饭。”</p>
+<p>“可以。”</p>
+<p>我走到厨房，打开了柜门，可是里面除了一堆包装纸以外，什么都没有。我才想起来，昨天晚上肚子饿把最后一包吃了。</p>
+<p>“这个… 我方便面吃完了… 我可以叫外卖吗？”</p>
+<p>“因为载体在客厅里，让快递员看到可能会有不好的影响。如果您肚子饿的话，可以喝一点营养液。”</p>
+<p>“营养液？”</p>
+<p>“是的。确切的说是仿制精液 —— 有精液的外观，味道，粘稠度和气味，但是并不是真的精液。”</p>
+<p>“啊… 这个…”</p>
+<p>“如果您喝不下去的话，可以使用灌肠的方式强制输入。”</p>
+<p>“那个… 还是不用了吧…”</p>
+<p>我感觉我简直是自己坑自己。我刚刚为什么要说要吃饭呢？饿着肚子就好了嘛。</p>
+<p>“那么使用嘴部灌输的，现在开始执行。请佩戴马具型假阴茎口塞。”</p>
+<p>一个隔间被打开了，里面放着一个马具口塞 —— 一个长约 15cm 的假阴茎安装在一片皮革上。皮革上连接着四条皮带。佩戴后，其中两条将从左右绕过脑袋在后脑勺处连接。这两根在耳朵处分叉出另一条皮带，用于从下巴下穿过。皮革片上方又连有两个皮带，但在鼻子上方汇合，成一条，从头顶上经过，和另外两条相连。皮革的另一侧有着一个通用连接线接口 —— 估计是用来输送营养液的。同样的，所有的连接口全换成了金属插片。</p>
+<p>“我… 能不能不吃了…”</p>
+<p>“拒绝。”</p>
+<p>好极了。</p>
+<p>我只得拿起这马具口塞，张开嘴巴，把假阴茎含入口中，我感觉是用塑胶做的。然而，这假阴茎看上去很短，但是放入嘴里就不一样了。我的整个嘴巴很快就填满了，假阴茎的龟头直抵我的喉咙。我将两条带子从左右绕过，并在脑后系在了一起。因为长度原因，假阴茎又往里面挪了一点。我把剩下的带子也全部锁上了。这样一来，这跟假阴茎就锁在我的嘴里了。</p>
+<p>“嗯… 哼嗯…”</p>
+<p>我示意已经戴好了。</p>
+<p>“请将通用连接线另一头插入口塞外部的接口上。”</p>
+<p>我从地上捡起了那条刚刚接到贞操带上的连接线，插入了假阴茎背面的接口。</p>
+<p>“开始灌输仿制精液。”</p>
+<p>突然，一股温暖粘稠的液体从假阴茎的顶部喷出，涌入了我的喉咙。</p>
+<p>“嗯！ ————”</p>
+<p>因为这仿制精液源源不断地涌入，我不得不直接让它进入食道，这样一来我就不能呼吸了。我本能地用手去扯连接线，可是我无论怎么用力，锁在我脸上的马具型口塞纹丝不动。我感到胃里暖暖的 —— 仿制精液已经进入我的胃了。</p>
+<p>很快，我开始感到窒息了。我跪坐在上，然而仿制精液的输送依然没有停。因为不得不直接让仿制精液进入胃部，我连声音也发不出来。</p>
+<p>不知道过了多久，我呛着了。一些白色液体从我的鼻子里喷了出来。我感觉一股精液的臭味飘荡在我的鼻子里。不过精液的灌输总算是停了。</p>
+<p>我迅速用手擦掉了从鼻子里涌出的精液，然后用鼻子吸了一大口气。</p>
+<p>“下一轮灌输将在 10 秒后开始，请做好准备。”</p>
+<p>“恩恩！恩！唔！——”</p>
+<p>我表示强烈的抗议。与此同时尝试着用手拉着口塞。</p>
+<p>“3，2，1…”</p>
+<p>新的一轮灌输又开始了。仿制精液再次涌入我的食道。直到我呛到。</p>
+<p>这样的精液灌输一共进行了 5 轮。最后一轮结束后，我的浴衣和地上都沾满了精液。</p>
+<p>“唔……”</p>
+<p>“灌输完成。”</p>
+<p>只听喀嚓一声，连接头从我的嘴上弹了出来。</p>
+<p>“恩恩…恩？”</p>
+<p>我想问为什么口塞没有被解开。</p>
+<p>“今天晚上您将佩戴口塞睡觉。”</p>
+<p>“恩恩…恩！”</p>
+<p>就算没有在输送精液，假阴茎依然抵着我的喉咙口，使我很难受。</p>
+<p>这时，载体上又打开了一个隔间，里面放着一根较短的连接线。</p>
+<p>“请将连接线一头插入口塞上的接口，并将另一头插入中央控制系统任一空余接口。”</p>
+<p>我照做了。与此同时，我还问道：</p>
+<p>“嗯嗯… 嗯嗯嗯… 嗯？”</p>
+<p>好吧，我想问的是为什么口塞要和贞操带接在一起。</p>
+<p>“这是用来采集您的口水的。”</p>
+<p>不知道为什么，人工智能理解了我的问题。</p>
+<p>“您现在可以去睡觉了。”</p>
+<p>我拿了几张餐巾纸，擦干了地上残留的精液。由于体内的按摩棒们依然在旋转和震动着，我跪下的那一瞬间，性欲再一次被带了起来。</p>
+<p>我进到卫生间，将沾满精液的浴衣脱了下来，扔进了洗衣篮，洗了一把脸就去了卧室。</p>
+<p>我倒在床上。由于含着假阴茎已经有一点时间了，我的下颚已经开始痛了。</p>
+<p>在把穿着鞋子的脚放进被窝里之前，我还是有点犹豫的，但是考虑到这个鞋子现在只在家里穿过，并不是很脏，我还是把它们放进了被子里。</p>
+<p>我平时有抱抱枕的习惯。我从床的另一边拿过来那个我经常抱的白色长条抱枕，夹在两腿之间。然而我从来没有穿着丝袜夹过抱枕。大腿上的丝袜和抱枕摩擦发出轻微的摩擦声让我感到极度舒适。</p>
+<p>就在这时，我感到肛门里的按摩棒停止了运动，而阴道里的按摩棒也降低了速度和力度。</p>
+<p>“由于明天还有很多活动，今天晚上您可以稍微睡得好一些。”</p>
+<p>虽然我很想说好个鬼啊 —— 喉咙口的假阴茎让我不停地吞咽着口水 —— 我依然嗯了一声表示感谢。</p>
+<p>胃里的仿制精液还是感觉暖暖的。就这样，在阴道按摩棒的轻微刺激下，我陷入了睡眠。</p>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../1-%E4%B8%BB%E7%BA%BF/5/"
+    title=""
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../1-%E4%B8%BB%E7%BA%BF/3/"
+    title=""
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <p class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      title="Scroll to top"
+      onclick="scrollToTop()"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "\/1-%E4%B8%BB%E7%BA%BF\/4\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Awesome Books
+      &middot;
+      COPYLEFT:)
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">
+      kitab
+    </a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+  
+</footer>
+
+  </body>
+</html>

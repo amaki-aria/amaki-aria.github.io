@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>demo for amaki</title>
+  <meta name="description" content="Sample" />
+  <meta name="author" content="Yrr0r" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.60.0" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/kitab.css" />
+
+  <script src="../../js/myFunctions.js"></script>
+  <script src="../../js/clipboard.min.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="../../"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+	
+	
+	
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="../../pride_and_prejudice/">
+            Pride <em>and</em> Prejudice
+          </a>
+          by Jane Austen
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/">
+            1 - 主线
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../2-%E6%94%AF%E7%BA%BF/">
+            2 - 支线
+          </a>
+          by 
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Chapters"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        1 - 主线
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/1/">01</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/0/">00 - 序</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/10/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/11/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/12/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/13/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/14/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/15/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/16/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/2/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/3/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/4/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/5/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/6/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/7/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/8/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/9/"></a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    1 - 主线
+  </small>
+  <h2></h2>
+  <div class="rounded">
+    <p><a href="https://github.com/SCLeoX/Wearable-Technology/issues/13">评论</a></p>
+<h1 id="6">6.</h1>
+<p>“嗯&hellip; 说起来我还没吃早饭呢。”</p>
+<p>我享受地趴在沙发上，享受这腿部按摩。之前在等绿灯的时候没有注意到，这腿部按摩不只是一成不变的麻，而是一紧一松的。因为丝袜包裹了我的整条腿，我感觉就像是有两人紧紧地抱着我的腿一样。胸上的榨乳器依然在工作着，我时不时能感觉到有乳汁流出。</p>
+<p>“早饭在 11 分钟前已经通过外卖平台订好了，还有 13 分钟后就会送到。”</p>
+<p>“欸？！那送外卖的看到你&hellip; 看到载体怎么办？”</p>
+<p>“和你以前一样，订单的备注里面写了留在门口。”</p>
+<p>“哇&hellip; 这你都知道啊&hellip;”</p>
+<p>我从来没有跟任何人讲过我不希望和外卖员讲话。不是因为害怕，而是觉得很麻烦。让外卖员把外卖放在门口是最方便简单的解决方案。与此同时，我意识到，昨天晚上不让我订外卖的原因并不是被怕看见，而是纯粹想给我喝那仿制精液。</p>
+<p>“是的，我确实知道。与此同时，请注意你的称呼用词。下次用错将会进行惩罚。”</p>
+<p>“啊，对不起，我的主人。”</p>
+<p>我也想不明白之前怎么就脑子短路决定叫它主人了。</p>
+<p>“现在，请你把之前的那副手铐戴上。”</p>
+<p>“&hellip;为什么要戴手铐？”</p>
+<p>“因为你要在没有手帮助的情况下吃早餐以锻炼你的嘴巴灵活度。”</p>
+<p>“…什么…”</p>
+<p>“总之请把你的双手拷在背后。”</p>
+<p>我完全不明白这人工智能这次想搞什么鬼，但是我依然一边趴在沙发上，一边用左手捡起了之前在地上的手铐，并把自己的双手拷在背后。</p>
+<p>“在外卖送到之前你可以先在沙发上躺着休息一会儿。”</p>
+<p>于是我继续躺在沙发上享受这腿部按摩。</p>
+<p>不知过了多久，门铃响了 —— 外卖送到了。即使要求了不要送入户，外卖员还是会按门铃示意送到了。</p>
+<p>“去拿吧，用嘴。”</p>
+<p>我站了起来。即使按摩棒依然在缓慢活动，我已经基本适应了，再加上现在鞋子并没有变成高跟鞋，保持平衡已经不是问题了。我从猫眼往外看了一下，门口并没有人。我转过身去，用左手手肘打开了门。外卖已经放在门口了 —— 是一个棕色的，没有拎环的纸袋子。带子开口处有一块绿色的胶带。</p>
+<p>我快速蹲下身，用牙齿咬住了纸袋子，然后转身走进了房间并用脚关上了门。外卖并不是很重，所以用牙齿咬着并不是很吃力。</p>
+<p>“请把外卖放在桌子上。”</p>
+<p>我衔着带子来到了桌子前，并弯腰将其放在了桌子上。棕色的纸袋子上留下了一些口水的痕迹。</p>
+<p>“请用嘴将包装拆开并将内容全部吃下。”</p>
+<p>突然我感到体内的按摩棒开始高速运动了起来。阴蒂上的小爪子也开始了动作。</p>
+<p>“怎、怎么…”</p>
+<p>“在吃完前你将会一直处于高潮边缘。”</p>
+<p>“好过分…”</p>
+<p>我坐了下来。我隐隐地感觉到这外卖里估计是什么奇怪的东西，但是顾不了想这么多，目前的首要任务是得把这个纸袋子打开。</p>
+<p>大概几年前，国家管理者们出于环保原因，全面禁止了塑料袋。从那以后，所有的外卖包装都是纸袋子了。不过使用纸袋子对我目前的境地是有利的 —— 我完全无法想象用嘴解开一个打成死结的塑料袋有多困难。</p>
+<p>不过用嘴打开一个纸袋子也不是什么简单的事情。显然下嘴点不能是那块写着谢谢惠顾的绿色胶带 —— 那东西就算用手也要抠半天才能抠下来。在这受到强烈按摩棒刺激的场合，那明显不是一个好主意。</p>
+<p>取而代之的是，我决定把整个顶部撕下来。我侧过头来，咬住了袋子的一侧并开始撕咬。然而，我还是低估了用嘴撕开纸袋子的难度。咬了半天，除了留下一些口水印外，没有任何的进展。而我此时已经是满脸发热，处于高潮边缘地狱了。</p>
+<p>我突然想到，一个可行的策略是用口水将其浸湿，然后或许会更容易撕开。想到这，我把头探了过去开始舔这纸袋子。显然，这袋子并不是什么好的材料制作的，舔上去有一股纸腥味。</p>
+<p>终于，在我不断地舔和撕咬下，纸袋子的侧面总算是破了一个洞。有了洞就好办了，我将舌头伸了进去，开始把洞撕开。这时，我发现袋子里面是一个用透明塑料盒子装着的蛋糕。</p>
+<p>等我把整个袋子顶部撕开时，我已经因为快感而坐不住了。眼前的蛋糕坐在一个黑色塑料地盘上，顶上照着一个透明的塑料顶。我不相信这会是一个普通的蛋糕。</p>
+<p>“这&hellip; 这蛋糕&hellip; 里&hellip; 里面有什么&hellip;奇&hellip;”</p>
+<p>我想问这里面有没有什么要坑我的东西，但是无法抑制的喘息使我连话也说不完。</p>
+<p>“这只是一个普通的蛋糕。请注意，你的高潮边缘控制要在吃完蛋糕后才结束，请加油。”</p>
+<p>我顾不上回答，用嘴去咬顶和底的连接处。幸运的是这两者之间并没有胶水什么的，我很顺利地将它们分开了。</p>
+<p>虽然为了保持体型，我应该尽可能保持较少的糖摄入量。可惜我是真的非常喜欢吃甜食，看见这蛋糕放在我面前，并且如果我不吃我将永远卡在这高潮边缘地狱，我毫不犹豫地对着顶上的奶油一口咬了上去。</p>
+<p>入口还没半秒，我就差点将其吐了出来 —— 这蛋糕不是甜的。</p>
+<p>“为…为什么…这…不是甜的？”</p>
+<p>“这是为了保证你的饮食习惯健康 —— 你以后不能吃甜食了。”</p>
+<p>“那…那奶茶呢？”</p>
+<p>我是真的很喜欢喝奶茶，而且每次要加全糖。</p>
+<p>“只能喝无糖的了。”</p>
+<p>“哇………”</p>
+<p>我哀嚎了一声，然后低下头去吃这没味道的蛋糕。幸运的是吃蛋糕地过程，并没有碰到什么困难。我狼吞虎咽着，蛋糕很快就被吃完了。</p>
+<p>不出所料，吃完后我体内的按摩棒就减速了，手腕上的手铐也自动解开了。然而因为之前堆积的快感，我本能地趴倒在桌子上。</p>
+<p>“恭喜你，吃完了呢。”</p>
+<p>“能不能&hellip; 让我&hellip; 高潮&hellip;”</p>
+<p>“请求拒绝。欸，这样吧，你的高潮边缘持续到你把作业写完吧。写完了就让你高潮。”</p>
+<p>“不&hellip; 不要！”</p>
+<p>可是已经晚了，按摩器们又开始运动了起来。再加上一直工作着的榨乳器，我很快又到了高潮边缘。</p>
+<p>知道反抗没用，我只得顶着这快感开始写作业。幸运的是，这个周末的作业很少。不幸的是，就算作业很少，没有几个小时是写不完的。</p>
+<p>“啊啊啊！！”</p>
+<p>还没做几道题，一股剧烈的疼痛从我脖子上传来。我下意识地用双手抓住脖子上的项圈。然而无论怎么拉扯，项圈依然牢牢地贴在皮肤上。</p>
+<p>“第 6 题错了。”</p>
+<p>我忍着尚未消散的疼痛和快感又仔细读了一下题，果然错了。</p>
+<p>“如果想不被电击的话就尽可能不要做错吧。”</p>
+<p>太残忍了，在这种情况下，我连意识都很难保持，怎么可能还能保持正确率呢？</p>
+<p>“啊啊啊啊啊啊！！！”</p>
+<p>“还是错的。”</p>
+<p>……</p>
+<p>不知道过了多久，我总算把作业写完了。我自己也数不清楚自己被电击了多少次。</p>
+<p>我奄奄一息地趴在桌子上。</p>
+<p>“让&hellip;让&hellip;”</p>
+<p>“电了那么多下你居然还没有哭，你比我计算的要勇敢啊。”</p>
+<p>“让&hellip;我&hellip;”</p>
+<p>“想要高潮是吧？看在你表现那么好的份上，就奖励你持续高潮到晕厥好了。”</p>
+<p>“不&hellip;”</p>
+<p>晚了，按摩棒和阴蒂上的抓子开始疯狂运动。在这无法逃避的快感中，我瘫倒在地上，双腿绷直，双手情不自禁地按着下体。我隐约地感到有液体进入我的肛门。还来不及问那是什么，我就到达了高潮。</p>
+<p>然而，出乎意料的是，这高潮似乎完全没有结束的迹象。我的双脚开始不受控制的乱踢。很快，我便感觉双眼发黑，晕了过去。</p>
+<p>…</p>
+<p>等意识恢复后，按摩棒的运动已经减慢了，榨乳也停止了，不过我感到了一股强烈的腹胀感。我睁开眼睛一看，发现自己躺在载体边上，一根连接线正透过裙子连接到我的贞操带上。配合上这腹胀感，我很快就知道发生了什么 —— 我正在被灌肠。</p>
+<p>“醒了啊。这是你的午饭 —— 直接通过肛门灌输营养液。”</p>
+<p>我发现我的双手被铐在背后。我刚想问为什么要这样，人工智能又发言了。</p>
+<p>“这个主要是为了锻炼你的肠道容量。同时为了使灌输方便，请趴在地上，并把屁股抬高。”</p>
+<p>虽然不情愿，我只能翻过身来，把屁股抬了起来。尽管房间内没有别人，我依然双颊变得通红 —— 这个姿势实在是太色情了。</p>
+<p>换了姿势显然是加快了灌肠的速度。我很快就感觉到肚子痛了。</p>
+<p>“我&hellip; 已经满了&hellip; 可以停了&hellip;”</p>
+<p>“才灌了 900cc，一共要灌 1500cc。”</p>
+<p>“不&hellip; 我受不了那么多的&hellip;”</p>
+<p>“请继续坚持了，1100cc 了。”</p>
+<p>我感觉肚子已经鼓起来了。</p>
+<p>“1200cc。”</p>
+<p>“停&hellip; 快停&hellip;”</p>
+<p>“1300cc。”</p>
+<p>我下意识地往远处爬去，然而连接线把我拉住了。</p>
+<p>“1400cc。”</p>
+<p>“痛&hellip;”</p>
+<p>“完成了。现在你的肠道会慢慢吸收营养液里面的营养。等到你把水平窒息室安装好，就可以将多余的营养液排出。”</p>
+<p>“水平&hellip; 水平窒息室？”</p>
+<p>我忍着腹痛问道。</p>
+<p>“简要来说就是在浴缸上装一个横着的玻璃门。被困在水里的窒息才有真正窒息的感觉。”</p>
+<p>“&hellip;”</p>
+<p>这时门铃响了。</p>
+<p>“需要的零件已经送到了，去取吧。”</p>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../1-%E4%B8%BB%E7%BA%BF/7/"
+    title=""
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../1-%E4%B8%BB%E7%BA%BF/5/"
+    title=""
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <p class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      title="Scroll to top"
+      onclick="scrollToTop()"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "\/1-%E4%B8%BB%E7%BA%BF\/6\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Awesome Books
+      &middot;
+      COPYLEFT:)
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">
+      kitab
+    </a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+  
+</footer>
+
+  </body>
+</html>

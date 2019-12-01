@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>demo for amaki</title>
+  <meta name="description" content="Sample" />
+  <meta name="author" content="Yrr0r" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.60.0" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/kitab.css" />
+
+  <script src="../../js/myFunctions.js"></script>
+  <script src="../../js/clipboard.min.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="../../"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+	
+	
+	
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="../../pride_and_prejudice/">
+            Pride <em>and</em> Prejudice
+          </a>
+          by Jane Austen
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/">
+            1 - 主线
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../2-%E6%94%AF%E7%BA%BF/">
+            2 - 支线
+          </a>
+          by 
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Chapters"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        1 - 主线
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/1/">01</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/0/">00 - 序</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/10/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/11/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/12/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/13/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/14/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/15/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/16/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/2/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/3/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/4/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/5/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/6/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/7/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/8/"></a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../1-%E4%B8%BB%E7%BA%BF/9/"></a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    1 - 主线
+  </small>
+  <h2>00 - 序</h2>
+  <div class="rounded">
+    <h1 id="heading">序.</h1>
+<p>刚回到家，顾不上脱校服，我就仰躺在床上准备稍微休息一下。我感觉校服的裙子在背后皱了起来，便随手整理了一下。其实我几乎已经是全校唯一一个坚持穿校服短裙的女生了。我也不知道为什么其他女生不穿。我觉得可能是因为她们对自己的相貌没自信，而我对自己的外表 —— 除了乳量 —— 可是自信满满。去年学校里同学组织评选校花，虽然第一名被一个高三刷票学姐拿走了，但是我得到的票数是全校第二。因为那个高三的已经毕业了，我估计我现在已经是这学校的校花了吧 —— 当然前提是高一没有比我更漂亮的。</p>
+<p>身为“校花”，我经常收到别的男生的，甚至还有女生的表白。但是在那种时候，我总是表现得很单纯的样子，然后以 “目前不打算发展这类关系” 为由拒绝掉。</p>
+<p>严格上说，这并不是一个谎言。发展恋爱关系是一件很复杂的事情。我现在确实不打算那么做。然而，作为一个正值青春期的十六岁少女，性欲的释放不可避免。如果没有伴侣，那么这件事就只能靠自己了。</p>
+<p>我伸手拿过来床边的平板电脑 —— 我喜欢躺在床上自慰。我打开了一个色情视频网站，并输入关键词 “性虐 机械”。不知道为什么，我对于传统的男女性爱视频并没有兴趣。相反，这些使用炮机或者振动器让被拘束的女生强制高潮的视频却引起了我的兴趣。</p>
+<p>我随便点开来了其中的一个链接。视频中，一个穿着超高高跟鞋、双手被绑在身后的女孩被带到一根垂直的铁质杆子前。铁杆子中下部有一个明显是用来调节长度的旋钮。杆子的顶端则呈看起来是用于插入体内的蘑菇的形状。而这 “金属蘑菇” 稍微往下一点的地方，有一个开关。我见过类似的设备，我知道整个 “金属蘑菇” 部分是个震动器。这个开关是用来控制这个震动器的。</p>
+<p>我的性致很快被吊了起来。我用左手继续拿着平板，右手解开了短裙的纽扣和拉链。在开始前，我情不自禁地看了一眼门上的锁。其实我没必要检查门有没有锁。父母都出国出差了，没个一年半载回不来。其他人也没有门的钥匙卡。即使不反锁也不会有人进得来的。</p>
+<p>我把右手放入了嘴中，舔了舔那稍微有点咸味的食指和拇指，并有意留了一些口水在上面用来润滑。然后，我将这沾有口水的右手伸入了我的内裤，并开始抚摸自己的阴蒂。我的身体在性方面异常敏感，还没到五秒，我感觉我的乳头和阴蒂就已经直立了。不幸的是，如果我继续用左手拿着平板，我将没有空余的手能用来按摩自己的乳头。于是我将平板放在床上并侧过身去看，这样我的左手就空出来了。我用这空出来的左手缓缓将校服掀起来，与此同时，右手也一刻不停地刺激着阴蒂。</p>
+<p>视频中的女孩被一男生带到了铁杆子的正上方。杆子的长度目前处于最短状态，所以并没有插入女孩体内。随后，男生蹲了下去以调节杆子的长度。他将旋钮转松，然后把上半段杆子往上提，并插入了女孩的阴道内。女孩稍微颤抖了一下，但很快稳住了。杆子顶部的 “蘑菇” 完全没入了女孩体内。男生继续抬高杆子，直到女孩轻轻叫了一声。根据判断，杆子估计是顶到子宫口了。男生调紧了旋钮，并尝试往下拉了一下上半段杆子，杆子纹丝不动，看上去是卡紧了。男生站了起来，从屏幕外拿来一个口球，并将其送向了女孩的嘴。女孩非常配合地把嘴张开然后把球含了进去。男生走到女孩身后将口球的两根皮带往后勒了一下然后系上。口球的尺寸非常合适。球的直径刚好在女孩的牙齿部位，迫使其将嘴张到最大。</p>
+<p>我的身体随着视频变得越来越亢奋。手上的动作也慢慢从抚摸变成了揉捏。我的阴道开始分泌出少量爱液。为了不浪费这天然的润滑剂，我在拇指和食指继续按摩阴蒂的同时，将剩下三根手指慢慢插入了阴道。我的喘气声也变得越来越大。</p>
+<p>视频中的男生按下了杆子旁边的按钮 —— 震动器被启动了。女孩低吟了一声 “嗯~”，身体开始左右晃动，并开始挣扎。男生站在一旁，欣赏了大概十秒后，便蹲下身去，开始脱女孩的高跟鞋。这次，女孩的反应要激烈得多。女孩一边透过口球高喊着 “嗯！—— 唔！—— 嗯！！” 以示抗议，一边用踢脚的方式来阻止男生。男生眼疾手快，抓住了女孩的左脚脚腕。一旦一只脚被抓住，另外一只脚只能用来承担身体的重量 —— 当然坐在 “蘑菇” 上的子宫口也可以用来承担重量，不过那可真的要痛死了。尽管被抓住，女孩依然在 “嗯！—— 唔！——”，并尝试挣脱左脚，但是因为差点失去平衡 —— 毕竟双手绑在身后且只有一只脚站立 —— 便放弃了。男生解开了高跟鞋上的带子，将高跟鞋脱了下来，然后放开了左脚。没了高跟鞋的支撑，女孩只能踮着左脚，并晃动了几下来寻求平衡。然而男生并没有打算结束。男生将手伸向了女孩的右脚。因为另外一只脚不得不踮着，这次女孩的反抗力度大幅下降。男生很快将女孩的高跟鞋脱了下来。此时，女孩只能踮着脚站立。估计是因为现在多多少少由子宫口承担的重量增加了，震动器的震动更加有效地传递给了子宫口。我知道，子宫口也是女孩子的敏感地带之一。刺激子宫口也是可以达到高潮的。女孩的脸变得越来越红。少量口水从口球的洞中流出。叫声也慢慢从原先的抗议变成了短而急促的娇喘：“嗯~&hellip; 哈&hellip;&hellip; 啊~”。</p>
+<p>开始娇喘的不止是女孩，还有我。我感觉一股快感在身体里堆积。右手的后三根手指也开始在阴道里快速抽插。我知道我离我的高潮也越来越近了。就在这时，一条推送信息从屏幕底部弹了出来。这是一条私人信息，而且发送者是匿名的。信息的标题是 “招募可穿戴自慰设备测试员”。什么嘛？这种信息为什么会推送到我这里？</p>
+<p>其实至于为什么会推送给我，我是知道的。上星期我注册了一个付费性虐色情视频网站的账号。注册的时候填了邮箱，估计对方就靠着这个邮箱，把信息发送给了我。放在平时，看到这种信息我肯定是马上删除 —— 防止被同学看到。但是现在，我正在性头上。多多少少我对于自己一个人用手自慰也已经感到厌倦了。如果这条消息是真的呢？如果我真的能免费收到一台自慰设备呢？我将左手抽了出来，并让右手继续着之前的动作。我点开了信息。消息的正文只有两个按钮：接受和拒绝。既然这里连我的个人信息都没有问，点接受看看下一步是什么应该没有什么问题吧。抱着试一试的态度，我点了接受。</p>
+<p>然而接受后没有下一步。屏幕中显示了一行字 “您的可穿戴设备已经发货，预计在周五下午送达”。什么嘛。连我的地址都没有问就说已经发货了，明显是钓鱼的。为了不占用我宝贵的性致，我迅速关闭了这条消息，并回到刚刚的视频。</p>
+<p>即使经历了刚刚这条广告信息，我的敏感度丝毫未减。视频中的女孩努力地踮着双脚，颤抖着的痛苦样子也让我变得更加激动。我的双手移动速度越来越快。我感到我的身体向这一个顶点越靠越近。这股感觉终于在和视频中的女孩高潮的同一刻被释放了出来。我感到一股暖流从胯下流出 —— 我潮吹了。虽然和许多视频相比，我出的量很少，但是足以浸湿了内裤和一部分床单。</p>
+<p>我关掉了视频并躺在床上。我的平静期很短，如果需要的话，我可以在两分钟后再次开始自慰。但是我不但算那么做，因为我累了，而且我还得想一想刚刚那条广告信息到底是什么。</p>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../1-%E4%B8%BB%E7%BA%BF/10/"
+    title=""
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../1-%E4%B8%BB%E7%BA%BF/1/"
+    title="01"
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <p class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      title="Scroll to top"
+      onclick="scrollToTop()"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "\/1-%E4%B8%BB%E7%BA%BF\/0\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Awesome Books
+      &middot;
+      COPYLEFT:)
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">
+      kitab
+    </a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+  
+</footer>
+
+  </body>
+</html>
