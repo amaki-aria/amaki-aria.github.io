@@ -2,7 +2,7 @@ baseURL = ""
 RelativeURLs=true
 languageCode = "zh-cn"
 theme = "kitab"
-title = "demo for amaki"
+title = "amaki's novels"
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
 pluralizelisttitles = false
