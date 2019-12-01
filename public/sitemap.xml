@@ -671,7 +671,16 @@
   </url>
   
   <url>
+    <loc>/%E5%A0%95%E5%A4%A9%E4%B9%8B%E7%BE%BD/%E5%A0%95%E5%A4%A9%E4%B9%8B%E7%BE%BD/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/%E5%A0%95%E5%A4%A9%E4%B9%8B%E7%BE%BD/</loc>
   </url>
   
   <url>
