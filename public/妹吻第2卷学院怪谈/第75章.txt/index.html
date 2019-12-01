@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>amaki&#39;s novels</title>
+  <meta name="description" content="Sample" />
+  <meta name="author" content="Yrr0r" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.60.1" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/kitab.css" />
+
+  <script src="../../js/myFunctions.js"></script>
+  <script src="../../js/clipboard.min.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="../../"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+	
+	
+	
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E5%B9%BB%E7%89%A9%E8%AF%AD/">
+            妹吻第1卷：梦幻物语
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/">
+            妹吻第2卷：学院怪谈
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/">
+            妹吻第3卷：夏日旅行
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/">
+            妹吻第4卷：镜之祭典
+          </a>
+          by 
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Chapters"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        妹吻第2卷：学院怪谈
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC38%E7%AB%A0.txt/">第三十八章 特查的工作</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC39%E7%AB%A0.txt/">第三十九章 黑猫的幻影</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC40%E7%AB%A0.txt/">第四十章 似真似幻</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC41%E7%AB%A0.txt/">第四十一章 千羽学院怪谈</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC42%E7%AB%A0.txt/">第四十二章 姐妹俩的下午茶</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC43%E7%AB%A0.txt/">第四十三章 超自然研究社</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC44%E7%AB%A0.txt/">第四十四章 与奇怪学姐一起共进晚餐</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC45%E7%AB%A0.txt/">第四十五章 暴风雨夜</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC46%E7%AB%A0.txt/">第四十六章 不眠之夜</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC47%E7%AB%A0.txt/">第四十七章 不安【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC48%E7%AB%A0.txt/">第四十八章 姐妹调查中（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC49%E7%AB%A0.txt/">第四十九章 姐妹调查中（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC50%E7%AB%A0.txt/">第五十章 镜之夜</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC51%E7%AB%A0.txt/">第五十一章 惩罚，不是游戏</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC52%E7%AB%A0.txt/">第五十二章 纱雪的祈愿</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC53%E7%AB%A0.txt/">第五十三章 特查的新成员</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC54%E7%AB%A0.txt/">第五十四章 悄悄潜入你的世界（1）【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC55%E7%AB%A0.txt/">第五十五章 悄悄潜入你的梦境（2）【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC56%E7%AB%A0.txt/">第五十六章 魔术复写——Imitate</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC57%E7%AB%A0.txt/">第五十七章 消失的钥匙</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC58%E7%AB%A0.txt/">第五十八章 戴着手铐上学的一天。</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC59%E7%AB%A0.txt/">第五十九章 老妈驾到</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC60%E7%AB%A0.txt/">第六十章 梦的延续</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC61%E7%AB%A0.txt/">第六十一章 小女仆的夜晚</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC62%E7%AB%A0.txt/">第六十二章 深夜的千羽学院（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC63%E7%AB%A0.txt/">第六十三章 深夜的千羽学院（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC64%E7%AB%A0.txt/">第六十四章 走廊中捡到的女孩</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC65%E7%AB%A0.txt/">第六十五章 惊异走廊</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC66%E7%AB%A0.txt/">第六十六章 孤独的少女</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC67%E7%AB%A0.txt/">第六十七章 人偶魔女</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC68%E7%AB%A0.txt/">第六十八章 Broken Doll</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC69%E7%AB%A0.txt/">第六十九章 朋友</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC70%E7%AB%A0.txt/">第七十章 救济的圣女</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC71%E7%AB%A0.txt/">第七十一章 那一夜</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC72%E7%AB%A0.txt/">第七十二章 赤月的银狐（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC73%E7%AB%A0.txt/">第七十三章 赤月的银狐（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC74%E7%AB%A0.txt/">第七十四章 赤月的银狐（3）【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC75%E7%AB%A0.txt/">第七十五章 赤月的银狐（4）【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC76%E7%AB%A0.txt/">第七十六章 赤月的银狐（5）【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC77%E7%AB%A0.txt/">第七十七章 赌上身体的决斗</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC78%E7%AB%A0.txt/">第七十八章 御三家的峰会</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC79%E7%AB%A0.txt/">第七十九章 在时间停止的世界里【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC80%E7%AB%A0.txt/">第八十章 交流生</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    妹吻第2卷：学院怪谈
+  </small>
+  <h2>第七十五章 赤月的银狐（4）【诺霖视角】</h2>
+  <div class="rounded">
+    <p>第二卷：学院怪谈 第75章</p>
+<p>　　第七十五章 赤月的银狐（4）【诺霖视角】</p>
+<p>　　好快的速度，已经完全超越了常人反应能力了吧！</p>
+<p>　　“Quantum Sickle！”立刻用魔力形成了一把镰刀，用着刀刃作为着防御的同时，不断地朝后退着。然而，眼前的柯萝诺斯却依然是不给我任何反应的机会，迅速地拉近了我们两人的距离，如同着紧贴我的身体不放一般，扣下了霰弹枪的扳机。</p>
+<p>　　“砰——”</p>
+<p>　　伴随着一声枪响，鲜血再一度飞溅。在强大的作用力直接将我击退到了一旁的树上。背后传来一声沉闷的声响，估计是脊椎都断了几根吧。</p>
+<p>　　“噗……哈……”</p>
+<p>　　身体各个地方都穿来着剧痛，口中一时间吐出了不少的鲜血。</p>
+<p>　　即使我知道她打出的子弹上都附着着治愈术式，在给我造成实质性的伤害的瞬间便是能修复好我受伤的身体，但是，治愈术式却无法消除身体上的痛感。</p>
+<p>　　泪水模糊了我的视线，眼前的柯萝诺斯缓缓地朝着我的方向走来。</p>
+<p>　　“噗……噗哈……”</p>
+<p>　　口中还遗留着浓浓的血腥味，身体就像是浑身骨头碎裂了一般的剧痛。</p>
+<p>　　“觉得自己还是个魔女的话，就给我站起来！”</p>
+<p>　　她再一次用着霰弹枪指向了我的脑袋。</p>
+<p>　　真是，好强的实力。完全和优佳学姐特训的时候不一样。在她那猛烈的攻势之下，我完全没有找到反击的办法。</p>
+<p>　　“不肯站起来的话，那就——”</p>
+<p>　　她将霰弹枪指向了在我身旁不远处的姐姐。</p>
+<p>　　一时间，姐姐的脸上流露出了惊恐的神色。但是很快姐姐便是恢复了平静，默默的走到了我的身前，张开双臂将我护在了身后。</p>
+<p>　　“就冲着我来吧！不要，不要再伤害霖了！”</p>
+<p>　　姐姐这是要……保护我……</p>
+<p>　　“姐……姐姐，冷，冷静啊！”</p>
+<p>　　居然直面那个可怕的柯萝诺斯·拉普莉丝？</p>
+<p>　　不行的，姐姐怎么可能打得过这个变态般强大的魔女啊！</p>
+<p>　　我又怎么可以让只是普通人的姐姐进入到我们魔女间的战斗中。</p>
+<p>　　“姐，姐姐！”强忍着身体上的疼痛，用着镰刀支撑着自己站了起来。</p>
+<p>　　我才不是只会躲在姐姐身后嘤嘤嘤的软弱妹妹。</p>
+<p>　　我是魔女，有着十分强大的力量的魔女。</p>
+<p>　　保护姐姐什么的，可不是嘴上说说的！</p>
+<p>　　“这里，让我来！”</p>
+<p>　　“霖，你别逞强啊！”</p>
+<p>　　“逞强什么的……才，才没有。保护姐姐，是霖一个做得，责任啊——”</p>
+<p>　　强忍着剧痛，站在了姐姐的面前。</p>
+<p>　　“这才有点像是妹妹的样子呢。”柯萝诺斯笑了笑。</p>
+<p>　　“想要欺负姐姐，先过了我这一关，再，再说！”</p>
+<p>　　“砰。”又是一声枪响，我甚至都没有看清楚她拿枪的动作，只是单纯的感觉到一阵魔力从我的脑袋边上擦过。</p>
+<p>　　几根银发掉落在了地上，不由得使我倒吸了一口冷气。</p>
+<p>　　“这是用拉普莉丝家族特制的魔力水晶所制成的子弹。”她从裙子的口袋里拿出了几块大约有一个指甲盖大小的迷你水晶，将其装在了枪管之中。</p>
+<p>　　“在扣下扳机的时候，水晶本体会在极高温的环境中升华，而其中储存的魔力便会和内置术式产生反应，从而产生这种由纯粹的高浓度压缩魔力组成的魔弹，就像是这样。”</p>
+<p>　　说着，她抬手打向了一旁的树木。</p>
+<p>　　树干上被魔弹所打穿了一个圆柱形的洞，看起来很是吓人的样子。</p>
+<p>　　“所以，这种子弹，打在‘姐姐’的身上的时候，丝毫不会对‘姐姐’有着任何的伤害，不过，冲击力和疼痛感依旧会有就是了。”她脸上的表情逐渐变得狰狞了起来，“要想试试看吗，这位‘姐姐’？保证给你无与伦比的快感哦呵呵呵呵——”</p>
+<p>　　“才不会让你伤害到姐姐一根毫毛！”</p>
+<p>　　如果她的意图是为了激怒我的话，那么我不得不承认，她成功了。内心之中仿佛就像是汽油桶被点燃了一般，强大的魔力从身体中源源不断地流出，汇聚于手中形成了一把长剑的模样。</p>
+<p>　　“Quantum Sword——”</p>
+<p>　　漆黑的剑身之中，闪烁着星星点点的淡紫色光芒。</p>
+<p>　　锋利的剑刃划破天际，仿佛能将面前的一切都悉数斩断。</p>
+<p>　　“Shadow of Dream.”</p>
+<p>　　这是由我的纯粹的魔力汇聚而成的魔剑，其名为Shadow of Dream，梦之幻影。</p>
+<p>　　曾在与优佳学姐特训的时候召唤出来过一次。当优佳学姐让我想象出剑的样子的时候，因为阴差阳错而召唤出来的魔剑。</p>
+<p>　　与我的其他武器不同，威慑力、破坏力，都不是处于一个等级之上的。但是同时，它带给我的身体负荷也比其他武器更大。</p>
+<p>　　不过，在面对着柯萝诺斯·拉普莉丝的时候，就让我毫无保留的将实力展现出来吧！不然的话，我又怎么能好好地保护好自己的姐姐呢？</p>
+<p>　　顺便一提，这把剑有着一个很有用的功能——技巧共享。当我握住这把剑的时候，脑海中就会浮现出其所有的技巧。</p>
+<p>　　即使是我这样从来没有学过剑术的小女孩，也照样能发挥出匹敌剑圣般的技巧。</p>
+<p>　　这就是我的底牌——Shadow of Dream！</p>
+<p>　　“很帅气的剑呢。”</p>
+<p>　　柯萝诺斯居然没有感觉到害怕，反倒是称赞起了我的武器。</p>
+<p>　　“哼，可别怪我不手下留情哦！”</p>
+<p>　　“请随意，我可不觉得自己会输给你。空有一身技巧，但没有实战经验，也不过是半吊子而已。”</p>
+<p>　　居然说我是半吊子！</p>
+<p>　　身为御三家的魔女的自信吗？</p>
+<p>　　我知道，她刚刚也只不过是在和我玩玩而已。</p>
+<p>　　所以，到现在还没能摸清楚她的底牌。她的专属魔术又到底是什么？</p>
+<p>　　“哈——”</p>
+<p>　　手持着这把长剑迅速的冲了上去。</p>
+<p>　　脑海中浮现出那剑战斗的技巧。</p>
+<p>　　横扫，斩击！</p>
+<p>　　只不过，面前的柯萝诺斯又突然消失了。</p>
+<p>　　冷静下来，我早就已经记下了她的魔力气息了。</p>
+<p>　　“hey！——”</p>
+<p>　　迅速转过身去，下意识地挥舞起手中的长剑。</p>
+<p>　　“什么——”</p>
+<p>　　令我们都没有想到的是，我手中的长剑居然斩断了朝我袭来的子弹，用着更强的魔力流将那发打向着我的魔弹所抵消了。</p>
+<p>　　这便是魔剑所传递给我的技巧吗？就连高速袭来的子弹都可以轻松切断的技巧……简直就像是小说中写的一样呢。</p>
+<p>　　“你还是除了柯蕾以外第二个，能够斩断我的子弹的。”</p>
+<p>　　柯蕾莉忒吗？如果是那个被优奈学姐称为世界最强的魔术师的她，切断子弹什么的，的确不是什么问题。</p>
+<p>　　“不过下一次，我可不会再失手了哦。”她跳跃到了空中，落到了一旁的钟楼上，以钟楼的墙壁作为了自己的支点。</p>
+<p>　　魔法阵在她的周围展开，手中的霰弹枪再一度瞄准了我。身后的魔法阵联结在了一起，仿佛就像是在蓄力一般。</p>
+<p>　　“Magic Rain Shoot！”</p>
+<p>　　另一种招式吗？</p>
+<p>　　枪口、魔法阵之中都释放出了密集的魔力流。像是上一次那样再被直击一次的话，后果不堪设想。</p>
+<p>　　赤红色的天空中都染上了一层魔力流中的金色，密集的如同着雨点一般向着我落下来。</p>
+<p>　　该如何躲闪？在空中完全没有障碍物什么的作为抵挡啊！</p>
+<p>　　等等，冷静下来！</p>
+<p>　　是魔术吗？为什么这种规模的魔术，却连吟唱都不需要？</p>
+<p>　　还是说另有技巧吗？</p>
+<p>　　“Defend！”将长剑横在了手中作为着护盾。然后，如同着帘幕一般的魔力雨朝着我砸了下来。</p>
+<p>　　吟唱……魔法阵……</p>
+<p>　　难道说是——</p>
+<p>　　“奥义——紫电！”</p>
+<p>　　左手展开防阵，右手持剑，咬紧牙关，直面袭来的魔力流。看准了最中间的那块水晶，手中的大剑横扫过夜空。</p>
+<p>　　伴随着“Boom——”那般轰雷般的响声，那块被魔力流所包裹的水晶被切成了两半。</p>
+<p>　　紧接着，我迅速的后退，不出我所料，伴随着切断之处产生的巨大爆炸，维持着魔术的水晶被切碎之后，那些魔力流也随之消散。</p>
+<p>　　果然就像是我推测的那样，不需要吟唱的原因便是——本身并不需要她来构建术式，这种魔术，只不过是她们拉普莉丝家族的宝石魔术之中的一种。</p>
+<p>　　而处理这种魔术的办法，也比我想象的要简单的多——只要破坏掉术式本身，魔术便无法继续发动。而破坏掉这种宝石魔术，只要把核心的水晶给斩碎就好了。</p>
+<p>　　完全没想到，这么一块水晶之中居然有着如此高浓度的压缩魔力。</p>
+<p>　　“之前告诉我水晶会在高浓度魔力的冲击下气化什么的，其实是假消息吧？”再一度架起了手中的大剑，在脑海中分析起了刚刚那魔术的奥秘。</p>
+<p>　　只要能够逆推算出术式的构成的话，就可以用Imitate来复写。具体做不做得到，就让我来展现给你看看吧！</p>
+<p>　　“那可不是假消息哦！拉普莉丝家族的水晶可是有着许多种类的哦，之前和你说的那种，只不过是最常用来当子弹的消耗品而已。至于现在——”柯萝诺斯又一次架起了她的霰弹枪，身后再一度展开了魔法阵。</p>
+<p>　　“只不过，每一次要装填子弹，也未免太慢了一点吧？”</p>
+<p>　　我的身后也已经出现了五个辅助的魔法阵，将我的魔力互相联结在一起，如同着圆盘一般在我的身后旋转着。</p>
+<p>　　“什么，难道说——”</p>
+<p>　　“Imitate——Magic Rain Shoot！”</p>
+<p>　　没错，这就是属于我的魔术——魔术复写。</p>
+<p>　　散发着微弱的淡蓝色的光芒的密集魔力流向着面前的柯萝诺斯射了过去。由下而上，每一束魔力流都宛如着强力的箭矢一般</p>
+<p>　　“Magic Rain Shoot！”</p>
+<p>　　她比我慢了一拍再一次扣下了扳机。</p>
+<p>　　赤月之下，只见两道闪烁着不同光芒的魔力雨互相交织在了一起，又会碰撞出怎么样的火花呢？</p>
+<p>　　我不知道能否压制住她，复写的魔术效果会有所减弱，但是这种纯粹的魔力对决之中，我可不觉得我会落于下风。</p>
+<p>　　就连柯萝诺斯的脸上，也好像露出了略显得有点难受的表情。</p>
+<p>　　</p>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC76%E7%AB%A0.txt/"
+    title="第七十六章 赤月的银狐（5）【诺霖视角】"
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/%E7%AC%AC74%E7%AB%A0.txt/"
+    title="第七十四章 赤月的银狐（3）【诺霖视角】"
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <p class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      title="Scroll to top"
+      onclick="scrollToTop()"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "\/%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88\/%E7%AC%AC75%E7%AB%A0.txt\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Awesome Books
+      &middot;
+      COPYLEFT:)
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">
+      kitab
+    </a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+  
+</footer>
+
+  </body>
+</html>

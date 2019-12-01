@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>amaki&#39;s novels</title>
+  <meta name="description" content="Sample" />
+  <meta name="author" content="Yrr0r" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.60.1" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/kitab.css" />
+
+  <script src="../../js/myFunctions.js"></script>
+  <script src="../../js/clipboard.min.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="../../"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+	
+	
+	
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E5%B9%BB%E7%89%A9%E8%AF%AD/">
+            妹吻第1卷：梦幻物语
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/">
+            妹吻第2卷：学院怪谈
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/">
+            妹吻第3卷：夏日旅行
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/">
+            妹吻第4卷：镜之祭典
+          </a>
+          by 
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Chapters"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        妹吻第3卷：夏日旅行
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC81%E7%AB%A0.txt/">第八十一章 姐妹俩的生日（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC82%E7%AB%A0.txt/">第八十二章 姐妹俩的生日（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC83%E7%AB%A0.txt/">第八十三章 姐妹俩的生日（3）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC84%E7%AB%A0.txt/">第八十四章 姐妹俩的生日（4）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC85%E7%AB%A0.txt/">第八十五章 姐妹俩的生日（5）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC86%E7%AB%A0.txt/">第八十六章 姐妹俩的生日（6）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC87%E7%AB%A0.txt/">第八十七章 姐妹俩的生日（7）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC88%E7%AB%A0.txt/">第八十八章 姐妹俩的生日（8）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC89%E7%AB%A0.txt/">第八十九章 一个好消息和一个坏消息</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC90%E7%AB%A0.txt/">第九十章 优奈学姐的复习秘籍</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC91%E7%AB%A0.txt/">第九十一章 暑假的序幕</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC92%E7%AB%A0.txt/">第九十二章 机场奇遇</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC93%E7%AB%A0.txt/">第九十三章 机场动乱</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC94%E7%AB%A0.txt/">第九十四章 私人沙滩</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC95%E7%AB%A0.txt/">第九十五章 假期的第一天（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC96%E7%AB%A0.txt/">第九十六章 假期的第一天（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC97%E7%AB%A0.txt/">第九十七章 烧烤大会</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC98%E7%AB%A0.txt/">第九十八章 扭曲的时空（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC99%E7%AB%A0.txt/">第九十九章 扭曲的时空（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC100%E7%AB%A0.txt/">第一百章 惩罚游戏</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC101%E7%AB%A0.txt/">第一百零一章 大海（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC102%E7%AB%A0.txt/">第一百零二章 大海（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC103%E7%AB%A0.txt/">第一百零三章 大海（3）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC104%E7%AB%A0.txt/">第一百零四章 不速之客</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC105%E7%AB%A0.txt/">第一百零五章 特训的成果【诺汐视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC106%E7%AB%A0.txt/">第一百零六章 天之坠</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC107%E7%AB%A0.txt/">第一百零七章 另一位梦之魔女【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC108%E7%AB%A0.txt/">第一百零八章 相爱相杀的姐妹之战（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC109%E7%AB%A0.txt/">第一百零九章 相爱相杀的姐妹之战（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC110%E7%AB%A0.txt/">第一百一十章 梦幻轮舞曲·诺霖篇【诺汐视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC111%E7%AB%A0.txt/">第一百一十一章 梦幻轮舞曲·优佳篇</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC112%E7%AB%A0.txt/">第一百一十二章 梦幻轮舞曲·柯萝诺斯篇</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC113%E7%AB%A0.txt/">第一百一十三章 雨中的小萝莉</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC114%E7%AB%A0.txt/">第一百一十四章 Forbidden Codex（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC115%E7%AB%A0.txt/">第一百一十五章 Forbidden Codex（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC116%E7%AB%A0.txt/">第一百一十六章 Forbidden Codex（3）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC117%E7%AB%A0.txt/">第一百一十七章 Forbidden Codex（4）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC118%E7%AB%A0.txt/">第一百一十八章 萝莉，就会白给（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC119%E7%AB%A0.txt/">第一百一十九章 萝莉，就会白给（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC120%E7%AB%A0.txt/">第一百二十章 萝莉，就会白给（3）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC121%E7%AB%A0.txt/">第一百二十一章 禁忌图书馆</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    妹吻第3卷：夏日旅行
+  </small>
+  <h2>第一百章 惩罚游戏</h2>
+  <div class="rounded">
+    <p>第三卷：夏日旅行 第100章</p>
+<p>　　第一百章 惩罚游戏</p>
+<p>　　胜负已分，可怜的千羽优佳在最后关头掉了链子，完全忘记了柯萝诺斯那可以一转定胜负的永劫之眼。现在，等待着她的，则是两位姐姐偷偷定下的惩罚。</p>
+<p>　　“根据之前的说法，输掉的要接受惩罚，对吧？”柯蕾莉忒的脸上露出了得意的笑容，舔了舔口中的冰棍。那不怀好意的笑容，不由得使得优佳躲到了优奈的身后，总感觉，迎接着她的，可能会是一场十分可怕的惩罚游戏。</p>
+<p>　　“嗯……是的。”</p>
+<p>　　“姐姐！姐姐你那天晚上明明没有和我说失败的话会有惩罚游戏啊！”优佳感觉自己被坑了，坑自己的人毫无疑问就是自己的姐姐优奈。</p>
+<p>　　早知道有惩罚游戏的话，她又怎么可能轻易地答应下来呢？本来她就知道自己对上柯萝诺斯没有多少的胜率，必然不可能冒着那么大的风险去接下挑战的。</p>
+<p>　　“唔，我可能忘记了吧，毕竟那个时候你不在海边嘛……”优奈装出了一脸看风景的样子。</p>
+<p>　　“姐姐不准转移话题！”优佳用着小锤锤敲着优奈的胸口。还未解除魔女化的她，甚至还用着自己的猫尾巴缠住了优奈的脚踝，以表示出作为妹妹的小小抗议。</p>
+<p>　　“优佳学姐穿女仆装的样子，好期待呢。”在一旁的诺汐也开始煽风点火了起来。</p>
+<p>　　“是呢是呢，我也很想看看呢。”诺霖点头附和道。</p>
+<p>　　“你们两个，你们两个也要欺负我吗！”优佳转过头，脑袋上的猫耳朵中都冒出了热气，满脸通红的样子，看起来十分生气的样子。</p>
+<p>　　“我们可不敢欺负优佳学姐！我们只是，只是很期待而已！”</p>
+<p>　　“对对，我们才不敢欺负优佳学姐呢！”</p>
+<p>　　两只银发萝莉抱在一起，脸上露出了十分得意的神情。</p>
+<p>　　“明天记得穿女仆装哦~今天就到这里吧。”柯蕾莉忒抚摸着躺在自己大腿上的柯萝诺斯的脑袋，看着妹妹此时使用魔力过度的情况，她知道现在也应该好好地照顾她一下了。</p>
+<p>　　“太过分了喵！”</p>
+<p>　　临近正午，太阳逐渐变得晒了起来，再继续停留的话会对皮肤不是很好。每天的下午几乎都是她们的自由活动时间，基本上她们都会呆在自己的房间里，做着那些不可告人的事情。因为房间的隔音效果很好，所以完全不用担心会被别人听见什么的。</p>
+<p>　　“女仆装……嘛……”</p>
+<p>　　如果是女仆装的话，优佳觉得自己还是能够接受的，毕竟，也不是什么特别羞耻的服装。砂糖在学校和在家的时候，都是穿着那件女仆装的。</p>
+<p>　　但是，问题在于，她要穿的，并不是为她量身定做的女仆装，而是——砂糖的女仆装。</p>
+<p>　　“开什么玩笑啊！我一个一米七的女孩子，穿，穿这件一米四的女仆装？！”第二天早上，当优奈将女仆装拿给了优佳之后，她的脸上露出了十分难以置信的神情。</p>
+<p>　　这件衣服太小了，完全小到了过分的程度。</p>
+<p>　　三十厘米的差距，简直是天差地别了！</p>
+<p>　　“不行不行，绝对不行的吧！”</p>
+<p>　　自己绝对穿不下这件女仆装的，就算能够穿下来，也肯定会变得超级奇怪的说！</p>
+<p>　　“不试试看怎么知道呢，对吧，亲爱的~”优奈已经贴到了优佳的身边，那充满着诱惑的眼神，仿佛随时都像是要将优佳吃掉一般。</p>
+<p>　　“穿不下的！”</p>
+<p>　　“亲爱的~不试试看嘛~这可是我和柯蕾好不容易定下的惩罚游戏呢。要是不愿意的话，说不定我们就准备执行plan B了呢~”</p>
+<p>　　“plan B是什么？”</p>
+<p>　　优佳感觉到了几分不安，所谓的plan B，估计会比原先现在的plan A更为糟糕的吧？</p>
+<p>　　“plan B就是全裸哦~反正大家都是女孩子，优佳肯定也觉得无所谓的对吧~”</p>
+<p>　　“怎么可能无所谓啊！”优佳感觉到了优奈那可怕的视线，立刻拿起了放在桌子上的那件女仆装，开始试穿了起来。</p>
+<p>　　“计划成功~”甚至还可以欣赏到优佳换女仆装的全过程，虽然在柯蕾面前稍微没了一点面子，但是她觉得这还是相当值得的！</p>
+<p>　　“姐姐转过身去！”</p>
+<p>　　身后那如同饿狼一般的视线令优佳略感觉到了几丝害怕。她立刻让自己的姐姐转过身去，并不想让姐姐看到她换衣服的那个场景。</p>
+<p>　　“诶为什么呀……我可是你姐姐呀~纽扣扣不起来的话，姐姐还可以帮你搭一把手呢~”优奈眨了眨眼，露出了一副人畜无害的神情。</p>
+<p>　　“被姐姐看着怎么可能换得好衣服！”</p>
+<p>　　“好吧，那我出去了哦，等会衣服扣不上的话不要来叫我。”优奈鼓起脸颊，打开房门便是直接离去了，就让里面的某只小猫咪自己换那件完全不合身的衣服吧！</p>
+<p>　　时间一分一秒的流逝着，但是优奈却丝毫不慌张，呆在房门外，偷偷靠着门缝偷窥着里面的场景。优佳那美丽的身体展现在她的面前，套上女仆装的时候，甚至都能看到衣服都紧绷着，马上就要脱线的样子。</p>
+<p>　　穿着裙子的时候，优佳甚至都因为重心不稳而直接摔在了地上。</p>
+<p>　　五分钟后，房内便是传来了优佳那求助的声音，不用想都知道，她又肯定是在扣纽扣的时候出现了问题。</p>
+<p>　　“姐姐——”</p>
+<p>　　优奈就呆在门外，故意捉弄着自己的妹妹。</p>
+<p>　　“姐姐，来帮帮我好不好……”</p>
+<p>　　站在镜子前的优佳感觉自己的手臂都要断了，这件超紧的女仆装，完全无法将扣子扣起来，穿在身上的感觉都变得怪怪的。</p>
+<p>　　即使强行使用着魔术也完全无解，自己的空间魔术在这个时候完全无法起到任何的作用。</p>
+<p>　　然而，门外的优奈一点回应都没有，就像是在生着她的气一样。</p>
+<p>　　“姐姐大人……姐姐大人帮帮可怜的优佳好不好。优佳完全穿不了这件衣服的……”优佳站在门口，提着那件女仆装对着优奈说着。</p>
+<p>　　“嗯？”这一次，优奈终于有了回应。</p>
+<p>　　“姐姐大人帮帮我……”</p>
+<p>　　“真拿你没办法呢。”优奈走了进来，用手摸了摸优佳的脑袋。“这件衣服不是这么穿的，要这样，这样。先把衣服脱下来吧，我稍微修改一点腰身你应该就能穿上去了。”</p>
+<p>　　——————————————————</p>
+<p>　　“说起来，优佳学姐怎么还没有来呢？”诺汐一边吃着西瓜一边说着，脸上露出了几分不解的神情。</p>
+<p>　　“砂糖酱的这件连衣裙真好看呢！”诺霖已经和砂糖开始聊了起来，看着比她还要娇小几分的砂糖穿着那件可爱的连衣裙，她也不由得感觉到了几分羡慕。</p>
+<p>　　可爱的粉白色连衣裙上，点缀着可爱的草莓图案，裙边装饰着白色的蕾丝花边。与砂糖那娇羞的神情相对应，简直几乎完美。白色丝袜与裙摆中间的那片绝对领域，更是完美的展示出了女孩子的魅力。</p>
+<p>　　“来，稍稍提一下裙子，让诺霖姐姐给你拍个照~”诺霖拿起了手机，蹲在一旁开始为砂糖拍摄起了可爱的照片。</p>
+<p>　　“唔……”砂糖酱害羞地按照着诺霖的指示来做着奇怪的动作，“裙底，裙底不能拍的！”</p>
+<p>　　“不会拍的啦，来，笑一个~”</p>
+<p>　　“这样，这样嘛……”砂糖酱露出了笑容。</p>
+<p>　　那可爱的笑容，正如她的名字一般甜美。</p>
+<p>　　一旁的众人看了，都完全沉浸于这一切之中，瞬间忘却了一切烦恼，宛若进入到了人间仙境一般。</p>
+<p>　　“霖整天就知道欺负小孩子。”</p>
+<p>　　“什么嘛，给可爱的砂糖酱拍照的事情，能算欺负吗！这是姐姐不懂艺术，不懂美！平日里看到可爱的我，你不也会拍照片吗！”</p>
+<p>　　“说的也是呢。“</p>
+<p>　　诺汐看着自己手机里的那些诺霖的美图，不由得露出了笑容。</p>
+<p>　　“大，大家好……我，我来迟了……”</p>
+<p>　　就在这个时候，耳边传来了优佳的声音，手中端着七杯冰水，身穿着一件女仆装的优佳出现在了众人的面前。砂糖的女仆装穿在她的身上显得十分奇怪，毕竟实在是太小了一点。</p>
+<p>　　慢吞吞地迈着步子，生怕着自己的动作会将衣服给撕裂一般。一旁的优奈则是配合着她的步子，观察着她那可爱的动作，甚至也掏出了手机开始拍照了起来。</p>
+<p>　　“不，不准拍啊，姐姐！”简直羞耻到了极点，优佳现在就想好好的钻进沙子里，让沙子埋葬自己算了。</p>
+<p>　　“等等，优佳学姐小心——”</p>
+<p>　　诺霖刚想提醒优佳学姐，结果却已经来不及了。她突然被一个贝壳所绊倒，原先就已经不稳的身体直接向前倾，手中的七杯冰水也即将要翻出来的样子。</p>
+<p>　　“Transport！”</p>
+<p>　　瞬间使用着魔术转移了那些冰水，让那些冰水稳稳地落到了一旁的桌上之后，优佳也像是生无可恋的摔在了沙滩上。</p>
+<p>　　“哎呀，真是冒失的小女仆呢。”一旁的柯萝诺斯用着自己的魔力将冰水转移到了自己的手中，侧着身子，翘着二郎腿看向了地上的千羽优佳。</p>
+<p>　　“柯萝诺斯！”趴在地上的优佳如此的说着，脸上满满的写着愤怒。</p>
+<p>　　“二小姐穿这件衣服，好奇怪的说。”砂糖歪了歪脑袋，脸上露出了尤为好奇的神情。</p>
+<p>　　“还不是因为太小了啊……身上，身上全是沙子，我，我要去洗澡啊——”摔了一跤之后，可怜的优佳变得尤为狼狈不堪，脸上、身上、衣服上都满满的全是沙子，刚想要转身离开，结果又脸朝着地面摔了一跤。</p>
+<p>　　“啊啊啊啊——受不了了！”还是用魔术来转移自己好了，优佳立刻在面前打开了一扇任意门，眨眼间便又是消失在了众人的视线里。</p>
+<p>　　“看来，今天的惩罚游戏只能到此为止了呢。”优奈耸了耸肩，“柯蕾莉忒？”</p>
+<p>　　“嗯嗯，足够了，能够一饱眼福就足够了。”柯蕾看着自己所拍下的千羽优佳那冒失的样子，不由得露出了笑容。</p>
+<p>　　“诶，姐姐，也让我看看喵~”柯萝诺斯也凑了过去。</p>
+<p>　　“等会记得发我一份哦。”优奈对着她们挥了挥手，“现在我得要去好好爱抚一下我的优佳了，晚上见哦。”</p>
+<p>　　“拜拜~”</p>
+<p>　　</p>
+<p>　　</p>
+<p>　　</p>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC101%E7%AB%A0.txt/"
+    title="第一百零一章 大海（1）"
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/%E7%AC%AC99%E7%AB%A0.txt/"
+    title="第九十九章 扭曲的时空（2）"
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <p class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      title="Scroll to top"
+      onclick="scrollToTop()"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "\/%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C\/%E7%AC%AC100%E7%AB%A0.txt\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Awesome Books
+      &middot;
+      COPYLEFT:)
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">
+      kitab
+    </a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+  
+</footer>
+
+  </body>
+</html>
