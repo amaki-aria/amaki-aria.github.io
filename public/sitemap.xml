@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/%E5%A0%95%E5%A4%A9%E4%B9%8B%E7%BE%BD/%E5%A0%95%E5%A4%A9%E4%B9%8B%E7%BE%BD/</loc>
+  </url>
+  
+  <url>
     <loc>/%E5%A6%B9%E5%90%BB%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E5%B9%BB%E7%89%A9%E8%AF%AD/%E7%AC%AC1%E7%AB%A0.txt/</loc>
   </url>
   
@@ -668,11 +672,6 @@
   
   <url>
     <loc>/%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/%E7%AC%AC167%E7%AB%A0.txt/</loc>
-  </url>
-  
-  <url>
-    <loc>/%E5%A0%95%E5%A4%A9%E4%B9%8B%E7%BE%BD/%E5%A0%95%E5%A4%A9%E4%B9%8B%E7%BE%BD/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
