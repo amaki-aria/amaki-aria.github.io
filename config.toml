@@ -12,4 +12,4 @@ pluralizelisttitles = false
   description = "Sample"
   dateFormat = "2006-01-02"
   footer1 = "Awesome Books"
-  footer2 = "COPYLEFT:)"
+  footer2 = ":)"
