@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>amaki&#39;s novels</title>
+  <meta name="description" content="Sample" />
+  <meta name="author" content="Yrr0r" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.60.1" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/kitab.css" />
+
+  <script src="../../js/myFunctions.js"></script>
+  <script src="../../js/clipboard.min.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="../../"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+	
+	
+	
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="../../%E5%A0%95%E5%A4%A9%E4%B9%8B%E7%BE%BD/">
+            堕天之羽
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E5%B9%BB%E7%89%A9%E8%AF%AD/">
+            妹吻第1卷：梦幻物语
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC2%E5%8D%B7%E5%AD%A6%E9%99%A2%E6%80%AA%E8%B0%88/">
+            妹吻第2卷：学院怪谈
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC3%E5%8D%B7%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C/">
+            妹吻第3卷：夏日旅行
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC4%E5%8D%B7%E9%95%9C%E4%B9%8B%E7%A5%AD%E5%85%B8/">
+            妹吻第4卷：镜之祭典
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A6%B9%E5%90%BB%E7%AC%AC5%E5%8D%B7%E6%B7%B1%E6%B8%8A%E8%A7%89%E9%86%92/">
+            妹吻第5卷：深渊觉醒
+          </a>
+          by 
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/">
+            白珍珠的泡沫恋曲
+          </a>
+          by 
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Chapters"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        白珍珠的泡沫恋曲
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/1-%E6%88%91%E7%9A%84%E5%A6%B9%E5%A6%B9%E4%B8%8D%E5%8F%AF%E8%83%BD%E8%BF%99%E4%B9%88%E7%97%85%E5%A8%87.txt/">1-我的妹妹不可能这么病娇.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/2-%E6%88%91%E9%9D%92%E6%A2%85%E7%AB%B9%E9%A9%AC%E4%B8%8E%E5%A6%B9%E5%A6%B9%E7%9A%84%E6%83%A8%E7%83%88%E4%BF%AE%E7%BD%97%E5%9C%BA.txt/">2-我青梅竹马与妹妹的惨烈修罗场.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/3-%E4%B8%8D%E5%AF%BB%E5%B8%B8%E7%9A%84%E9%AC%BC%E5%B1%8B%E4%B8%8E%E4%B8%8D%E5%AF%BB%E5%B8%B8%E7%9A%84%E9%AC%BC.txt/">3-不寻常的鬼屋与不寻常的鬼.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/4-%E6%96%B0%E7%94%9F%E6%B4%BB.txt/">4-新生活.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/5-%E9%9B%A8%E5%A4%A9.txt/">5-雨天.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/6-%E8%BD%AC%E6%A0%A1%E7%94%9F.txt/">6-转校生.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/7-%E7%97%85%E5%BE%97%E4%B8%8D%E8%BD%BB%E7%9A%84%E4%B8%A4%E4%BA%BA.txt/">7-病得不轻的两人.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/8-%E5%AD%A6%E4%B9%A0%E4%BC%9A.txt/">8-学习会.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/9-%E5%A4%8F%E5%A4%9C%E7%9A%84%E6%98%9F%E7%A9%BA.txt/">9-夏夜的星空.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/10-%E5%A7%90%E5%A6%B9%E4%B9%8B%E4%B8%8A%E6%81%8B%E4%BA%BA%E6%9C%AA%E6%BB%A1.txt/">10-姐妹之上，恋人未满.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/11-%E6%81%B6%E9%AD%94.txt/">11-恶魔.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/13-%E7%A5%9E%E4%B8%8E%E5%A4%A9%E4%BD%BF%E7%9A%84%E5%8D%8F%E5%A5%8F%E6%9B%B2.txt/">13-神与天使的协奏曲.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/14-%E4%B8%8D%E4%B8%80%E8%88%AC%E7%9A%84%E7%94%9F%E6%97%A5%E7%A4%BC%E7%89%A9.txt/">14-不一般的生日礼物.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/15-%E6%9C%9F%E6%9C%AB%E5%8D%B1%E6%9C%BA.txt/">15-期末危机.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/16-%E6%83%A9%E7%BD%9A%E6%B8%B8%E6%88%8F.txt/">16-惩罚游戏.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/17-lover-or-sister.txt/">17-Lover or sister.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/18-%E5%A4%8F%E6%97%A5%E6%97%85%E8%A1%8C.txt/">18-夏日旅行.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/19-%E6%B2%99%E6%BB%A9%E4%B8%8A%E7%9A%84%E5%A4%8F%E6%97%A5%E6%95%85%E4%BA%8B.txt/">19-沙滩上的夏日故事.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/20-%E6%B2%99%E6%BB%A9%E5%8D%B1%E6%9C%BA.txt/">20-沙滩危机.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/21-%E5%A4%A9%E4%BD%BF%E7%9A%84%E7%BB%88%E6%9C%AB%E4%B9%8B%E6%9B%B2.txt/">21-天使的终末之曲.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/22-%E4%BA%8E%E4%B8%96%E7%95%8C%E5%B0%BD%E5%A4%B4%E5%A5%8F%E5%93%8D%E7%9A%84%E6%81%8B%E6%9B%B2.txt/">22-于世界尽头奏响的恋曲.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/23-%E4%B8%96%E7%95%8C%E5%B0%91%E5%A5%B3%E7%9A%84%E6%95%85%E4%BA%8B.txt/">23-世界少女的故事.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/24-%E9%82%82%E9%80%85.txt/">24-邂逅.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/25-%E6%81%8B%E5%BF%83%E8%90%8C%E5%8A%A8.txt/">25-恋心萌动.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/26-%E7%88%B1%E6%AE%87.txt/">26-爱殇.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/28-%E6%A2%A6%E9%86%92%E6%97%B6%E5%88%86.txt/">28-梦醒时分.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/29-%E3%81%9F%E3%81%A0%E3%81%84%E3%81%BE.txt/">29-ただいま.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/30-%E7%BE%8E%E5%A5%BD%E7%9A%84%E6%AF%8F%E4%B8%80%E5%A4%A9%E7%BB%88%E7%AB%A0.txt/">30-美好的每一天（终章）.txt</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/0-%E7%81%B5%E9%AD%82%E7%9A%84%E8%BD%AC%E7%94%9F.txt/">0-灵魂的转生.txt</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    白珍珠的泡沫恋曲
+  </small>
+  <h2>30-美好的每一天（终章）.txt</h2>
+  <div class="rounded">
+    <p>“雪，我们研究所似乎要来一个新的人应聘你的助手。”铃木伊织看着趴在桌上戏弄着兔子玩偶的千堂雪，不禁叹了一口气。这千堂雪是个小女孩吗？明明都已经是27岁的人了，还拥有着博士学位，却还像个小孩子一样的喜欢玩偶？自从发布会之后，千堂雪整个人就又变得有点魂不守舍了。听铃木晞月说，千堂雪那样子就像是回到了当年被她前女友甩的时候。</p>
+<p>“谁啊？”千堂雪漫不经心回答道。</p>
+<p>“我们学校的一位大四学生，化学系的，明年就要毕业了吧。”铃木伊织将申请人的资料表递了过去，“说起来也真是奇怪，为什么还有人来加入我们这个破地方啊。”</p>
+<p>“大四生？不收……”千堂雪漫不经心地接过资料表看了一眼，“松井唯，性别女，出生于2005年7月16日……”脑海里突然闪过一道光，第六感告诉她，这个叫松井唯的女孩子就是她苦苦等待了十年的人，看着资料表上附着的照片，竟然和上次粉丝见面会上见到的少女一模一样。</p>
+<p>“是吗，还真是可惜呢，我得去通知一下学妹她被没良心的学姐拒了呢。”铃木晞月挥了挥手示意铃木伊织将她推开。</p>
+<p>“等等。”千堂雪突然又恢复了原来那种认真的模样，“这个女孩，我要了。”</p>
+<p>“噫——”某对妇妻异口同声地说着。</p>
+<p>此时的大学校园里。</p>
+<p>“唯，听说你居然去申请去我们学校研究所里面当千堂博士的助手？千堂博士那个性格，你就不害怕吗？”千堂雪有时候还兼职学校里的教授，依旧发挥了那冰山美人般的震慑力，令她的学生都感觉到她难以接近。</p>
+<p>“我一直很想成为千堂博士的助手啊。”松井唯耸了耸肩，“对了，告诉你一个惊天大秘密。我喜欢的白咲老师，实际上就是千堂博士本人哦。”在那次粉丝见面会上，松井唯见到了千堂雪第一眼就有一种很熟悉的感觉，甚至在当时还情不自禁喊出了“姐姐大人”现在想想实在是太过于羞耻了。</p>
+<p>“什么？那个写下了《温柔的陷阱》的白咲スーノ老师居然就是千堂博士本人？不可能的吧，她给人的感觉，完全不像是能写出这种细腻的百合向小说的女人啊！”松井唯的挚友也是白咲スーノ（即千堂雪）的忠实粉丝，只不过她和松井唯不同，她是直的。</p>
+<p>“嘻嘻，你不知道吧，千堂博士的母亲原姓就是白咲哦，而且スーノ也就是雪的意思，所以说千堂博士和白咲スーノ老师肯定是一个人。不说了，铃木博士发给我新消息了。”松井唯露出了自信的笑容，低头看了看自己的手机上铃木伊织发来的消息。“千堂博士已经同意了，明天来研究所报道。——铃木伊织”</p>
+<p>“什么？我居然直接通过了？！”松井唯兴奋地叫出了声，“我，我终于可以见到千堂博士了吗！太太高兴了！”松井唯直接抱紧了挚友的身体。</p>
+<p>“唯……你给我，放，放开……”挚友被她抱得都要喘不过气来了。“说起来你到底是吃错了什么药才会放弃大好前途去和千堂博士厮混啊……”虽然挚友也知道千堂博士很有才华的女人，但是看她那个研究所，实在是太不正经了吧。</p>
+<p>“命运哦。”松井唯笑了笑，哼着小曲向着研究所走去了。</p>
+<p>12岁的时候，松井唯生了一场大病，在昏迷的时候做了一个奇怪而又漫长的梦，梦境之中，似乎自己与一个女生抱在一起，最后她对着那位女生说道：“请务必，等待着你妹妹的归来。”</p>
+<p>当她从那个长久的梦境之中醒来的时候，有一种恍若隔世的感觉，然而实际上只是过了一天而已。只不过，在松井唯心中，梦境之中的场景深深印在了她的心中，潜意识里有一种强烈的意识驱使着她去寻找一个人，她并不知道那个人具体是谁，好像是那个梦中的女孩，也好像是自己的姐姐……</p>
+<p>这种动力驱使着她努力学习，业余时候也喜欢上了白咲スーノ老师写的百合向小说，深深被那位老师的姐妹百合作品所折服，心中似乎有一个声音告诉着她，这位白咲スーノ老师就是她一直以来所要寻找的人，以致于在她的粉丝见面会上，松井唯下意识地喊出了“姐姐大人”这样的话语。后来仔细调查了一下才发现，原来那位白咲スーノ老师就是自己大学里的千堂雪博士，就仿佛是冥冥之中自有注定一般，松井唯主动要求去当研究所的助手。</p>
+<p>一走进研究所的大门，松井唯就向前来接她的铃木伊织鞠了一躬，做出一幅彬彬有礼的模样，令铃木伊织对她的好感又上去了几分。“雪她会喜欢你的。”伊织笑了一下，这位估计就是铃木晞月所说的，雪一直在等待的女孩吧。</p>
+<p>“千堂博士好……”松井唯一走进千堂雪的办公室再鞠了一躬，“我叫松井唯，今年22岁，特地来应聘千堂博士的助理，希望能留在研究所工作。”简短的自我介绍一番之后，千堂雪给了铃木伊织一个眼色，示意她退下。</p>
+<p>“你叫我什么？”千堂雪看完了她的简介之后意识到她可能就是她一直等待的千堂雨，虽然在外表上有点差异，但是她身上却有着千堂雨独特的气质，对她有着十分的吸引力，从见到她第一眼开始就是这样了，心脏在不停地跳动着，要不是自己的理性压制着自己，千堂雪恐怕自己会忍不住亲上去。</p>
+<p>“千堂博士……”松井唯突然意识到了什么，立刻改口了，“姐姐大人。”</p>
+<p>本来面无表情的千堂雪在听到了这句久违的“姐姐大人”之后，原本冰山般的表情也渐渐缓和了，露出了会心的笑容，“你终于回来了。”就这一句话，她等待了整整十年，现在的她，已经不再是17岁时候那个年少无知的懵懂少女，而是变成了一位事业有成的成功女性，以前的她以姐姐的身份爱上了自己的亲妹妹千堂雨，现在，那位千堂雨终于回来了。</p>
+<p>“我可以叫你雨吗？松井桑？”虽然知道自己这个要求有点不合理，但是千堂雪还是提出了。</p>
+<p>“可以，姐姐大人想怎么叫都可以。毕竟，我是你的小雨啊。”松井唯笑了笑，十年前的那个梦，她现在已经能大致想起来不少了，她记得，在她的梦中，自己的名字就是千堂雨。</p>
+<p>“我回来了，小雪。”</p>
+<p>“欢迎回来，小雨。”</p>
+<p>两人握了握手，相视而笑。</p>
+<p>十年的等待终于没有白费，此时的千堂雪的心中，绽放出了幸福的花朵。</p>
+<p>对于女人来说，最重要的事情，莫过于她们的婚礼了。</p>
+<p>教堂里，两位穿着婚纱的女性手牵着手慢慢走在红毯上。</p>
+<p>铃木伊织特地借了一套神父的衣服站在台上，手上捧着一本圣经，铃木晞月则坐在台下，静静地看着两位新人的婚礼。</p>
+<p>“松井唯小姐，你是否愿意让你身边的这位女性成为你的伴侣并且与她缔结婚约，无论疾病还是健康，或任何其他理由，都爱她，照顾她，尊重她，接纳她，永远对她忠贞不渝直至生命尽头？”</p>
+<p>“我愿意。”站在铃木伊织左边的松井唯笑着说道。</p>
+<p>“千堂雪小姐，你是否愿意让你身边的这位女性成为你的伴侣并且与她缔结婚约，无论疾病还是健康，或任何其他理由，都爱她，照顾她，尊重她，接纳她，永远对她忠贞不渝直至生命尽头？”</p>
+<p>“我愿意。”千堂雪深情地望着松井唯，距离她们重逢其实也就过了一个月的时间，不过有着十年前情感的积淀，两人很快便决定举办婚礼了。</p>
+<p>婚礼很简单，因为松井唯的父母在她大二的时候就去世了，所以出场的只有千堂雪的父母、铃木晞月、铃木伊织（司仪）伴郎和伴娘都没有，也没有邀请别人，就简简单单几个人走个过场而已。</p>
+<p>“下面请新人父母上台发言。”铃木伊织向着千堂琴美做出了一个请的手势。</p>
+<p>“嗯，虽然不知道说什么好。”千堂琴美走上台揽住了千堂雪的肩，“雪是我家唯一的闺女，一直很担心她最后到底会找到一个怎么样的归宿，唯是个好女孩，雪你以后也一定要好好对待她，知道了吗？”交代完千堂雪之后，千堂琴美又转向松井唯。</p>
+<p>“松井唯桑，既然嫁到了千堂家，从此之后你也是我第二个女儿了，有什么事情不需要客气，雪脾气不好，如果欺负你的话记得告诉我，我帮你教训雪。”千堂琴美拍了拍松井唯的肩。</p>
+<p>“你们好好的吧，有什么问题的话，我和行人也会帮助你们。”千堂琴美说完便走下了台。</p>
+<p>“好，下面请两位新人交换钻戒。”铃木伊织拿好千堂雪买好的钻戒，递给了两人。千堂雪将钻戒戴在松井唯的无名指上，然后轻吻了一下她的手指。之后松井唯也做出了同样的动作，两人戴好钻戒，许下相守一生的诺言，相拥相吻。</p>
+<p>即使过程很坎坷，但是想必接下来迎接着她们的，一定是美好的每一天吧。</p>
+<p>（end）</p>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/0-%E7%81%B5%E9%AD%82%E7%9A%84%E8%BD%AC%E7%94%9F.txt/"
+    title="0-灵魂的转生.txt"
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/29-%E3%81%9F%E3%81%A0%E3%81%84%E3%81%BE.txt/"
+    title="29-ただいま.txt"
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <p class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      title="Scroll to top"
+      onclick="scrollToTop()"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "\/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2\/30-%E7%BE%8E%E5%A5%BD%E7%9A%84%E6%AF%8F%E4%B8%80%E5%A4%A9%E7%BB%88%E7%AB%A0.txt\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Awesome Books
+      &middot;
+      :)
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">
+      kitab
+    </a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+  
+</footer>
+
+  </body>
+</html>
