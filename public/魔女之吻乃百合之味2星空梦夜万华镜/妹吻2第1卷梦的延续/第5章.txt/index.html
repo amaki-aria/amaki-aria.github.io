@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>amaki&#39;s novels</title>
+  <meta name="description" content="Sample" />
+  <meta name="author" content="Yrr0r" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.60.1" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../../css/kitab.css" />
+
+  <script src="../../../js/myFunctions.js"></script>
+  <script src="../../../js/clipboard.min.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="../../../"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+	
+	
+	
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B3%E7%95%AA%E5%A4%96%E7%B3%BB%E5%88%97/">
+            魔女之吻乃百合之味【番外系列】
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/">
+            姐姐，在时光流逝前都要抱紧我哦
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E5%A0%95%E5%A4%A9%E4%B9%8B%E7%BE%BD/">
+            堕天之羽
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/">
+            魔女之吻乃百合之味1：梦与希望的女神
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/">
+            魔女之吻乃百合之味2：星空梦夜万华镜
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/">
+            白珍珠的泡沫恋曲
+          </a>
+          by amaki-aria
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Chapters"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        魔女之吻乃百合之味2：星空梦夜万华镜
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC1%E7%AB%A0.txt/">第一章 扭曲的世界【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC2%E7%AB%A0.txt/">第二章 芒果情怀</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC3%E7%AB%A0.txt/">第三章 图书馆的奇遇（1）【H，图书馆自慰】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC4%E7%AB%A0.txt/">第四章 图书馆的奇遇（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC5%E7%AB%A0.txt/">第五章 猫娘诺汐（1）【</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC6%E7%AB%A0.txt/">第六章 猫娘诺汐（2）【H，足交play】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC7%E7%AB%A0.txt/">第七章 猫娘诺汐（3）【H】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC8%E7%AB%A0.txt/">第八章 入学测试</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC9%E7%AB%A0.txt/">第九章 深渊魔女再临</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC10%E7%AB%A0.txt/">第十章 深渊之梦</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC11%E7%AB%A0.txt/">第十一章 深渊之梦（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC12%E7%AB%A0.txt/">第十二章 梦之深渊【诺霖视角】【H，吸血play】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC13%E7%AB%A0.txt/">第十三章 感觉共享项圈【诺霖视角】（奇怪的play）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC14%E7%AB%A0.txt/">第十四章 崭新的大学生活（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC15%E7%AB%A0.txt/">第十五章 崭新的大学生活（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC16%E7%AB%A0.txt/">第十六章 社团招新</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC17%E7%AB%A0.txt/">第十七章 夜晚的校园约会【H，校园露出】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC18%E7%AB%A0.txt/">第十八章 消失的衣物【H，校园露出】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC19%E7%AB%A0.txt/">第十九章 魔女之宴</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC20%E7%AB%A0.txt/">第二十章 全裸狂想曲【H，脱衣舞play】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC21%E7%AB%A0.txt/">第二十一章 只有七个人的班级</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC22%E7%AB%A0.txt/">第二十二章 魔导机甲（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC23%E7%AB%A0.txt/">第二十三章 魔导机甲（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC24%E7%AB%A0.txt/">第二十三章 那比机甲更可怕</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC25%E7%AB%A0.txt/">第二十五章 最美的风景线（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC26%E7%AB%A0.txt/">第二十六章 最美的风景线（2）【H，公园露出】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC27%E7%AB%A0.txt/">第二十七章 不和谐的声音</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC28%E7%AB%A0.txt/">第二十八章 无中生“友”</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC29%E7%AB%A0.txt/">第二十九章 古典百合主义</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC30%E7%AB%A0.txt/">第三十章 笼中猫【H，3p，优奈x优佳x砂糖】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC31%E7%AB%A0.txt/">第三十一章 我不在乎</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC32%E7%AB%A0.txt/">第三十二章 诺霖酱的百合直播间【H，直播play】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC%E4%B8%80%E5%8D%B7%E5%90%8E%E8%AE%B0.txt/">第一卷后记</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    魔女之吻乃百合之味2：星空梦夜万华镜
+  </small>
+  <h2>第五章 猫娘诺汐（1）【</h2>
+  <div class="rounded">
+    <p>第一卷：梦的延续 第5章</p>
+<p>　　第五章 猫娘诺汐（1）【</p>
+<p>　　“时钟塔总部找我们有点事情，你们今天自己在家要乖一点哦。”一大清早，菲娅与诗音把早饭给姐妹俩准备好了之后，就匆匆出门了。</p>
+<p>　　“以及诺汐，不准欺负诺霖哦！”</p>
+<p>　　“了解~”诺汐和诺霖异口同声地对自己的双亲说道。不用说都知道，今天所有的学习计划之类的都会被耽搁，又将会是属于着她们的淫乱之日。</p>
+<p>　　“姐姐，你是不是上次答应我说可以无条件满足我一个愿望？”当诺汐还在思考着今天该和妹妹玩什么样的H游戏时，诺霖则是率先抢占了先机。在吃完早餐之后她想起了之前在图书馆发生的事情，顺便，还趁着诺汐还没反应过来之前偷偷咬了一口她的三明治。</p>
+<p>　　虽然菲娅给她们做的三明治并没有任何的区别，但是诺霖还是觉得诺汐的那一份更好吃一点。</p>
+<p>　　“嗯？好像是有这回事。”诺汐歪了歪脑袋，本来脑海里已经计划了几百种有趣的H游戏，但是被妹妹这么一打断也只能耐心的听妹妹说上去了。</p>
+<p>　　“就是上次，在图书馆，你，你让我自慰给你看的那一次……”诺霖低声地对诺汐说着。一回想起那次在图书馆自慰还翻车的事情，她的脸上就红得像是个苹果一样。</p>
+<p>　　而且还是熟人，虽然她并不在意身体被别人看光什么的，但是这种事情被撞见就很尴尬。</p>
+<p>　　“总之，今天正好Mum和Kassan都不在，姐姐要补偿我！满足我的要求才行！”诺霖义正言辞地说着，语气颇为认真的样子。</p>
+<p>　　“行行行，只要是小霖的要求姐姐都答应。”</p>
+<p>　　诺汐当然也不可能拒绝诺霖，看着嘟起嘴来略有点生气的诺霖，真的是一种视觉享受，“那么，今天想要姐姐做什么呢？什么都可以哦，嗯……别太过分就行。”不过诺汐相信自己的妹妹肯定还是很怜香惜玉的。</p>
+<p>　　“《DreamLand》。”诺霖轻轻呼唤了一声，将她的《DreamLand》召唤了出来，魔导书上闪耀着微弱的紫光，看起来颇具神秘感。</p>
+<p>　　“嗯？去小霖的梦世界和露西一起玩倒也不错。”诺霖该不会是想3p吧？诺汐倒并不反感这些就是了。</p>
+<p>　　“等等，谁说要和露西一起玩了！到了梦世界被玩的就是我了好吧！”诺霖才不会上诺汐的当呢，她将《DreamLand》放在了桌上，“姐姐，把手放在书本的封面上吧！”</p>
+<p>　　“嗯？你准备干什么？”诺汐虽然感觉到十分不解，但是考虑到今天要听从诺霖的要求，她也就不得不遵从着诺霖的指示照做了。</p>
+<p>　　将手放在了《DreamLand》上，身旁的妹妹露出了一丝坏笑，双手合十，口中吟唱起了几句咒语，就仿佛在向着《DreamLand》祈祷一般，“《DreamLand》的书灵，我以契约者，梦之魔女诺霖·卡蕾娜之名义向您请求，请你附身于我的姐姐诺汐·卡蕾娜的身上，让她变成那般模样吧。”</p>
+<p>　　“诶，等等，我——”</p>
+<p>　　诺汐感觉到自己的意识逐渐模糊了，仿佛看到了一位有着海蓝色秀发的猫耳美少女扑进了她的怀中，用着她那透明的身体轻吻了一下自己的额头后，一阵强大的魔力朝着自己涌来，令她几乎失去了意识。</p>
+<p>　　“唔，附身的时候会发生这种事情吗？”看着昏倒在了地板上的诺汐，诺霖露出了相当不解的神情。轻轻用手抚摸了一下姐姐的猫耳朵，毛绒绒的，手感相当的好。根据上一次琳娜·卡蕾娜亲口讲述的观点，契约者是可以让书灵附身到指定的其他人身上的。上一次诺霖想要诺汐变成猫耳萝莉，结果被诺汐义正言辞地拒绝了，但是这一次，她可不会再错过了。</p>
+<p>　　“小汐真可爱呢，和我一样可爱~”这是十几年难得一遇的美景，下一次再让诺汐变成这样不知道还得过去多久。趁着诺汐还没醒来，她便是已经开始抚摸起了诺汐的耳朵和尾巴，就像是当年诺汐对自己的一样。</p>
+<p>　　“小汐……好棒呀……”</p>
+<p>　　光是看着如此可爱的姐姐，诺霖的心中就变得痒痒的，自己的小花园也变得有点点湿润，仿佛在渴求着诺汐的爱抚一般。用着手机连拍了好几张照片，开始欣赏起了姐姐的美貌。</p>
+<p>　　“小……小汐……”轻轻咬了一下诺汐的猫耳，姐姐那敏感的身体轻轻颤抖了一下之后，总算是醒了过来。</p>
+<p>　　“霖……我，我怎么了喵……”诺汐此时的意识还模模糊糊的，在被《DreamLand》的书灵附身之后她总感觉身体变得怪怪的，连说话的语气都变得奇怪了起来。</p>
+<p>　　“小汐，看。”诺霖将诺汐的照片设为了自己的锁屏，并将其在她的面前晃了晃，“小汐变成猫娘的时候也好可爱的说。”</p>
+<p>　　“霖——”这时候诺汐才知道妹妹在搞什么奇怪的小算盘，值得庆幸的是，在被《DreamLand》的书灵暂时附身了之后她的活动能力也变得像是猫咪一般灵活，轻轻地向前一跃，将她调皮的妹妹给抱在了怀中，操控起了身后的那条猫尾巴，缠在了诺霖那雪白的大腿上。</p>
+<p>　　“真是个天真的小丫头呢。”</p>
+<p>　　“等等，姐……”</p>
+<p>　　“你以为我变成了猫娘就不能欺负你了吗？”</p>
+<p>　　上面的猫耳朵摇了摇，诺汐轻轻舔了一下诺霖的脖子。用自己的膝盖分开了诺霖的大腿，那根灵活的猫尾巴朝着诺霖的大腿深处伸了过去，触碰到了诺霖那湿润的阴唇时，触电般的感觉，使得诺霖的身体立即挣扎了一下，“小，小汐……你……”</p>
+<p>　　“你以为我变成猫娘之后就会乖乖受你支配了吗？”诺汐依旧是那一副强势的模样，短短几分钟后，她便是已经熟悉了这一副奇怪的身体。和诺霖平日里的魔女化一样，只是书灵附身到了她的身上而已。尾巴仿佛成为了她的第三只手，用来给诺霖按摩私处可是极佳的。猫尾灵活地在小唇上画着圈，诺霖的爱液顺着她的大腿不断地流下，口中还不段地发出着动听的娇喘。</p>
+<p>　　“嗯……嗯哈……小，小汐……”</p>
+<p>　　“是呢，就像是这样，霖的声音真好听呢。”</p>
+<p>　　“嗯，嗯啊……我——”</p>
+<p>　　“还想趁这个时候欺负我嘛？嗯，回答我呀~”她用着舌头轻舔着诺霖的耳垂，将她的情欲挑到了极致。</p>
+<p>　　“小，小……汐，啊啊！”</p>
+<p>　　“不，不对，哪里，哪里出了问题。”在经历了一次高潮之后，诺霖立即推开了诺汐，虽然身体因为高潮的余韵而感觉变得软绵绵的，但是作为着魔女的力量她还是有的。</p>
+<p>　　“今天，今天姐姐答应了要满足我的愿望的！所以，今天一整天姐姐都不准欺负我！”诺霖重新坐到了椅子上，整理了一下她那被诺汐给弄乱的裙子，嘟起小嘴的样子甚是可爱。</p>
+<p>　　“诶，愿望就这么简单喵？”诺汐的猫耳朵晃了晃，不让她欺负诺霖？那今天还有什么意思呢？好不容易双亲都不在家，难不成她要和诺霖真的好好复习一天。</p>
+<p>　　“我还没说完呢！不准打断我。接下来的条件是，姐姐要成为我的猫娘，完全服从我的所有命令。知道了吗？”</p>
+<p>　　“就今天一天喵？”身后的猫尾巴摇了摇，变成猫娘的诺汐此时倒是已经完全习惯了这一切，平日里都是诺霖变成猫娘被她玩，偶尔这么互换一下身份似乎也挺不错的样子。</p>
+<p>　　“如果姐姐愿意的话，随时都可以和我说的。只不过得看《DreamLand》的意见就是了。”诺霖轻轻拍了拍她的那本魔女之书，要不是上一次琳娜大人给她看了那段影片，她还真不知道魔女之书还有这种奇怪的用法。</p>
+<p>　　把诺汐变成可爱小猫娘什么的，想想就兴奋！</p>
+<p>　　“那就算了喵……”诺汐觉得此刻的自己怪怪的，后面的喵字口癖，总有点不符合她往日的人设，让她往日那种姐姐的威严与腹黑感荡然无存，反倒是像是弱气的小猫娘一般，听上去就像是要被啪的样子。</p>
+<p>　　“哦对了，第二个条件，姐姐今天对我的称呼也得叫我‘主人’，而不是‘小霖’。”诺霖翘起了二郎腿，裸露的双足在空气之中显得格外的诱人，“能做到嘛，姐姐大人？”</p>
+<p>　　“嗯，今天什么都听主人的喵。”诺汐迅速融入到了她的角色之中，偶尔尝试一点刺激的对她来说也完全不坏，她倒是很期待自己的妹妹能带给她怎么样的惊喜。</p>
+<p>　　“那就从现在开始，半跪在我的面前。”诺霖露出了一丝坏笑，像是今天这样的机会可并不多，她要好好把握住才可以。</p>
+<p>　　“是，是像这样吗？”诺汐以鸭子坐的方式坐在了诺霖的面前，看着诺霖那极具诱惑力的双足，以及隐约间能窥见的那条小缝，她不禁想要上去抚摸一把，将诺霖给吃干抹净。但是与诺霖的约定又只能让她冷静了下来，今天的她是诺霖的宠物猫娘，必须好好遵守着她们的约定才行，不能欺负她的主人。</p>
+<p>　　“嗯，今天的小汐真听话呢。”诺霖用手轻轻抚摸着诺汐的脑袋，紧接着她轻轻弹了弹响指，“幻想召唤，拘束用具。”手中立即出现了手铐、绳索之类的用具，令诺汐下意识地颤抖了一下。</p>
+<p>　　“诶？猫娘还要做这些吗，是不是不太对啊霖！”</p>
+<p>　　一时间激动，结果诺汐忘记了约定，对诺霖的称呼都说错了。如同诺霖的预计一般，她中了诺霖的圈套。</p>
+<p>　　“姐姐又说错了哦，要称呼我为主人才行哦。”诺霖露出了一丝坏笑，拿起了手中的绳子，她特地召唤出来的绳子就是在此刻用的。</p>
+<p>　　“作为惩罚，接下来要让姐姐戴上这些哦~”</p>
+<p>　　</p>
+<p>　　</p>
+<p>　　</p>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC6%E7%AB%A0.txt/"
+    title="第六章 猫娘诺汐（2）【H，足交play】"
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC4%E7%AB%A0.txt/"
+    title="第四章 图书馆的奇遇（2）"
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <p class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      title="Scroll to top"
+      onclick="scrollToTop()"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C\/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD\/%E7%AC%AC5%E7%AB%A0.txt\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Awesome Books
+      &middot;
+      :)
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">
+      kitab
+    </a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+  
+</footer>
+
+  </body>
+</html>
