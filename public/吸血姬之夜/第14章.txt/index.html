@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>amaki&#39;s novels</title>
+  <meta name="description" content="Sample" />
+  <meta name="author" content="Yrr0r" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.60.1" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../css/kitab.css" />
+
+  <script src="../../js/myFunctions.js"></script>
+  <script src="../../js/clipboard.min.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="../../"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+	
+	
+	
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/">
+            吸血姬之夜
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B3%E7%95%AA%E5%A4%96%E7%B3%BB%E5%88%97/">
+            魔女之吻乃百合之味【番外系列】
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/">
+            姐姐，在时光流逝前都要抱紧我哦
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/">
+            魔女之吻乃百合之味2：星空梦夜万华镜
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%A0%95%E5%A4%A9%E4%B9%8B%E7%BE%BD/">
+            堕天之羽
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/">
+            魔女之吻乃百合之味1：梦与希望的女神
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/">
+            白珍珠的泡沫恋曲
+          </a>
+          by amaki-aria
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Chapters"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        吸血姬之夜
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC1%E7%AB%A0.txt/">第一章 白昼I：天下第一的幸运少女</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC2%E7%AB%A0.txt/">第二章 黑夜I：刻下属于我的烙印（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC3%E7%AB%A0.txt/">第三章 黑夜I：刻下属于我的烙印（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC4%E7%AB%A0.txt/">第四章 白昼II：姐妹之间</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC5%E7%AB%A0.txt/">第五章 黑夜II：坠入天堂的少女</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC6%E7%AB%A0.txt/">第六章 白昼III：禁忌的边界线</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC7%E7%AB%A0.txt/">第七章 白昼IV：魔女的下午茶会</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC8%E7%AB%A0.txt/">第八章 黑夜III：无眠之夜</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC9%E7%AB%A0.txt/">第九章 黑夜IV：城堡逃亡</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC10%E7%AB%A0.txt/">第十章 黑夜V：牢狱中的二人</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC11%E7%AB%A0.txt/">第十一章 白昼V：吸血鬼该做的事情</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC12%E7%AB%A0.txt/">第十二章 黑夜VI：荆棘花妖（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC13%E7%AB%A0.txt/">第十三章 黑夜VI：荆棘花妖（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC14%E7%AB%A0.txt/">第十四章 白昼VI：姐姐你是笨蛋吗？</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC15%E7%AB%A0.txt/">第十五章 黑夜VII：入侵教会</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC16%E7%AB%A0.txt/">第十六章 黄昏：变化的心意</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC17%E7%AB%A0.txt/">第十七章 白夜：血之狂祭</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC18%E7%AB%A0.txt/">第十八章 朝雾：只想和姐姐在一起</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC19%E7%AB%A0.txt/">第十九章 黎明：可我们一直在一起</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC20%E7%AB%A0.txt/">第二十章 永恒：以后也要一直走下去</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E5%90%8E%E8%AE%B0.txt/">后记</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    吸血姬之夜
+  </small>
+  <h2>第十四章 白昼VI：姐姐你是笨蛋吗？</h2>
+  <div class="rounded">
+    <p>第一卷 第14章</p>
+<p>　　第十四章 白昼VI：姐姐你是笨蛋吗？</p>
+<p>　　“呼……可真是累死我了。”因为熬夜又挨了诺霖一顿批的原因，此时的艾莉希雅表现的懒懒散散，就好像是对什么都提不起劲那样。</p>
+<p>　　走进了无人的体育馆内，本来打算着在这里小憩一会的艾莉希雅，却是听见了熟悉的声音。</p>
+<p>　　“跑起来！给我跑起来！”声音的来源是艾薇·莉丝蒂亚，艾莉希雅在学院里的闺蜜之一。她顺着声音的方向望去，便是看见了她的那两位闺蜜正在这体育馆内锻炼着，不对，准确来说是艾薇在督促着希莉锻炼。</p>
+<p>　　嗯？太阳从西边出来了吗？那个长年体育不及格的希莉·莉丝蒂亚竟然会锻炼？艾莉希雅对此表现出了几分兴致，朝着她的方向看了过去。</p>
+<p>　　“艾薇，跑，跑不动了嘛……”</p>
+<p>　　“不准偷懒，快跑！还有十圈，今天跑不完就回去睡自己的床！”艾薇脸上虽然有点红，但仍旧是板着一副脸对着希莉说道。</p>
+<p>　　昨晚在面对着第一个Boss的时候，毫无疑问地输了。她原想着以自己的长枪作为着武器，让希莉用暗系魔法发射出去，最终虽然的确做到一发击杀了那个花妖，但是触发了精英技能「悲叹之种」后复活了，失去武器，魔力耗尽的两人毫无例外被复活后的花妖给击杀了。</p>
+<p>　　那现在是什么情况？</p>
+<p>　　来到学校之后，因为希莉在游戏里的表现实在是太糟糕了，身为着现实魔女的艾薇实在是看不下去，便是为她制定了一整套锻炼计划。</p>
+<p>　　“呜呜呜——”希莉简直是欲哭无泪，自己的妹妹可能是个恶魔。一早上起就逼着她复习了一大堆魔法的知识，现在还逼着她锻炼！她该怎么做才能逃离恶魔妹妹的魔爪！</p>
+<p>　　“不准偷懒！继续，继续！”艾薇又瞪了希莉一眼，“认真点，今晚必须要把那个boss给攻略下来！”</p>
+<p>　　“诶！这也太艰难了吧！”希莉表示自己实在是太难了。她还想要靠着几天时间来好好摸索一下那个Boss的机制来着的，结果妹妹一下子就下了deadline？！</p>
+<p>　　“有这个时间抱怨不如给我认真锻炼，速度太慢了！快点跑起来！”这点程度的锻炼，对于身为着魔女的艾薇来说当然是轻而易举，而希莉嘛……</p>
+<p>　　“呜呜呜……”她只剩下了面条泪。</p>
+<p>　　“荆棘花妖嘛，看来我的设计还不错呢。”艾莉希雅则是呆在一旁，用着她们两人都听不见的声音小声地低语着。不用想都知道，这个万恶的Boss就是她本人所设计出来为难她们的。</p>
+<p>　　作为万恶的游戏制作人，她可是故意给她们设计了这个拥有着高额物理减伤的Boss，就是让艾薇无法对其造成有效攻击，不得不让希莉上场用魔法展开攻击。这款游戏注重的就是姐妹间的配合，只不过昨晚她俩的表现实在是……</p>
+<p>　　自己的次母诺霖·卡蕾娜在看完之后觉得她们俩期末可能会挂科。</p>
+<p>　　“希莉，不准躺下来！快点站起来站起来！”</p>
+<p>　　“呜……不做了嘛，这游戏那么难，索性不玩了算了！”在筋疲力尽之后，希莉开始和艾薇闹起了脾气，她嘟起了嘴唇，躺在了地上不愿再多动一步。</p>
+<p>　　“希莉~”艾薇坐到了希莉的身上，对着她眨了眨眼，“希莉酱~姐姐~姐姐大人~不要这么懒惰好嘛~”她用手轻抚着希莉的脸颊，对着她卖着萌。</p>
+<p>　　“呜……艾薇，不想锻炼了嘛……”她开始向着妹妹撒娇了起来，“不就是个游戏嘛，没有必要在现实中折腾我吧？”</p>
+<p>　　“嗯……但是姐姐，别忘了马上就要期中考了。”</p>
+<p>　　抛开游戏的问题不谈，希莉的专业课仍旧是令艾薇无法放心下来。</p>
+<p>　　“专业课什么的……我，我会努力的啦。”希莉不敢直视艾薇的视线，没错，目前的专业课什么的对她来说才是大问题。</p>
+<p>　　“什么时候努力？”</p>
+<p>　　“明……明天可以吗？”</p>
+<p>　　“希莉！”</p>
+<p>　　“呜我错了嘛……那，那就现，现在……”察觉到妹妹有点生气的希莉，不得不向着妹妹妥协了起来。她知道艾薇很关心自己，但是奈何自己的懒癌实在是太严重了一点。</p>
+<p>　　“那现在该怎么做？和我一起锻炼还是去图书馆学习？”艾薇俯在了希莉的身上，两人的脸颊看起来就好像是要紧贴在一起的样子。</p>
+<p>　　“图，图书馆吧……”</p>
+<p>　　最终希莉还是选择了一个比较温和的方式，被艾薇拖去了图书馆内。看着她们的感情这么好，艾莉希雅的心中也感觉到开心了起来。</p>
+<p>　　“好了，那么接下来下一个Boss该怎么设计呢，让我来好好研究一番。”她看着天花板开始发起了呆，《吸血姬之夜》里面还有着很多需要她改进的地方。而且目前看起来，这个第一个Boss的难度也有点偏高的样子。</p>
+<p>　　“嗯……那么接下来的话……”她从亚空间里拿出了她的平板，开始修改起了原先那些Boss的数值，“那就这样，这样……嗯，这样的话比较好……”</p>
+<p>　　——————————————————</p>
+<p>　　“呼……学习了一天还真是累呢。”回到了宿舍之后，希莉整个人几乎都要瘫倒的样子，和艾薇泡在了图书馆一整个下午，脑袋里都被那些魔法阵的草图所填满，明明是双子姐姐，却还要学习魔法什么的，实在是太过分了！</p>
+<p>　　“但是姐姐只要学的话还是学的好的呀。”艾薇用手轻抚了一下希莉的秀发，与她依靠在了一起，感受着她身上所散发出来的香气。</p>
+<p>　　“唔……艾薇，今天我好好努力过了哦！”看她那可爱的模样，就好像是个小孩子一样在妹妹的怀中撒着娇。</p>
+<p>　　“是~希莉好好努力了呢。”艾薇摸了摸她的脑袋，对着她显露出了可爱的笑容，“今晚还想玩那个游戏吗？”</p>
+<p>　　“玩呀，学习了那么多的魔法知识，我绝对要好好实战一番才行！”因为双子姐姐的特殊体质，她在现实中学的魔法知识基本上用不着，只能在那个游戏世界里，她才能感受到魔法的魅力。</p>
+<p>　　“那先洗澡吧？”</p>
+<p>　　“一起嘛？”希莉勾住了艾薇的脖子，用着撒娇的语气对着艾薇说道。这几天都没有和艾薇一起洗澡，她可是感觉很寂寞呢。</p>
+<p>　　“一起……吧。”上一次在浴室里发生的那些事情，仍旧徘徊在艾薇的心头，久久的挥之不去。她搞不清希莉内心的想法，也不想去多做揣测。</p>
+<p>　　“那艾薇今天要帮我擦背，可以嘛？”</p>
+<p>　　“可以……”就这么被忽悠忽悠着，艾薇又答应了希莉提出的奇怪要求。没事的，上一次是希莉帮自己擦背，今天反过来而已……</p>
+<p>　　很正常的事情，不能多想，没错，不要去多想……</p>
+<p>　　一边自我催眠着，一边挽着姐姐的手走进了浴室里。</p>
+<p>　　“如果艾薇想要的话，姐姐随时都可以奉陪的哦！”仿佛就像是故意要戏弄一下妹妹的样子，艾薇刚脱下自己的外衣，希莉便是发出了一些糟糕的发言，“毕竟，艾薇之前魔力消耗的也有点多吧？”</p>
+<p>　　“咕哈！不要在我脱衣服的时候说奇怪的话啊！还有，姐姐，姐姐你在看哪里！”她用手捂住了自己的股间，不敢让希莉发现她自己已经湿掉的事实。</p>
+<p>　　“难道不想要嘛？说好的不准自己解决吧？”希莉蹲下了身体，将视线看向了艾薇的私密处，“已经湿了吧？”</p>
+<p>　　“嗯……是……是魔女的生理现象……”才，才不是因为能和姐姐一起洗澡而感觉到兴奋什么的，“姐……姐姐，能，能给我吗？”不知道是不是因为浴室里的蒸汽的原因，她的脸上又蒙上了一层红晕。</p>
+<p>　　“哪有会拒绝妹妹的姐姐呢？”</p>
+<p>　　</p>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC15%E7%AB%A0.txt/"
+    title="第十五章 黑夜VII：入侵教会"
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/%E7%AC%AC13%E7%AB%A0.txt/"
+    title="第十三章 黑夜VI：荆棘花妖（2）"
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <p class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      title="Scroll to top"
+      onclick="scrollToTop()"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "\/%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C\/%E7%AC%AC14%E7%AB%A0.txt\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Awesome Books
+      &middot;
+      :)
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">
+      kitab
+    </a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+  
+</footer>
+
+  </body>
+</html>
