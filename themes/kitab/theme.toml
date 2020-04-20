@@ -1,0 +1,12 @@
+name = "kitab"
+license = "MIT"
+licenselink = "https://github.com/darshanbaral/kitab/blob/master/LICENSE"
+description = "A hugo theme for publishing books"
+homepage = "https://github.com/darshanbaral/kitab"
+tags = ["book"]
+features = ["minimal", "responsive"]
+min_version = "0.55"
+
+[author]
+  name = "Darshan Baral"
+  homepage = "https://www.darshanbaral.com/"

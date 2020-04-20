@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    {{ (.Site.GetPage .Section).Title | markdownify }}
+  </small>
+  <h2>{{ .Title }}</h2>
+  <div class="rounded">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}

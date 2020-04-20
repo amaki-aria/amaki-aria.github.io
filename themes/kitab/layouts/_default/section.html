@@ -1,0 +1,59 @@
+{{ define "main" }}
+<div class="row mb-2 no-gutters">
+  {{ $flag := or (ne (string .Params.bookCover) "") (ne (string .Params.bookCoverSmall) "") }}
+  {{ if $flag }}
+  <div class="col-md-6 mt-2">
+    <div class="w-90 m-auto bg-warning">
+      {{ if (and .Params.bookCover .Params.bookCoverSmall) }}
+      <a href="{{ .Params.bookCover | relURL }}"
+        ><img
+          class="rounded"
+          style="width: 100%;"
+          src="{{ .Params.bookCoverSmall | relURL }}"
+      /></a>
+      {{ else if .Params.bookCover }}
+      <img
+        class="rounded"
+        style="width: 100%;"
+        src="{{ .Params.bookCover | relURL }}"
+      />
+      {{ end }}
+      <div class="bookTitle p-0 rounded" style="width: 60%;">
+        <h2 class="book-cover m-0 pl-1 pr-1">{{ .Title | markdownify }}</h2>
+        {{ if .Params.subtitle }}
+        <h4 class="book-cover pl-1 pr-1 w-auto">
+          {{- .Params.subtitle -}}
+        </h4>
+        {{ end }}
+      </div>
+      <div class="bookAuthor p-0 rounded">
+        <h4 class="book-cover m-0 pl-1 pr-1">{{ .Params.author }}</h4>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+  
+  <div class="{{ cond $flag "col-md-6" "col-md-12" }} p-2 mt-2 rounded shadow">
+    {{ if not $flag }}
+    <h2>{{ .Title | markdownify }}</h2>
+    {{ if .Params.subtitle }}
+    <h4>{{ .Params.subtitle }}</h4>
+    {{ end }}
+    <h5>by {{ .Params.author }}</h5>
+    <hr>
+    {{ end }}
+    <h3>
+      Chapters
+    </h3>
+    <ul class="list-unstyled">
+      {{ range .Pages.ByWeight }}
+      <li>
+        <a href="{{ .Permalink }}">
+          {{ .Title }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}

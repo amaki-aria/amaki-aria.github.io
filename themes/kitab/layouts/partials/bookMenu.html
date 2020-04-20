@@ -1,0 +1,32 @@
+<div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        {{ range .Site.Sections }}
+        <li class="hanging">
+          <a href="{{ .Permalink }}">
+            {{ .Title | markdownify }}
+          </a>
+          by {{ .Params.author }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>

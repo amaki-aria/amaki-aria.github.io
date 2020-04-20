@@ -1,0 +1,42 @@
+{{ define "main" }}
+  <div class="site-title text-center">
+    <h1>
+      {{- .Title -}}
+    </h1>
+  </div>
+  <div class="d-flex flex-row justify-content-center row">
+    {{ range .Site.Sections.ByWeight }}
+    <div class="m-4 p-4 shadow rounded" style="min-width: 300px; width: 40%;">
+      <a href="{{ .Permalink }}">
+        <h4 class="mb-0 p-0">
+          {{ .Title | markdownify }}
+        </h4>
+      </a>
+      <div class="text-right">
+      <small>
+          - {{ .Params.author }} ({{ .Date.Format (default "2006-May-13" $.Site.Params.dateFormat) }})
+        </small>
+      </div>
+      <ul class="list-unstyled ml-1 mb-0 border-top border-primary pt-2">
+        {{ range first 5 .Pages }}
+        <li>
+          <a href="{{ .Permalink }}">
+            <p class="mb-1">
+              {{ .Title }}
+            </p>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+      {{ $pageNums := len .Pages }}
+      {{ if ge $pageNums 6 }}
+      <p class="text-right mb-0">
+        <a href="{{ .Permalink }}">
+          ...more
+        </a>
+      </p>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+{{ end }}

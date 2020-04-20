@@ -1,0 +1,67 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3ef;
+  overflow-y: scroll;
+}
+nav {
+  height: 40px;
+}
+main {
+  min-height: calc(100vh - 100px);
+}
+.side-bar {
+  width: 25px;
+  position: fixed;
+  top: 70px;
+}
+footer {
+  font-size: 0.9em;
+  margin-left: 35px;
+}
+.nav-menu {
+  color: #007bff !important;
+  font-size: 1.5em;
+}
+.nav-menu:hover {
+  color: #0056b3 !important;
+  cursor: pointer;
+}
+.nav-menu-disabled {
+  color: #4e4f50 !important;
+  font-size: 1.5em;
+}
+a:hover {
+  text-decoration: none;
+}
+.book-cover {
+  color: white;
+  background-color: #24242499;
+}
+.bookTitle {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+}
+.bookAuthor {
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+}
+.show {
+  transition: all 0.1s;
+}
+.hanging {
+  padding-left: 15px;
+  text-indent: -15px;
+}
+#copiedMessage {
+  position: fixed;
+  display: table-cell;
+  line-height: 100px;
+  width: 224px;
+  height: 100px;
+  text-align: center;
+  top: calc(50% - 50px);
+  left: calc(50% - 112px);
+  transition: all 1s;
+}

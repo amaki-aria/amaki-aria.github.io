@@ -1,0 +1,11 @@
+<nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="{{ `/` | relURL }}"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+    {{ partial "bookMenu" . }}
+    {{ if eq .Kind "page" }}
+    {{ partial "chapterMenu" . }}
+    {{ end }}
+  </div>
+</nav>
