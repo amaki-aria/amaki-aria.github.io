@@ -1,5 +1,5 @@
 +++
-title = "特别番外"
+title = "魔族女王的王后"
 weight = 17
 +++
 ﻿siskiss1：梦与希望的女神
