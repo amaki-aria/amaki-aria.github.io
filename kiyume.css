@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin: 0 auto;
+    color: blueviolet;
+    font-family: "萝莉体 第二版";
+    text-align: center;
+    padding: 40px;
+    border-bottom: 2px solid blueviolet;
+}
+footer{
+    margin: 0 auto;
+    color: #c705e3;
+    font-family: "Segoe UI Black";
+    text-align: center;
+    padding: 40px;
+    border-top: 2px solid #c705e3;
+}
+.container{
+    overflow: hidden;
+    height: 60%;
+}
+.left,.right{
+    float: left;
+    width: 260px;
+    position: relative;
+    padding: 20px;
+}
+.content{
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.amaki {
+    margin: 300px 100px 300px 500px;
+    display: inline-block;
+    text-align: center;
+}
+.diary{
+    margin: 300px 200px 300px 400px;
+    display: inline-block;
+    text-align: center;
+}
+.left{
+    margin-right: -300px;
+    line-height: 1.5em;
+}
+.right{
+    margin-left: -300px;
+    line-height: 3em;
+}
+.right ul{
+    list-style-type: none;
+}
