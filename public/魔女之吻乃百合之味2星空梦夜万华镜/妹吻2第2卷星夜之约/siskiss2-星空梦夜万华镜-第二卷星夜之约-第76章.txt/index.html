@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <title>amaki&#39;s novels</title>
+  <meta name="description" content="Sample" />
+  <meta name="author" content="Yrr0r" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="generator" content="kitab theme by Darshan in Hugo 0.60.1" />
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="../../../css/kitab.css" />
+
+  <script src="../../../js/myFunctions.js"></script>
+  <script src="../../../js/clipboard.min.js"></script>
+</head>
+
+  <body class="container" style="max-width: 1024px;">
+    <nav class="mt-2 border-bottom">
+  <div class="d-flex flex-row position-relative">
+    <a href="../../../"
+      ><i title="Home" class="nav-menu mr-2 mt-1 fas fa-home"></i
+    ></a>
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-book"
+    onclick="expandMenu(this)"
+    title="Show all books"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2">
+      <strong>
+        Books
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        <li class="hanging">
+          <a href="../../../%E5%B0%8F%E8%AF%B4%E7%AB%99%E4%BB%8B%E7%BB%8D/">
+            本小说站介绍
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E5%90%8C%E4%BA%BA%E9%83%A8%E5%88%86/">
+            同人集
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0rx%E5%9C%A3%E5%A5%B3%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0/">
+            魔女之吻乃百合之味 外传（RX）：圣女调教日记
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E5%90%B8%E8%A1%80%E5%A7%AC%E4%B9%8B%E5%A4%9C/">
+            吸血姬之夜
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B3%E7%95%AA%E5%A4%96%E7%B3%BB%E5%88%97/">
+            魔女之吻乃百合之味【番外系列】
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/">
+            姐姐，在时光流逝前都要抱紧我哦
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/">
+            魔女之吻乃百合之味2：星空梦夜万华镜
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E5%A0%95%E5%A4%A9%E4%B9%8B%E7%BE%BD/">
+            堕天之羽
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/">
+            魔女之吻乃百合之味1：梦与希望的女神
+          </a>
+          by amaki-aria
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/">
+            白珍珠的泡沫恋曲
+          </a>
+          by amaki-aria
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="position-relative">
+  <i
+    class="nav-menu hover-menu ml-2 mr-2 mt-1 fas fa-bars"
+    onclick="expandMenu(this)"
+    title = "Show Chapters"
+  ></i>
+  <div
+    class="show bg-light shadow mt-2"
+    style="
+      position: absolute;
+      min-width: 280px;
+      max-width: 75%;
+      z-index: 1;
+      max-height: 0px;
+      overflow: hidden;"
+  >
+    <div class="p-2 rounded">
+      <strong class="mt-3">
+        
+        
+        魔女之吻乃百合之味2：星空梦夜万华镜
+        
+      </strong>
+      <ul class="list-unstyled ml-1">
+        
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC1%E7%AB%A0.txt/">第一章 扭曲的世界【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC2%E7%AB%A0.txt/">第二章 芒果情怀</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC3%E7%AB%A0.txt/">第三章 图书馆的奇遇（1）【H，图书馆自慰】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC4%E7%AB%A0.txt/">第四章 图书馆的奇遇（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC5%E7%AB%A0.txt/">第五章 猫娘诺汐（1）【H】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC6%E7%AB%A0.txt/">第一卷：梦的延续 第6章</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC7%E7%AB%A0.txt/">第一卷：梦的延续 第7章</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC8%E7%AB%A0.txt/">第八章 入学测试</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC9%E7%AB%A0.txt/">第九章 深渊魔女再临</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC10%E7%AB%A0.txt/">第十章 深渊之梦</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC11%E7%AB%A0.txt/">第十一章 深渊之梦（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC12%E7%AB%A0.txt/">第十二章 梦之深渊【诺霖视角】【H，吸血play】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC13%E7%AB%A0.txt/">第十三章 感觉共享项圈【诺霖视角】（奇怪的play）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC14%E7%AB%A0.txt/">第十四章 崭新的大学生活（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC15%E7%AB%A0.txt/">第十五章 崭新的大学生活（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC16%E7%AB%A0.txt/">第十六章 社团招新</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC17%E7%AB%A0.txt/">第十七章 夜晚的校园约会【H，校园露出】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC18%E7%AB%A0.txt/">第十八章 消失的衣物【H，校园露出】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC19%E7%AB%A0.txt/">第十九章 魔女之宴</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC20%E7%AB%A0.txt/">第二十章 全裸狂想曲【H，脱衣舞play】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC21%E7%AB%A0.txt/">第二十一章 只有七个人的班级</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC22%E7%AB%A0.txt/">第二十二章 魔导机甲（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC23%E7%AB%A0.txt/">第二十三章 魔导机甲（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC24%E7%AB%A0.txt/">第二十三章 那比机甲更可怕</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC25%E7%AB%A0.txt/">第二十五章 最美的风景线（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC26%E7%AB%A0.txt/">第二十六章 最美的风景线（2）【H，公园露出】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC27%E7%AB%A0.txt/">第二十七章 不和谐的声音</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC28%E7%AB%A0.txt/">第二十八章 无中生“友”</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC29%E7%AB%A0.txt/">第二十九章 古典百合主义</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC30%E7%AB%A0.txt/">第三十章 笼中猫【H，3p，优奈x优佳x砂糖】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC31%E7%AB%A0.txt/">第三十一章 我不在乎</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%B8%80%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD-%E7%AC%AC32%E7%AB%A0.txt/">第三十二章 诺霖酱的百合直播间【H，直播play】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC1%E5%8D%B7%E6%A2%A6%E7%9A%84%E5%BB%B6%E7%BB%AD/%E7%AC%AC%E4%B8%80%E5%8D%B7%E5%90%8E%E8%AE%B0.txt/">第一卷后记</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC33%E7%AB%A0.txt/">第三十三章 枪林弹雨（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC34%E7%AB%A0.txt/">第三十四章 枪林弹雨（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC35%E7%AB%A0.txt/">第三十五章 妹妹的世界【H，3p，诺汐x诺霖x露西】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC36%E7%AB%A0.txt/">第三十六章 灵异课堂（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC37%E7%AB%A0.txt/">第三十七章 灵异课堂（2）【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC38%E7%AB%A0.txt/">第三十八章 今夜星空为你闪耀</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC39%E7%AB%A0.txt/">第三十九章 蓝发猫耳美少女</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC40%E7%AB%A0.txt/">第四十章 诺霖酱大危机！（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC41%E7%AB%A0.txt/">第四十一章 诺霖酱大危机！（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC42%E7%AB%A0.txt/">第四十二章 商场内的约会（1）【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC43%E7%AB%A0.txt/">第四十三章 商场里的约会（2）【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC44%E7%AB%A0.txt/">第四十四章 商场里的约会（3）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC45%E7%AB%A0.txt/">第四十五章 人偶屋</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC46%E7%AB%A0.txt/">第四十六章  如果早知道，AI也会吵架</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC47%E7%AB%A0.txt/">第四十七章 AI吵架不要牵扯到我们啊（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC48%E7%AB%A0.txt/">第四十八章 AI吵架不要牵扯到我们啊（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC49%E7%AB%A0.txt/">第四十九章 烛光晚餐 【H 晚餐play】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC50%E7%AB%A0.txt/">第五十章  古代魔女</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC51%E7%AB%A0.txt/">第五十一章 抖S萝莉的惩罚（1）【H】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC52%E7%AB%A0.txt/">第五十二章 抖S萝莉的惩罚（2）【H】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC53%E7%AB%A0.txt/">第五十三章 抖S萝莉的惩罚（3）【H】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC54%E7%AB%A0.txt/">第五十四章 魔法校园祭</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC55%E7%AB%A0.txt/">第五十五章  试制型远程魔导机甲</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC56%E7%AB%A0.txt/">第五十六章 魔女们的晚宴（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC57%E7%AB%A0.txt/">第五十七章 魔女们的晚宴（2）【H，泳池play】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC58%E7%AB%A0.txt/">第五十八章 魔女们的晚宴（3）【H，泳池play】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC59%E7%AB%A0.txt/">第五十九章 魔法祭开幕式</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC60%E7%AB%A0.txt/">第六十章  热爱学习的少女们</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC61%E7%AB%A0.txt/">第六十一章 诺霖的烦恼</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC62%E7%AB%A0.txt/">第六十二章 脑洞大开的诺霖酱</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC63%E7%AB%A0.txt/">第六十三章  魔女对抗赛上都是些什么人啊！</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC64%E7%AB%A0.txt/">第六十四章 姐妹混合双打（1）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC65%E7%AB%A0.txt/">第六十五章 姐妹混合双打（2）</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC66%E7%AB%A0.txt/">第六十六章  运动会的一天</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC67%E7%AB%A0.txt/">第六十七章  百步穿杨</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC68%E7%AB%A0.txt/">第六十八章 特殊的公开课</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC69%E7%AB%A0.txt/">第六十九章 闪耀的魔女们</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC70%E7%AB%A0.txt/">第七十章 虚拟现实</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC71%E7%AB%A0.txt/">第七十一章  梦中的竞技场【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC72%E7%AB%A0.txt/">第七十二章 挖矿少女</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC73%E7%AB%A0.txt/">第七十三章 梦中伊人【诺霖视角】</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC74%E7%AB%A0.txt/">第七十四章 心灵侵蚀</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC75%E7%AB%A0.txt/">第七十五章 魔法祭公展</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC76%E7%AB%A0.txt/">第七十六章 规劝者</a>
+        </li>
+        
+        <li class="hanging">
+          <a href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC77%E7%AB%A0.txt/">第七十七章 诺霖的歉意【H，浴室play】</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</nav>
+
+    <main class="mt-3" style="margin-left: 32px;">
+      
+<div class="mb-2 p-3 shadow position-relative">
+  <small
+    class="bg-white pl-1 pr-1 rounded border border-secondary"
+    style="background-color: #f3f3ef !important; position: absolute; top: -0.75em; left: 0.5em"
+  >
+    魔女之吻乃百合之味2：星空梦夜万华镜
+  </small>
+  <h2>第七十六章 规劝者</h2>
+  <div class="rounded">
+    <p>﻿siskiss2 星空梦夜万华镜</p>
+<p>第二卷：星夜之约</p>
+<p>第76章</p>
+<p>第七十六章 规劝者</p>
+<p>　　“50%的能量转化效率？！”</p>
+<p>　　相信只要学过物理的都知道，根据热力学第二定律，非自发的能量转化之中必定存在着损耗，燃料的内能能够转化为有用功的部分是相当有限的。自第一次工业革命诞生了蒸汽机之后，科学家们一直致力于提高能量转化的效率。然而，就算是目前电动机已经有了高达90%的转化效率，但是用来产生电能的热机的效率依旧是很低。那些常见的内燃机的效率连40%都到不了。</p>
+<p>　　诺霖所制作的往复式魔导引擎，刚一问世就有着高达50%的转化效率，这大大超出了柯蕾莉忒的预期。时钟塔魔术协会对于诺霖制作的小玩具的兴致并不大，她们所真正关注的则是由卡蕾娜姐妹所实现的往复式魔导引擎，这种能高效的直接将魔力（Magic Energy）转化为有用功的装置，有着极其可观的前景，必将会带来一场全新的热机革命。</p>
+<p>　　诺霖和诺汐的演讲很是成功，这个往复式魔导引擎，虽然小巧简约，但是仍旧是当之无愧的压轴大戏。科技界的各位也逐渐放下了对于魔法的偏见，事后还有不少寻找到柯蕾莉忒，准备推进与时钟塔的合作。</p>
+<p>　　而这个往复式魔导引擎，柯蕾莉忒事后还为着她们申请了特别专利，成为了姐妹俩在魔术界的第一项正式发明。</p>
+<p>　　“呼，小霖我先去上个厕所哦，刚刚水有点喝太多了。”诺汐对着诺霖说了一声之后，便是朝着洗手间的方向走了过去。</p>
+<p>　　应用魔导技术展览馆很大，诺汐花费了好大力气才算是找到了洗手间在那里。然而，略微有点路痴的她，在之后却是忘记了该怎么回到原来的地方。</p>
+<p>　　“回头路是，是走这一条吗？唔……”诺汐看着指示牌，来的时候她是根据着指示牌的方向走的，但是回去的时候确实要被迷宫般的场所给绕晕了。</p>
+<p>　　“不行呀，不能让小霖等急了。”她拿出了手机，开始寻找起了归途的道路。</p>
+<p>　　“诺汐·卡蕾娜吗？”</p>
+<p>　　就在这个时候，耳边突然传来了一个男人的声音，诺汐下意识地回过头去，结果对方却是率先一步出击，全然不等诺汐反应过来，便是用着拳头给予她的喉咙一记重击。紧接着，掏出一灌辣椒水喷雾，对着诺汐的眼睛便是喷了上去。手机甚至都被打飞在了一边，从走廊上掉了下去。</p>
+<p>　　“魔法对你无效的话，用这个就可以了。”男人看起来对自己的动作甚是满意。</p>
+<p>　　“啊啊啊啊啊——”眼睛感觉到火辣辣的疼，为什么会在这种时候被偷袭？这里不是时钟塔的地盘吗？现在眼睛完全睁不开，不过长期以来的训练却是让诺汐镇定了下来，手背上聚集起魔力，试图着召唤出自己的Chessia，“你，你是……谁——”</p>
+<p>　　“魔剑吗，可没门。”男人完全不给诺汐留有任何的情面，仿佛早就已经对于诺汐·卡蕾娜有了完全的了解一般，他猛地一个踢腿正中她的脸颊，将她踢飞在了墙壁上，动手锁住了她的脖子，再将她猛地摔在了地上。</p>
+<p>　　“噗哈……”诺汐哪里遭遇过如此被动的局面？她一直认为自己的体术水平还是在上游的，实际上不过只是因为有着Chessia在辅助着她而已。看不见对手的面容，同时也没有召唤出Chessia的她，全然就是个手无寸铁的小女孩，完全不是那个男人的对手。</p>
+<p>　　“放开姐姐。”就在这个时候，一个熟悉的声音传来，诺汐立即抬起了头，即使现在她完全看不见，但是她也知道，自己的妹妹来了。是因为自己离开了太久的缘故，诺霖等不急了吗？不管如此，诺汐知道，眼前的这个男人的生命已经宛若风中残烛。</p>
+<p>　　“哦？宁不就是诺霖·卡蕾娜小姐，终于来了嗷？”男人的语气之中带着几丝讥讽，仿佛已经等候诺霖许久一样。</p>
+<p>　　“放开姐姐。”诺霖的面色很是阴沉，她从来都没有感觉到如此愤怒过。梦中幻影被她握在了手中，上面的剑刃上都爆发出了浓郁的紫光，仿佛随时都可以简单的将这个走廊给化为灰烬一般。</p>
+<p>　　“请允许我来自我介绍一下吧。我是来自于北美光明会，古典百合主义教团的韦恩，代号飓风。此次特地前来，就是为了惩戒汝等败坏社会风气，玷污纯洁的百合之人！”男人勒住了诺汐的脖子，试图以此为人质来要挟着诺霖。“在如此重要的魔法祭公展之中展示你们那无聊的性玩具？还大谈其词去主动申请专利？我见过不知廉耻的荡妇，但没有见过像你这样不知廉耻的人，诺霖·卡蕾娜！”</p>
+<p>　　“放开姐姐。”诺霖并不愿意去听男人的话，她现在已经很主动的忍耐着火气，要不是看在这里还是属于着时钟塔的场所，她估计早就一刀直接砍下去了。北美光明会？古典百合主义教团？哦，琳娜大人曾经与她讲述过的那个邪教教团啊，没想到从键盘侠转行当恐怖分子了。</p>
+<p>　　“你之前的所有作品我都已经看过！低俗，媚宅，令我恶心！百合绝不是你们这些低劣的女同性恋所能够玷污的存在！”男人似乎越说越上头，看起来就好像是个狂教徒一般，他用手撕开了诺汐的衣服，诺汐所穿着的一对蕾丝文胸暴露在了空气之中，“看看自己的穿着吧！穿成这样是想给谁看？”</p>
+<p>　　“我说了让你放开姐姐的吧！”诺霖的怒气值已经到达了顶点，“<!-- raw HTML omitted -->念刃<!-- raw HTML omitted -->！”</p>
+<p>　　“呵呵呵，开始动手暴力手段了吗，诺霖·卡蕾娜？”然而，诺霖的念刃并没有对男人奏效，在接触到男人手臂的时候突然被弹开，他的手臂依旧是安然无恙。“汝等不配被称之为‘百合’，我心目中那高贵的百合，绝不是你们这些家伙所能玷污的！”</p>
+<p>　　“哦？那你倒是说说，你心目中的百合，究竟应该是什么样的呢？”诺霖抬起了脑袋，男人身上的穿着是之前维斯特所用过的魔力免疫的风衣，只需要用高能的魔力直接轰开便是。但是诺霖觉得这个男人胆敢如此挑战自己，绝对是做好了其他的准备，一件魔免的风衣并不会给他那么大的勇气，为了不伤到姐姐，诺霖决定先观望一会再说。</p>
+<p>　　如果和琳娜所说的那样，按照古典百合主义教团的教旨，他们是不会对诺汐动手动脚的，也不用担心男人会做出多少出格的举动。</p>
+<p>　　“霖……别，别管我……”诺汐好像是从昏迷之中重新醒了过来，试图准备着从男人的怀中挣脱。</p>
+<p>　　任何的肢体接触都令她感觉到恶心，她现在就想召唤出Chessia将男人劈成两半，不对，应该是凌迟！</p>
+<p>　　然而，目前来说做不到，小刀夹在她的脖子上，眼睛又看不见，她并不敢轻举妄动。</p>
+<p>　　“百合是少女间最为真挚、纯洁的感情！绝不是代表着你们这些女同性恋的世俗爱情！”男人对着诺霖诉说着自己的理想，“好好想想你们的所做作为吧，拍写真、做直播、演电影，再加上今天堂而皇之的在公展上介绍你们那些低俗的性玩具。你们所做的一切，完全就是再将百合，朝着异性恋的泥潭之中带！”</p>
+<p>　　“哦？异性恋的泥潭？”诺霖有点听不懂男人的话，不过看着男人一步步后退的样子，看起来他也并不是什么勇猛之人，毕竟还在畏惧着自己嘛。</p>
+<p>　　“性爱，沉浸于肉体关系的低俗之事！你们的所作所为毫无疑问便是如此，令我都感觉到不齿！”</p>
+<p>　　“女性不应该沦为性欲的奴隶！女性是禁欲的，是温柔的，绝不是像你们这样放荡而又不检点的。色欲是七大罪之一！你们利用着肉体关系玷污了高洁的百合。而现在，百合的繁荣，就由我们光明会所复兴！”男人对着诺霖发表了一通歪理，只可惜在诺霖的眼中，他就活脱脱像是个跳梁小丑一般。</p>
+<p>　　“百合的繁荣？难道现在不够繁荣吗？”还是说20世纪早期的“S系禁忌百合”算繁荣呢？</p>
+<p>　　“并不繁荣！恕我直言，女同性恋的存在玷污了百合本身，你们这些家伙就应该从此滚出百合！”</p>
+<p>　　“那你是否知道，傲慢，也是七大罪之一呢？”诺霖身上的衣服换为了往日的魔女长裙，脑袋上也出现了一对可爱的猫耳朵。魔女化，没错，这已经是她好久都没有体验到的过程了。看来，伊梦也对这种家伙感觉到无语了，竟然愿意解放自己的魔女权能呢。</p>
+<p>　　“傲慢？呵呵，这不叫傲慢！你们糟蹋了百合本身，那就别怪我们光明会为了百合的正义而行动了！”男人自信地说着，一把抓住了诺汐的头发，将她直接撞到了墙上，动手掀开了诺汐的裙子，“今天，我就要让你们知道，你们那些放纵的行为究竟会招致怎么样的后果！”</p>
+<p>　　“你想干什么！”诺霖意识到不妙，自己的预测失误了，他们竟然敢对姐姐出手？这不是违反着教义的吗？不对，根据他的说法「女同性恋≠百合」，所以这种行为……糟糕！</p>
+<p>　　诺霖还是把人性想象的太简单，有些人真的比她想象的要坏很多。</p>
+<p>　　“Imitate——”</p>
+<p>　　“呵呵，宁想要用魔法来对抗我吗？没用的，我身上穿着的，可是我们光明会最新制作的反射性魔免外衣。不仅能够防御住你那些无聊的魔法攻击，还能够复制出一份完全一样的魔法来。你就在一旁看着吧，啊——多么美丽的肉体，诺汐·卡蕾娜，能够规劝你，矫正你的作风，真的是百合之神所给予的恩赐啊——”他将诺汐的手反绞到了身后，完全不给予她反抗的余地，正当他真的准备“规劝”诺汐之时，大脑之中却是一阵抽搐，手中的小刀不受控制的掉在了地上，同时，被他反绞的诺汐也发起了反击，一脚直接踢在了他的脸上，将他踹到了一旁的栏杆处。</p>
+<p>　　“我说过能动姐姐的人只有我一个吧？还敢对姐姐动手动脚的话，就别怪我不客气了！<!-- raw HTML omitted -->Doomsday Nightmare<!-- raw HTML omitted -->！”还以为他有什么厉害的手段，不就是个破披风而已吗？他不会真的以为这种魔免的魔导器能够抵御得住自己的梦境魔法吧？</p>
+<p>　　“百合，或者说女同性恋，绝不是满足你们这些家伙的意淫对象。”</p>
+<p>　　“我们也是人，也有着自己的生理欲望，是有血有肉的人类，并不是为了满足你们的欣赏欲与优越感，为了取乐你们而诞生出来的工具。”诺霖用着魔力将那个男人所抬起，猛地砸向了天花板之中，同时再用着魔力治愈了一下诺汐身上的伤。</p>
+<p>　　太后悔了，竟然给了那个家伙欺负姐姐的机会！</p>
+<p>　　早知道她就不应该去打听那么多无用的情报，直接用梦境魔法操控他不就完了吗？真的是太不成熟，把人性想象的太简单了。</p>
+<p>　　“在无尽的梦魇之中，永眠吧！”</p>
+<p>　　</p>
+<p>　　——————————————</p>
+<p>　　p.s. 妹吻2的反派真的在作风和三观上很令人作呕，但是能够给他们这种人发便当也是莫名的爽。同时，为了治愈大家受伤的心灵，所以接下来我会写段H剧情来给大家治愈一下下~</p>
+<p>　　</p>
+<p>　　</p>
+
+  </div>
+</div>
+
+    </main>
+    <div class="side-bar">
+  
+  <p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC77%E7%AB%A0.txt/"
+    title="第七十七章 诺霖的歉意【H，浴室play】"
+  >
+    <i class="nav-menu fas fa-chevron-circle-right"></i>
+  </a>
+  
+</p>
+<p class="mb-1 mt-1 text-left">
+  
+  <a
+    href="../../../%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC75%E7%AB%A0.txt/"
+    title="第七十五章 魔法祭公展"
+  >
+    <i class="nav-menu fas fa-chevron-circle-left"></i>
+  </a>
+  
+</p>
+
+  
+  <p class="mb-1 mt-1 text-left">
+    <i
+      class="nav-menu fas fa-chevron-circle-up"
+      title="Scroll to top"
+      onclick="scrollToTop()"
+    ></i>
+  </p>
+  <p class="mb-1 mt-1 text-left">
+    <i
+      title="Copy URL to share"
+      class="nav-menu fas fa-share-alt"
+    ></i>
+  </p>
+</div>
+
+<script>
+  function displayCopyMessage(bool) {
+    let alertMessage = "";
+    if (bool) {
+      alertMessage = "Link copied to clipboard";
+    } else {
+      alertMessage = "Link could not be copied to clipboard";
+    }
+    let copiedMessage = document.createElement("div");
+    copiedMessage.id = "copiedMessage";
+    copiedMessage.textContent = alertMessage;
+    copiedMessage.classList.add(
+      "bg-warning",
+      "shadow",
+      "d-block",
+      "text-center"
+    );
+    document.body.appendChild(copiedMessage);
+
+    setTimeout(function() {
+      copiedMessage.style.opacity = 0;
+    }, 500);
+    setTimeout(function() {
+      document.body.removeChild(copiedMessage);
+    }, 1500);
+  }
+
+  let clipboard = new ClipboardJS(".fa-share-alt", {
+    text: function() {
+      return "\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B32%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C\/%E5%A6%B9%E5%90%BB2%E7%AC%AC2%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6\/siskiss2-%E6%98%9F%E7%A9%BA%E6%A2%A6%E5%A4%9C%E4%B8%87%E5%8D%8E%E9%95%9C-%E7%AC%AC%E4%BA%8C%E5%8D%B7%E6%98%9F%E5%A4%9C%E4%B9%8B%E7%BA%A6-%E7%AC%AC76%E7%AB%A0.txt\/";
+    }
+  });
+
+  clipboard.on("success", function() {
+    displayCopyMessage(true);
+  });
+
+  clipboard.on("error", function() {
+    displayCopyMessage(false);
+  });
+</script>
+
+    <footer class="d-flex flex-row flex-wrap justify-content-between">
+  <div class="d-flex flex-column">
+    <span class="mb-1">
+      Awesome Books
+      &middot;
+      :)
+    </span>
+  </div>
+  <p class="about text-left mb-0">
+    <a href="https://github.com/darshanbaral/kitab">
+      kitab
+    </a>
+    theme by
+    <a href="https://www.darshanbaral.com/"> Darshan Baral</a>.
+  </p>
+</footer>
+
+  </body>
+</html>
