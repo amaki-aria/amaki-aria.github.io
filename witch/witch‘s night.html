@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>魔女之宴-小游戏</title>
+    <link rel="stylesheet" href="witch's%20night.css">
+</head>
+<body>
+<div class="container">
+<div class="left">
+    <h2>魔女之宴的社团一个小游戏</h2>
+    <div id="notice">告知：
+        <p>本游戏为魔女之宴社团内的一个桌游，类似于大富翁的机制</p>
+        <p>请不要穿超过五件以上的衣物参加本游戏</p>
+        <p>需要准备道具（例如跳蛋、按摩棒若干）</p>
+        <p>建议情侣间一起玩，有不少互动指令</p>
+        <p>在开始前每个人请塞上一枚跳蛋，暂时不打开</p>
+    </div>
+    <div id="rule">规则：
+        <p>1、按下按键掷骰子，非6的情况下对应前进相应步数，如果是6则将跳蛋的频率调高一档并再扔一次</p>
+        <p>2、前进到相应格子时，请完成对应指令</p>
+        <p>3、只有当到达红色格子时才允许高潮</p>
+        <p>4、在非红色格子上高潮时算作游戏失败</p>
+        <p>5、当到达紫色格子的时候可以休息一下（暂停一轮）</p>
+        <p>6、当到达绿色格子的时候，你获得一次机会，能够指定另一位玩家执行你所经过的格子上的命令（并不强制在本回合使用）</p>
+        <p>7、当到达蓝色格子的时候，你必须脱一件衣服（如果身上还有的话）</p>
+        <p>8、一共40格，如果超出终点则被扔进泳池内</p>
+    </div>
+    <button onclick="roll()">掷骰子吧</button>
+    <p id="six"></p>
+    <div id="passage"></div>
+    <button onclick="reset()">重新开始一局新的游戏</button>
+</div>
+<div class="right">
+    <div class="number" id="1">1</div>
+    <div class="number" id="2">2</div>
+    <div class="number" id="3">3</div>
+    <div class="number" id="4">4</div>
+    <div class="number" id="8">8</div>
+    <div class="number" id="7">7</div>
+    <div class="number" id="6">6</div>
+    <div class="number" id="5">5</div>
+    <div class="number" id="9">9</div>
+    <div class="number" id="10">10</div>
+    <div class="number" id="11">11</div>
+    <div class="number" id="12">12</div>
+    <div class="number" id="16">16</div>
+    <div class="number" id="15">15</div>
+    <div class="number" id="14">14</div>
+    <div class="number" id="13">13</div>
+    <div class="number" id="17">17</div>
+    <div class="number" id="18">18</div>
+    <div class="number" id="19">19</div>
+    <div class="number" id="20">20</div>
+    <div class="number" id="24">24</div>
+    <div class="number" id="23">23</div>
+    <div class="number" id="22">22</div>
+    <div class="number" id="21">21</div>
+    <div class="number" id="25">25</div>
+    <div class="number" id="26">26</div>
+    <div class="number" id="27">27</div>
+    <div class="number" id="28">28</div>
+    <div class="number" id="32">32</div>
+    <div class="number" id="31">31</div>
+    <div class="number" id="30">30</div>
+    <div class="number" id="29">29</div>
+    <div class="number" id="33">33</div>
+    <div class="number" id="34">34</div>
+    <div class="number" id="35">35</div>
+    <div class="number" id="36">36</div>
+    <div class="number" id="40">40</div>
+    <div class="number" id="39">39</div>
+    <div class="number" id="38">38</div>
+    <div class="number" id="37">37</div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+    n = 0; // 初始数值,设置为全局变量
+    function roll() {
+        var r = Math.floor(Math.random()*6 + 1);
+        var reroll = document.getElementById('six');//生成一个随机数，进行roll点
+        if(r == 6){
+            reroll.innerText = '你扔到了6，请把档位提高一档并重新再扔一次';
+        }else{
+            reroll.innerText = '你扔到了' + r + '，并执行以下操作';
+            n = n + r;
+            gameText(n);
+            gameDiv(n);
+        }
+    }
+
+    function gameDiv(num){
+       $('#'+ num).addClass('checked');
+    }
+    function gameText(num) {
+        var passage = document.getElementById('passage');
+        var msg = passage.innerHTML;
+        switch (num) {
+            case 1:
+                msg += '<p>1、塞上一枚跳蛋，前进1格</p>';
+                passage.innerHTML = msg;
+                n += 1;
+                break;
+            case 2:
+                msg += '<p>2、与你的对象接吻</p>';
+                passage.innerHTML = msg;
+                break;
+            case 3:
+                msg += '<p>3、脱下丝袜，含在口中一分钟</p>';
+                passage.innerHTML = msg;
+                break;
+            case 4:
+                msg += '<p>4、将跳蛋频率调高一档</p>';
+                passage.innerHTML = msg;
+                break;
+            case 5:
+                msg += '<p>5、脱去内衣和内裤，前进3格</p>';
+                passage.innerHTML = msg;
+                n += 3;
+                break;
+            case 6:
+                msg += '<p>6、戴上手铐</p>';
+                passage.innerHTML = msg;
+                break;
+            case 7:
+                msg += '<p>7、脱去身上所有衣物</p>';
+                passage.innerHTML = msg;
+                break;
+            case 8:
+                msg += '<p>8、与你的对象进行一轮“真心话大冒险”游戏</p>';
+                passage.innerHTML = msg;
+                break;
+            case 9:
+                msg += '<p>9、塞上按摩棒,前进1格</p>';
+                passage.innerHTML = msg;
+                n += 1;
+                break;
+            case 10:
+                msg += '<p>10、休息一轮，后前进3格</p>';
+                passage.innerHTML = msg;
+                n += 3;
+                break;
+            case 11:
+                msg += '<p>11、后退2格</p>';
+                passage.innerHTML = msg;
+                n -= 2;
+                break;
+            case 12:
+                msg += '<p>12、脱下内裤并含在嘴中三分钟</p>';
+                passage.innerHTML = msg;
+                break;
+            case 13:
+                msg += '<p>13、将按摩棒调至最高档位，持续时间两分钟</p>';
+                passage.innerHTML = msg;
+                break;
+            case 14:
+                msg += '<p>14、脱光所有的衣服并后退一格</p>';
+                passage.innerHTML = msg;
+                n -= 1;
+                break;
+            case 15:
+                msg += '<p>15、单脚站立保持平衡一分钟</p>';
+                passage.innerHTML = msg;
+                break;
+            case 16:
+                msg += '<p>16、被你的对象打屁股x*10下，x为你本轮扔到的骰子数</p>';
+                passage.innerHTML = msg;
+                break;
+            case 17:
+                msg += '<p>17、戴上脚铐，被你的对象挠一分钟脚心</p>';
+                passage.innerHTML = msg;
+                break;
+            case 18:
+                msg += '<p>18、脱一件衣服，前进3格</p>';
+                passage.innerHTML = msg;
+                n += 3;
+                break;
+            case 19:
+                msg += '<p>19、戴上口球，若一分钟内没有口水流出，则获得buff【不用执行下一次命令】若有口水流出，则多加一枚跳蛋</p>';
+                passage.innerHTML = msg;
+                break;
+            case 20:
+                msg += '<p>20、脱去上衣并戴上乳夹，允许你休息一轮</p>';
+                passage.innerHTML = msg;
+                break;
+            case 21:
+                msg += '<p>21、把你身体里所有的跳蛋转移给一名指定玩家</p>';
+                passage.innerHTML = msg;
+                break;
+            case 22:
+                msg += '<p>22、与你的对象接吻，然后前进三格</p>';
+                passage.innerHTML = msg;
+                n += 3;
+                break;
+            case 23:
+                msg += '<p>23、捆住手腕脚踝，然后后退一格</p>';
+                passage.innerHTML = msg;
+                n -= 1;
+                break;
+            case 24:
+                msg += '<p>24、单脚站立一分钟，同时让你的对象给你不断地挠脚心</p>';
+                passage.innerHTML = msg;
+                break;
+            case 25:
+                msg += '<p>25、指定一名玩家进行roll点，如果你的点数高，则可以调高她所有道具的频率1档，反之则自己被调高2档</p>';
+                passage.innerHTML = msg;
+                break;
+            case 26:
+                msg += '<p>26、打你的对象屁股5x下，x为本轮点数</p>';
+                passage.innerHTML = msg;
+                break;
+            case 27:
+                msg += '<p>27、向你的对象念以下话语：“我最喜欢xxx（名字）了，以后心甘情愿成为xxx的宠物，让我做什么事情都可以”</p>';
+                passage.innerHTML = msg;
+                break;
+            case 28:
+                msg += '<p>28、戴上口球，同时被打屁股5x下，x为本轮点数</p>';
+                passage.innerHTML = msg;
+                break;
+            case 29:
+                msg += '<p>29、脱去所有衣服，然后前进2格，并执行31格的指令【保持M字开腿自慰直至高潮，同时进行录像】</p>';
+                passage.innerHTML = msg;
+                n += 2;
+                break;
+            case 30:
+                msg += '<p>30、取下所有的道具，然后前进1格，并执行31格的指令【保持M字开腿自慰直至高潮，同时进行录像】</p>';
+                passage.innerHTML = msg;
+                n += 1;
+                break;
+            case 31:
+                msg += '<p>31、保持M字开腿自慰直至高潮，同时进行录像</p>';
+                passage.innerHTML = msg;
+                break;
+            case 32:
+                msg += '<p>32、你太幸运了，回到原点</p>';
+                passage.innerHTML = msg;
+                n = 0;
+                break;
+            case 33:
+                msg += '<p>33、与你的对象互换所在的格子</p>';
+                passage.innerHTML = msg;
+                break;
+            case 34:
+                msg += '<p>34、后退10格，同时本轮游戏之中不允许再高潮</p>';
+                passage.innerHTML = msg;
+                n -= 10;
+                break;
+            case 35:
+                msg += '<p>35、摘下所有装饰，后退4格，并执行31格的指令【保持M字开腿自慰直至高潮，同时进行录像】</p>';
+                passage.innerHTML = msg;
+                n -= 3;
+                break;
+            case 36:
+                msg += '<p>36、如果没有经过31格，则执行一次31格的指令【保持M字开腿自慰直至高潮，同时进行录像】，如果经过了31格，则播放31格时候的录像</p>';
+                passage.innerHTML = msg;
+                break;
+            case 37:
+                msg += '<p>37、将按摩棒和跳蛋的频率调整至最高，持续三分钟</p>';
+                passage.innerHTML = msg;
+                break;
+            case 38:
+                msg += '<p>38、如果你的身上还有衣服，那么直接前进至40格，获得胜利。如果没有衣服，则返回至30格</p>';
+                passage.innerHTML = msg;
+                break;
+            case 39:
+                msg += '<p>39、如果你的身上没有衣服，那么直接前进至40格，获得胜利。如果还有衣服，则脱光所有衣服并丢进泳池</p>';
+                passage.innerHTML = msg;
+                break;
+            case 40:
+                msg += '<p>40、恭喜你到达了终点，现在可以指定所有人完成一个命令</p>';
+                passage.innerHTML = msg;
+                break;
+            default:
+                msg += '<p>你不小心超出了终点，要被丢入泳池中了</p>';
+                passage.innerHTML = msg;
+                break
+        }
+    }
+    function reset() {
+        document.getElementById('passage').innerText = '';
+        var reroll = document.getElementById('six');
+        reroll.innerText = '开始你的新游戏吧';
+        n = 0;
+        $('.number').removeClass('checked');
+    }
+</script>
+</body>
+</html>
