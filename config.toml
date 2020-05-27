@@ -13,3 +13,8 @@ pluralizelisttitles = false
   dateFormat = "2006-01-02"
   footer1 = "Awesome Books"
   footer2 = ":)"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
