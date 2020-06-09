@@ -1,8 +1,8 @@
 baseURL = ""
 RelativeURLs=true
 languageCode = "zh-cn"
-theme = "kitab"
-title = "amaki's novels"
+theme = "yuripages"
+title = "梦之图书馆"
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
 pluralizelisttitles = false

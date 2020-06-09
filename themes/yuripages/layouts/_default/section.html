@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+<!--{{.RelPermalink}}-->
+
+<div class="container">
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{{.Site.Home.Permalink}}">主页</a></li>
+      <li class="breadcrumb-item"><a href="{{.Parent.Permalink}}">{{.Parent.Title}}</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+    </ol>
+  </nav>
+
+  <!--标题和简介-->
+  <div class="card my-3 p-3">
+    <h1 class="text-center"> {{.Title}} </h1>
+    <div>
+      {{.Content}}
+    </div>
+  </div>
+  
+  <!--目录区-->
+  <div class="card my-3">
+    <div class="card-header">
+      目录
+    </div>
+    
+    <ul class="list-group list-group-flush">
+
+      {{ range .Pages.ByWeight }}
+      <li class="list-group-item">
+        <a href="{{.Permalink}}">{{.Title}}</a>
+      </li>
+      
+      {{end}}
+
+    </ul>
+   
+  </div>
+  
+
+</div>
+
+
+
+
+
+
+<!--end main-->
+{{end}} 

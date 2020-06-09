@@ -1,57 +1,83 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
-
-header{
-    margin: 0 auto;
-    color: blueviolet;
-    font-family: "萝莉体 第二版";
-    text-align: center;
-    padding: 40px;
-    border-bottom: 2px solid blueviolet;
+body{
+    background-image: url(pc.jpeg);
+    background-repeat: repeat-y;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
-footer{
-    margin: 0 auto;
-    color: #c705e3;
-    font-family: "Segoe UI Black";
+h2{
     text-align: center;
-    padding: 40px;
-    border-top: 2px solid #c705e3;
+    font-family: Lolita;
+    font-size: 4rem;
+}
+h5{
+    text-align: center;
+    font-family: Lolita;
+    font-size: 2rem;
 }
 .container{
+}
+.toplist{
+    text-align: center;
+    list-style-type: none;
+}
+.toplist>li{
+    display: inline-block;
+    font-size: 2.5rem;
+    padding: 0 2%;
+    border-left: 1px solid #333333;
+    position: relative;
     overflow: hidden;
-    height: 60%;
 }
-.left,.right{
-    float: left;
-    width: 260px;
-    position: relative;
-    padding: 20px;
+.toplist li:first-child{
+     border-left: none;
+ }
+.toplist li .catalog{
+    display: none;
 }
-.content{
-    float: left;
-    width: 100%;
-    position: relative;
+.toplist>li:hover .catalog{
+    display: block;
 }
-.amaki {
-    margin: 300px 100px 300px 500px;
-    display: inline-block;
+.toplist>li .catalog>li{
+    display: flex;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.center{
+    display:flex;
     text-align: center;
+    justify-self: center;
+    align-items: center;
 }
-.diary{
-    margin: 300px 200px 300px 400px;
-    display: inline-block;
-    text-align: center;
-}
-.left{
-    margin-right: -300px;
+#mention{
+    margin-top: 5%;
+    padding: 5%;
+    border: 4px solid #795da3;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    border-radius: 20%;
+    font-size: 1.7rem;
+    font-family: 黑体;
     line-height: 1.5em;
 }
-.right{
-    margin-left: -300px;
-    line-height: 3em;
+#notice{
+    font-size: 3rem;
+    font-family: '萝莉体 第二版';
+    line-height: 2em;
 }
-.right ul{
-    list-style-type: none;
+
+@media screen and (max-width:800px){
+    body{
+        background-image: url(mobile.jpg);
+        background-repeat: repeat-y;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    .toplist li:nth-child(3){
+        border-left: none;
+    }
 }

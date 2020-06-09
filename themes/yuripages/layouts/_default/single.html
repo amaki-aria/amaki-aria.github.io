@@ -1,0 +1,69 @@
+{{ define "main" }}
+
+<div id="pagePermalink" hidden=True>{{.Page.Permalink}}</div>
+
+<div id="readerview">
+  <div class="container">
+    <!--面包屑样式的导航，该导航以后建议使用noscript标签或隐藏。-->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{.Site.Home.Permalink}}">主页</a></li>
+        <li class="breadcrumb-item"><a href="{{.Parent.RelPermalink}}">{{.Parent.Title}}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+      </ol>
+    </nav>
+
+    <div id="page-data" hidden="true">
+     todo: 此处可以用js从URL里插入一个面包屑导航代替上面的导航。
+    </div>
+  
+    <!--头部插入一个章节目录，默认隐藏，todo：用目录页插件-->
+    <div id="reader-chapterMenu" hidden=true>
+    目录：</br>
+    {{range .Parent.Pages}}
+    {{.Title}} </br>
+    {{end}}
+    </div>
+
+    <div class="card my-3">
+      <div id="reader-prevNext-bottom" class="card">
+        <div class="row m-0">
+          <!--Hugo的上一页和下一页是反着来的，所以上一页其实是Next，下一页是Prev-->
+          {{with .NextInSection}} <a type="button" class="btn text-left btn-light col-12 col-md-6" href="{{.Permalink}}"><b>上一页：</b> {{.Title}}</a>{{end}}
+          {{with .PrevInSection}} <a type="button" class="btn text-left btn-light col-12 col-md-6" href="{{.Permalink}}"><b>下一页：</b> {{.Title}}</a>{{end}}
+        </div>
+      </div>
+    </div>
+  
+    <!--内容主体-->
+    <div class="card my-3">
+
+      <div class="card-body">
+        <h2 class="card-title text-center">{{ .Title }}</h2>
+        <h6 class="card-subtitle mb-2 text-muted text-center"> {{.WordCount}} 字 </h6> <!--字数统计-->
+        
+        <div class="card-text">
+          {{ .Content }}
+        </div>
+  
+      </div>
+
+      
+    </div>
+
+    <div class="card my-3">
+      <div id="reader-prevNext-bottom" class="card">
+        <div class="row m-0">
+          <!--Hugo的上一页和下一页是反着来的，所以上一页其实是Next，下一页是Prev-->
+          {{with .NextInSection}} <a type="button" class="btn text-left btn-light col-12 col-md-6" href="{{.Permalink}}"><b>上一页：</b> {{.Title}}</a>{{end}}
+          {{with .PrevInSection}} <a type="button" class="btn text-left btn-light col-12 col-md-6" href="{{.Permalink}}"><b>下一页：</b> {{.Title}}</a>{{end}}
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+</div>
+
+<!--end main-->
+{{ end }}
