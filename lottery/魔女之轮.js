@@ -12,10 +12,13 @@ function clickBtn() {
         'transform':'rotate('+lottery.ch+'deg)',
         '-webkit-transform':'rotate('+lottery.ch+'deg)',
     });
-    var resultnum = 9 - n1;
-    var resultDiv = document.getElementById('No'+ resultnum);
-    msg = resultDiv.innerHTML;
-    var result = document.getElementById('result');
-    result.innerHTML = '结果是：' + msg;
+    setTimeout(function () {
+        var resultnum = 9 - n1;
+        var resultDiv = document.getElementById('No'+ resultnum);
+        msg = resultDiv.innerHTML;
+        var result = document.getElementById('result');
+        result.innerHTML = '结果是：' + msg;
+    },8000);
+
 
 }
