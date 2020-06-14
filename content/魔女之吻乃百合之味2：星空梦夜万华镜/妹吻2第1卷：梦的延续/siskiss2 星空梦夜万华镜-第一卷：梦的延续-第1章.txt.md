@@ -2,6 +2,10 @@
 title = "第一章 扭曲的世界【诺霖视角】"
 weight = 1
 +++
+<img src='/img/cover_siskiss2.jpg' alt='妹吻2封面' width='100%'>
+
+【画师：MinHoo】
+
 ﻿siskiss2 星空梦夜万华镜
 
 第一卷：梦的延续
