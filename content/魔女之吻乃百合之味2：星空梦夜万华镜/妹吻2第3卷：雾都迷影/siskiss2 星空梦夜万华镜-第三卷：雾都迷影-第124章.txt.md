@@ -224,7 +224,7 @@ weight = 124
 
 　　“知，知道了……”
 
-　　![叼着裙子罚站](/img/dress.jpg)
+　　<img src='/img/dress.jpg' alt='叼着裙子罚站' width='100%'>
 
 　　【画师：kaga_mi p站id：82223219】
 
