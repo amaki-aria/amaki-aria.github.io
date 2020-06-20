@@ -30,22 +30,37 @@ h5{
     padding: 0 2%;
     border-left: 1px solid #333333;
     position: relative;
-    overflow: hidden;
 }
 .toplist li:first-child{
      border-left: none;
  }
 .toplist li .catalog{
     display: none;
+    position: absolute; /* 父元素相对定位，子元素相对于父元素定位 */
+    top: 3.4rem;
+    background-color: rgba(255,255,255,0.75);
+    border-radius: 5px;
+    padding: 5px 0;
+    box-shadow:0 3px 12px rgba(27,31,35,.15),0 0 1px rgba(27,31,35,.2);
 }
-.toplist>li:hover .catalog{
-    display: block;
-}
+
 .toplist>li .catalog>li{
-    display: flex;
+    list-style-type: none;
     text-align: left;
     font-size: 1.3rem;
     font-weight: bold;
+    padding:0.2rem;
+}
+.toplist>li .catalog>li>a{
+    padding: 0.2rem 0; /*跟前面的padding 0.2rem对应，至于为什么我也不知道*/
+    text-decoration: none;
+    color: black;
+}
+.toplist>li .catalog>li:hover{
+    background-color: rgba(0,0,0,0.75);
+}
+.toplist>li .catalog>li:hover a{
+    color: #eee;
 }
 .center{
     display:flex;
