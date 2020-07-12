@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DreamLand 主页</title>
-    <link rel="stylesheet" href="kiyume.css">
+    <title>梦大陆主页</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-<header>
-    <h2>Welcome to DreamLand</h2>
-    <h5>By:Amaki-aria</h5>
-</header>
 <div class="container">
-    <div class="list">
-        <ul class="toplist">
-            <li>小说链接
-                <ul class="catalog">
+    <h1>Welcome to DreamLand</h1>
+    <nav role="navigation" class="navbar">
+        <ul class="nav nav-pills">
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">小说链接
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
                     <li><a href="https://www.ciweimao.com/book/100065512">白珍珠的泡沫恋曲</a></li>
                     <li><a href="http://book.sfacg.com/Novel/141209/">彼岸星辉</a></li>
                     <li><a href="https://www.ciweimao.com/book/100099727">姐姐大人怎么可能是血族公主</a></li>
@@ -23,48 +23,61 @@
                     <li><a href="https://www.yamibo.com/novel/263934">吸血姬之夜</a></li>
                 </ul>
             </li>
-            <li>魔女之宴
-                <ul class="catalog">
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">魔女之宴
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
                     <li><a href="https://amaki.kiyume.top/witch/">飞行棋</a></li>
-                    <li><a href="#">现代魔法学简介</a></li>
                     <li><a href="https://amaki.kiyume.top/lottery/">魔女之轮</a></li>
+                    <li><a href="#">魔女之吻wiki</a></li>
                     <li><a href="#">其余活动待更新</a></li>
-                    <li><a href="#">营销号生成器</a></li>
                 </ul>
             </li>
-            <li>个人页面
-                <ul class="catalog">
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">个人页面
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
                     <li><a href="https://twitter.com/Amaki_aria">推特</a></li>
                     <li><a href="https://diary.kiyume.top/">博客</a></li>
                     <li><a href="https://github.com/amaki-aria/amaki-aria.github.io">github仓库</a></li>
                     <li><a href="https://afdian.net/@amaki-aria">爱发电平台</a></li>
+                    <li><a href="https://www.pixiv.net/users/13526406">pixiv主页</a></li>
                 </ul>
             </li>
-            <li>友情链接
-                <ul class="catalog">
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">友情链接
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
                     <li><a href="https://yuriimg.com/">百合居</a></li>
                     <li><a href="https://blog.yrr0r.net/">Yrr酱的博客</a></li>
-                    <li><a href="https://blog.literalkernel.work/">魔女姐姐的博客</a></li>
+                    <li><a href="https://www.literalkernel.work/">魔女姐姐的博客</a></li>
                     <li><a href="https://www.yurisora.com/">yurisora论坛</a></li>
                     <li><a href="https://www.yamibo.com/site/novel">百合会论坛</a></li>
                     <li><a href="https://wt.tepis.me/">可穿戴科技（琳·缇佩斯 著）</a></li>
                 </ul>
             </li>
         </ul>
+    </nav>
+    <div class="jumbotron">
+        <h1>欢迎来到梦大陆</h1>
+        <p>欢迎来到我的个人网站，如果是前来观看完整版小说，可以点击“梦之图书馆”</p>
+        <p>想要支持本人为爱发电的，可以点击“爱发电平台”</p>
+        <p>注：小说仅供试阅，全文免费开源，未经授权不得私自传播</p>
+        <p>含有着R18内容，未满18岁请自行点击上述“小说链接”观看全年龄版</p>
+        <p><a href="https://amaki.kiyume.top/public/" class="btn btn-primary btn-lg" role="button">梦之图书馆</a>
+        <a href="https://afdian.net/@amaki-aria" class="btn btn-primary btn-lg" role="button">爱发电平台</a></p>
     </div>
-    <div class="center">
-        <div id="mention">
-            <p>欢迎来到我的梦的世界，如果是前来看完整版小说，请点击以下链接</p>
-            <a href="https://amaki.kiyume.top/public/" id="notice">梦之图书馆</a>
-            <p>注：小说仅供试阅，全文免费，未经授权不得私自传播</p>
-            <p>含有着R18内容，未满18岁请自行点击上述“小说链接”观看全年龄版</p>
-            <p>想要支持本人为爱发电的，可以点击右上角<a href="https://afdian.net/@amaki-aria">爱发电平台</a>进行支持</p>
-        </div>
-    </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="kiyume.js"></script>
-<script src="jquery-3.5.1.min.js"></script>
+    <nav role="navigation" class="navbar navbar-fixed-bottom">
+        <div class="nav">
+            <p style="text-align: center;">@Amaki-aria 2020</p>
+        </div>
+    </nav>
+</div>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
 </body>
 </html>
