@@ -11,22 +11,31 @@
 
 
 
-<link href="../../cssjs/bootstrap.min.css" rel="stylesheet">
-
-
-  <body>
+  <body id="body">
 
     <main class="block-main">
       
 
-<div id="pagePermalink" hidden=True>/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/26-%E7%88%B1%E6%AE%87.txt/</div>
+
+<div id="pageInfo" hidden=true>
+  {
+    "kind" : "page",
+    "weight": 27,
+    "title" : "26-爱殇",
+    "link" : "/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/26-%E7%88%B1%E6%AE%87.txt/",
+    "currentSection" : "白珍珠的泡沫恋曲"
+  }
+</div>
 
 <div id="readerview">
-  <div class="container">
+  <div class="container" id="pageview">
     
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../../">主页</a></li>
+        <li class="breadcrumb-item"><a href="../../">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M16 9l-3-3V2h-2v2L8 1 0 9h2l1 5c0 .55.45 1 1 1h8c.55 0 1-.45 1-1l1-5h2zm-4 5H9v-4H7v4H4L2.81 7.69 8 2.5l5.19 5.19L12 14z"></path></svg>
+        </a></li>
         <li class="breadcrumb-item"><a href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/">白珍珠的泡沫恋曲</a></li>
         <li class="breadcrumb-item active" aria-current="page">26-爱殇</li>
       </ol>
@@ -35,6 +44,7 @@
     <div id="page-data" hidden="true">
      todo: 此处可以用js从URL里插入一个面包屑导航代替上面的导航。
     </div>
+    
   
     
     <div id="reader-chapterMenu" hidden=true>
@@ -108,14 +118,14 @@
       <div id="reader-prevNext-bottom" class="card">
         <div class="row m-0">
           
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/25-%E6%81%8B%E5%BF%83%E8%90%8C%E5%8A%A8.txt/"><b>上一页：</b> 25-恋心萌动</a>
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/27-%E4%BC%BC%E4%B8%BA%E4%BA%BA%E5%81%B6%E7%9A%84%E5%B0%91%E5%A5%B3.txt/"><b>下一页：</b> 27-似为人偶的少女</a>
+           <a type="button" id="prevlink" class="btn text-left btn-light col-12 col-md-6" href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/25-%E6%81%8B%E5%BF%83%E8%90%8C%E5%8A%A8.txt/"><b>上一页：</b> 25-恋心萌动</a>
+           <a type="button" id="nextlink" class="btn text-left btn-light col-12 col-md-6" href="../../%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/27-%E4%BC%BC%E4%B8%BA%E4%BA%BA%E5%81%B6%E7%9A%84%E5%B0%91%E5%A5%B3.txt/"><b>下一页：</b> 27-似为人偶的少女</a>
         </div>
       </div>
     </div>
   
     
-    <div class="card my-3">
+    <div class="card my-3" id="mainview">
 
       <div class="card-body">
         <h2 class="card-title text-center">26-爱殇</h2>
@@ -228,6 +238,33 @@
         </div>
       </div>
     </div>
+
+    
+    <div style="position:fixed; top: 1rem; left: 1rem; width: 25%;">
+      <button onclick="addBookmark()" id="bkmrk" title="加书签" class="btn btn-light" style="display: block;">
+        +<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M12 0H4c-.73 0-1 .27-1 1v15l5-3.09L13 16V1c0-.73-.27-1-1-1z"></path></svg>
+      </button>
+      <button onclick="toggleBmDisplay()" id="bkmrk" title="管理书签" class="btn btn-light" style="display: block;">
+        书签
+      </button>
+      
+      <div id="bmcard" class="card card-body overflow-hidden" hidden="true">
+        <h4>书签管理器</h4>
+        <div id="bookmarksSection"></div>
+      </div>
+      
+    </div>
+
+    
+    <div class="dropdown" style="position: fixed; bottom: 1rem; left: 1rem;">
+      <button class="btn btn-light dropdown-toggle" type="button" id="themeMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        主题选择
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#" onclick="changeTheme('day')">日间</a>
+        <a class="dropdown-item" href="#" onclick="changeTheme('night')">夜间</a>
+      </div>
+    </div>
   
   </div>
   
@@ -239,17 +276,26 @@
 
     
 
-<footer class="text-center m-3">
+<div class="text-center" id="footer">
     <p>Maintained with love by Yrr0r</p>
     <p>Sample</p>
     <p>Theme "YuriPages" by Yrr0r.</p>
-</footer>
+</div>
 
 
 
 
 
 
+<link href="../../cssjs/bootstrap.min.css" rel="stylesheet">
 
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+
+<script src="../../cssjs/bootstrap.bundle.min.js"></script>
+
+
+<script src="../../cssjs/utility.js"></script>
   </body>
 </html>
