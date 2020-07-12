@@ -4,6 +4,10 @@
 
 YuriPages is a theme made with BootStrap for novel authors. The main difference than other themes is that categorizing is mainly based on directory structure.
 
+### Getting Started:
+
+Just simply download or clone this repository, and drop it into 
+
 ### **Commonly needed config entries**:
 
 ###### CJK language users:
@@ -39,5 +43,9 @@ In the `[params]` section of the config file, these options are available:
 
 # Todo:
 
-- Enabling or disabling features via config file (or possibly also by another file.)
-- Bookmarks, real breadcrumb, and bookshelf implemented by javascript.
+- [ ] Bookmarks (progress marking) and probably a bookshelf implemented in JavaScript and data is stored in LocalStorage.
+- [x] Night mode, implemented by changing colors using JS. 
+- [ ] Cover images for books in `index.html` .
+- [x] Turn the page with arrow keys (left = prev page, right = next page, Z = down half page).
+
+- [ ] 文案没中文，差评

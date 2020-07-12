@@ -1,6 +1,15 @@
 {{ define "main" }}
 
-<!--{{.RelPermalink}}-->
+<!--Front info, to be read by a script.-->
+<div id="pageInfo" hidden=true>
+  {
+    "kind" : "{{.Kind}}",
+    "weight": {{.Weight}},
+    "title" : "{{.Title}}",
+    "link" : "{{.RelPermalink}}",
+    "currentSection" : "{{.CurrentSection.Title}}"
+  }
+</div>
 
 <div class="container">
 
@@ -21,6 +30,7 @@
   </div>
   
   <!--目录区-->
+  {{with .Pages}}
   <div class="card my-3">
     <div class="card-header">
       目录
@@ -28,16 +38,17 @@
     
     <ul class="list-group list-group-flush">
 
-      {{ range .Pages.ByWeight }}
-      <li class="list-group-item">
-        <a href="{{.Permalink}}">{{.Title}}</a>
-      </li>
+        {{ range .ByWeight }}
+        <li class="list-group-item">
+          <a href="{{.Permalink}}">{{.Title}}</a>
+        </li>
+        
+        {{end}}
       
-      {{end}}
-
     </ul>
    
   </div>
+  {{end}}
   
 
 </div>
