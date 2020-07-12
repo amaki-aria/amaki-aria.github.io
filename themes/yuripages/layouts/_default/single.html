@@ -1,13 +1,25 @@
 {{ define "main" }}
 
-<div id="pagePermalink" hidden=True>{{.Page.Permalink}}</div>
+<!--Front info, to be read by a script.-->
+<div id="pageInfo" hidden=true>
+  {
+    "kind" : "{{.Kind}}",
+    "weight": {{.Weight}},
+    "title" : "{{.Title}}",
+    "link" : "{{.RelPermalink}}",
+    "currentSection" : "{{.CurrentSection.Title}}"
+  }
+</div>
 
 <div id="readerview">
-  <div class="container">
+  <div class="container" id="pageview">
     <!--面包屑样式的导航，该导航以后建议使用noscript标签或隐藏。-->
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{.Site.Home.Permalink}}">主页</a></li>
+        <li class="breadcrumb-item"><a href="{{.Site.Home.Permalink}}">
+          <!--SVG-->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M16 9l-3-3V2h-2v2L8 1 0 9h2l1 5c0 .55.45 1 1 1h8c.55 0 1-.45 1-1l1-5h2zm-4 5H9v-4H7v4H4L2.81 7.69 8 2.5l5.19 5.19L12 14z"></path></svg>
+        </a></li>
         <li class="breadcrumb-item"><a href="{{.Parent.RelPermalink}}">{{.Parent.Title}}</a></li>
         <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
       </ol>
@@ -16,6 +28,7 @@
     <div id="page-data" hidden="true">
      todo: 此处可以用js从URL里插入一个面包屑导航代替上面的导航。
     </div>
+    
   
     <!--头部插入一个章节目录，默认隐藏，todo：用目录页插件-->
     <div id="reader-chapterMenu" hidden=true>
@@ -29,14 +42,14 @@
       <div id="reader-prevNext-bottom" class="card">
         <div class="row m-0">
           <!--Hugo的上一页和下一页是反着来的，所以上一页其实是Next，下一页是Prev-->
-          {{with .NextInSection}} <a type="button" class="btn text-left btn-light col-12 col-md-6" href="{{.Permalink}}"><b>上一页：</b> {{.Title}}</a>{{end}}
-          {{with .PrevInSection}} <a type="button" class="btn text-left btn-light col-12 col-md-6" href="{{.Permalink}}"><b>下一页：</b> {{.Title}}</a>{{end}}
+          {{with .NextInSection}} <a type="button" id="prevlink" class="btn text-left btn-light col-12 col-md-6" href="{{.Permalink}}"><b>上一页：</b> {{.Title}}</a>{{end}}
+          {{with .PrevInSection}} <a type="button" id="nextlink" class="btn text-left btn-light col-12 col-md-6" href="{{.Permalink}}"><b>下一页：</b> {{.Title}}</a>{{end}}
         </div>
       </div>
     </div>
   
     <!--内容主体-->
-    <div class="card my-3">
+    <div class="card my-3" id="mainview">
 
       <div class="card-body">
         <h2 class="card-title text-center">{{ .Title }}</h2>
@@ -58,6 +71,33 @@
           {{with .NextInSection}} <a type="button" class="btn text-left btn-light col-12 col-md-6" href="{{.Permalink}}"><b>上一页：</b> {{.Title}}</a>{{end}}
           {{with .PrevInSection}} <a type="button" class="btn text-left btn-light col-12 col-md-6" href="{{.Permalink}}"><b>下一页：</b> {{.Title}}</a>{{end}}
         </div>
+      </div>
+    </div>
+
+    <!--加书签-->
+    <div style="position:fixed; top: 1rem; left: 1rem; width: 25%;">
+      <button onclick="addBookmark()" id="bkmrk" title="加书签" class="btn btn-light" style="display: block;">
+        +<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M12 0H4c-.73 0-1 .27-1 1v15l5-3.09L13 16V1c0-.73-.27-1-1-1z"></path></svg>
+      </button>
+      <button onclick="toggleBmDisplay()" id="bkmrk" title="管理书签" class="btn btn-light" style="display: block;">
+        书签
+      </button>
+      <!--书签管理-->
+      <div id="bmcard" class="card card-body overflow-hidden" hidden="true">
+        <h4>书签管理器</h4>
+        <div id="bookmarksSection"></div>
+      </div>
+      
+    </div>
+
+    <!--颜色主题-->
+    <div class="dropdown" style="position: fixed; bottom: 1rem; left: 1rem;">
+      <button class="btn btn-light dropdown-toggle" type="button" id="themeMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        主题选择
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#" onclick="changeTheme('day')">日间</a>
+        <a class="dropdown-item" href="#" onclick="changeTheme('night')">夜间</a>
       </div>
     </div>
   
