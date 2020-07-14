@@ -6,6 +6,14 @@ weight = 1
 
 【画师：MinHoo】
 
+人设图
+
+<img src="/img/Noxi.jpg" alt='诺汐人设图' width='100%'>
+
+<img src="/img/Norin.jpg" alt='诺霖人设图' width='100%'>
+
+【画师：zds丶】
+
 ﻿siskiss2 星空梦夜万华镜
 
 第一卷：梦的延续

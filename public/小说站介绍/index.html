@@ -11,15 +11,21 @@
 
 
 
-<link href="../cssjs/bootstrap.min.css" rel="stylesheet">
-
-
-  <body>
+  <body id="body">
 
     <main class="block-main">
       
 
 
+<div id="pageInfo" hidden=true>
+  {
+    "kind" : "section",
+    "weight": 0,
+    "title" : "本小说站介绍",
+    "link" : "/%E5%B0%8F%E8%AF%B4%E7%AB%99%E4%BB%8B%E7%BB%8D/",
+    "currentSection" : "本小说站介绍"
+  }
+</div>
 
 <div class="container">
 
@@ -40,6 +46,7 @@
   </div>
   
   
+  
   <div class="card my-3">
     <div class="card-header">
       目录
@@ -47,16 +54,17 @@
     
     <ul class="list-group list-group-flush">
 
+        
+        <li class="list-group-item">
+          <a href="../%E5%B0%8F%E8%AF%B4%E7%AB%99%E4%BB%8B%E7%BB%8D/%E5%B0%8F%E8%AF%B4%E7%AB%99%E4%BB%8B%E7%BB%8D/">小说站个人声明以及作者自述</a>
+        </li>
+        
+        
       
-      <li class="list-group-item">
-        <a href="../%E5%B0%8F%E8%AF%B4%E7%AB%99%E4%BB%8B%E7%BB%8D/%E5%B0%8F%E8%AF%B4%E7%AB%99%E4%BB%8B%E7%BB%8D/">小说站个人声明以及作者自述</a>
-      </li>
-      
-      
-
     </ul>
    
   </div>
+  
   
 
 </div>
@@ -72,17 +80,26 @@
 
     
 
-<footer class="text-center m-3">
+<div class="text-center" id="footer">
     <p>Maintained with love by Yrr0r</p>
     <p>Sample</p>
     <p>Theme "YuriPages" by Yrr0r.</p>
-</footer>
+</div>
 
 
 
 
 
 
+<link href="../cssjs/bootstrap.min.css" rel="stylesheet">
 
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+
+<script src="../cssjs/bootstrap.bundle.min.js"></script>
+
+
+<script src="../cssjs/utility.js"></script>
   </body>
 </html>
