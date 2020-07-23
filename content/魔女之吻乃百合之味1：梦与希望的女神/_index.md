@@ -6,7 +6,7 @@ author = "amaki-aria"
 
 date = "2019-06-17"
 
-weight=2
+weight= 1
 
 +++
 
