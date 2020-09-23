@@ -1,5 +1,5 @@
 +++
-title = "第五卷：末日审判"
+title = "魔女之吻乃百合之味2-5：末日审判"
 author = "amaki-aria"
 date = "2020-09-23"
 
