@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="flying.css">
+</head>
+<body>
+<div class="container">
+    <h1>魔女之宴-飞行棋Ver2.0版</h1>
+    <div class="alert alert-info alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>警告：</strong>游戏只为娱乐，务必在双方你情我愿的条件下进行。
+    </div>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#instruction">游戏规则与注意事项</button>
+    <div class="modal fade" id="instruction" tabindex="-1" role="dialog" aria-labelledby="title">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="title">游戏规则</h4>
+                </div>
+                <div class="modal-body">
+                    <p><strong>游戏规则:</strong></p>
+                    <p>1、本游戏为一个简易的飞行棋游戏，请不要穿7件以上的衣服参加游戏。</p>
+                    <p>2、按下“游戏开始”按钮，开始一局新的游戏，按下骰子进行移动。</p>
+                    <p>3、不同颜色的格子对应着不同的随机事件，当踩到格子的时候会触发。</p>
+                    <p>4、第20格为终点格。如果超过20格则游戏继续，随机事件也会重置。</p>
+                    <p>5、第7格和第17格为休息格，身体可以稍作休息。</p>
+                    <p>6、在非7、17、20以外的格子时，如若没有随机事件指定，则必须进行高潮控制，不可高潮。</p>
+                    <p>7、情侣间一起玩效果更加，当然一个人也可以玩。</p>
+                    <p>8、希望大家玩的开心，请准备好情趣玩具哦！</p>
+                    <p>9、为了获得最佳体验，建议游戏开始前佩戴上一枚跳蛋，但不需要打开</p>
+                    <p>10、碍于技术力问题，对手机端适配较差，建议使用PC端进行游戏</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success btn-lg" data-dismiss="modal">
+                        游戏开始
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game">
+        <div class="checkerboard" id="No.1">1</div>
+        <div class="checkerboard" id="No.2">2</div>
+        <div class="checkerboard" id="No.3">3</div>
+        <div class="checkerboard" id="No.4">4</div>
+        <div class="checkerboard" id="No.5">5</div>
+        <div class="checkerboard" id="No.6">6</div>
+        <div class="checkerboard" id="No.7">7-★</div>
+        <div class="checkerboard" id="No.8">8</div>
+        <div class="checkerboard" id="No.9">9</div>
+        <div class="checkerboard" id="No.10">10</div>
+        <div class="checkerboard" id="No.11">11</div>
+        <div class="checkerboard" id="No.12">12</div>
+        <div class="checkerboard" id="No.13">13</div>
+        <div class="checkerboard" id="No.14">14</div>
+        <div class="checkerboard" id="No.15">15</div>
+        <div class="checkerboard" id="No.16">16</div>
+        <div class="checkerboard" id="No.17">17-★</div>
+        <div class="checkerboard" id="No.18">18</div>
+        <div class="checkerboard" id="No.19">19</div>
+        <div class="checkerboard" id="No.20">20.终点</div>
+    </div>
+
+    <div class="random">
+        <div class="dice">
+        </div>
+    <div class="now">
+        <div id="dice-result"></div>
+        <div id="step-result"></div>
+        <div id="check-result"></div>
+    </div>
+    </div>
+    <div class="game-set">
+        <button type="button" class="btn btn-primary btn-lg" onclick="eventSet()">游戏开始</button>
+        <button type="button" class="btn btn-danger btn-lg" onclick="reset()">游戏重置</button>
+    </div>
+</div>
+<script src="https://cdnjs.loli.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.loli.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="flying.js"></script>
+</body>
+</html>

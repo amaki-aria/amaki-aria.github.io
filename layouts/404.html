@@ -1,0 +1,14 @@
+{{ define "main"}}
+<div class="container">
+  <h1 class="text-center">404</h1>
+</div>
+<script>
+  const cur = window.location.href;
+  const matchPublicRe = /https\:\/\/[-A-Za-z0-9+&@#%?=~_|!:,.;]+\/public([\s\S]*)/
+  const publicRes = cur.match(matchPublicRe)
+  if (publicRes.length > 0) {
+    relative = publicRes[1]
+    window.location.assign("/novel" + relative)
+  }
+</script>
+{{ end }}
