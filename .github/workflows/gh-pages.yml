@@ -20,6 +20,12 @@ jobs:
           repository: Yrr0r/yuripages
           path: themes/yuripages
 
+      - name: patch html
+        run: |
+          mkdir -p layouts/_default
+          cp themes/yuripages/layouts/index.html layouts/_default/novel.html
+          cp content/index.html layouts/index.html
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
