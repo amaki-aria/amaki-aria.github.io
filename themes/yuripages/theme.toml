@@ -1,9 +1,0 @@
-name = "YuriPages"
-license = "GPLv3"
-description = "Write a book, instead of just posts."
-tags = ["book", "novel"]
-features = ["bootstrap"]
-min_version = "0.60"
-
-[author]
-  name = "Yrr0r"
