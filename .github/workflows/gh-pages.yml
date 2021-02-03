@@ -1,0 +1,46 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - master  # Set a branch to deploy
+
+jobs:
+  deploy:
+    timeout-minutes: 10
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout amaki-aria.github.io
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Checkout yuripages
+        uses: actions/checkout@v2
+        with:
+          repository: Yrr0r/yuripages
+          path: themes/yuripages
+
+      - name: Patch html
+        run: |
+          mkdir -p layouts/section
+          cp themes/yuripages/layouts/index.html layouts/section/blocklist.html.html
+          cp content/index.html layouts/index.html
+
+      - name: Reset mtime
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8.6'
+      - run: python3 git_reset_mtime.py
+
+      - name: Hugo
+        uses: klakegg/actions-hugo@1.0.0
+        with:
+          version: '0.80.0'
+          image: 'busybox'
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
