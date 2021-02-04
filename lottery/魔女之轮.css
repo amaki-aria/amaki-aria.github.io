@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lolita' ,微软雅黑;
+}
+header h2{
+    font-size: 56px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.arrow{
+    width: 0;
+    height: 0;
+    border: 40px solid;
+    border-color: black transparent transparent;
+    margin: 0 auto;
+}
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: #5c0064;
+    border-radius: 50%;
+    margin: 30px auto;
+    margin-top: 0 ;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.lottery{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    /*background-color: #d43cff;*/
+    box-shadow: 0 0 15px #000000;
+}
+.block{
+    box-shadow: 0 0 1px #000000 inset; 
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    -webkit-transform-origin: right bottom 0;
+    -moz-transform-origin: right bottom 0;
+    -ms-transform-origin: right bottom 0;
+    -o-transform-origin: right bottom 0;
+    transform-origin: right bottom 0;
+}
+.block:nth-child(1){
+    background-color: #ff180c;
+    -webkit-transform: rotate(22.5deg) skewY(45deg);
+    -moz-transform: rotate(22.5deg) skewY(45deg);
+    -ms-transform: rotate(22.5deg) skewY(45deg);
+    -o-transform: rotate(22.5deg) skewY(45deg);
+    transform: rotate(22.5deg) skewY(45deg);
+}
+.block:nth-child(2){
+    background-color: #ffac1d;
+    -webkit-transform: rotate(67.5deg) skewY(45deg);
+    -moz-transform: rotate(67.5deg) skewY(45deg);
+    -ms-transform: rotate(67.5deg) skewY(45deg);
+    -o-transform: rotate(67.5deg) skewY(45deg);
+    transform: rotate(67.5deg) skewY(45deg);
+}
+.block:nth-child(3){
+    background-color: #fff819;
+    -webkit-transform: rotate(112.5deg) skewY(45deg);
+    -moz-transform: rotate(112.5deg) skewY(45deg);
+    -ms-transform: rotate(112.5deg) skewY(45deg);
+    -o-transform: rotate(112.5deg) skewY(45deg);
+    transform: rotate(112.5deg) skewY(45deg);
+}
+.block:nth-child(4){
+    background-color: #98ff08;
+    -webkit-transform: rotate(157.5deg) skewY(45deg);
+    -moz-transform: rotate(157.5deg) skewY(45deg);
+    -ms-transform: rotate(157.5deg) skewY(45deg);
+    -o-transform: rotate(157.5deg) skewY(45deg);
+    transform: rotate(157.5deg) skewY(45deg);
+}
+.block:nth-child(5){
+    background-color: #0dff1b;
+    -webkit-transform: rotate(202.5deg) skewY(45deg);
+    -moz-transform: rotate(202.5deg) skewY(45deg);
+    -ms-transform: rotate(202.5deg) skewY(45deg);
+    -o-transform: rotate(202.5deg) skewY(45deg);
+    transform: rotate(202.5deg) skewY(45deg);
+}
+.block:nth-child(6){
+    background-color: #15ffbd;
+    -webkit-transform: rotate(247.5deg) skewY(45deg);
+    -moz-transform: rotate(247.5deg) skewY(45deg);
+    -ms-transform: rotate(247.5deg) skewY(45deg);
+    -o-transform: rotate(247.5deg) skewY(45deg);
+    transform: rotate(247.5deg) skewY(45deg);
+}
+.block:nth-child(7){
+    background-color: #1b47ff;
+    -webkit-transform: rotate(292.5deg) skewY(45deg);
+    -moz-transform: rotate(292.5deg) skewY(45deg);
+    -ms-transform: rotate(292.5deg) skewY(45deg);
+    -o-transform: rotate(292.5deg) skewY(45deg);
+    transform: rotate(292.5deg) skewY(45deg);
+}
+.block:nth-child(8){
+    background-color: #c207ff;
+    -webkit-transform: rotate(337.5deg) skewY(45deg);
+    -moz-transform: rotate(337.5deg) skewY(45deg);
+    -ms-transform: rotate(337.5deg) skewY(45deg);
+    -o-transform: rotate(337.5deg) skewY(45deg);
+    transform: rotate(337.5deg) skewY(45deg);
+}
+.text{
+    width: 200px;
+    height: 230px;
+    transform-origin: center center 0;
+    transform: skewY(-45deg) rotate(-22.5deg) translate(10px, 70px);
+    -webkit-transform: skewY(-45deg) rotate(-22.5deg) translate(10px, 70px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+#button  button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid white;
+    background-color: #605c63;
+    position: absolute;
+    font-size: 28px;
+    top: 270px;
+    left: 270px;
+    cursor: pointer;
+    box-shadow: 0 0 14px #000 inset;
+    color: #FFF;
+}
+#arrow{
+    position: absolute;
+    top:270px;
+    left:270px;
+}
+#result{
+    margin:32px auto;
+    text-align: center;
+    color: #050505;
+    font-size: 28px;
+}
