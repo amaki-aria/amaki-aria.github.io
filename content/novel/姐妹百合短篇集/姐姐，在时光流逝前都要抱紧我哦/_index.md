@@ -1,10 +1,6 @@
-+++
-
-title = "姐姐，在时光流逝前都要抱紧我哦"
-
-author = "amaki-aria"
-
-date = "2020-02-20"
-
-+++
+---
+title: 姐姐，在时光流逝前都要抱紧我哦
+author: amaki-aria
+date: 2020-02-20T00:00:00.000Z
+---
 
