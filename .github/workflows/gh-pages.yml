@@ -21,6 +21,23 @@ jobs:
           repository: Yrr0r/yuripages
           path: themes/yuripages
 
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '15.8.0'
+      - uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: build/node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('auto-build/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+      - run: yarn install
+        working-directory: build
+      - run: node --unhandled-rejections=strict --trace-warnings build/add-navdata.js
+
       - name: Patch html
         run: |
           mkdir -p layouts/section
