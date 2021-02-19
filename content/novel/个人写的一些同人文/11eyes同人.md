@@ -1,6 +1,6 @@
 ---
 title: 【11eyes】[莉泽洛特×莉洁特] 魔女的救赎
-author: amaki-aria
+author: 蝶天希
 date: 2020-04-24T00:00:00.000Z
 weight: 1
 ---
