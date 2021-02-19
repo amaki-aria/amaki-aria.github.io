@@ -1,6 +1,6 @@
 ---
 title: 吸血姬之夜
-author: amaki-aria
+author: 蝶天希
 date: 2020-03-27T00:00:00.000Z
 weight: 100
 ---
