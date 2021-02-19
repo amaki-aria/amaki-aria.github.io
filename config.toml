@@ -7,11 +7,13 @@ title = "梦之图书馆"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 pluralizelisttitles = false
 hasCJKLanguage = true
+enableGitInfo = true
 
 [params]
-  author = "Yrr0r"
-  description = "Sample"
+  author = "蝶天希"
+  maintainer = "Yrr0r & Gesrua"
   dateFormat = "2006-01-02"
+  gitRepo = "https://github.com/amaki-aria/amaki-aria.github.io"
   footer1 = "Awesome Books"
   footer2 = ":)"
 
