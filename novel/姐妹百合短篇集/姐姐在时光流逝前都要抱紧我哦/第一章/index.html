@@ -1,99 +1,85 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    
 
-
-
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 
-
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>第一章</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace-theme-default.min.css" integrity="sha256-anPTRkzR25h4UMAUWxh0FNzKvgVv2MnEyxeDpgOtfiA=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace.min.js" integrity="sha256-kubxe7yxLaribPaAekUOUDUCap6FSiCeKCQQqYQDs4s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"
+    integrity="sha256-yYGYRNGM8Fn1Kn2lP3htQYNIzGYt1+JD8AnsVZusheI=" crossorigin="anonymous"></script>
+<script>
+    var pjax = new Pjax({
+        debug: true,
+        cacheBust: false,
+        elements: "a.js-Pjax",
+        selectors: [
+            "title",
+            "#pjax-main",
+        ]
+    })
+</script>
+</head>
 
-
-
-  </head>
-
-  <body id="body">
-
-    <main class="block-main">
+<body>
+  <div id="pjax-main" class="columns is-centered is-size-5">
+    <div class="column is-three-quarters is-full-mobile">
       
+<script>
+  window.$pagedata = {
+    type: 'single',
 
 
-<div id="pageInfo" hidden=true>
-  {
-    "kind" : "page",
-    "weight": 1,
-    "title" : "第一章",
-    "link" : "/novel/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/%E7%AC%AC%E4%B8%80%E7%AB%A0/",
-    "currentSection" : "姐姐，在时光流逝前都要抱紧我哦"
+    next: '\/novel\/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86\/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6\/%E7%AC%AC%E4%BA%8C%E7%AB%A0\/',
+
   }
-</div>
+</script>
 
-<div id="readerview">
-  <div class="container" id="pageview">
-    
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../../../../">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M16 9l-3-3V2h-2v2L8 1 0 9h2l1 5c0 .55.45 1 1 1h8c.55 0 1-.45 1-1l1-5h2zm-4 5H9v-4H7v4H4L2.81 7.69 8 2.5l5.19 5.19L12 14z"></path></svg>
-        </a></li>
-        <li class="breadcrumb-item"><a href="../../../../novel/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/">姐姐，在时光流逝前都要抱紧我哦</a></li>
-        <li class="breadcrumb-item active" aria-current="page">第一章</li>
-      </ol>
-    </nav>
-
-    <div id="page-data" hidden="true">
-     todo: 此处可以用js从URL里插入一个面包屑导航代替上面的导航。
-    </div>
-    
-  
-    
-    <div id="reader-chapterMenu" hidden=true>
-    目录：</br>
-    
-    第一章 </br>
-    
-    第二章 </br>
-    
-    第三章 </br>
-    
-    第四章 </br>
-    
-    第五章 </br>
-    
-    第六章 </br>
-    
-    第七章 </br>
-    
-    第八章 </br>
-    
-    第九章 </br>
-    
-    </div>
-
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-          
-           <a type="button" id="nextlink" class="btn text-left btn-light col-12 col-md-6" href="../../../../novel/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/"><b>下一页：</b> 第二章</a>
-        </div>
-      </div>
-    </div>
-  
-    
-    <div class="card my-3" id="mainview">
-
-      <div class="card-body">
-        <h2 class="card-title text-center">第一章</h2>
-        <h6 class="card-subtitle mb-2 text-muted text-center"> 2600 字 </h6> 
+<section class="section is-paddingless-horizontal">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ol>
+      
+      
         
-        <div class="card-text">
-          <p>　　对我来说，那也许是一个平凡的夏天，那天的我，怎么也不会想到，就因为自己的一念之差，我与她的命运，就此发生了改变。</p>
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/');return false;"> 梦之图书馆</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86\/');return false;"> 姐妹百合短篇集</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86\/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6\/');return false;"> 姐姐，在时光流逝前都要抱紧我哦</a>
+            </li>
+          
+        
+      
+      <li class="is-active" aria-current="page">
+        <a href="#">第一章</a>
+      </li>
+    </ol>
+  </nav>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <h1 class="has-text-centered title is-1">
+    第一章
+  </h1>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <div class="container">
+    <div class="content is-size-5">
+      <p>　　对我来说，那也许是一个平凡的夏天，那天的我，怎么也不会想到，就因为自己的一念之差，我与她的命运，就此发生了改变。</p>
 <p>　　盛夏的一天，强行被她从家中拖出来陪她一起补课的我，心中，满满的都是怨念，知了在树上肆意的叫着，额头上沁出了大大的汗珠，不禁令我感觉有点身心俱疲。</p>
 <p>　　“刚刚上课的内容没怎么听懂欸，小雨你帮我讲讲好不好？”</p>
 <p>　　“不好。”到底是谁在大夏天拉着我出来陪她一起补课然后最后自己上课的时候只顾着玩手机啥也没听的？害得我牺牲了整整一个上午来陪着她出门听那些无聊的课，实在是……</p>
@@ -129,8 +115,8 @@
 <p>　　“1+1=？”</p>
 <p>　　“2……”等等，为什么这种问题都要问，难道是想要测试我的智力有没有下降吗？</p>
 <p>　　“家人的姓名什么的还记得吗？”</p>
-<p>　　“父亲林宏，母亲林昕月，还有个双胞胎姐姐林萱云，就是那边站着的那个。顺便，医生姐姐，我还没有失忆。就算你现在拿来一张高考数学卷我还是有自信做到130分的。”</p>
-<p>　　似乎是听到了我叫她“医生姐姐”，那位女医生的脸上，绽放出了和蔼的微笑，对着旁边的几位医生说道，“和CT检查出来的结果一样，身上除了有几处擦伤之外均无大碍。大脑也似乎完全没有受到影响。要不是她姐姐呆在旁边的话我都不相信这是被卡车撞了之后的结果。”</p>
+<p>　　“父亲林宏，母亲林昕月，还有个双胞胎姐姐林萱云，就是那边站着的那个。顺便，医生姐姐，我还没有失忆。就算你现在拿来一张高考数学卷我还是有自信做到 130 分的。”</p>
+<p>　　似乎是听到了我叫她“医生姐姐”，那位女医生的脸上，绽放出了和蔼的微笑，对着旁边的几位医生说道，“和 CT 检查出来的结果一样，身上除了有几处擦伤之外均无大碍。大脑也似乎完全没有受到影响。要不是她姐姐呆在旁边的话我都不相信这是被卡车撞了之后的结果。”</p>
 <p>　　“医生，你们的意思是，我的小雨她……”</p>
 <p>　　“是的，这大概是医学史上罕见的奇迹吧，经过几天的照顾，你的妹妹不仅脱离了生命危险，而且也已经完全恢复了。”医生笑着拍了拍林萱云的肩，“再住两天院看看情况吧，看这个样子，应该也可以下床了吧。”</p>
 <p>　　原来，我完全没事吗？</p>
@@ -146,83 +132,106 @@
 <p>　　“我，我是从平行宇宙穿越而来的另一个你，目的就是为了用这个毒苹果把你毒死，这样，在所有的平行宇宙之中，我就是世界上最美丽的人了。”</p>
 <p>　　“那我是不是还要等一位恋尸癖王子来把我救出来呢？”原来只是想装成失忆逗逗她的我，结果反被她的笑话给逗笑了。</p>
 <p>　　“恋尸癖王子是没有的，但是这里有一位恋尸癖公主，你看要不要凑合着让她来救你一下？”一边说着，她将苹果塞到了我的嘴里。</p>
-<p>　　“唔——林，林萱云你个坏蛋——”</p>
+<p>　　“唔⸺林，林萱云你个坏蛋⸺”</p>
 <p>　　依旧是，没有发生什么变化的，平静的日常，无论是对我还是对她来说，一切，都显得如此平和。当时的我，也完全不会意识到，这一场车祸，才仅仅是一切的开端罢了。</p>
 
-        </div>
-  
-      </div>
-
-      
     </div>
+  </div>
+</section>
 
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-          
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../../../novel/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/"><b>下一页：</b> 第二章</a>
-        </div>
-      </div>
-    </div>
-
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <nav class="pagenav">
     
-    <div style="position:fixed; top: 1rem; left: 1rem; width: 25%;">
-      <button onclick="addBookmark()" id="bkmrk" title="加书签" class="btn btn-light" style="display: block;">
-        +<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M12 0H4c-.73 0-1 .27-1 1v15l5-3.09L13 16V1c0-.73-.27-1-1-1z"></path></svg>
-      </button>
-      <button onclick="toggleBmDisplay()" id="bkmrk" title="管理书签" class="btn btn-light" style="display: block;">
-        书签
-      </button>
-      
-      <div id="bmcard" class="card card-body overflow-hidden" hidden="true">
-        <h4>书签管理器</h4>
-        <div id="bookmarksSection"></div>
-      </div>
-      
-    </div>
-
     
-    <div class="dropdown" style="position: fixed; bottom: 1rem; left: 1rem;">
-      <button class="btn btn-light dropdown-toggle" type="button" id="themeMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        主题选择
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#" onclick="changeTheme('day')">日间</a>
-        <a class="dropdown-item" href="#" onclick="changeTheme('night')">夜间</a>
-      </div>
-    </div>
+    
+    <a id="nextlink" class="button nextbtn is-size-5" href="../../../../novel/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/%E7%AC%AC%E4%BA%8C%E7%AB%A0/" onclick="pjax.loadUrl('\/novel\/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86\/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6\/%E7%AC%AC%E4%BA%8C%E7%AB%A0\/');return false;">
+      <span>
+        <strong>下一章</strong>
+        <em>第二章</em>
+      </span>
+    </a>
+    
+  </nav>
   
+  <section class="section is-paddingless-horizontal has-text-grey-light">
+  <p>
+    上次更新：
+    <span title="0001-01-01 00:00:00 &#43;0000 UTC">0001-01-01</span>
+      
+      ，<a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/commits/master/content/novel/%e5%a7%90%e5%a6%b9%e7%99%be%e5%90%88%e7%9f%ad%e7%af%87%e9%9b%86/%e5%a7%90%e5%a7%90%ef%bc%8c%e5%9c%a8%e6%97%b6%e5%85%89%e6%b5%81%e9%80%9d%e5%89%8d%e9%83%bd%e8%a6%81%e6%8a%b1%e7%b4%a7%e6%88%91%e5%93%a6/%e7%ac%ac%e4%b8%80%e7%ab%a0.md" target="_blank">更新历史</a>
+  </p>
+  
+  <p>
+    <a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/blob/master/content/novel/%e5%a7%90%e5%a6%b9%e7%99%be%e5%90%88%e7%9f%ad%e7%af%87%e9%9b%86/%e5%a7%90%e5%a7%90%ef%bc%8c%e5%9c%a8%e6%97%b6%e5%85%89%e6%b5%81%e9%80%9d%e5%89%8d%e9%83%bd%e8%a6%81%e6%8a%b1%e7%b4%a7%e6%88%91%e5%93%a6/%e7%ac%ac%e4%b8%80%e7%ab%a0.md" target="_blank">在 GitHub 上改进此页</a>
+  </p>
+  
+</section>
+</section>
+
+    </div>
   </div>
   
-</div>
 
+<footer class="footer">
+  <div class="container">
+    <div class="level">
+      <div class="level-start">
+        蝶天希
+        <p>Maintained with love by Yrr0r &amp; Gesrua</p>
+        
+      </div>
+      <div class="level-end">
+        <p>Theme <a href="https://github.com/Yrr0r/yuripages">YuriPages</a> by <a href="https://github.com/Yrr0r">Yrr0r</a> & <a href="https://github.com/Gesrua">Gesrua</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener('keydown', k => {
+    if (k.code == 'KeyZ') {
+      window.scrollBy({ top: window.innerHeight / 2, left: 0, behavior: 'smooth' });
+    } else if (k.code == 'ArrowRight' && window?.$pagedata?.next) {
+      pjax.loadUrl(window.$pagedata.next)
+    } else if (k.code == 'ArrowLeft' && window?.$pagedata?.prev) {
+      pjax.loadUrl(window.$pagedata.prev)
+    }
+  });
+</script>
+<style>
+  .is-paddingless-horizontal {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  .pagenav {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+  }
 
-    </main>
+  .pagenav span {
+    line-height: 1.25
+  }
 
-    
+  .pagenav span em {
+    display: block;
+    font-style: normal;
+  }
 
-<div class="text-center" id="footer">
-    <p>Maintained with love by Yrr0r</p>
-    <p>Sample</p>
-    <p>Theme "YuriPages" by Yrr0r.</p>
-</div>
+  .prevbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: 0;
+  }
 
+  .nextbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: auto;
+    margin-right: 0
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</body>
 
-
-
-
-
-<link href="../../../../cssjs/bootstrap.min.css" rel="stylesheet">
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-
-<script src="../../../../cssjs/bootstrap.bundle.min.js"></script>
-
-
-<script src="../../../../cssjs/utility.js"></script>
-  </body>
 </html>

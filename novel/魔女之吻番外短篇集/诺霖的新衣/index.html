@@ -1,107 +1,81 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    
 
-
-
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 
-
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>诺霖的新衣</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace-theme-default.min.css" integrity="sha256-anPTRkzR25h4UMAUWxh0FNzKvgVv2MnEyxeDpgOtfiA=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace.min.js" integrity="sha256-kubxe7yxLaribPaAekUOUDUCap6FSiCeKCQQqYQDs4s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"
+    integrity="sha256-yYGYRNGM8Fn1Kn2lP3htQYNIzGYt1+JD8AnsVZusheI=" crossorigin="anonymous"></script>
+<script>
+    var pjax = new Pjax({
+        debug: true,
+        cacheBust: false,
+        elements: "a.js-Pjax",
+        selectors: [
+            "title",
+            "#pjax-main",
+        ]
+    })
+</script>
+</head>
 
-
-
-  </head>
-
-  <body id="body">
-
-    <main class="block-main">
+<body>
+  <div id="pjax-main" class="columns is-centered is-size-5">
+    <div class="column is-three-quarters is-full-mobile">
       
+<script>
+  window.$pagedata = {
+    type: 'single',
+
+    prev: '\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E7%95%AA%E5%A4%96%E7%9F%AD%E7%AF%87%E9%9B%86\/%E5%A5%B6%E6%B2%B9%E5%91%B3%E7%9A%84%E5%9C%A3%E8%AF%9E%E8%8A%82\/',
 
 
-<div id="pageInfo" hidden=true>
-  {
-    "kind" : "page",
-    "weight": 3,
-    "title" : "诺霖的新衣",
-    "link" : "/novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E7%95%AA%E5%A4%96%E7%9F%AD%E7%AF%87%E9%9B%86/%E8%AF%BA%E9%9C%96%E7%9A%84%E6%96%B0%E8%A1%A3/",
-    "currentSection" : "魔女之吻系列·番外短篇集"
+    next: '\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E7%95%AA%E5%A4%96%E7%9F%AD%E7%AF%87%E9%9B%86\/%E7%8C%AB%E5%A8%98%E7%9A%84%E6%AD%A3%E7%A1%AE%E9%A5%B2%E5%85%BB%E6%96%B9%E6%B3%95\/',
+
   }
-</div>
+</script>
 
-<div id="readerview">
-  <div class="container" id="pageview">
-    
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../../../">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M16 9l-3-3V2h-2v2L8 1 0 9h2l1 5c0 .55.45 1 1 1h8c.55 0 1-.45 1-1l1-5h2zm-4 5H9v-4H7v4H4L2.81 7.69 8 2.5l5.19 5.19L12 14z"></path></svg>
-        </a></li>
-        <li class="breadcrumb-item"><a href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E7%95%AA%E5%A4%96%E7%9F%AD%E7%AF%87%E9%9B%86/">魔女之吻系列·番外短篇集</a></li>
-        <li class="breadcrumb-item active" aria-current="page">诺霖的新衣</li>
-      </ol>
-    </nav>
-
-    <div id="page-data" hidden="true">
-     todo: 此处可以用js从URL里插入一个面包屑导航代替上面的导航。
-    </div>
-    
-  
-    
-    <div id="reader-chapterMenu" hidden=true>
-    目录：</br>
-    
-    初夜【诺汐视角】 </br>
-    
-    奶油味的圣诞节 </br>
-    
-    诺霖的新衣 </br>
-    
-    猫娘的正确饲养方法 </br>
-    
-    魔女审判（1） </br>
-    
-    真心话大冒险（1）——诺霖与诺汐的0721访谈会 </br>
-    
-    全裸生日宴【诺霖视角】 </br>
-    
-    神探诺霖酱 </br>
-    
-    彼此【灵魂互换】 </br>
-    
-    触手池里的姐妹俩 </br>
-    
-    千羽优奈的捆绑派对 </br>
-    
-    水晶之恋 </br>
-    
-    废弃乐园与彷徨的双子 </br>
-    
-    </div>
-
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-           <a type="button" id="prevlink" class="btn text-left btn-light col-12 col-md-6" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E7%95%AA%E5%A4%96%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A5%B6%E6%B2%B9%E5%91%B3%E7%9A%84%E5%9C%A3%E8%AF%9E%E8%8A%82/"><b>上一页：</b> 奶油味的圣诞节</a>
-           <a type="button" id="nextlink" class="btn text-left btn-light col-12 col-md-6" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E7%95%AA%E5%A4%96%E7%9F%AD%E7%AF%87%E9%9B%86/%E7%8C%AB%E5%A8%98%E7%9A%84%E6%AD%A3%E7%A1%AE%E9%A5%B2%E5%85%BB%E6%96%B9%E6%B3%95/"><b>下一页：</b> 猫娘的正确饲养方法</a>
-        </div>
-      </div>
-    </div>
-  
-    
-    <div class="card my-3" id="mainview">
-
-      <div class="card-body">
-        <h2 class="card-title text-center">诺霖的新衣</h2>
-        <h6 class="card-subtitle mb-2 text-muted text-center"> 6781 字 </h6> 
+<section class="section is-paddingless-horizontal">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ol>
+      
+      
         
-        <div class="card-text">
-          <p>　　【p.s.这里的剧情已经糟糕到了极致，请好孩子不要学】</p>
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/');return false;"> 梦之图书馆</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E7%95%AA%E5%A4%96%E7%9F%AD%E7%AF%87%E9%9B%86\/');return false;"> 魔女之吻系列·番外短篇集</a>
+            </li>
+          
+        
+      
+      <li class="is-active" aria-current="page">
+        <a href="#">诺霖的新衣</a>
+      </li>
+    </ol>
+  </nav>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <h1 class="has-text-centered title is-1">
+    诺霖的新衣
+  </h1>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <div class="container">
+    <div class="content is-size-5">
+      <p>　　【p.s. 这里的剧情已经糟糕到了极致，请好孩子不要学】</p>
 <p>　　早晨六点，诺汐还在熟睡之中，诺霖却因为突然想上厕所而爬了起来。</p>
 <p>　　「诺霖姐姐，能听得到我的声音吗？」</p>
 <p>　　诺霖她觉得自己也不知道吃错了什么药，好像是昨晚去图书馆自慰，呸，自习的时候又不小心被哪本魔导书砸到了脑袋，现在的脑海中的某个恶魔在向着她提出着诱惑。</p>
@@ -163,7 +137,7 @@
 <p>　　那种稳中带皮，不断地在禁忌的边界线偏远左右横跳的刺激感，但是心中却知道自己不可能翻车的安心感交织在一起，令我相当的舒服。</p>
 <p>　　“嗯？被我夸奖很开心嘛？”诺汐歪了歪脑袋，略显不解地看了我一眼。</p>
 <p>　　“那当然啦，毕竟是姐姐嘛！”我微笑着回答道，嗯，就算是现在也不能太过得意了，被姐姐发现我的异常可就不好了。</p>
-<p>　　——————————————————————</p>
+<hr>
 <p>　　“真的不用空间魔术直接传送过去吗？”</p>
 <p>　　牵着彼此的手，漫步在校园中，诺汐在我的耳边低语道。</p>
 <p>　　因为身上没有穿着任何的衣服，所以我的身体远比平日里要敏感的多。光是诺霖轻轻地在我的耳边低语，我的身体便是温度上升，心中感觉到一阵止不住的燥热。</p>
@@ -172,7 +146,7 @@
 <p>　　“是嘛……”</p>
 <p>　　“早安，特查的二位。”一位同年级的少女从我的身边走过，轻轻拍了拍我的肩膀，令我几乎吓了一大跳。</p>
 <p>　　“早啊……”</p>
-<p>　　原来是隔壁二年B班的，前几天刚刚来过我们特查拜托过我和姐姐一些事情。在与我们姐妹俩打了个招呼之后，她便是直接从我的身边走过。</p>
+<p>　　原来是隔壁二年 B 班的，前几天刚刚来过我们特查拜托过我和姐姐一些事情。在与我们姐妹俩打了个招呼之后，她便是直接从我的身边走过。</p>
 <p>　　瞬间心跳加速，体内的温度不断的上升，呼吸都变得急喘了起来。这是第一次感觉其他人与我的距离竟然这么近，好刺激，不会被发现吧。</p>
 <p>　　“霖你怎么了？发烧了吗？”</p>
 <p>　　好像是感觉到了我的体温上升，诺汐立刻停下脚步看了我一眼。</p>
@@ -190,7 +164,7 @@
 <p>　　“今天竟然准时到校了，倒还挺不错。”冰老虎已经呆在了讲台上，在我们进来之后难得的表扬了我们一句。心中不由得有点小激动。</p>
 <p>　　“快点做到位置上并且把作业交了吧。”</p>
 <p>　　“是。”</p>
-<p>　　 像是往常一样坐到了自己的座位上，深呼吸了一口从包里拿出了书本。前桌的由理再一次转过头来，“呐呐，诺霖，最近新出的一本书看了嘛？好有趣的说——”</p>
+<p>　　 像是往常一样坐到了自己的座位上，深呼吸了一口从包里拿出了书本。前桌的由理再一次转过头来，“呐呐，诺霖，最近新出的一本书看了嘛？好有趣的说⸺”</p>
 <p>　　“哪本书？”</p>
 <p>　　“最近刚出的日文版，不过你应该是看过英文原版的吧，听说是英国某个知名百合作者写的。”由理从包里拿出了那本书，看着封面上画着的那两只金发萝莉，我瞬间便是明白了她在说的是哪一本书。</p>
 <p>　　“早看过了，英文原版都读了四五遍了。”</p>
@@ -203,7 +177,7 @@
 <p>　　突然感觉到了诺汐那温暖的小手放在了我的大腿上，我转头看向了诺汐，她的脸上依旧是露出着一副人畜无害的表情，看起来在认真地看着黑板记着笔记，实际上空闲的左手则是已经伸到了我的大腿根部。</p>
 <p>　　以前的我照理来说应该已经习惯了诺汐上课的小动作才对，但是今天不一样，因为身上没穿衣服的原因，羞耻度比原先翻了好几倍还不止，诺汐的手渐渐深入，抚摸着我的大腿根部，距离私处只有一点点的距离，我不由得心跳加速了起来。</p>
 <p>　　“姐……”</p>
-<p>　　“嘘——”诺汐将手指竖在了嘴唇上，嘴角微微上扬，露出了一丝坏笑。接着，她的手指开始运动了起来，在那敏感的阴唇外画着圈，酥酥麻麻的，不断地挑逗着我身体中的情欲。</p>
+<p>　　“嘘⸺”诺汐将手指竖在了嘴唇上，嘴角微微上扬，露出了一丝坏笑。接着，她的手指开始运动了起来，在那敏感的阴唇外画着圈，酥酥麻麻的，不断地挑逗着我身体中的情欲。</p>
 <p>　　“姐……姐姐！”</p>
 <p>　　想要将注意力集中到书本中，但是却完全无法做到。</p>
 <p>　　情欲如同着一团烈火在我的心中熊熊燃烧着，折磨着我身体的各处。诺汐如同着弹奏着乐器一般挑拨着我的阴唇，手指的动作逐渐加速，爱液逐渐都逐渐流淌了下来。</p>
@@ -224,9 +198,9 @@
 <p>　　“OK，做完了。”一气呵成，机械般的完美解出了答案。冰老虎并没有让我回去，反倒像是罚站一般的让我站到了一旁，正对着班里的同学们。</p>
 <p>　　一丝不挂的身体就这么暴露在了同学们的面前，我的双手背在了身后，全然不知道该放在哪里是好。身上私密的地方都暴露在空气之中，全身各处都变得有点奇怪。</p>
 <p>　　“圆锥曲线的题目，向来都是考试的重点，然而我们班的得分并不高。以诺霖·卡蕾娜做的这道双曲线题目为例，今天再详细地给大家演示一遍大题。”冰老虎颇为认真地在那边讲解着这个题目，完全没有想放我下去的意思。</p>
-<p>　　求求你了！让我下去吧……这到底是算那种惩罚play啊！感觉到了大家看向我的视线，我甚至都有了想要将幻觉魔术解除的邪恶想法。</p>
+<p>　　求求你了！让我下去吧……这到底是算那种惩罚 play 啊！感觉到了大家看向我的视线，我甚至都有了想要将幻觉魔术解除的邪恶想法。</p>
 <p>　　不行不行，上一次已经闹过了乌龙了，我在千羽学院内的人气很高，再闹出这种秩序的话估计都要被算作扰乱课堂纪律了。</p>
-<p>　　“直线与圆锥曲线相交，首先第一步便是设交点为A、B。”她一边说着，一边还用红笔在我写的步骤上进行着标注，“诺霖，这里的(x1,y1),(x2,y2)要先设出来，知道了吗？”</p>
+<p>　　“直线与圆锥曲线相交，首先第一步便是设交点为 A、B。”她一边说着，一边还用红笔在我写的步骤上进行着标注，“诺霖，这里的 (x1,y1),(x2,y2) 要先设出来，知道了吗？”</p>
 <p>　　就好像是在故意挑着我错一样。</p>
 <p>　　“知，知道了。”</p>
 <p>　　强行正常地回答了冰老虎一句，忍耐着不让娇喘从我的口中发出。</p>
@@ -242,7 +216,7 @@
 <p>　　「能否稍微，借我一点魔力呢？」</p>
 <p>　　露西的话语轻轻地挑了一下我的心弦，那无形的手仿佛开始缓缓弹奏起了一出爱欲的狂想曲，在我的允诺之下，看不见的手将我的全身包围，开始给我的每一处按摩了一下。</p>
 <p>　　“啊……”一丝娇喘声从嘴角漏出，在这寂静的教室里，显得未免有点尴尬。</p>
-<p>　　“我发现很多人到了这一步之后就做不下去了，为什么？这是个一元二次方程，x1和x2的值就是两个根，然后算？算下来的话就错了，这里不能算，诺霖在这里一步做的就很好，这里我们选用韦达定理。不过，诺霖，我再问你个问题，韦达定理随时可以用吗？”</p>
+<p>　　“我发现很多人到了这一步之后就做不下去了，为什么？这是个一元二次方程，x1 和 x2 的值就是两个根，然后算？算下来的话就错了，这里不能算，诺霖在这里一步做的就很好，这里我们选用韦达定理。不过，诺霖，我再问你个问题，韦达定理随时可以用吗？”</p>
 <p>　　“难，难道不……不是吗？”全身各处的快感不断地冲击着我的一切，令我的话语都显得断断续续的。</p>
 <p>　　她们都在看着我，包括着诺汐在内的大家都在看着我。没事，有着幻觉魔术的庇护，她们也不会觉得奇怪的吧……毕竟我本来就是个超奇怪的少女，还会把裸照发布在论坛里什么的……</p>
 <p>　　她们应该早就已经见怪不怪了吧……</p>
@@ -251,7 +225,7 @@
 <p>　　奇怪的开关仿佛在那一时间被打开了，身体突然一软，我差点倒了下去。</p>
 <p>　　“呜……啊，抱歉抱歉。”</p>
 <p>　　自己的腰撞到了黑板槽那边，发出了一声叮当的响声。冰凉的痛感令我的理智稍微恢复了几分。冰老虎的看了看奇怪的我，继续讲起了她的课。</p>
-<p>　　“最后根据韦达定理的结果求出AB的长以及FAB的面积。诺霖做的的确没错，但是请要验证一下一元二次方程本身是否有解，诺霖漏了这一步，在正式考试的时候可是要扣分的。”</p>
+<p>　　“最后根据韦达定理的结果求出 AB 的长以及 FAB 的面积。诺霖做的的确没错，但是请要验证一下一元二次方程本身是否有解，诺霖漏了这一步，在正式考试的时候可是要扣分的。”</p>
 <p>　　她还是一如既往的严格呢。</p>
 <p>　　“诺霖你先回去吧，接下来我们再继续讲点其他的，再回到双曲线这里……”最后，她用着红色粉笔打了个勾之后便是让我重新回到了座位上。</p>
 <p>　　总算是解放了……我怕再这样下去我可能会在众人面前高潮什么的。</p>
@@ -261,83 +235,111 @@
 <p>　　小秘密被拆穿之后，我的脸瞬间变得像是西红柿一样，无力地瘫在了桌上，用着怨念的目光看向了面前的她。</p>
 <p>　　“毕竟，霖在讲台上的表情很奇怪嘛~”诺汐露出了胜利的笑容，“可小心因为扰乱教学纪律而被开除哦~”</p>
 <p>　　“才，才不会！”就好像是小报复一般，轻轻地咬了一下诺汐的手臂。</p>
-<p>　　</p>
-<p>　　</p>
 
-        </div>
-  
-      </div>
-
-      
     </div>
+  </div>
+</section>
 
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E7%95%AA%E5%A4%96%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A5%B6%E6%B2%B9%E5%91%B3%E7%9A%84%E5%9C%A3%E8%AF%9E%E8%8A%82/"><b>上一页：</b> 奶油味的圣诞节</a>
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E7%95%AA%E5%A4%96%E7%9F%AD%E7%AF%87%E9%9B%86/%E7%8C%AB%E5%A8%98%E7%9A%84%E6%AD%A3%E7%A1%AE%E9%A5%B2%E5%85%BB%E6%96%B9%E6%B3%95/"><b>下一页：</b> 猫娘的正确饲养方法</a>
-        </div>
-      </div>
-    </div>
-
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <nav class="pagenav">
     
-    <div style="position:fixed; top: 1rem; left: 1rem; width: 25%;">
-      <button onclick="addBookmark()" id="bkmrk" title="加书签" class="btn btn-light" style="display: block;">
-        +<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M12 0H4c-.73 0-1 .27-1 1v15l5-3.09L13 16V1c0-.73-.27-1-1-1z"></path></svg>
-      </button>
-      <button onclick="toggleBmDisplay()" id="bkmrk" title="管理书签" class="btn btn-light" style="display: block;">
-        书签
-      </button>
-      
-      <div id="bmcard" class="card card-body overflow-hidden" hidden="true">
-        <h4>书签管理器</h4>
-        <div id="bookmarksSection"></div>
-      </div>
-      
-    </div>
-
     
-    <div class="dropdown" style="position: fixed; bottom: 1rem; left: 1rem;">
-      <button class="btn btn-light dropdown-toggle" type="button" id="themeMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        主题选择
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#" onclick="changeTheme('day')">日间</a>
-        <a class="dropdown-item" href="#" onclick="changeTheme('night')">夜间</a>
-      </div>
-    </div>
+    <a id="prevlink" class="button prevbtn is-size-5" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E7%95%AA%E5%A4%96%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A5%B6%E6%B2%B9%E5%91%B3%E7%9A%84%E5%9C%A3%E8%AF%9E%E8%8A%82/" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E7%95%AA%E5%A4%96%E7%9F%AD%E7%AF%87%E9%9B%86\/%E5%A5%B6%E6%B2%B9%E5%91%B3%E7%9A%84%E5%9C%A3%E8%AF%9E%E8%8A%82\/');return false;">
+      <span>
+        <strong>上一章</strong>
+        <em>奶油味的圣诞节</em>
+      </span>
+    </a>
+    
+    
+    <a id="nextlink" class="button nextbtn is-size-5" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E7%95%AA%E5%A4%96%E7%9F%AD%E7%AF%87%E9%9B%86/%E7%8C%AB%E5%A8%98%E7%9A%84%E6%AD%A3%E7%A1%AE%E9%A5%B2%E5%85%BB%E6%96%B9%E6%B3%95/" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E7%95%AA%E5%A4%96%E7%9F%AD%E7%AF%87%E9%9B%86\/%E7%8C%AB%E5%A8%98%E7%9A%84%E6%AD%A3%E7%A1%AE%E9%A5%B2%E5%85%BB%E6%96%B9%E6%B3%95\/');return false;">
+      <span>
+        <strong>下一章</strong>
+        <em>猫娘的正确饲养方法</em>
+      </span>
+    </a>
+    
+  </nav>
   
+  <section class="section is-paddingless-horizontal has-text-grey-light">
+  <p>
+    上次更新：
+    <span title="0001-01-01 00:00:00 &#43;0000 UTC">0001-01-01</span>
+      
+      ，<a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/commits/master/content/novel/%e9%ad%94%e5%a5%b3%e4%b9%8b%e5%90%bb%c2%b7%e7%95%aa%e5%a4%96%e7%9f%ad%e7%af%87%e9%9b%86/%e8%af%ba%e9%9c%96%e7%9a%84%e6%96%b0%e8%a1%a3.md" target="_blank">更新历史</a>
+  </p>
+  
+  <p>
+    <a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/blob/master/content/novel/%e9%ad%94%e5%a5%b3%e4%b9%8b%e5%90%bb%c2%b7%e7%95%aa%e5%a4%96%e7%9f%ad%e7%af%87%e9%9b%86/%e8%af%ba%e9%9c%96%e7%9a%84%e6%96%b0%e8%a1%a3.md" target="_blank">在 GitHub 上改进此页</a>
+  </p>
+  
+</section>
+</section>
+
+    </div>
   </div>
   
-</div>
 
+<footer class="footer">
+  <div class="container">
+    <div class="level">
+      <div class="level-start">
+        蝶天希
+        <p>Maintained with love by Yrr0r &amp; Gesrua</p>
+        
+      </div>
+      <div class="level-end">
+        <p>Theme <a href="https://github.com/Yrr0r/yuripages">YuriPages</a> by <a href="https://github.com/Yrr0r">Yrr0r</a> & <a href="https://github.com/Gesrua">Gesrua</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener('keydown', k => {
+    if (k.code == 'KeyZ') {
+      window.scrollBy({ top: window.innerHeight / 2, left: 0, behavior: 'smooth' });
+    } else if (k.code == 'ArrowRight' && window?.$pagedata?.next) {
+      pjax.loadUrl(window.$pagedata.next)
+    } else if (k.code == 'ArrowLeft' && window?.$pagedata?.prev) {
+      pjax.loadUrl(window.$pagedata.prev)
+    }
+  });
+</script>
+<style>
+  .is-paddingless-horizontal {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  .pagenav {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+  }
 
-    </main>
+  .pagenav span {
+    line-height: 1.25
+  }
 
-    
+  .pagenav span em {
+    display: block;
+    font-style: normal;
+  }
 
-<div class="text-center" id="footer">
-    <p>Maintained with love by Yrr0r</p>
-    <p>Sample</p>
-    <p>Theme "YuriPages" by Yrr0r.</p>
-</div>
+  .prevbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: 0;
+  }
 
+  .nextbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: auto;
+    margin-right: 0
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</body>
 
-
-
-
-
-<link href="../../../cssjs/bootstrap.min.css" rel="stylesheet">
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-
-<script src="../../../cssjs/bootstrap.bundle.min.js"></script>
-
-
-<script src="../../../cssjs/utility.js"></script>
-  </body>
 </html>

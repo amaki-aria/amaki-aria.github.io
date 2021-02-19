@@ -1,97 +1,81 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    
 
-
-
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 
-
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>第一章 我的姐姐是魔王</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace-theme-default.min.css" integrity="sha256-anPTRkzR25h4UMAUWxh0FNzKvgVv2MnEyxeDpgOtfiA=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace.min.js" integrity="sha256-kubxe7yxLaribPaAekUOUDUCap6FSiCeKCQQqYQDs4s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"
+    integrity="sha256-yYGYRNGM8Fn1Kn2lP3htQYNIzGYt1+JD8AnsVZusheI=" crossorigin="anonymous"></script>
+<script>
+    var pjax = new Pjax({
+        debug: true,
+        cacheBust: false,
+        elements: "a.js-Pjax",
+        selectors: [
+            "title",
+            "#pjax-main",
+        ]
+    })
+</script>
+</head>
 
-
-
-  </head>
-
-  <body id="body">
-
-    <main class="block-main">
+<body>
+  <div id="pjax-main" class="columns is-centered is-size-5">
+    <div class="column is-three-quarters is-full-mobile">
       
+<script>
+  window.$pagedata = {
+    type: 'single',
 
 
-<div id="pageInfo" hidden=true>
-  {
-    "kind" : "page",
-    "weight": 1,
-    "title" : "第一章 我的姐姐是魔王",
-    "link" : "/novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E5%9C%A3%E5%A5%B3%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0/%E7%AC%AC%E4%B8%80%E7%AB%A0/",
-    "currentSection" : "魔女之吻乃百合之味 外传（RX）：圣女调教日记"
+    next: '\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E5%9C%A3%E5%A5%B3%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0\/%E7%AC%AC%E4%BA%8C%E7%AB%A0\/',
+
   }
-</div>
+</script>
 
-<div id="readerview">
-  <div class="container" id="pageview">
-    
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../../../">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M16 9l-3-3V2h-2v2L8 1 0 9h2l1 5c0 .55.45 1 1 1h8c.55 0 1-.45 1-1l1-5h2zm-4 5H9v-4H7v4H4L2.81 7.69 8 2.5l5.19 5.19L12 14z"></path></svg>
-        </a></li>
-        <li class="breadcrumb-item"><a href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E5%9C%A3%E5%A5%B3%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0/">魔女之吻乃百合之味 外传（RX）：圣女调教日记</a></li>
-        <li class="breadcrumb-item active" aria-current="page">第一章 我的姐姐是魔王</li>
-      </ol>
-    </nav>
-
-    <div id="page-data" hidden="true">
-     todo: 此处可以用js从URL里插入一个面包屑导航代替上面的导航。
-    </div>
-    
-  
-    
-    <div id="reader-chapterMenu" hidden=true>
-    目录：</br>
-    
-    第一章 我的姐姐是魔王 </br>
-    
-    第二章 魔王的烙印（1） </br>
-    
-    第三章 魔王的烙印（2） </br>
-    
-    第四章 叛逆的圣女 </br>
-    
-    第五章 强制高潮地狱 </br>
-    
-    第六章 过去的真相 </br>
-    
-    第七章 魔族女王的王后 </br>
-    
-    </div>
-
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-          
-           <a type="button" id="nextlink" class="btn text-left btn-light col-12 col-md-6" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E5%9C%A3%E5%A5%B3%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0/%E7%AC%AC%E4%BA%8C%E7%AB%A0/"><b>下一页：</b> 第二章 魔王的烙印（1）</a>
-        </div>
-      </div>
-    </div>
-  
-    
-    <div class="card my-3" id="mainview">
-
-      <div class="card-body">
-        <h2 class="card-title text-center">第一章 我的姐姐是魔王</h2>
-        <h6 class="card-subtitle mb-2 text-muted text-center"> 3012 字 </h6> 
+<section class="section is-paddingless-horizontal">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ol>
+      
+      
         
-        <div class="card-text">
-          <p>　　【基于一些读者的要求，把妹吻1第53章和54章的剧情给拓展了一下】</p>
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/');return false;"> 梦之图书馆</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E5%9C%A3%E5%A5%B3%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0\/');return false;"> 魔女之吻乃百合之味 外传（RX）：圣女调教日记</a>
+            </li>
+          
+        
+      
+      <li class="is-active" aria-current="page">
+        <a href="#">第一章 我的姐姐是魔王</a>
+      </li>
+    </ol>
+  </nav>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <h1 class="has-text-centered title is-1">
+    第一章 我的姐姐是魔王
+  </h1>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <div class="container">
+    <div class="content is-size-5">
+      <p>　　【基于一些读者的要求，把妹吻 1 第 53 章和 54 章的剧情给拓展了一下】</p>
 <p>　　【诺霖主视角】</p>
-<p>　　【监禁、SM剧情注意】</p>
+<p>　　【监禁、SM 剧情注意】</p>
 <p>　　圣战，由辉光神殿所发起的为了讨伐魔族势力的战争。然而，在魔王的弹指之间，我们的军队便是灰飞烟灭，耳边只剩下了无数士兵的哭喊声。作为着圣女率领着整个军队的我，却什么都做不到。</p>
 <p>　　魔族大军甚至都没有出动，我们的对手仅仅只有一人，那就是魔王。然而，哪怕是集结着整个神殿所有的精锐，也无法战胜她，转念之间，我们的军队几乎是全军覆没。</p>
 <p>　　“报告，圣女大人，真琴她……”抱着大剑的由理朝着我的方向跑了过来，她的身上满是血污，甚至腰间的伤口还流着血。</p>
@@ -102,7 +86,7 @@
 <p>　　“如果现在投降的话，我还能饶你一命哦，圣女小姐。”</p>
 <p>　　“姐……姐姐？”</p>
 <p>　　那是，魔王？</p>
-<p>　　我从小所憧憬着的存在——两年前所失踪的姐姐，辉光神殿的上一任圣女，被誉为天下最强魔法使的诺汐·卡蕾娜。</p>
+<p>　　我从小所憧憬着的存在⸺两年前所失踪的姐姐，辉光神殿的上一任圣女，被誉为天下最强魔法使的诺汐·卡蕾娜。</p>
 <p>　　她是有史以来最强的圣女，曾经带领着神殿大军无数次击溃了魔族大军，为人类大陆带来着繁荣与和平，至今仍旧在被歌颂着的前任圣女。在两年前的那一场圣战之中下落未明，至今仍然是大陆上的一大谜团。我会继承她的职位成为新任圣女也是因此。</p>
 <p>　　如果是她就是魔王的话，那也丝毫不奇怪了。</p>
 <p>　　因为她就是如此强大的存在，是我绝对不可能企及的存在。</p>
@@ -124,14 +108,14 @@
 <p>　　“为什么……姐姐会变成魔王……这，这不可能……”我看着眼前的姐姐，完全不敢相信眼前发生的这一切。仍然想只是催眠着自己这不过是一场梦而已，然而，展露在我面前的现实却是如此的无情，姐姐对着我微微一笑并对我说道，“没什么大不了的，我就是货真价实的魔王，如假包换的诺汐·卡蕾娜。”</p>
 <p>　　“不，不可能！我的姐姐，才，才不是……”我试图着从锁链中挣脱，然而身体却只感觉到了被锁链给磕着的疼痛感。</p>
 <p>　　“看来，需要给霖好好地上一课才行呢。”诺汐轻轻舔了一下我的脖子，用手轻轻挑了一下我微微隆起的胸部。</p>
-<p>　　“咿呀——不，不要……放开，放开我，你，你才不是……姐姐……嗯，嗯啊……”刚试图着反抗，然而嘴唇却是被姐姐给堵住了。两人的唇合在了一起，姐姐粗暴地用舌头撬开了我的牙齿，在我的口腔之中不断地搅动着，这奇妙的感觉令我的大脑都变得晕晕的，仿佛感觉到有着奇怪的液体注入到了自己的体内，好似迷药一般给予了我的大脑不小的刺激。</p>
+<p>　　“咿呀⸺不，不要……放开，放开我，你，你才不是……姐姐……嗯，嗯啊……”刚试图着反抗，然而嘴唇却是被姐姐给堵住了。两人的唇合在了一起，姐姐粗暴地用舌头撬开了我的牙齿，在我的口腔之中不断地搅动着，这奇妙的感觉令我的大脑都变得晕晕的，仿佛感觉到有着奇怪的液体注入到了自己的体内，好似迷药一般给予了我的大脑不小的刺激。</p>
 <p>　　“嗯，嗯哈……咕啾……姐姐，咕……”</p>
 <p>　　口中发出着奇怪的呻吟，在诺汐所展开的攻势面前我显得毫无反抗的余地，就好像是一只被关押在笼子之中的宠物一般，沦陷于姐姐所给予的爱抚之中。</p>
 <p>　　身体变得无比地燥热，完全无法抗拒姐姐的动作。</p>
 <p>　　因为她的动作就是如此地舒适，在这绵长而又激烈的深吻之中，我的魂都好似被她给勾了走。一边亲吻着的同时，姐姐将手指移向了我的小腹处，在上面用着手指好像是画着无形的图案。那敏感而又私密的地方暴露在空气之中，从中传来的阵阵快感不断地冲击着我的大脑，私处已经湿的一塌糊涂，甚至都有着水珠顺着大腿不断滴下，能够让我这么有感觉的，也只有着她一人了。</p>
 <p>　　“怎么样，相信姐姐了吗？”我们的唇间拉出了一条美丽的银丝，她对着我微微一笑。</p>
 <p>　　“你……你是……”</p>
-<p>　　姐姐是货真价实的，是我这2年间朝思暮想的姐姐。</p>
+<p>　　姐姐是货真价实的，是我这 2 年间朝思暮想的姐姐。</p>
 <p>　　同时，这也就代表着，她便是击溃了神殿大军的魔王。能够与姐姐重逢，应该是一件值得高兴的事情才对，但是为什么，为什么现在我却完全高兴不起来呢？心中好像被什么塞住了一样，感觉到莫名的有点窒息。泪水下意识地顺着我的眼泪留下，我好想在她的怀里大哭一场。</p>
 <p>　　但是，不行，哪怕神殿精锐已经覆灭了，</p>
 <p>　　我也仍旧是辉光神殿的圣女。</p>
@@ -139,11 +123,11 @@
 <p>　　哪怕对方是我朝思暮想的姐姐，</p>
 <p>　　我也要维持住自己作为着圣女最后的那点尊严。</p>
 <p>　　“你，你才不是，我的姐姐！”我用着自己所剩不多的力气推开了俯在我身上的姐姐，憋住泪水对着她大喊道，“我的姐姐诺汐，才，才不可能是你这种滥杀无辜，践踏生命的魔王！”</p>
-<p>　　“我的姐姐在2年前就已经死了！魔王，休想变成姐姐的样子来糊弄我！我的姐姐才，才不可能像是你这样！”</p>
+<p>　　“我的姐姐在 2 年前就已经死了！魔王，休想变成姐姐的样子来糊弄我！我的姐姐才，才不可能像是你这样！”</p>
 <p>　　哪怕身体被束缚着，我也仍旧是努力地缩在了角落之中，试图着远离面前所谓的魔王。她不是姐姐，她只是用魔法变装成了姐姐模样的恶魔而已！</p>
 <p>　　我的姐姐大人，才不可能是这样的！</p>
 <p>　　“哦？是嘛，看来，需要让姐姐我好好疼爱小霖一番才行了呢。”被我推开的诺汐，非但没有显露出怒色，反倒是露出了一抹神秘的笑容，“今天就到这里吧，今后，还有得是机会来好好，调，教，你，呢。”</p>
-<p>　　————————————————————————</p>
+<hr>
 <p>　　“……”诺汐看着我所写的剧本，脸上露出了颇为奇妙的表情。我乖巧地呆在她的身边，这种羞耻的东西在被姐姐看着的时候不禁令我坐立难安。</p>
 <p>　　“那个……为什么我突然变成了凤傲天角色，还有，真琴酱和由理酱也太惨了一点吧，我觉得我可是那种会把闺蜜直接砍死的人。”</p>
 <p>　　“该吐槽的是这里吗！”</p>
@@ -153,82 +137,105 @@
 <p>　　“所以，为什么这么强大的我会莫名其妙变成了魔王？所谓的那场两年前的圣战是怎么回事？”</p>
 <p>　　“被魔族抓走了然后调教成了魔王。”实际上剧情我是想要写的是因为神殿的隐情，魔族实际上是受害者一方的老套剧情，但是还是莫名地想要和姐姐皮一下。</p>
 <p>　　“诺霖，我看你今天是欠收拾了！”</p>
-<p>　　“我开玩笑的啊，姐姐不要挠，不要挠我的腰，哈哈，哈哈哈哈哈——救命，救命啊——姐姐大人小霖错了啊——”</p>
+<p>　　“我开玩笑的啊，姐姐不要挠，不要挠我的腰，哈哈，哈哈哈哈哈⸺救命，救命啊⸺姐姐大人小霖错了啊⸺”</p>
 
-        </div>
-  
-      </div>
-
-      
     </div>
+  </div>
+</section>
 
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-          
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E5%9C%A3%E5%A5%B3%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0/%E7%AC%AC%E4%BA%8C%E7%AB%A0/"><b>下一页：</b> 第二章 魔王的烙印（1）</a>
-        </div>
-      </div>
-    </div>
-
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <nav class="pagenav">
     
-    <div style="position:fixed; top: 1rem; left: 1rem; width: 25%;">
-      <button onclick="addBookmark()" id="bkmrk" title="加书签" class="btn btn-light" style="display: block;">
-        +<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M12 0H4c-.73 0-1 .27-1 1v15l5-3.09L13 16V1c0-.73-.27-1-1-1z"></path></svg>
-      </button>
-      <button onclick="toggleBmDisplay()" id="bkmrk" title="管理书签" class="btn btn-light" style="display: block;">
-        书签
-      </button>
-      
-      <div id="bmcard" class="card card-body overflow-hidden" hidden="true">
-        <h4>书签管理器</h4>
-        <div id="bookmarksSection"></div>
-      </div>
-      
-    </div>
-
     
-    <div class="dropdown" style="position: fixed; bottom: 1rem; left: 1rem;">
-      <button class="btn btn-light dropdown-toggle" type="button" id="themeMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        主题选择
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#" onclick="changeTheme('day')">日间</a>
-        <a class="dropdown-item" href="#" onclick="changeTheme('night')">夜间</a>
-      </div>
-    </div>
+    
+    <a id="nextlink" class="button nextbtn is-size-5" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E5%9C%A3%E5%A5%B3%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0/%E7%AC%AC%E4%BA%8C%E7%AB%A0/" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E5%9C%A3%E5%A5%B3%E8%B0%83%E6%95%99%E6%97%A5%E8%AE%B0\/%E7%AC%AC%E4%BA%8C%E7%AB%A0\/');return false;">
+      <span>
+        <strong>下一章</strong>
+        <em>第二章 魔王的烙印（1）</em>
+      </span>
+    </a>
+    
+  </nav>
   
+  <section class="section is-paddingless-horizontal has-text-grey-light">
+  <p>
+    上次更新：
+    <span title="0001-01-01 00:00:00 &#43;0000 UTC">0001-01-01</span>
+      
+      ，<a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/commits/master/content/novel/%e9%ad%94%e5%a5%b3%e4%b9%8b%e5%90%bb%e5%a4%96%e4%bc%a0%ef%bc%9a%e5%9c%a3%e5%a5%b3%e8%b0%83%e6%95%99%e6%97%a5%e8%ae%b0/%e7%ac%ac%e4%b8%80%e7%ab%a0.md" target="_blank">更新历史</a>
+  </p>
+  
+  <p>
+    <a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/blob/master/content/novel/%e9%ad%94%e5%a5%b3%e4%b9%8b%e5%90%bb%e5%a4%96%e4%bc%a0%ef%bc%9a%e5%9c%a3%e5%a5%b3%e8%b0%83%e6%95%99%e6%97%a5%e8%ae%b0/%e7%ac%ac%e4%b8%80%e7%ab%a0.md" target="_blank">在 GitHub 上改进此页</a>
+  </p>
+  
+</section>
+</section>
+
+    </div>
   </div>
   
-</div>
 
+<footer class="footer">
+  <div class="container">
+    <div class="level">
+      <div class="level-start">
+        蝶天希
+        <p>Maintained with love by Yrr0r &amp; Gesrua</p>
+        
+      </div>
+      <div class="level-end">
+        <p>Theme <a href="https://github.com/Yrr0r/yuripages">YuriPages</a> by <a href="https://github.com/Yrr0r">Yrr0r</a> & <a href="https://github.com/Gesrua">Gesrua</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener('keydown', k => {
+    if (k.code == 'KeyZ') {
+      window.scrollBy({ top: window.innerHeight / 2, left: 0, behavior: 'smooth' });
+    } else if (k.code == 'ArrowRight' && window?.$pagedata?.next) {
+      pjax.loadUrl(window.$pagedata.next)
+    } else if (k.code == 'ArrowLeft' && window?.$pagedata?.prev) {
+      pjax.loadUrl(window.$pagedata.prev)
+    }
+  });
+</script>
+<style>
+  .is-paddingless-horizontal {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  .pagenav {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+  }
 
-    </main>
+  .pagenav span {
+    line-height: 1.25
+  }
 
-    
+  .pagenav span em {
+    display: block;
+    font-style: normal;
+  }
 
-<div class="text-center" id="footer">
-    <p>Maintained with love by Yrr0r</p>
-    <p>Sample</p>
-    <p>Theme "YuriPages" by Yrr0r.</p>
-</div>
+  .prevbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: 0;
+  }
 
+  .nextbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: auto;
+    margin-right: 0
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</body>
 
-
-
-
-
-<link href="../../../cssjs/bootstrap.min.css" rel="stylesheet">
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-
-<script src="../../../cssjs/bootstrap.bundle.min.js"></script>
-
-
-<script src="../../../cssjs/utility.js"></script>
-  </body>
 </html>

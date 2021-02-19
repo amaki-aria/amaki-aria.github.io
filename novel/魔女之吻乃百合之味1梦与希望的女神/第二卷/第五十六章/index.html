@@ -1,172 +1,92 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    
 
-
-
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 
-
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>第五十六章 魔术复写——Imitate</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace-theme-default.min.css" integrity="sha256-anPTRkzR25h4UMAUWxh0FNzKvgVv2MnEyxeDpgOtfiA=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace.min.js" integrity="sha256-kubxe7yxLaribPaAekUOUDUCap6FSiCeKCQQqYQDs4s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"
+    integrity="sha256-yYGYRNGM8Fn1Kn2lP3htQYNIzGYt1+JD8AnsVZusheI=" crossorigin="anonymous"></script>
+<script>
+    var pjax = new Pjax({
+        debug: true,
+        cacheBust: false,
+        elements: "a.js-Pjax",
+        selectors: [
+            "title",
+            "#pjax-main",
+        ]
+    })
+</script>
+</head>
 
-
-
-  </head>
-
-  <body id="body">
-
-    <main class="block-main">
+<body>
+  <div id="pjax-main" class="columns is-centered is-size-5">
+    <div class="column is-three-quarters is-full-mobile">
       
+<script>
+  window.$pagedata = {
+    type: 'single',
+
+    prev: '\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%BA%8C%E5%8D%B7\/%E7%AC%AC%E4%BA%94%E5%8D%81%E4%BA%94%E7%AB%A0\/',
 
 
-<div id="pageInfo" hidden=true>
-  {
-    "kind" : "page",
-    "weight": 56,
-    "title" : "第五十六章 魔术复写——Imitate",
-    "link" : "/novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%BA%8C%E5%8D%B7/%E7%AC%AC%E4%BA%94%E5%8D%81%E5%85%AD%E7%AB%A0/",
-    "currentSection" : "第二卷 学院怪谈"
+    next: '\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%BA%8C%E5%8D%B7\/%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E7%AB%A0\/',
+
   }
-</div>
+</script>
 
-<div id="readerview">
-  <div class="container" id="pageview">
-    
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../../../../">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M16 9l-3-3V2h-2v2L8 1 0 9h2l1 5c0 .55.45 1 1 1h8c.55 0 1-.45 1-1l1-5h2zm-4 5H9v-4H7v4H4L2.81 7.69 8 2.5l5.19 5.19L12 14z"></path></svg>
-        </a></li>
-        <li class="breadcrumb-item"><a href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%BA%8C%E5%8D%B7/">第二卷 学院怪谈</a></li>
-        <li class="breadcrumb-item active" aria-current="page">第五十六章 魔术复写——Imitate</li>
-      </ol>
-    </nav>
-
-    <div id="page-data" hidden="true">
-     todo: 此处可以用js从URL里插入一个面包屑导航代替上面的导航。
-    </div>
-    
-  
-    
-    <div id="reader-chapterMenu" hidden=true>
-    目录：</br>
-    
-    第三十八章 特查的工作 </br>
-    
-    第三十九章 黑猫的幻影 </br>
-    
-    第四十章 似真似幻 </br>
-    
-    第四十一章 千羽学院怪谈 </br>
-    
-    第四十二章 姐妹俩的下午茶 </br>
-    
-    第四十三章 超自然研究社 </br>
-    
-    第四十四章 与奇怪学姐一起共进晚餐 </br>
-    
-    第四十五章 暴风雨夜 </br>
-    
-    第四十六章 不眠之夜 </br>
-    
-    第四十七章 不安【诺霖视角】 </br>
-    
-    第四十八章 姐妹调查中（1） </br>
-    
-    第四十九章 姐妹调查中（2） </br>
-    
-    第五十章 镜之夜 </br>
-    
-    第五十一章 惩罚，不是游戏 </br>
-    
-    第五十二章 纱雪的祈愿 </br>
-    
-    第五十三章 特查的新成员 </br>
-    
-    第五十四章 悄悄潜入你的世界（1）【诺霖视角】 </br>
-    
-    第五十五章 悄悄潜入你的梦境（2）【诺霖视角】 </br>
-    
-    第五十六章 魔术复写——Imitate </br>
-    
-    第五十七章 消失的钥匙 </br>
-    
-    第五十八章 戴着手铐上学的一天。 </br>
-    
-    第五十九章 老妈驾到 </br>
-    
-    第六十章 梦的延续 </br>
-    
-    第六十一章 小女仆的夜晚 </br>
-    
-    第六十二章 深夜的千羽学院（1） </br>
-    
-    第六十三章 深夜的千羽学院（2） </br>
-    
-    第六十四章 走廊中捡到的女孩 </br>
-    
-    第六十五章 惊异走廊 </br>
-    
-    第六十六章 孤独的少女 </br>
-    
-    第六十七章 人偶魔女 </br>
-    
-    第六十八章 Broken Doll </br>
-    
-    第六十九章 朋友 </br>
-    
-    第七十章 救济的圣女 </br>
-    
-    第七十一章 那一夜 </br>
-    
-    第七十二章 赤月的银狐（1） </br>
-    
-    第七十三章 赤月的银狐（2） </br>
-    
-    第七十四章 赤月的银狐（3）【诺霖视角】 </br>
-    
-    第七十五章 赤月的银狐（4）【诺霖视角】 </br>
-    
-    第七十六章 赤月的银狐（5）【诺霖视角】 </br>
-    
-    第七十七章 赌上身体的决斗 </br>
-    
-    第七十八章 御三家的峰会 </br>
-    
-    第七十九章 在时间停止的世界里【诺霖视角】 </br>
-    
-    第八十章 交流生 </br>
-    
-    </div>
-
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-           <a type="button" id="prevlink" class="btn text-left btn-light col-12 col-md-6" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%BA%8C%E5%8D%B7/%E7%AC%AC%E4%BA%94%E5%8D%81%E4%BA%94%E7%AB%A0/"><b>上一页：</b> 第五十五章 悄悄潜入你的梦境（2）【诺霖视角】</a>
-           <a type="button" id="nextlink" class="btn text-left btn-light col-12 col-md-6" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%BA%8C%E5%8D%B7/%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E7%AB%A0/"><b>下一页：</b> 第五十七章 消失的钥匙</a>
-        </div>
-      </div>
-    </div>
-  
-    
-    <div class="card my-3" id="mainview">
-
-      <div class="card-body">
-        <h2 class="card-title text-center">第五十六章 魔术复写——Imitate</h2>
-        <h6 class="card-subtitle mb-2 text-muted text-center"> 4323 字 </h6> 
+<section class="section is-paddingless-horizontal">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ol>
+      
+      
         
-        <div class="card-text">
-          <p>　　直到第二天的早晨，诺霖还是没有将昨晚的事情告诉诺汐。</p>
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/');return false;"> 梦之图书馆</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/');return false;"> 魔女之吻乃百合之味1：梦与希望的女神</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%BA%8C%E5%8D%B7\/');return false;"> 第二卷 学院怪谈</a>
+            </li>
+          
+        
+      
+      <li class="is-active" aria-current="page">
+        <a href="#">第五十六章 魔术复写——Imitate</a>
+      </li>
+    </ol>
+  </nav>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <h1 class="has-text-centered title is-1">
+    第五十六章 魔术复写——Imitate
+  </h1>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <div class="container">
+    <div class="content is-size-5">
+      <p>　　直到第二天的早晨，诺霖还是没有将昨晚的事情告诉诺汐。</p>
 <p>　　只不过，通过潜入到诺汐的潜意识层面，观察她的梦境，诺霖发现了很多可怕的事情。在梦境的最后，那个魔王诺汐对着她说的那句话，依旧令她耿耿于怀。</p>
 <p>　　然而，早晨醒来后的诺汐，并没有表现出任何的异常，也似乎并没有察觉到妹妹潜入到自己梦中的事情。当诺霖问起她昨晚是不是做了很奇怪的梦的时候，诺汐却只是笑了笑谈起了其他的话题。</p>
 <p>　　诺霖对此稍微有点小愤怒，但是很快也就选择了原谅姐姐，勾住她的手臂嘟着小嘴就将这一页翻了过去。</p>
 <p>　　校园生活很是平常，姐妹俩洗漱完毕便是整理好了书包前去餐厅吃早饭了。镜中人影事件平息后的现今，她们还是依旧得去认真（并不可能）地上学的。</p>
-<p>　　毕竟6月月考已经迫在眉睫，虽然不打算复习，但是她也不想自己的成绩变得太难看。万一暑假回家被Mum和Kaasan问起来的话，还会显得些许尴尬。</p>
+<p>　　毕竟 6 月月考已经迫在眉睫，虽然不打算复习，但是她也不想自己的成绩变得太难看。万一暑假回家被 Mum 和 Kaasan 问起来的话，还会显得些许尴尬。</p>
 <p>　　殊不知，理事长办公室里，优奈和优佳两人正在谋划着什么。</p>
 <p>　　“造梦者？优佳你觉得逗我开心很好玩吗？！”</p>
 <p>　　在她们面前的，则是特查的新成员，外号镜之魔女的小鸢纱雪。</p>
@@ -178,10 +98,10 @@
 <p>　　那个蠢萌蠢萌的诺霖·卡蕾娜是造梦者？</p>
 <p>　　就宛若说着太阳会从西边出来一样不可思议。</p>
 <p>　　“你和她战斗的时候，没感觉到违和感吗？”</p>
-<p>　　“明明是高达270ppm的大魔女，却完全体现不出魔女的实力，你是想说这个吗？”纱雪回忆起她和诺霖的那场战斗，“她所用的魔术，大部分都是强化、召唤和防御魔术，并没有用过真正的攻击魔术。”</p>
+<p>　　“明明是高达 270ppm 的大魔女，却完全体现不出魔女的实力，你是想说这个吗？”纱雪回忆起她和诺霖的那场战斗，“她所用的魔术，大部分都是强化、召唤和防御魔术，并没有用过真正的攻击魔术。”</p>
 <p>　　“她的魔女之书上是一片空白，什么魔术都没有记载。她到现在，都没有学会属于她的魔术。”</p>
 <p>　　“不，不会吧，怎么，怎么可能？！”</p>
-<p>　　“因为身为造梦者的话，就不需要像我们这些魔女一样，学习很多的魔术了。”优佳在一旁的说着，“毕竟，她们可是有被誉为魔术史上最不可思议的魔术——魔术复写，又名Imitate.”</p>
+<p>　　“因为身为造梦者的话，就不需要像我们这些魔女一样，学习很多的魔术了。”优佳在一旁的说着，“毕竟，她们可是有被誉为魔术史上最不可思议的魔术⸺魔术复写，又名 Imitate.”</p>
 <p>　　“魔术复写？”</p>
 <p>　　同为魔女，纱雪感觉自己的知识储备比起优佳来说要差的多。不过，毕竟千羽优佳可是御三家的魔女，而她只不过是属于千羽家族势力之下的一个普通的小魔女而已。</p>
 <p>　　“简单说就是，那个魔术可以将复制所有其他的魔术的效果。学会了这个魔术，可以说是几乎掌握了所有其他的魔术了。”</p>
@@ -196,13 +116,13 @@
 <p>　　“唔，不要啊！”然而，再怎么样的呼喊也已经是无效的了，悲催的小鸢纱雪，就这样在她加入特查的第二天，得到了一个全新而又困难的任务。</p>
 <p>　　下午社团活动的时候，小鸢纱雪向着来到活动室的姐妹俩说起了整个事件。</p>
 <p>　　“魔术复写？”身为事件的主人公的诺霖，现在仍处在一头雾水的情况。本来昨晚潜入到诺汐的梦中那件事情就已经让她的脑袋晕乎乎的了，现在又被突然告知了造梦者之类的话语，这么多全新的信息，完全已经超出了她大脑处理能力的极限了。</p>
-<p>　　“用英文名——Imitate来解释的话，会更好的理解吧？”纱雪向着诺霖解释道，“简单说，就是模仿他人的魔术。”</p>
-<p>　　“模仿他人的魔术吗？难道说就像是这样——任意门！”诺霖的脑海中浮现出优佳学姐使用魔术的样子，尝试使用着传说之中的魔术复写，然而，眼前却什么都没有发生，并没有出现一扇能够穿梭空间的任意门，换句话说——魔术失败了。</p>
+<p>　　“用英文名⸺Imitate 来解释的话，会更好的理解吧？”纱雪向着诺霖解释道，“简单说，就是模仿他人的魔术。”</p>
+<p>　　“模仿他人的魔术吗？难道说就像是这样⸺任意门！”诺霖的脑海中浮现出优佳学姐使用魔术的样子，尝试使用着传说之中的魔术复写，然而，眼前却什么都没有发生，并没有出现一扇能够穿梭空间的任意门，换句话说⸺魔术失败了。</p>
 <p>　　“你是不是没关掉项圈的开关啊？”</p>
-<p>　　“诶，对对，忘记了这点。”诺霖立刻按了一下项圈的开关，怪不得她总是感觉到体内的Novia因子不愿意回应自己的呼唤，原来是抑制的项圈还在发挥着作用。关掉项圈开关的那个瞬间，体内的Novia因子一下子就重新恢复了活力，身体都渐渐变得燥热了起来。</p>
+<p>　　“诶，对对，忘记了这点。”诺霖立刻按了一下项圈的开关，怪不得她总是感觉到体内的 Novia 因子不愿意回应自己的呼唤，原来是抑制的项圈还在发挥着作用。关掉项圈开关的那个瞬间，体内的 Novia 因子一下子就重新恢复了活力，身体都渐渐变得燥热了起来。</p>
 <p>　　“那么，就让我再试一次吧。”</p>
-<p>　　诺霖走到了房间的大门前，深呼吸了一口，调动起了体内的Novia因子，手心中渐渐展开出一个小型的魔法阵。</p>
-<p>　　闭上眼，思考着自己想要的魔术的效果，聆听着自己心中的声音。魔术复写，Imitate，所需要模仿的对象是——空间魔术，任意门。</p>
+<p>　　诺霖走到了房间的大门前，深呼吸了一口，调动起了体内的 Novia 因子，手心中渐渐展开出一个小型的魔法阵。</p>
+<p>　　闭上眼，思考着自己想要的魔术的效果，聆听着自己心中的声音。魔术复写，Imitate，所需要模仿的对象是⸺空间魔术，任意门。</p>
 <p>　　“Imitate，任意门！”到了嘴边所吐出的话语，仅仅只有这两个词语而已。</p>
 <p>　　魔力波从手心之中注入到魔法阵之中，魔术的术式开始进行构建，在场的三个人，以高度紧张的心情看着面前的这一切，期待着诺霖的魔术可以成功。那扇门上绽放出了微弱的银白色光芒，看上去魔术好像发挥了效果一样。</p>
 <p>　　“呼……”伴随着光芒的消退，魔术就此告一段落，诺霖感觉自己的身体仿佛都被抽空了一样，倒在了一旁诺汐的怀中。</p>
@@ -219,7 +139,7 @@
 <p>　　“姐姐你肯定在想一些不好的东西！”</p>
 <p>　　“霖怎么知道我下一句话就是如果训练不好的话姐姐就要给霖惩罚呢~”</p>
 <p>　　“因为姐姐满脑子都是色色的东西吧！”</p>
-<p>　　“是色色的霖哦——”诺汐凑到了诺霖的身旁，轻轻舔了舔她的耳垂，敏感的诺霖，又一下羞红了脸。“如果霖表现好的话，给霖一点小奖励也是完全OK的哦~”</p>
+<p>　　“是色色的霖哦⸺”诺汐凑到了诺霖的身旁，轻轻舔了舔她的耳垂，敏感的诺霖，又一下羞红了脸。“如果霖表现好的话，给霖一点小奖励也是完全 OK 的哦~”</p>
 <p>　　“奖，奖励……这，这可是姐姐说的哦！不，不准反悔！”诺霖轻轻地揪住了诺汐的衣角，完全对奖励充满了期待。</p>
 <p>　　“绝不会反悔的，姐姐什么时候说话不算话过呢？”</p>
 <p>　　于是，带着一堆魔导书的姐妹俩就由小鸢纱雪带去了训练场，准备开始了属于她们的魔术复写特训。小鸢纱雪呆在训练场外，静静地看着她们姐妹俩的训练，顺便也时刻注意着随时可能发生的事态。</p>
@@ -229,8 +149,8 @@
 <p>　　其实这还是诺汐第一次使用魔术，不过，对于她这种非魔术师来说，使用魔术只不过是对着魔导书念咒语罢了。</p>
 <p>　　“咒语好长呢，难道说我复写的时候还要重新在念一遍咒语吗？”诺霖感觉到了一丝压力。“伟大的冰，冰雪女神……唔，咬到舌头了！”</p>
 <p>　　噙着泪花的蠢萝莉，看起来十分的可爱。不过，完全没有魔术师的样子。</p>
-<p>　　“再来！伟大的冰雪女神，将强大的力娘吃……力量赐予我的——呜！”诺霖又一次咬到了舌头，她完全是面对着长咒语束手无策了。</p>
-<p>　　“还不能就这么倒下！”诺霖喝了口水之后又继续吟唱了起来，“伟大的冰雪女神，将强大的力量赋予我的手中，将冰霜于此凝结，化为锋利的长剑——姐姐，招式名是什么？”</p>
+<p>　　“再来！伟大的冰雪女神，将强大的力娘吃……力量赐予我的⸺呜！”诺霖又一次咬到了舌头，她完全是面对着长咒语束手无策了。</p>
+<p>　　“还不能就这么倒下！”诺霖喝了口水之后又继续吟唱了起来，“伟大的冰雪女神，将强大的力量赋予我的手中，将冰霜于此凝结，化为锋利的长剑⸺姐姐，招式名是什么？”</p>
 <p>　　“贯穿之冰剑……”诺汐长舒了一口气，这一次的诺霖虽然没有咬到舌头，但是居然忘词了。</p>
 <p>　　“平时用魔术又不需要念这么长的咒语！”诺霖嘟着嘴蠢，完全是一脸不满的样子，“贯穿之冰剑！”</p>
 <p>　　然后，下一秒，一个冰块直接砸在了诺霖的脑袋上，将可怜的诺霖，砸的双眼直冒金星，晕乎乎地倒在了诺汐的怀中。</p>
@@ -240,12 +160,12 @@
 <p>　　“唔……”</p>
 <p>　　“而且，刚刚我那魔术复写是失败了吧？明显就是失败了对吧！呐，姐姐大人！”</p>
 <p>　　说是要冰剑，结果召唤来了一个冰块，还砸自己脑袋上了。这魔术简直是失败的不能再失败了！</p>
-<p>　　“平日里你用的魔术也就Quantum Sickle和Quantum Chain吧……所以，长咒语果然适应不了吗……”诺汐只记得诺霖拿着大镰刀和锁链和魔导书萝莉乱砍的那些场景了。</p>
+<p>　　“平日里你用的魔术也就 Quantum Sickle 和 Quantum Chain 吧……所以，长咒语果然适应不了吗……”诺汐只记得诺霖拿着大镰刀和锁链和魔导书萝莉乱砍的那些场景了。</p>
 <p>　　“真正的魔术师才需要这种长咒语呢！”</p>
 <p>　　“对魔术师和魔女来说，的确不需要念这么多的咒语吧？”小鸢纱雪走了进来，“诺霖，你试试看在大脑中模拟一下魔术的形成过程，然后再试试看用自己的能力去复写一遍这些魔术，大概，就可以吧？”</p>
-<p>　　“这……我，我试试看吧……”诺霖深呼吸了一口气，抬起右手，聚集起体内的Novia因子。</p>
+<p>　　“这……我，我试试看吧……”诺霖深呼吸了一口气，抬起右手，聚集起体内的 Novia 因子。</p>
 <p>　　冰剑……想象出利用魔术将周围的一切凝结起来的模样，果然，一支虽然略显得粗糙但是依旧是一把剑的模样的冰剑浮现在了她的身旁。</p>
-<p>　　“Imitate——贯穿之冰剑！”</p>
+<p>　　“Imitate⸺贯穿之冰剑！”</p>
 <p>　　“成功了！”</p>
 <p>　　冰剑在诺霖的控制下，以飞速朝着靶子射了出去。</p>
 <p>　　只不过，那支冰剑在碰到靶子的时候却直接碎成了冰渣，破坏力，相比起诺汐召唤的那支冰剑完全差得远。</p>
@@ -255,80 +175,110 @@
 <p>　　“就是成功了啊！”</p>
 <p>　　诺霖嘟起了嘴唇，轻轻地拍打起了诺汐的胸膛。</p>
 
-        </div>
-  
-      </div>
-
-      
     </div>
+  </div>
+</section>
 
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%BA%8C%E5%8D%B7/%E7%AC%AC%E4%BA%94%E5%8D%81%E4%BA%94%E7%AB%A0/"><b>上一页：</b> 第五十五章 悄悄潜入你的梦境（2）【诺霖视角】</a>
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%BA%8C%E5%8D%B7/%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E7%AB%A0/"><b>下一页：</b> 第五十七章 消失的钥匙</a>
-        </div>
-      </div>
-    </div>
-
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <nav class="pagenav">
     
-    <div style="position:fixed; top: 1rem; left: 1rem; width: 25%;">
-      <button onclick="addBookmark()" id="bkmrk" title="加书签" class="btn btn-light" style="display: block;">
-        +<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M12 0H4c-.73 0-1 .27-1 1v15l5-3.09L13 16V1c0-.73-.27-1-1-1z"></path></svg>
-      </button>
-      <button onclick="toggleBmDisplay()" id="bkmrk" title="管理书签" class="btn btn-light" style="display: block;">
-        书签
-      </button>
-      
-      <div id="bmcard" class="card card-body overflow-hidden" hidden="true">
-        <h4>书签管理器</h4>
-        <div id="bookmarksSection"></div>
-      </div>
-      
-    </div>
-
     
-    <div class="dropdown" style="position: fixed; bottom: 1rem; left: 1rem;">
-      <button class="btn btn-light dropdown-toggle" type="button" id="themeMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        主题选择
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#" onclick="changeTheme('day')">日间</a>
-        <a class="dropdown-item" href="#" onclick="changeTheme('night')">夜间</a>
-      </div>
-    </div>
+    <a id="prevlink" class="button prevbtn is-size-5" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%BA%8C%E5%8D%B7/%E7%AC%AC%E4%BA%94%E5%8D%81%E4%BA%94%E7%AB%A0/" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%BA%8C%E5%8D%B7\/%E7%AC%AC%E4%BA%94%E5%8D%81%E4%BA%94%E7%AB%A0\/');return false;">
+      <span>
+        <strong>上一章</strong>
+        <em>第五十五章 悄悄潜入你的梦境（2）【诺霖视角】</em>
+      </span>
+    </a>
+    
+    
+    <a id="nextlink" class="button nextbtn is-size-5" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%BA%8C%E5%8D%B7/%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E7%AB%A0/" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%BA%8C%E5%8D%B7\/%E7%AC%AC%E4%BA%94%E5%8D%81%E4%B8%83%E7%AB%A0\/');return false;">
+      <span>
+        <strong>下一章</strong>
+        <em>第五十七章 消失的钥匙</em>
+      </span>
+    </a>
+    
+  </nav>
   
+  <section class="section is-paddingless-horizontal has-text-grey-light">
+  <p>
+    上次更新：
+    <span title="0001-01-01 00:00:00 &#43;0000 UTC">0001-01-01</span>
+      
+      ，<a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/commits/master/content/novel/%e9%ad%94%e5%a5%b3%e4%b9%8b%e5%90%bb%e4%b9%83%e7%99%be%e5%90%88%e4%b9%8b%e5%91%b31%ef%bc%9a%e6%a2%a6%e4%b8%8e%e5%b8%8c%e6%9c%9b%e7%9a%84%e5%a5%b3%e7%a5%9e/%e7%ac%ac%e4%ba%8c%e5%8d%b7/%e7%ac%ac%e4%ba%94%e5%8d%81%e5%85%ad%e7%ab%a0.md" target="_blank">更新历史</a>
+  </p>
+  
+  <p>
+    <a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/blob/master/content/novel/%e9%ad%94%e5%a5%b3%e4%b9%8b%e5%90%bb%e4%b9%83%e7%99%be%e5%90%88%e4%b9%8b%e5%91%b31%ef%bc%9a%e6%a2%a6%e4%b8%8e%e5%b8%8c%e6%9c%9b%e7%9a%84%e5%a5%b3%e7%a5%9e/%e7%ac%ac%e4%ba%8c%e5%8d%b7/%e7%ac%ac%e4%ba%94%e5%8d%81%e5%85%ad%e7%ab%a0.md" target="_blank">在 GitHub 上改进此页</a>
+  </p>
+  
+</section>
+</section>
+
+    </div>
   </div>
   
-</div>
 
+<footer class="footer">
+  <div class="container">
+    <div class="level">
+      <div class="level-start">
+        蝶天希
+        <p>Maintained with love by Yrr0r &amp; Gesrua</p>
+        
+      </div>
+      <div class="level-end">
+        <p>Theme <a href="https://github.com/Yrr0r/yuripages">YuriPages</a> by <a href="https://github.com/Yrr0r">Yrr0r</a> & <a href="https://github.com/Gesrua">Gesrua</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener('keydown', k => {
+    if (k.code == 'KeyZ') {
+      window.scrollBy({ top: window.innerHeight / 2, left: 0, behavior: 'smooth' });
+    } else if (k.code == 'ArrowRight' && window?.$pagedata?.next) {
+      pjax.loadUrl(window.$pagedata.next)
+    } else if (k.code == 'ArrowLeft' && window?.$pagedata?.prev) {
+      pjax.loadUrl(window.$pagedata.prev)
+    }
+  });
+</script>
+<style>
+  .is-paddingless-horizontal {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  .pagenav {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+  }
 
-    </main>
+  .pagenav span {
+    line-height: 1.25
+  }
 
-    
+  .pagenav span em {
+    display: block;
+    font-style: normal;
+  }
 
-<div class="text-center" id="footer">
-    <p>Maintained with love by Yrr0r</p>
-    <p>Sample</p>
-    <p>Theme "YuriPages" by Yrr0r.</p>
-</div>
+  .prevbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: 0;
+  }
 
+  .nextbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: auto;
+    margin-right: 0
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</body>
 
-
-
-
-
-<link href="../../../../cssjs/bootstrap.min.css" rel="stylesheet">
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-
-<script src="../../../../cssjs/bootstrap.bundle.min.js"></script>
-
-
-<script src="../../../../cssjs/utility.js"></script>
-  </body>
 </html>

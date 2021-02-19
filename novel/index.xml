@@ -5,7 +5,6 @@
     <link>/novel/</link>
     <description>Recent content on 梦之图书馆</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sun, 27 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/novel/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="/novel/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

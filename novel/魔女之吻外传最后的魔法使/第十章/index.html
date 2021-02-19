@@ -1,101 +1,79 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    
 
-
-
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 
-
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>第十章 全新的身份</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace-theme-default.min.css" integrity="sha256-anPTRkzR25h4UMAUWxh0FNzKvgVv2MnEyxeDpgOtfiA=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace.min.js" integrity="sha256-kubxe7yxLaribPaAekUOUDUCap6FSiCeKCQQqYQDs4s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"
+    integrity="sha256-yYGYRNGM8Fn1Kn2lP3htQYNIzGYt1+JD8AnsVZusheI=" crossorigin="anonymous"></script>
+<script>
+    var pjax = new Pjax({
+        debug: true,
+        cacheBust: false,
+        elements: "a.js-Pjax",
+        selectors: [
+            "title",
+            "#pjax-main",
+        ]
+    })
+</script>
+</head>
 
-
-
-  </head>
-
-  <body id="body">
-
-    <main class="block-main">
+<body>
+  <div id="pjax-main" class="columns is-centered is-size-5">
+    <div class="column is-three-quarters is-full-mobile">
       
+<script>
+  window.$pagedata = {
+    type: 'single',
+
+    prev: '\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF\/%E7%AC%AC%E4%B9%9D%E7%AB%A0\/',
 
 
-<div id="pageInfo" hidden=true>
-  {
-    "kind" : "page",
-    "weight": 10,
-    "title" : "第十章 全新的身份",
-    "link" : "/novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF/%E7%AC%AC%E5%8D%81%E7%AB%A0/",
-    "currentSection" : "魔女之吻外传：最后的魔法使"
   }
-</div>
+</script>
 
-<div id="readerview">
-  <div class="container" id="pageview">
-    
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../../../">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M16 9l-3-3V2h-2v2L8 1 0 9h2l1 5c0 .55.45 1 1 1h8c.55 0 1-.45 1-1l1-5h2zm-4 5H9v-4H7v4H4L2.81 7.69 8 2.5l5.19 5.19L12 14z"></path></svg>
-        </a></li>
-        <li class="breadcrumb-item"><a href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF/">魔女之吻外传：最后的魔法使</a></li>
-        <li class="breadcrumb-item active" aria-current="page">第十章 全新的身份</li>
-      </ol>
-    </nav>
-
-    <div id="page-data" hidden="true">
-     todo: 此处可以用js从URL里插入一个面包屑导航代替上面的导航。
-    </div>
-    
-  
-    
-    <div id="reader-chapterMenu" hidden=true>
-    目录：</br>
-    
-    第一章 穿越世界的少女 </br>
-    
-    第二章 未识别的ID </br>
-    
-    第三章 恐怖袭击 </br>
-    
-    第四章 黑市 </br>
-    
-    第五章 地下监牢 </br>
-    
-    第六章 黑市拍卖场 </br>
-    
-    第七章 沦为奴隶的少女 </br>
-    
-    第八章 艾蜜儿伯爵 </br>
-    
-    第九章 萝莉死神 </br>
-    
-    第十章 全新的身份 </br>
-    
-    </div>
-
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-           <a type="button" id="prevlink" class="btn text-left btn-light col-12 col-md-6" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF/%E7%AC%AC%E4%B9%9D%E7%AB%A0/"><b>上一页：</b> 第九章 萝莉死神</a>
-          
-        </div>
-      </div>
-    </div>
-  
-    
-    <div class="card my-3" id="mainview">
-
-      <div class="card-body">
-        <h2 class="card-title text-center">第十章 全新的身份</h2>
-        <h6 class="card-subtitle mb-2 text-muted text-center"> 2654 字 </h6> 
+<section class="section is-paddingless-horizontal">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ol>
+      
+      
         
-        <div class="card-text">
-          <p>　　“就这么死了呢。”诺霖看着被她所杀掉的芙莉丝和芙丽娅，脸上露出了魔鬼般的笑容，“明明才当了几个小时的主人而已嘛，无趣。”她坐在那柔软的沙发椅上，翘着她那一双可爱的白丝小脚丫。</p>
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/');return false;"> 梦之图书馆</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF\/');return false;"> 魔女之吻外传：最后的魔法使</a>
+            </li>
+          
+        
+      
+      <li class="is-active" aria-current="page">
+        <a href="#">第十章 全新的身份</a>
+      </li>
+    </ol>
+  </nav>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <h1 class="has-text-centered title is-1">
+    第十章 全新的身份
+  </h1>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <div class="container">
+    <div class="content is-size-5">
+      <p>　　“就这么死了呢。”诺霖看着被她所杀掉的芙莉丝和芙丽娅，脸上露出了魔鬼般的笑容，“明明才当了几个小时的主人而已嘛，无趣。”她坐在那柔软的沙发椅上，翘着她那一双可爱的白丝小脚丫。</p>
 <p>　　普通人在面对着她这位魔女的时候，完全显得毫无还手之力。就好像是刚刚的杀戮一般，弹指之间，诺霖便是用着自己的幻觉魔法好好的教育了一番她们，仅从外观上来看，她似乎并没有动手的说。</p>
 <p>　　她其实本来想要饶过她们俩一命的，但是考虑到伯爵姐妹已经知道了她这个魔法使的身份，真的放她们俩一条生路的话，她这个魔法使的身份，估计会在这个世界引起不少的反响。为了安全起见，她只能将她们杀了。</p>
 <p>　　“霖你也……其实用用幻觉魔法就好了吧？”诺汐无奈地看了看诺霖，并将这个小丫头给斥责了一番。虽然伯爵姐妹对她们做了很过分的事情，甚至想要谋害她们的生命，但是就这么用魔法杀死这种普通人，也未免有点良心上过意不去。</p>
@@ -114,7 +92,7 @@
 <p>　　“啪嗒”一声，颈环锁在了她的脖子上，还顺便提示了一句，“身份认证成功。ID：芙丽娅·艾蜜儿。”</p>
 <p>　　“这，这都可以的吗？就这么简单？”诺汐看着她手中芙莉丝的项圈，“这种用于身份识别的颈环照常理来讲不应该是有专属匹配功能，如果被其他人戴着的话会报错的吧？”</p>
 <p>　　“里面当然是有的。但是这种魔导器，难得倒我吗？虽然不清楚内部的构造，不过用「Resonance」把整个功能给停用了还是可以的。”诺霖自信地笑着，“而且，黑市里是有交易二手颈环的哦？从那些上层平民的身上抢来的，在黑市上流通的二手颈环，不都可以用吗？它们也是被特别处理过的。”</p>
-<p>　　“原来如此。”诺汐虽然似懂非懂，但是依旧是戴上了这条颈环，伴随着“身份认证成功。ID：芙莉丝·艾蜜儿。”的提示音响起，也就证明了从此之后，她们俩在这个世界的身份，已经不再是什么没有ID的流浪者，而是身居高位的伯爵。</p>
+<p>　　“原来如此。”诺汐虽然似懂非懂，但是依旧是戴上了这条颈环，伴随着“身份认证成功。ID：芙莉丝·艾蜜儿。”的提示音响起，也就证明了从此之后，她们俩在这个世界的身份，已经不再是什么没有 ID 的流浪者，而是身居高位的伯爵。</p>
 <p>　　“说真的，我都觉得我们在玩过山车模拟器了。”诺霖轻声地说着，此时的她，已经从奴隶摇身一变成为了主人，总算是重新变回大小姐了，诺霖如是想到。在这个奇怪的未来世界，总是能够带给她那么多的惊喜和惊吓。</p>
 <p>　　“和小霖在一起每天都是过山车。”</p>
 <p>　　“唔！姐姐你什么意思嘛！难道不喜欢嘛？”</p>
@@ -134,80 +112,103 @@
 <p>　　“也有可能是存在着机械合成、外貌改造之类，不方便吧？”这个世界的魔法科技太过高端，很多事情，已经超出了姐妹俩的想象力极限了。</p>
 <p>　　“实在不放心的话，现在我们出去逛逛街如何呢？顺便，也得好好看看这个所谓的上层社会是什么样的呢。”</p>
 
-        </div>
-  
-      </div>
-
-      
     </div>
+  </div>
+</section>
 
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF/%E7%AC%AC%E4%B9%9D%E7%AB%A0/"><b>上一页：</b> 第九章 萝莉死神</a>
-          
-        </div>
-      </div>
-    </div>
-
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <nav class="pagenav">
     
-    <div style="position:fixed; top: 1rem; left: 1rem; width: 25%;">
-      <button onclick="addBookmark()" id="bkmrk" title="加书签" class="btn btn-light" style="display: block;">
-        +<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M12 0H4c-.73 0-1 .27-1 1v15l5-3.09L13 16V1c0-.73-.27-1-1-1z"></path></svg>
-      </button>
-      <button onclick="toggleBmDisplay()" id="bkmrk" title="管理书签" class="btn btn-light" style="display: block;">
-        书签
-      </button>
-      
-      <div id="bmcard" class="card card-body overflow-hidden" hidden="true">
-        <h4>书签管理器</h4>
-        <div id="bookmarksSection"></div>
-      </div>
-      
-    </div>
-
     
-    <div class="dropdown" style="position: fixed; bottom: 1rem; left: 1rem;">
-      <button class="btn btn-light dropdown-toggle" type="button" id="themeMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        主题选择
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#" onclick="changeTheme('day')">日间</a>
-        <a class="dropdown-item" href="#" onclick="changeTheme('night')">夜间</a>
-      </div>
-    </div>
+    <a id="prevlink" class="button prevbtn is-size-5" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF/%E7%AC%AC%E4%B9%9D%E7%AB%A0/" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF\/%E7%AC%AC%E4%B9%9D%E7%AB%A0\/');return false;">
+      <span>
+        <strong>上一章</strong>
+        <em>第九章 萝莉死神</em>
+      </span>
+    </a>
+    
+    
+  </nav>
   
+  <section class="section is-paddingless-horizontal has-text-grey-light">
+  <p>
+    上次更新：
+    <span title="0001-01-01 00:00:00 &#43;0000 UTC">0001-01-01</span>
+      
+      ，<a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/commits/master/content/novel/%e9%ad%94%e5%a5%b3%e4%b9%8b%e5%90%bb%e5%a4%96%e4%bc%a0%ef%bc%9a%e6%9c%80%e5%90%8e%e7%9a%84%e9%ad%94%e6%b3%95%e4%bd%bf/%e7%ac%ac%e5%8d%81%e7%ab%a0.md" target="_blank">更新历史</a>
+  </p>
+  
+  <p>
+    <a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/blob/master/content/novel/%e9%ad%94%e5%a5%b3%e4%b9%8b%e5%90%bb%e5%a4%96%e4%bc%a0%ef%bc%9a%e6%9c%80%e5%90%8e%e7%9a%84%e9%ad%94%e6%b3%95%e4%bd%bf/%e7%ac%ac%e5%8d%81%e7%ab%a0.md" target="_blank">在 GitHub 上改进此页</a>
+  </p>
+  
+</section>
+</section>
+
+    </div>
   </div>
   
-</div>
 
+<footer class="footer">
+  <div class="container">
+    <div class="level">
+      <div class="level-start">
+        蝶天希
+        <p>Maintained with love by Yrr0r &amp; Gesrua</p>
+        
+      </div>
+      <div class="level-end">
+        <p>Theme <a href="https://github.com/Yrr0r/yuripages">YuriPages</a> by <a href="https://github.com/Yrr0r">Yrr0r</a> & <a href="https://github.com/Gesrua">Gesrua</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener('keydown', k => {
+    if (k.code == 'KeyZ') {
+      window.scrollBy({ top: window.innerHeight / 2, left: 0, behavior: 'smooth' });
+    } else if (k.code == 'ArrowRight' && window?.$pagedata?.next) {
+      pjax.loadUrl(window.$pagedata.next)
+    } else if (k.code == 'ArrowLeft' && window?.$pagedata?.prev) {
+      pjax.loadUrl(window.$pagedata.prev)
+    }
+  });
+</script>
+<style>
+  .is-paddingless-horizontal {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  .pagenav {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+  }
 
-    </main>
+  .pagenav span {
+    line-height: 1.25
+  }
 
-    
+  .pagenav span em {
+    display: block;
+    font-style: normal;
+  }
 
-<div class="text-center" id="footer">
-    <p>Maintained with love by Yrr0r</p>
-    <p>Sample</p>
-    <p>Theme "YuriPages" by Yrr0r.</p>
-</div>
+  .prevbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: 0;
+  }
 
+  .nextbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: auto;
+    margin-right: 0
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</body>
 
-
-
-
-
-<link href="../../../cssjs/bootstrap.min.css" rel="stylesheet">
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-
-<script src="../../../cssjs/bootstrap.bundle.min.js"></script>
-
-
-<script src="../../../cssjs/utility.js"></script>
-  </body>
 </html>

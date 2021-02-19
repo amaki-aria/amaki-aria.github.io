@@ -1,100 +1,88 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    
 
-
-
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 
-
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>第八章</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace-theme-default.min.css" integrity="sha256-anPTRkzR25h4UMAUWxh0FNzKvgVv2MnEyxeDpgOtfiA=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace.min.js" integrity="sha256-kubxe7yxLaribPaAekUOUDUCap6FSiCeKCQQqYQDs4s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"
+    integrity="sha256-yYGYRNGM8Fn1Kn2lP3htQYNIzGYt1+JD8AnsVZusheI=" crossorigin="anonymous"></script>
+<script>
+    var pjax = new Pjax({
+        debug: true,
+        cacheBust: false,
+        elements: "a.js-Pjax",
+        selectors: [
+            "title",
+            "#pjax-main",
+        ]
+    })
+</script>
+</head>
 
-
-
-  </head>
-
-  <body id="body">
-
-    <main class="block-main">
+<body>
+  <div id="pjax-main" class="columns is-centered is-size-5">
+    <div class="column is-three-quarters is-full-mobile">
       
+<script>
+  window.$pagedata = {
+    type: 'single',
+
+    prev: '\/novel\/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86\/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6\/%E7%AC%AC%E4%B8%83%E7%AB%A0\/',
 
 
-<div id="pageInfo" hidden=true>
-  {
-    "kind" : "page",
-    "weight": 8,
-    "title" : "第八章",
-    "link" : "/novel/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/%E7%AC%AC%E5%85%AB%E7%AB%A0/",
-    "currentSection" : "姐姐，在时光流逝前都要抱紧我哦"
+    next: '\/novel\/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86\/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6\/%E7%AC%AC%E4%B9%9D%E7%AB%A0\/',
+
   }
-</div>
+</script>
 
-<div id="readerview">
-  <div class="container" id="pageview">
-    
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../../../../">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M16 9l-3-3V2h-2v2L8 1 0 9h2l1 5c0 .55.45 1 1 1h8c.55 0 1-.45 1-1l1-5h2zm-4 5H9v-4H7v4H4L2.81 7.69 8 2.5l5.19 5.19L12 14z"></path></svg>
-        </a></li>
-        <li class="breadcrumb-item"><a href="../../../../novel/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/">姐姐，在时光流逝前都要抱紧我哦</a></li>
-        <li class="breadcrumb-item active" aria-current="page">第八章</li>
-      </ol>
-    </nav>
-
-    <div id="page-data" hidden="true">
-     todo: 此处可以用js从URL里插入一个面包屑导航代替上面的导航。
-    </div>
-    
-  
-    
-    <div id="reader-chapterMenu" hidden=true>
-    目录：</br>
-    
-    第一章 </br>
-    
-    第二章 </br>
-    
-    第三章 </br>
-    
-    第四章 </br>
-    
-    第五章 </br>
-    
-    第六章 </br>
-    
-    第七章 </br>
-    
-    第八章 </br>
-    
-    第九章 </br>
-    
-    </div>
-
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-           <a type="button" id="prevlink" class="btn text-left btn-light col-12 col-md-6" href="../../../../novel/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/%E7%AC%AC%E4%B8%83%E7%AB%A0/"><b>上一页：</b> 第七章</a>
-           <a type="button" id="nextlink" class="btn text-left btn-light col-12 col-md-6" href="../../../../novel/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/%E7%AC%AC%E4%B9%9D%E7%AB%A0/"><b>下一页：</b> 第九章</a>
-        </div>
-      </div>
-    </div>
-  
-    
-    <div class="card my-3" id="mainview">
-
-      <div class="card-body">
-        <h2 class="card-title text-center">第八章</h2>
-        <h6 class="card-subtitle mb-2 text-muted text-center"> 2122 字 </h6> 
+<section class="section is-paddingless-horizontal">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ol>
+      
+      
         
-        <div class="card-text">
-          <p>　　“是林萱云小姐的快递吗——”早上，当我还在睡梦之中的时候，门铃的突然响起，令我丝毫不情愿的从床上爬了起来。</p>
-<p>　　“萱云，你买了什么东西啊——”对着萱云打了个哈欠，刚起床的我，现在还是有着想要重新躺回去睡回笼觉的想法。</p>
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/');return false;"> 梦之图书馆</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86\/');return false;"> 姐妹百合短篇集</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86\/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6\/');return false;"> 姐姐，在时光流逝前都要抱紧我哦</a>
+            </li>
+          
+        
+      
+      <li class="is-active" aria-current="page">
+        <a href="#">第八章</a>
+      </li>
+    </ol>
+  </nav>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <h1 class="has-text-centered title is-1">
+    第八章
+  </h1>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <div class="container">
+    <div class="content is-size-5">
+      <p>　　“是林萱云小姐的快递吗⸺”早上，当我还在睡梦之中的时候，门铃的突然响起，令我丝毫不情愿的从床上爬了起来。</p>
+<p>　　“萱云，你买了什么东西啊⸺”对着萱云打了个哈欠，刚起床的我，现在还是有着想要重新躺回去睡回笼觉的想法。</p>
 <p>　　“嘿嘿，不告诉小雨。”林萱云故作神秘状，对着我露出了一丝笑容。看她这么神秘的样子，总令我心中有着那么一点点不安。那个神秘的快递包裹之中，到底装着些什么东西呢。</p>
 <p>　　“起床之后记得帮我弄早餐哦，亲爱的小雨~”朝着我卖起了萌，这般完全令我欲罢不能的表情，使我原先的睡意也被彻底驱散。乖乖的在她的催促之下起床穿好了衣服，在厨房之中开始为她准备起了早餐。</p>
 <p>　　父母好像又因为工作的原因要出差一段时间，这几天家中，就只剩下了我和林萱云两人。有姐有房，父母双忙，仿佛就像是轻小说之中所描绘的事情一般。</p>
@@ -105,13 +93,13 @@
 <p>　　虽然对她的感情早就已经超越了妹妹对姐姐的亲情，但是一想到要与相处了十六年的姐姐做着那种羞羞的事情，脸上就已经……</p>
 <p>　　“小雨？小雨？又在发呆了吗？”就在这个时候，林萱云的声音，在我的耳边回响了起来。那张几乎与我一模一样的脸颊映在了我的面前，差点使我吓得从沙发上跳了起来。</p>
 <p>　　“老姐你不要吓人啊！”当你发呆回过神的时候突然看到了一张与自己完全没有什么区别的脸的时候，绝对也会被吓一跳的吧？</p>
-<p>　　“诶，我打扮成这样你居然说我老，小雨你好过分！”林萱云听到了我对她的称呼之后，完全就像是受到了巨大的打击一般，脸上似乎都露出了生无可恋的表情，“明明我现在还是一位正直豆蔻年华的16岁少女，我的妹妹居然会这么说我……呜……咿呀。”刚走几步，她就好像是双腿有点发软了一般，看着她差点倒下来，我立刻起身将她扶在了怀里。</p>
-<p>　　“你这是怎么样了啊……”不解将她抱在怀里，我家姐姐已经迷糊到了要到平地摔的地步了吗？仔细看了看面前的她，脸颊上除了有着些许的绯红之外，并没有看出她与平常有什么不同之处，倒是她的手一直按着睡裙的边缘，仔细看看，脸上的表情好像是有着些许的娇羞。“萱云，你该不会是……”想起了以往在某些神秘的网站之中所看到的不可描述的东西，结合着林萱云目前的形态，不难令我联想到了——</p>
+<p>　　“诶，我打扮成这样你居然说我老，小雨你好过分！”林萱云听到了我对她的称呼之后，完全就像是受到了巨大的打击一般，脸上似乎都露出了生无可恋的表情，“明明我现在还是一位正直豆蔻年华的 16 岁少女，我的妹妹居然会这么说我……呜……咿呀。”刚走几步，她就好像是双腿有点发软了一般，看着她差点倒下来，我立刻起身将她扶在了怀里。</p>
+<p>　　“你这是怎么样了啊……”不解将她抱在怀里，我家姐姐已经迷糊到了要到平地摔的地步了吗？仔细看了看面前的她，脸颊上除了有着些许的绯红之外，并没有看出她与平常有什么不同之处，倒是她的手一直按着睡裙的边缘，仔细看看，脸上的表情好像是有着些许的娇羞。“萱云，你该不会是……”想起了以往在某些神秘的网站之中所看到的不可描述的东西，结合着林萱云目前的形态，不难令我联想到了⸺</p>
 <p>　　“你是不是在身体里放了些什么奇怪的东西？”视线，不由得的移向了面前姐姐的双腿之间。</p>
-<p>　　“你在说什么呢小雨，你姐姐会是这么欲求不满的人吗，哈哈哈哈小雨你想太多了嘛，姐姐我——”</p>
+<p>　　“你在说什么呢小雨，你姐姐会是这么欲求不满的人吗，哈哈哈哈小雨你想太多了嘛，姐姐我⸺”</p>
 <p>　　不用多说，看着她那幅心中有鬼的表情，我就知道多半有鬼了。</p>
 <p>　　“姐姐大人？”</p>
-<p>　　“才没有，才没有——咿呀，等等——”就在这个时候，林萱云睡裙的口袋中，掉出了某个绯红色的遥控器，完全使得此时的空气都完全凝固了起来。不用多说，答案已经心知肚明。某欲求不满的姐姐，也只能压着裙子，像是个犯了错的孩子一般坐在了我的边上。</p>
+<p>　　“才没有，才没有⸺咿呀，等等⸺”就在这个时候，林萱云睡裙的口袋中，掉出了某个绯红色的遥控器，完全使得此时的空气都完全凝固了起来。不用多说，答案已经心知肚明。某欲求不满的姐姐，也只能压着裙子，像是个犯了错的孩子一般坐在了我的边上。</p>
 <p>　　“你把我的钱，拿去买玩具了？”当然，我口中所说的玩具，肯定不是小孩子玩的那种。林萱云的遥控器此时已经被我握在了手中，看着上面的东西，稍稍做了点小研究。说起来，我还从来没有真正的玩过这种东西呢，偶尔看到的一些文中的情侣间都会用着这种东西来增加情趣。</p>
 <p>　　嗯，看着林萱云此时那般娇羞的表情，的确会有着一种想要惩罚她的欲望，就比如说现在，我的手已经不自觉的放在了她的大腿上，在裙底附近的地方，不断地摸索着。</p>
 <p>　　“小雨，等等，这边是，加……加快……”林萱云捂住了她的裙子，倚靠在我的肩头，“咿呀……小雨，停下啦……”</p>
@@ -122,80 +110,110 @@
 <p>　　“如果忍不住的话，小雨就算是把我推倒了也无所谓的哦！”她还如此的在我的耳边低吟着，就像是一个小恶魔在诱惑着我一般。</p>
 <p>　　“真到那个时候，萱云你就好好做好心理准备吧。”轻轻地挑起了她的下巴，“不就是姐妹间的游戏嘛，奉陪到底，就可以了吧？”</p>
 
-        </div>
-  
-      </div>
-
-      
     </div>
+  </div>
+</section>
 
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../../../novel/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/%E7%AC%AC%E4%B8%83%E7%AB%A0/"><b>上一页：</b> 第七章</a>
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../../../novel/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/%E7%AC%AC%E4%B9%9D%E7%AB%A0/"><b>下一页：</b> 第九章</a>
-        </div>
-      </div>
-    </div>
-
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <nav class="pagenav">
     
-    <div style="position:fixed; top: 1rem; left: 1rem; width: 25%;">
-      <button onclick="addBookmark()" id="bkmrk" title="加书签" class="btn btn-light" style="display: block;">
-        +<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M12 0H4c-.73 0-1 .27-1 1v15l5-3.09L13 16V1c0-.73-.27-1-1-1z"></path></svg>
-      </button>
-      <button onclick="toggleBmDisplay()" id="bkmrk" title="管理书签" class="btn btn-light" style="display: block;">
-        书签
-      </button>
-      
-      <div id="bmcard" class="card card-body overflow-hidden" hidden="true">
-        <h4>书签管理器</h4>
-        <div id="bookmarksSection"></div>
-      </div>
-      
-    </div>
-
     
-    <div class="dropdown" style="position: fixed; bottom: 1rem; left: 1rem;">
-      <button class="btn btn-light dropdown-toggle" type="button" id="themeMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        主题选择
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#" onclick="changeTheme('day')">日间</a>
-        <a class="dropdown-item" href="#" onclick="changeTheme('night')">夜间</a>
-      </div>
-    </div>
+    <a id="prevlink" class="button prevbtn is-size-5" href="../../../../novel/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/%E7%AC%AC%E4%B8%83%E7%AB%A0/" onclick="pjax.loadUrl('\/novel\/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86\/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6\/%E7%AC%AC%E4%B8%83%E7%AB%A0\/');return false;">
+      <span>
+        <strong>上一章</strong>
+        <em>第七章</em>
+      </span>
+    </a>
+    
+    
+    <a id="nextlink" class="button nextbtn is-size-5" href="../../../../novel/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6/%E7%AC%AC%E4%B9%9D%E7%AB%A0/" onclick="pjax.loadUrl('\/novel\/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86\/%E5%A7%90%E5%A7%90%E5%9C%A8%E6%97%B6%E5%85%89%E6%B5%81%E9%80%9D%E5%89%8D%E9%83%BD%E8%A6%81%E6%8A%B1%E7%B4%A7%E6%88%91%E5%93%A6\/%E7%AC%AC%E4%B9%9D%E7%AB%A0\/');return false;">
+      <span>
+        <strong>下一章</strong>
+        <em>第九章</em>
+      </span>
+    </a>
+    
+  </nav>
   
+  <section class="section is-paddingless-horizontal has-text-grey-light">
+  <p>
+    上次更新：
+    <span title="0001-01-01 00:00:00 &#43;0000 UTC">0001-01-01</span>
+      
+      ，<a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/commits/master/content/novel/%e5%a7%90%e5%a6%b9%e7%99%be%e5%90%88%e7%9f%ad%e7%af%87%e9%9b%86/%e5%a7%90%e5%a7%90%ef%bc%8c%e5%9c%a8%e6%97%b6%e5%85%89%e6%b5%81%e9%80%9d%e5%89%8d%e9%83%bd%e8%a6%81%e6%8a%b1%e7%b4%a7%e6%88%91%e5%93%a6/%e7%ac%ac%e5%85%ab%e7%ab%a0.md" target="_blank">更新历史</a>
+  </p>
+  
+  <p>
+    <a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/blob/master/content/novel/%e5%a7%90%e5%a6%b9%e7%99%be%e5%90%88%e7%9f%ad%e7%af%87%e9%9b%86/%e5%a7%90%e5%a7%90%ef%bc%8c%e5%9c%a8%e6%97%b6%e5%85%89%e6%b5%81%e9%80%9d%e5%89%8d%e9%83%bd%e8%a6%81%e6%8a%b1%e7%b4%a7%e6%88%91%e5%93%a6/%e7%ac%ac%e5%85%ab%e7%ab%a0.md" target="_blank">在 GitHub 上改进此页</a>
+  </p>
+  
+</section>
+</section>
+
+    </div>
   </div>
   
-</div>
 
+<footer class="footer">
+  <div class="container">
+    <div class="level">
+      <div class="level-start">
+        蝶天希
+        <p>Maintained with love by Yrr0r &amp; Gesrua</p>
+        
+      </div>
+      <div class="level-end">
+        <p>Theme <a href="https://github.com/Yrr0r/yuripages">YuriPages</a> by <a href="https://github.com/Yrr0r">Yrr0r</a> & <a href="https://github.com/Gesrua">Gesrua</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener('keydown', k => {
+    if (k.code == 'KeyZ') {
+      window.scrollBy({ top: window.innerHeight / 2, left: 0, behavior: 'smooth' });
+    } else if (k.code == 'ArrowRight' && window?.$pagedata?.next) {
+      pjax.loadUrl(window.$pagedata.next)
+    } else if (k.code == 'ArrowLeft' && window?.$pagedata?.prev) {
+      pjax.loadUrl(window.$pagedata.prev)
+    }
+  });
+</script>
+<style>
+  .is-paddingless-horizontal {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  .pagenav {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+  }
 
-    </main>
+  .pagenav span {
+    line-height: 1.25
+  }
 
-    
+  .pagenav span em {
+    display: block;
+    font-style: normal;
+  }
 
-<div class="text-center" id="footer">
-    <p>Maintained with love by Yrr0r</p>
-    <p>Sample</p>
-    <p>Theme "YuriPages" by Yrr0r.</p>
-</div>
+  .prevbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: 0;
+  }
 
+  .nextbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: auto;
+    margin-right: 0
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</body>
 
-
-
-
-
-<link href="../../../../cssjs/bootstrap.min.css" rel="stylesheet">
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-
-<script src="../../../../cssjs/bootstrap.bundle.min.js"></script>
-
-
-<script src="../../../../cssjs/utility.js"></script>
-  </body>
 </html>

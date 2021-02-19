@@ -1,157 +1,89 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    
 
-
-
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 
-
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>第二十八章 激战图书馆</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace-theme-default.min.css" integrity="sha256-anPTRkzR25h4UMAUWxh0FNzKvgVv2MnEyxeDpgOtfiA=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace.min.js" integrity="sha256-kubxe7yxLaribPaAekUOUDUCap6FSiCeKCQQqYQDs4s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"
+    integrity="sha256-yYGYRNGM8Fn1Kn2lP3htQYNIzGYt1+JD8AnsVZusheI=" crossorigin="anonymous"></script>
+<script>
+    var pjax = new Pjax({
+        debug: true,
+        cacheBust: false,
+        elements: "a.js-Pjax",
+        selectors: [
+            "title",
+            "#pjax-main",
+        ]
+    })
+</script>
+</head>
 
-
-
-  </head>
-
-  <body id="body">
-
-    <main class="block-main">
+<body>
+  <div id="pjax-main" class="columns is-centered is-size-5">
+    <div class="column is-three-quarters is-full-mobile">
       
+<script>
+  window.$pagedata = {
+    type: 'single',
+
+    prev: '\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%B8%80%E5%8D%B7\/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%83%E7%AB%A0\/',
 
 
-<div id="pageInfo" hidden=true>
-  {
-    "kind" : "page",
-    "weight": 28,
-    "title" : "第二十八章 激战图书馆",
-    "link" : "/novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%B8%80%E5%8D%B7/%E7%AC%AC%E4%BA%8C%E5%8D%81%E5%85%AB%E7%AB%A0/",
-    "currentSection" : "第一卷 梦幻物语"
+    next: '\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%B8%80%E5%8D%B7\/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B9%9D%E7%AB%A0\/',
+
   }
-</div>
+</script>
 
-<div id="readerview">
-  <div class="container" id="pageview">
-    
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../../../../">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M16 9l-3-3V2h-2v2L8 1 0 9h2l1 5c0 .55.45 1 1 1h8c.55 0 1-.45 1-1l1-5h2zm-4 5H9v-4H7v4H4L2.81 7.69 8 2.5l5.19 5.19L12 14z"></path></svg>
-        </a></li>
-        <li class="breadcrumb-item"><a href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%B8%80%E5%8D%B7/">第一卷 梦幻物语</a></li>
-        <li class="breadcrumb-item active" aria-current="page">第二十八章 激战图书馆</li>
-      </ol>
-    </nav>
-
-    <div id="page-data" hidden="true">
-     todo: 此处可以用js从URL里插入一个面包屑导航代替上面的导航。
-    </div>
-    
-  
-    
-    <div id="reader-chapterMenu" hidden=true>
-    目录：</br>
-    
-    第一章 一切物语开始的地方 </br>
-    
-    第二章 当妹妹变成小猫娘 </br>
-    
-    第三章 霖是大魔女喵~（1） </br>
-    
-    第四章 霖是大魔女喵~（2） </br>
-    
-    第五章 能力的代价 </br>
-    
-    第六章 魔女们的晚宴 </br>
-    
-    第七章 晚宴之后·诺汐and诺霖篇 </br>
-    
-    第八章 晚宴之后·优奈and优佳篇 </br>
-    
-    第九章 空白的魔女之书 </br>
-    
-    第十章 苏醒的魔导书 </br>
-    
-    第十一章 梦夜书库 </br>
-    
-    第十二章 异世界的钥匙 </br>
-    
-    第十三章 被监禁的小公主 </br>
-    
-    第十四章 不可思议的梦与现实 </br>
-    
-    第十五章 期中考前 </br>
-    
-    第十六章 期中复习 </br>
-    
-    第十七章 并不可能正经的复习 </br>
-    
-    第十八章 守望着我们的百合之神 </br>
-    
-    第十九章 学生会与特查 </br>
-    
-    第二十章 丢失的海报 </br>
-    
-    第二十一章 神秘的魔导书 </br>
-    
-    第二十二章 天使的肃清 </br>
-    
-    第二十三章 书中自有萝莉 </br>
-    
-    第二十四章 雪之王妃 </br>
-    
-    第二十五章 魔女特训 </br>
-    
-    第二十六章 魔女特训（2） </br>
-    
-    第二十七章 运动会 </br>
-    
-    第二十八章 激战图书馆 </br>
-    
-    第二十九章 霖的样子有点怪 </br>
-    
-    第三十章 我的妹妹不可能是病娇 </br>
-    
-    第三十一章 死里逃生？ </br>
-    
-    第三十二章 当妹妹变成了（1） </br>
-    
-    第三十三章 当妹妹变成了病娇（2） </br>
-    
-    第三十四章 魔女的恶作剧 </br>
-    
-    第三十五章 女仆！ </br>
-    
-    第三十六章 小黑屋 </br>
-    
-    第三十七章 噩梦一场【诺霖视角】 </br>
-    
-    </div>
-
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-           <a type="button" id="prevlink" class="btn text-left btn-light col-12 col-md-6" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%B8%80%E5%8D%B7/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%83%E7%AB%A0/"><b>上一页：</b> 第二十七章 运动会</a>
-           <a type="button" id="nextlink" class="btn text-left btn-light col-12 col-md-6" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%B8%80%E5%8D%B7/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B9%9D%E7%AB%A0/"><b>下一页：</b> 第二十九章 霖的样子有点怪</a>
-        </div>
-      </div>
-    </div>
-  
-    
-    <div class="card my-3" id="mainview">
-
-      <div class="card-body">
-        <h2 class="card-title text-center">第二十八章 激战图书馆</h2>
-        <h6 class="card-subtitle mb-2 text-muted text-center"> 2919 字 </h6> 
+<section class="section is-paddingless-horizontal">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ol>
+      
+      
         
-        <div class="card-text">
-          <p>　　时间一分一秒的流逝着，坐立不安的诺汐在房间里来回的走动着。明明房间里的空调都已经调到了24度，但是她的额头上，依旧是不停地渗着汗珠。一手甚至还搭在腰间悬挂着的手枪上，看起来就像是随时准备着执行封印任务的样子。</p>
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/');return false;"> 梦之图书馆</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/');return false;"> 魔女之吻乃百合之味1：梦与希望的女神</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%B8%80%E5%8D%B7\/');return false;"> 第一卷 梦幻物语</a>
+            </li>
+          
+        
+      
+      <li class="is-active" aria-current="page">
+        <a href="#">第二十八章 激战图书馆</a>
+      </li>
+    </ol>
+  </nav>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <h1 class="has-text-centered title is-1">
+    第二十八章 激战图书馆
+  </h1>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <div class="container">
+    <div class="content is-size-5">
+      <p>　　时间一分一秒的流逝着，坐立不安的诺汐在房间里来回的走动着。明明房间里的空调都已经调到了 24 度，但是她的额头上，依旧是不停地渗着汗珠。一手甚至还搭在腰间悬挂着的手枪上，看起来就像是随时准备着执行封印任务的样子。</p>
 <p>　　“莉娅学姐……”诺霖看向了坐在一旁的莉娅，脸上也一样带着十分忧郁的表情。</p>
-<p>　　“等呗，她们两个现在暂时还没有生命危险。等理事长她们的报告好了。”莉娅轻轻抿了口茶，将手搭在了诺霖的脑袋上，“诺霖，如果太激动的话，Novia Diffuse Field可是会影响到你的身体的哦。在这种时候，还是要让身体放轻松，明白了吗？”</p>
+<p>　　“等呗，她们两个现在暂时还没有生命危险。等理事长她们的报告好了。”莉娅轻轻抿了口茶，将手搭在了诺霖的脑袋上，“诺霖，如果太激动的话，Novia Diffuse Field 可是会影响到你的身体的哦。在这种时候，还是要让身体放轻松，明白了吗？”</p>
 <p>　　“可是……”自己的同班同学因为魔导书而住院，现在的她们又怎么可能冷静的下来。</p>
 <p>　　“莉娅学姐，《Index》里面有记载……”</p>
 <p>　　“连具体是什么魔导书都不知道，我又怎么可能用《Index》来检索呢？”莉娅苦笑着回答道，“现在好好休息一会，或者说，要来下下棋吗？”一边说着，她甚至已经在茶几上摆上了棋子。</p>
@@ -173,16 +105,16 @@
 <p>　　考虑到已经折损了一名大将，如果拖入到消耗战的话自己必将处于不利的局面，诺汐决定采取激进的攻势，全力的推进战线，对着莉娅展开了猛烈的进攻。</p>
 <p>　　“这么激进吗？”然而，莉娅却丝毫没有感觉到危险，依旧是在布置着她精心谋划的陷阱。</p>
 <p>　　“嘿嘿！正好吃掉一匹马！”蠢蠢的诺汐，殊不知她已经踏入到了陷阱之中，还因为自己贪了便宜而自信满满着呢。</p>
-<p>　　“哦？”莉娅丝毫没有在乎自己的损失，倒不如说，她正有此意。“将军——”</p>
+<p>　　“哦？”莉娅丝毫没有在乎自己的损失，倒不如说，她正有此意。“将军⸺”</p>
 <p>　　“诶？”诺汐立刻移动了她的王，还算是保住了一命。</p>
-<p>　　“啪——”紧接着，她的后就被莉娅给直接杀掉了。</p>
+<p>　　“啪⸺”紧接着，她的后就被莉娅给直接杀掉了。</p>
 <p>　　“我……”仿佛膝盖中了一架，失去了最有力的棋子后，诺汐整个人都有点失去信心了。完全不知道接下来的几步，该如何是好。</p>
 <p>　　反观莉娅，她自信的满满的操控着全局，攻守有序，步步为营。</p>
 <p>　　越是陷入到不利的局势，诺汐就越是浮躁，而越是浮躁，就越是令她看不清局势，导致更大错误的发生，这种恶性循环，宛如着滚雪球一般，诺汐的境地，越来越不利。</p>
 <p>　　一番激战（单方面的虐杀）过后，诺汐已经陷入到了孤军奋战的境地之中，仅仅保护着自己的王与军的她，完全被莉娅的大军团团包围</p>
 <p>　　“那么，到这里就结束了，就算是弃车保帅你也无力回天了，将军。”莉娅的最后一步，为胜利的方程式书写下了完美的句号。</p>
 <p>　　“心情太浮躁，中间的那几步，估计都没有经过仔细的思考吧？这么明显的陷阱，居然都没有看出来吗？”</p>
-<p>　　“啊……霖！”被虐了一顿的诺汐，立刻抱住了身旁的诺霖，“莉娅学姐她，她欺负我——”</p>
+<p>　　“啊……霖！”被虐了一顿的诺汐，立刻抱住了身旁的诺霖，“莉娅学姐她，她欺负我⸺”</p>
 <p>　　“姐姐，没事，接下来就让我来替姐姐报仇吧！”</p>
 <p>　　“霖你会下象棋？”</p>
 <p>　　“刚刚看姐姐下了一局之后，我已经知道大致的规则了。”</p>
@@ -194,97 +126,127 @@
 <p>　　“参见理事长。”莉娅轻声地说道。</p>
 <p>　　“诶，居然在下棋？莉娅你要不要下次来和我比赛一次试试看？”优佳一时间来了兴致，“要不现在就开始吧，我让你先手好了。”</p>
 <p>　　“还是，还是说说魔导书的事情吧……”莉娅自然不敢和优佳下象棋。以前的几次对局，她都以完全的完败而告终，自己最擅长的小计谋，完全逃不出优佳的眼睛，轻轻松松便是被她给识破。</p>
-<p>　　毕竟，高浓度的Novia因子，赋予了魔女们洞悉未来的能力，虽然也只能大致的看到几分钟后的情形，但是在棋局对垒之中，完全就像是个致命的外挂一样。</p>
+<p>　　毕竟，高浓度的 Novia 因子，赋予了魔女们洞悉未来的能力，虽然也只能大致的看到几分钟后的情形，但是在棋局对垒之中，完全就像是个致命的外挂一样。</p>
 <p>　　导致至今，千羽学院内都不存在着任何能与优佳一较高下的棋手。估计，能打败魔女的，也只有其他的魔女才可以吧？</p>
-<p>　　“那可真可惜呢。”优佳笑了笑，坐到了莉娅的身边，“姐姐——”</p>
-<p>　　“既然都到齐了，那么就来说结论好了。”特查办公室里，优奈环顾了一下在场的其他四人后，开始向着她们诉说了事情的经过，“引起事件的魔导书已经被我和优佳联手捕获并且封印住了。根据我们的调查，应该是一本无属性的，精神类的魔导书，等级为C级，作用是精神强化。估计是魔导书回应了期中复习想偷懒这类的想法，然后再出现的吧。距离现在都已经过去了一星期多才出现代偿现象，还算是幸运的。”</p>
-<p>　　“精神类的魔导书？是C级的话，她们两个现在……”</p>
+<p>　　“那可真可惜呢。”优佳笑了笑，坐到了莉娅的身边，“姐姐⸺”</p>
+<p>　　“既然都到齐了，那么就来说结论好了。”特查办公室里，优奈环顾了一下在场的其他四人后，开始向着她们诉说了事情的经过，“引起事件的魔导书已经被我和优佳联手捕获并且封印住了。根据我们的调查，应该是一本无属性的，精神类的魔导书，等级为 C 级，作用是精神强化。估计是魔导书回应了期中复习想偷懒这类的想法，然后再出现的吧。距离现在都已经过去了一星期多才出现代偿现象，还算是幸运的。”</p>
+<p>　　“精神类的魔导书？是 C 级的话，她们两个现在……”</p>
 <p>　　“只是因为代偿的原因倒下了而已，估计今晚就可以醒来。”</p>
 <p>　　“她们，她们没事就好……”诺汐长舒了一口气。</p>
-<p>　　“还好只是C级的魔导书，要是A级B级的魔导书，可能就要出生命危险了。”</p>
+<p>　　“还好只是 C 级的魔导书，要是 A 级 B 级的魔导书，可能就要出生命危险了。”</p>
 <p>　　“姐姐，我觉得还是最好和学生们说一下关于魔导书的事情吧。这种事情，还是给她们打个预防针比较好。”公开魔导书，这件事情姐妹俩前不久就讨论过，优佳更倾向于完全公开魔导书的事情，相当于给学生们的预警；而优奈则更害怕在公开魔导书的事情之后，会有不少憧憬着魔导书的力量的学生们，到时候可能会给学院带来更多的麻烦。</p>
 <p>　　现在的情况，看起来再隐瞒下去也没有任何的益处，优奈经过几番思索后，对着优佳点了点头。</p>
 <p>　　“也是，这几天都连续出了两起事件了。在这样下去，估计她们特查也会很累的。明天早晨顺便开个年级大会，说明一下这件事吧。”</p>
 <p>　　“那老妈那边……”</p>
 <p>　　“老妈那边让我搞定就好了，反正现在我才是千羽家的家主，她们估计也不会有太大意见的。”</p>
 <p>　　“既然没事的话，那么我们……”诺汐看了看交谈着的姐妹俩。</p>
-<p>　　“你们负责去把那本魔导书放回去，梦夜书库四楼，请——”</p>
+<p>　　“你们负责去把那本魔导书放回去，梦夜书库四楼，请⸺”</p>
 <p>　　一边说着，优奈将她放在包里的魔导书递给了诺汐。</p>
 
-        </div>
-  
-      </div>
-
-      
     </div>
+  </div>
+</section>
 
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%B8%80%E5%8D%B7/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%83%E7%AB%A0/"><b>上一页：</b> 第二十七章 运动会</a>
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%B8%80%E5%8D%B7/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B9%9D%E7%AB%A0/"><b>下一页：</b> 第二十九章 霖的样子有点怪</a>
-        </div>
-      </div>
-    </div>
-
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <nav class="pagenav">
     
-    <div style="position:fixed; top: 1rem; left: 1rem; width: 25%;">
-      <button onclick="addBookmark()" id="bkmrk" title="加书签" class="btn btn-light" style="display: block;">
-        +<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M12 0H4c-.73 0-1 .27-1 1v15l5-3.09L13 16V1c0-.73-.27-1-1-1z"></path></svg>
-      </button>
-      <button onclick="toggleBmDisplay()" id="bkmrk" title="管理书签" class="btn btn-light" style="display: block;">
-        书签
-      </button>
-      
-      <div id="bmcard" class="card card-body overflow-hidden" hidden="true">
-        <h4>书签管理器</h4>
-        <div id="bookmarksSection"></div>
-      </div>
-      
-    </div>
-
     
-    <div class="dropdown" style="position: fixed; bottom: 1rem; left: 1rem;">
-      <button class="btn btn-light dropdown-toggle" type="button" id="themeMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        主题选择
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#" onclick="changeTheme('day')">日间</a>
-        <a class="dropdown-item" href="#" onclick="changeTheme('night')">夜间</a>
-      </div>
-    </div>
+    <a id="prevlink" class="button prevbtn is-size-5" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%B8%80%E5%8D%B7/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%83%E7%AB%A0/" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%B8%80%E5%8D%B7\/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B8%83%E7%AB%A0\/');return false;">
+      <span>
+        <strong>上一章</strong>
+        <em>第二十七章 运动会</em>
+      </span>
+    </a>
+    
+    
+    <a id="nextlink" class="button nextbtn is-size-5" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%B8%80%E5%8D%B7/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B9%9D%E7%AB%A0/" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%B8%80%E5%8D%B7\/%E7%AC%AC%E4%BA%8C%E5%8D%81%E4%B9%9D%E7%AB%A0\/');return false;">
+      <span>
+        <strong>下一章</strong>
+        <em>第二十九章 霖的样子有点怪</em>
+      </span>
+    </a>
+    
+  </nav>
   
+  <section class="section is-paddingless-horizontal has-text-grey-light">
+  <p>
+    上次更新：
+    <span title="0001-01-01 00:00:00 &#43;0000 UTC">0001-01-01</span>
+      
+      ，<a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/commits/master/content/novel/%e9%ad%94%e5%a5%b3%e4%b9%8b%e5%90%bb%e4%b9%83%e7%99%be%e5%90%88%e4%b9%8b%e5%91%b31%ef%bc%9a%e6%a2%a6%e4%b8%8e%e5%b8%8c%e6%9c%9b%e7%9a%84%e5%a5%b3%e7%a5%9e/%e7%ac%ac%e4%b8%80%e5%8d%b7/%e7%ac%ac%e4%ba%8c%e5%8d%81%e5%85%ab%e7%ab%a0.md" target="_blank">更新历史</a>
+  </p>
+  
+  <p>
+    <a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/blob/master/content/novel/%e9%ad%94%e5%a5%b3%e4%b9%8b%e5%90%bb%e4%b9%83%e7%99%be%e5%90%88%e4%b9%8b%e5%91%b31%ef%bc%9a%e6%a2%a6%e4%b8%8e%e5%b8%8c%e6%9c%9b%e7%9a%84%e5%a5%b3%e7%a5%9e/%e7%ac%ac%e4%b8%80%e5%8d%b7/%e7%ac%ac%e4%ba%8c%e5%8d%81%e5%85%ab%e7%ab%a0.md" target="_blank">在 GitHub 上改进此页</a>
+  </p>
+  
+</section>
+</section>
+
+    </div>
   </div>
   
-</div>
 
+<footer class="footer">
+  <div class="container">
+    <div class="level">
+      <div class="level-start">
+        蝶天希
+        <p>Maintained with love by Yrr0r &amp; Gesrua</p>
+        
+      </div>
+      <div class="level-end">
+        <p>Theme <a href="https://github.com/Yrr0r/yuripages">YuriPages</a> by <a href="https://github.com/Yrr0r">Yrr0r</a> & <a href="https://github.com/Gesrua">Gesrua</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener('keydown', k => {
+    if (k.code == 'KeyZ') {
+      window.scrollBy({ top: window.innerHeight / 2, left: 0, behavior: 'smooth' });
+    } else if (k.code == 'ArrowRight' && window?.$pagedata?.next) {
+      pjax.loadUrl(window.$pagedata.next)
+    } else if (k.code == 'ArrowLeft' && window?.$pagedata?.prev) {
+      pjax.loadUrl(window.$pagedata.prev)
+    }
+  });
+</script>
+<style>
+  .is-paddingless-horizontal {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  .pagenav {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+  }
 
-    </main>
+  .pagenav span {
+    line-height: 1.25
+  }
 
-    
+  .pagenav span em {
+    display: block;
+    font-style: normal;
+  }
 
-<div class="text-center" id="footer">
-    <p>Maintained with love by Yrr0r</p>
-    <p>Sample</p>
-    <p>Theme "YuriPages" by Yrr0r.</p>
-</div>
+  .prevbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: 0;
+  }
 
+  .nextbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: auto;
+    margin-right: 0
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</body>
 
-
-
-
-
-<link href="../../../../cssjs/bootstrap.min.css" rel="stylesheet">
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-
-<script src="../../../../cssjs/bootstrap.bundle.min.js"></script>
-
-
-<script src="../../../../cssjs/utility.js"></script>
-  </body>
 </html>

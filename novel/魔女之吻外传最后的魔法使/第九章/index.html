@@ -1,128 +1,108 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    
 
-
-
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="UTF-8">
 
-
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>第九章 萝莉死神</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace-theme-default.min.css" integrity="sha256-anPTRkzR25h4UMAUWxh0FNzKvgVv2MnEyxeDpgOtfiA=" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.3/pace.min.js" integrity="sha256-kubxe7yxLaribPaAekUOUDUCap6FSiCeKCQQqYQDs4s=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"
+    integrity="sha256-yYGYRNGM8Fn1Kn2lP3htQYNIzGYt1+JD8AnsVZusheI=" crossorigin="anonymous"></script>
+<script>
+    var pjax = new Pjax({
+        debug: true,
+        cacheBust: false,
+        elements: "a.js-Pjax",
+        selectors: [
+            "title",
+            "#pjax-main",
+        ]
+    })
+</script>
+</head>
 
-
-
-  </head>
-
-  <body id="body">
-
-    <main class="block-main">
+<body>
+  <div id="pjax-main" class="columns is-centered is-size-5">
+    <div class="column is-three-quarters is-full-mobile">
       
+<script>
+  window.$pagedata = {
+    type: 'single',
+
+    prev: '\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF\/%E7%AC%AC%E5%85%AB%E7%AB%A0\/',
 
 
-<div id="pageInfo" hidden=true>
-  {
-    "kind" : "page",
-    "weight": 9,
-    "title" : "第九章 萝莉死神",
-    "link" : "/novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF/%E7%AC%AC%E4%B9%9D%E7%AB%A0/",
-    "currentSection" : "魔女之吻外传：最后的魔法使"
+    next: '\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF\/%E7%AC%AC%E5%8D%81%E7%AB%A0\/',
+
   }
-</div>
+</script>
 
-<div id="readerview">
-  <div class="container" id="pageview">
-    
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../../../">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M16 9l-3-3V2h-2v2L8 1 0 9h2l1 5c0 .55.45 1 1 1h8c.55 0 1-.45 1-1l1-5h2zm-4 5H9v-4H7v4H4L2.81 7.69 8 2.5l5.19 5.19L12 14z"></path></svg>
-        </a></li>
-        <li class="breadcrumb-item"><a href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF/">魔女之吻外传：最后的魔法使</a></li>
-        <li class="breadcrumb-item active" aria-current="page">第九章 萝莉死神</li>
-      </ol>
-    </nav>
-
-    <div id="page-data" hidden="true">
-     todo: 此处可以用js从URL里插入一个面包屑导航代替上面的导航。
-    </div>
-    
-  
-    
-    <div id="reader-chapterMenu" hidden=true>
-    目录：</br>
-    
-    第一章 穿越世界的少女 </br>
-    
-    第二章 未识别的ID </br>
-    
-    第三章 恐怖袭击 </br>
-    
-    第四章 黑市 </br>
-    
-    第五章 地下监牢 </br>
-    
-    第六章 黑市拍卖场 </br>
-    
-    第七章 沦为奴隶的少女 </br>
-    
-    第八章 艾蜜儿伯爵 </br>
-    
-    第九章 萝莉死神 </br>
-    
-    第十章 全新的身份 </br>
-    
-    </div>
-
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-           <a type="button" id="prevlink" class="btn text-left btn-light col-12 col-md-6" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF/%E7%AC%AC%E5%85%AB%E7%AB%A0/"><b>上一页：</b> 第八章 艾蜜儿伯爵</a>
-           <a type="button" id="nextlink" class="btn text-left btn-light col-12 col-md-6" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF/%E7%AC%AC%E5%8D%81%E7%AB%A0/"><b>下一页：</b> 第十章 全新的身份</a>
-        </div>
-      </div>
-    </div>
-  
-    
-    <div class="card my-3" id="mainview">
-
-      <div class="card-body">
-        <h2 class="card-title text-center">第九章 萝莉死神</h2>
-        <h6 class="card-subtitle mb-2 text-muted text-center"> 2911 字 </h6> 
+<section class="section is-paddingless-horizontal">
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ol>
+      
+      
         
-        <div class="card-text">
-          <p>　　这可能是诺霖和诺汐所度过的一个最糟糕的夜晚。</p>
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/');return false;"> 梦之图书馆</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="#" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF\/');return false;"> 魔女之吻外传：最后的魔法使</a>
+            </li>
+          
+        
+      
+      <li class="is-active" aria-current="page">
+        <a href="#">第九章 萝莉死神</a>
+      </li>
+    </ol>
+  </nav>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <h1 class="has-text-centered title is-1">
+    第九章 萝莉死神
+  </h1>
+</section>
+
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <div class="container">
+    <div class="content is-size-5">
+      <p>　　这可能是诺霖和诺汐所度过的一个最糟糕的夜晚。</p>
 <p>　　虽然有着淫纹保护着她们俩的身体，但是她们依旧是被那对伯爵姐妹给买下，将她们两人带到了上层自己的别墅内。艾蜜儿伯爵家的别墅与那贫民窟是截然不同，不仅甚是豪华，里面甚至还摆放着各种各样姐妹俩从未见过的东西。</p>
 <p>　　深夜，在到了房间里之后，姐妹俩在伯爵姐妹的逼迫之下戴为自己戴上了跳蛋，调整到了最高档位之后，将她们俩以羞耻的单脚缚姿势给绑在了柱子上。紧接着，就仿佛像是羞辱一般，那对巨乳姐妹在她们俩的面前好好进行了一番精彩的演出。</p>
 <p>　　金发的姐妹俩水乳交融，胸前那两坨无用的脂肪甚至还不断地贴在她们俩的脸颊上。太糟糕了，这一切都太糟糕了！那一晚上不仅不允许她们俩睡觉，甚至还因为自己的贫乳被狠狠地羞辱了一番。</p>
-<p>　　作为着双A少女，诺霖可是对于自己的身材很自信的。</p>
+<p>　　作为着双 A 少女，诺霖可是对于自己的身材很自信的。</p>
 <p>　　然而到了这个审美奇怪的世界，竟然还发生了这种事情！</p>
-<p>　　万恶的巨乳——万恶的巨乳！</p>
+<p>　　万恶的巨乳⸺万恶的巨乳！</p>
 <p>　　诺霖的心中已经不断地发出着怒吼。</p>
 <p>　　“哼哼，怎么样，小丫头。我们可比你原来的主人要棒多了哦~”最后，芙莉丝·艾蜜儿还特地用手抬起诺霖的下巴，故意挑逗着她，“要不要愿意放弃你原来主人的契约，投身入我的怀抱啊？”</p>
 <p>　　“才，才不！”放弃原来的主人？她的主人可是自己最爱的姐姐大人，绝对不可能的事情好吧！诺霖甚至还想要去咬她，被察觉到了之后立即便是被打了两个巴掌，还顺便被戴上了口球。</p>
 <p>　　“啧，真是不识相的小丫头。那边那位呢？作为着姐姐应该比妹妹要听话才对吧？是好好听话，认我们俩为主人，还是准备被我们折磨呢？”芙莉丝冷笑着看着诺汐，“芙丽娅，把我的鞭子拿过来~虽然我的手不能碰你们的那里，但是用鞭子抽还是可以的吧？”</p>
 <p>　　“不，不要……”诺汐颤抖着，下面最高档的跳蛋不断地刺激着她的身体，就连说话都显得断断续续的，听上去都显得有那么几分艰难。</p>
-<p>　　“不要吗~我会很困扰的哦~芙丽娅——”</p>
+<p>　　“不要吗~我会很困扰的哦~芙丽娅⸺”</p>
 <p>　　“给，姐姐大人。”一根沾着盐水的皮鞭递了过来，在地板上拍打了几下，“啪”“啪”两声巨响，使得地板上的瓷砖宛若都出现了一道浅浅的裂纹。</p>
-<p>　　“成为我的奴隶，还是想要被折磨呢？”她拉直了皮鞭，随时准备着朝向诺汐的身体落去，“给你三秒的机会哦，你们的身体那么漂亮，我可不想糟蹋了不是吗，3~2~1——”</p>
+<p>　　“成为我的奴隶，还是想要被折磨呢？”她拉直了皮鞭，随时准备着朝向诺汐的身体落去，“给你三秒的机会哦，你们的身体那么漂亮，我可不想糟蹋了不是吗，3~2~1⸺”</p>
 <p>　　“才，才不会，屈服，于你！”诺汐依旧是咬着牙。</p>
 <p>　　实际上她自己也不知道怎么才能解除淫纹的效果。这个淫纹是用着她们俩的血为原料，再加以炼金术和其他材料调配而成，并刻于她们的体内的，并不是简简单单的一个魔法契约之类的玩意。</p>
 <p>　　“真是不听话呢，既然如此，那么更应该好好教育一顿了呢。”芙莉丝举起了皮鞭，准备着直接对着诺汐的私处抽下去。然而鞭子还没有落下之时，突然以诡异的样子甩动起来，不仅没有落在诺汐的身上，甚至还旋转着缠绕住了芙莉丝本人。</p>
 <p>　　“什么情况，你们动了什么手脚！”芙莉丝还准备着自己解开绳子的时候，突然又感觉到身体像是失重了一般飘起。双脚无法触及到地面，脖子上感觉到仿佛被什么给勒住了一样，“芙丽娅，芙丽娅救，救我……”</p>
 <p>　　“姐姐！”</p>
-<p>　　她们自然是不知道发生了什么，也怎么都不可能想到，她们俩所买回来欺负的奴隶，竟然是这个世界之中极其罕见的存在——魔法使。</p>
+<p>　　她们自然是不知道发生了什么，也怎么都不可能想到，她们俩所买回来欺负的奴隶，竟然是这个世界之中极其罕见的存在⸺魔法使。</p>
 <p>　　“不可饶恕，胆敢欺负姐姐的家伙！”</p>
 <p>　　诺霖挣脱了她的口球和绳子，脸色阴沉，活动了一下手腕，被塞的跳蛋也直接取出来并丢在了一边，浑身散发出了强烈的杀气，轻轻一挥手，芙莉丝和芙丽娅则是直接被丢到了她们俩的床上，诺霖拿起了那支鞭子，抽打在了床沿上，那木制的床沿甚至都裂开了一道裂纹，那对伯爵姐妹不由得开始颤抖了起来。</p>
 <p>　　“你，你是……”为什么能够挣脱绳子？</p>
 <p>　　这买来的可不是什么诱人的奴隶小萝莉，是活生生的炸药包吧！身居高位，掌管黑市，手中握着诸多人生死的艾蜜儿伯爵姐妹，这一次真的感受到了恐惧。</p>
 <p>　　“保镖！保镖，巡逻机器人！”芙莉丝按下了床头柜上的按钮，立即开始呼叫起了救援。高居着伯爵之位的她们，可是有着许多的机器人保镖守护着的。</p>
 <p>　　“门已经封死了。”诺霖一抬手，用着自己的魔力将房门紧紧地封锁了起来，“绝，不，饶，恕。”她一字一句地说着，举起手中的鞭子，蓄上自己的魔力，重重地朝着床上姐妹俩的身体挥去。</p>
-<p>　　“不，不要，我，我恢复你们的自由身。饶命——啊啊——”</p>
+<p>　　“不，不要，我，我恢复你们的自由身。饶命⸺啊啊⸺”</p>
 <p>　　“姐姐？不要打姐姐了！我，我……”</p>
 <p>　　“啪！”</p>
 <p>　　房间里，回荡着杀猪一般地惨叫声。黑化的诺霖宛若着地狱之中的死神一般，不断地挥舞着手中拿着的鞭子，狠狠地抽打着她们俩的“主人”。</p>
@@ -132,7 +112,7 @@
 <p>　　“没，没事……下面，有点麻了。”诺汐喘着气，她的脸色还显得有几分红润，看得出来那最高频的跳蛋，令她几乎都没了什么力气。</p>
 <p>　　“先休息一会吧。想要喝水吗？我看看柜子里有什么。”</p>
 <p>　　“别想……动我的，东西。”芙莉丝艰难地在床上爬着，伸出着自己颤抖的右手，按下了左手手腕上的那个按钮。那位贫民窟的女人和她说过，这两个女孩很危险，攻击倾向很强，因此在买下她们的时候特地给她们俩的手环上施加了一个应急保护装置。本来以为这两只萝莉能乖乖听话，结果没想到，这个应急保护装置还真的生效了。</p>
-<p>　　“滴”的一声，突然手环上所释放出的一阵电流突然穿过了姐妹俩的身体，“啊啊啊啊——”诺霖和诺汐两人，都不由自主地发出了惨叫声，与此同时，原先被诺霖封锁的大门也瞬间被打开，两个提着枪的巡逻机器人，也冲进了房间里，用着手中的步枪指着姐妹俩的脑袋。</p>
+<p>　　“滴”的一声，突然手环上所释放出的一阵电流突然穿过了姐妹俩的身体，“啊啊啊啊⸺”诺霖和诺汐两人，都不由自主地发出了惨叫声，与此同时，原先被诺霖封锁的大门也瞬间被打开，两个提着枪的巡逻机器人，也冲进了房间里，用着手中的步枪指着姐妹俩的脑袋。</p>
 <p>　　“两个小丫头……还，还想要和我作对？你们，怎么可能玩得过，我。”芙莉丝艰难地站了起来，身上各处的伤痕仍旧是在隐隐作痛。这绝对是她人生最失败的一天，作为着大贵族出身的她，从未感觉到如此屈辱过。</p>
 <p>　　“就这种程度的电击而已吗？”只不过，诺霖给她的回应则是再一度出乎了她的意料。在装出来的几声尖叫之后，她则是立即回过头，直接将手环撕烂，转过头，脸上的表情再一度阴沉了下来。</p>
 <p>　　“你，你……这种电击，你不怕被电吗？！”</p>
@@ -141,82 +121,112 @@
 <p>　　“你们两个还愣着干，干什么！给我，给我抓住她们！处死，直接处死！”芙莉丝捂着自己的手臂，咬着牙对着那两个傻眼的机器人命令道。</p>
 <p>　　“遵命。”机器人们立即开始行动了起来，连开两枪，直接打爆了对方的脑袋。一时间，芙莉丝和芙丽娅都傻眼了。机器人的程序出错了？命令不是让她们打爆那两个贫乳萝莉的脑袋吗！</p>
 <p>　　“哎呀我傻了，应该直接设定让它们打爆你们的脑袋，还要多费我一点力气呢。”诺霖提起了手中的鞭子，这些机器人也是由魔力驱动的魔导机器，算是一种特殊的魔导器，她也自然可以用「Resonance」来进行干涉，操控机器人自相残杀什么的，可真是有趣呢。</p>
-<p>　　“所以，想要怎么死呢，亲爱的——主，人？”</p>
+<p>　　“所以，想要怎么死呢，亲爱的⸺主，人？”</p>
 
-        </div>
-  
-      </div>
-
-      
     </div>
+  </div>
+</section>
 
-    <div class="card my-3">
-      <div id="reader-prevNext-bottom" class="card">
-        <div class="row m-0">
-          
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF/%E7%AC%AC%E5%85%AB%E7%AB%A0/"><b>上一页：</b> 第八章 艾蜜儿伯爵</a>
-           <a type="button" class="btn text-left btn-light col-12 col-md-6" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF/%E7%AC%AC%E5%8D%81%E7%AB%A0/"><b>下一页：</b> 第十章 全新的身份</a>
-        </div>
-      </div>
-    </div>
-
+<section class="section is-paddingless-horizontal" style="padding-top: 0;">
+  <nav class="pagenav">
     
-    <div style="position:fixed; top: 1rem; left: 1rem; width: 25%;">
-      <button onclick="addBookmark()" id="bkmrk" title="加书签" class="btn btn-light" style="display: block;">
-        +<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20"><path fill-rule="evenodd" d="M12 0H4c-.73 0-1 .27-1 1v15l5-3.09L13 16V1c0-.73-.27-1-1-1z"></path></svg>
-      </button>
-      <button onclick="toggleBmDisplay()" id="bkmrk" title="管理书签" class="btn btn-light" style="display: block;">
-        书签
-      </button>
-      
-      <div id="bmcard" class="card card-body overflow-hidden" hidden="true">
-        <h4>书签管理器</h4>
-        <div id="bookmarksSection"></div>
-      </div>
-      
-    </div>
-
     
-    <div class="dropdown" style="position: fixed; bottom: 1rem; left: 1rem;">
-      <button class="btn btn-light dropdown-toggle" type="button" id="themeMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        主题选择
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#" onclick="changeTheme('day')">日间</a>
-        <a class="dropdown-item" href="#" onclick="changeTheme('night')">夜间</a>
-      </div>
-    </div>
+    <a id="prevlink" class="button prevbtn is-size-5" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF/%E7%AC%AC%E5%85%AB%E7%AB%A0/" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF\/%E7%AC%AC%E5%85%AB%E7%AB%A0\/');return false;">
+      <span>
+        <strong>上一章</strong>
+        <em>第八章 艾蜜儿伯爵</em>
+      </span>
+    </a>
+    
+    
+    <a id="nextlink" class="button nextbtn is-size-5" href="../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF/%E7%AC%AC%E5%8D%81%E7%AB%A0/" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E5%A4%96%E4%BC%A0%E6%9C%80%E5%90%8E%E7%9A%84%E9%AD%94%E6%B3%95%E4%BD%BF\/%E7%AC%AC%E5%8D%81%E7%AB%A0\/');return false;">
+      <span>
+        <strong>下一章</strong>
+        <em>第十章 全新的身份</em>
+      </span>
+    </a>
+    
+  </nav>
   
+  <section class="section is-paddingless-horizontal has-text-grey-light">
+  <p>
+    上次更新：
+    <span title="0001-01-01 00:00:00 &#43;0000 UTC">0001-01-01</span>
+      
+      ，<a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/commits/master/content/novel/%e9%ad%94%e5%a5%b3%e4%b9%8b%e5%90%bb%e5%a4%96%e4%bc%a0%ef%bc%9a%e6%9c%80%e5%90%8e%e7%9a%84%e9%ad%94%e6%b3%95%e4%bd%bf/%e7%ac%ac%e4%b9%9d%e7%ab%a0.md" target="_blank">更新历史</a>
+  </p>
+  
+  <p>
+    <a class="has-text-grey" style="border-bottom: 1px solid currentColor;" href="https://github.com/amaki-aria/amaki-aria.github.io/blob/master/content/novel/%e9%ad%94%e5%a5%b3%e4%b9%8b%e5%90%bb%e5%a4%96%e4%bc%a0%ef%bc%9a%e6%9c%80%e5%90%8e%e7%9a%84%e9%ad%94%e6%b3%95%e4%bd%bf/%e7%ac%ac%e4%b9%9d%e7%ab%a0.md" target="_blank">在 GitHub 上改进此页</a>
+  </p>
+  
+</section>
+</section>
+
+    </div>
   </div>
   
-</div>
 
+<footer class="footer">
+  <div class="container">
+    <div class="level">
+      <div class="level-start">
+        蝶天希
+        <p>Maintained with love by Yrr0r &amp; Gesrua</p>
+        
+      </div>
+      <div class="level-end">
+        <p>Theme <a href="https://github.com/Yrr0r/yuripages">YuriPages</a> by <a href="https://github.com/Yrr0r">Yrr0r</a> & <a href="https://github.com/Gesrua">Gesrua</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.addEventListener('keydown', k => {
+    if (k.code == 'KeyZ') {
+      window.scrollBy({ top: window.innerHeight / 2, left: 0, behavior: 'smooth' });
+    } else if (k.code == 'ArrowRight' && window?.$pagedata?.next) {
+      pjax.loadUrl(window.$pagedata.next)
+    } else if (k.code == 'ArrowLeft' && window?.$pagedata?.prev) {
+      pjax.loadUrl(window.$pagedata.prev)
+    }
+  });
+</script>
+<style>
+  .is-paddingless-horizontal {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  .pagenav {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+  }
 
-    </main>
+  .pagenav span {
+    line-height: 1.25
+  }
 
-    
+  .pagenav span em {
+    display: block;
+    font-style: normal;
+  }
 
-<div class="text-center" id="footer">
-    <p>Maintained with love by Yrr0r</p>
-    <p>Sample</p>
-    <p>Theme "YuriPages" by Yrr0r.</p>
-</div>
+  .prevbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: 0;
+  }
 
+  .nextbtn {
+    height: auto !important;
+    padding: .75em 1.25em !important;
+    margin-left: auto;
+    margin-right: 0
+  }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</body>
 
-
-
-
-
-<link href="../../../cssjs/bootstrap.min.css" rel="stylesheet">
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-
-<script src="../../../cssjs/bootstrap.bundle.min.js"></script>
-
-
-<script src="../../../cssjs/utility.js"></script>
-  </body>
 </html>

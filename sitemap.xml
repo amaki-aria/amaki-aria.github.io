@@ -3180,12 +3180,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/novel/</loc>
-    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
+    <lastmod>2021-02-20T02:55:15+08:00</lastmod>
   </url>
   
   <url>
@@ -3201,6 +3196,11 @@
   <url>
     <loc>/novel/%E5%A7%90%E5%A6%B9%E7%99%BE%E5%90%88%E7%9F%AD%E7%AF%87%E9%9B%86/%E5%A0%95%E5%A4%A9%E4%B9%8B%E7%BE%BD/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/novel/</loc>
+    <lastmod>2021-02-20T02:55:15+08:00</lastmod>
   </url>
   
 </urlset>
