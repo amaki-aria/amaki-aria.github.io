@@ -114,7 +114,6 @@
       document.body.removeChild(el);
     }
     function markdownFormat(content) {
-      content = content.replace(/-{3}-+/g, '<hr>')
       content = content.replace(/\s+$/, '') + '\n'
       content = content.replace(/^[ \t\u3000\u00A0]*—+[ \t\u3000\u00A0]*$/gm, '---')
       content = content.replace(/[^—]——[^—]/g, s => `${s[0]}\u2E3A${s[3]}`)
