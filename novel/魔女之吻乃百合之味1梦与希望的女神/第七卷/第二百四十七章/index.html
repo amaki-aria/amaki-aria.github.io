@@ -44,34 +44,41 @@
 </script>
 
 <section class="section is-paddingless-horizontal">
-  <nav class="breadcrumb" aria-label="breadcrumbs">
-    <ol>
-      
-      
+  <nav class="columns">
+    <nav class="breadcrumb column" aria-label="breadcrumbs">
+      <ol>
+        
         
           
-            <li>
-              <a href="#" onclick="pjax.loadUrl('\/novel\/');return false;"> 梦之图书馆</a>
-            </li>
+            
+              <li>
+                <a href="#" onclick="pjax.loadUrl('\/novel\/');return false;"> 梦之图书馆</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="#" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/');return false;"> 魔女之吻乃百合之味1：梦与希望的女神</a>
+              </li>
+            
+          
+            
+              <li>
+                <a href="#" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%B8%83%E5%8D%B7\/');return false;"> 第七卷 梦之女神</a>
+              </li>
+            
           
         
-          
-            <li>
-              <a href="#" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/');return false;"> 魔女之吻乃百合之味1：梦与希望的女神</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="#" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%B8%83%E5%8D%B7\/');return false;"> 第七卷 梦之女神</a>
-            </li>
-          
-        
-      
-      <li class="is-active" aria-current="page">
-        <a href="#">第二百四十七章 禁书图书馆</a>
-      </li>
-    </ol>
+        <li class="is-active" aria-current="page">
+          <a href="#">第二百四十七章 禁书图书馆</a>
+        </li>
+      </ol>
+    </nav>
+    <div class="column is-narrow">
+      <a href="#" onclick="document.body.classList.contains('dark-theme') ? document.body.classList.remove('dark-theme') : document.body.classList.add('dark-theme'); return false;">
+        <svg style="width: 1em" aria-hidden="true" focusable="false" data-prefix="far" data-icon="moon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-moon fa-w-16 fa-2x"><path fill="currentColor" d="M279.135 512c78.756 0 150.982-35.804 198.844-94.775 28.27-34.831-2.558-85.722-46.249-77.401-82.348 15.683-158.272-47.268-158.272-130.792 0-48.424 26.06-92.292 67.434-115.836 38.745-22.05 28.999-80.788-15.022-88.919A257.936 257.936 0 0 0 279.135 0c-141.36 0-256 114.575-256 256 0 141.36 114.576 256 256 256zm0-464c12.985 0 25.689 1.201 38.016 3.478-54.76 31.163-91.693 90.042-91.693 157.554 0 113.848 103.641 199.2 215.252 177.944C402.574 433.964 344.366 464 279.135 464c-114.875 0-208-93.125-208-208s93.125-208 208-208z" class=""></path></svg>
+      </a>
+    </div>
   </nav>
 </section>
 
@@ -213,6 +220,41 @@
   });
 </script>
 <style>
+  .dark-theme {
+    background-color: #0a0a0a !important;
+    color: #FFF !important;
+  }
+  .dark-theme strong, .dark-theme .title, .dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme .menu-list a, .dark-theme .breadcrumb .is-active a {
+    color: #FFF !important;
+  }
+  .dark-theme blockquote {
+    background-color: #363636!important;
+  }
+  .dark-theme .pagenav .button {
+    background-color: #363636;
+    border-color: transparent;
+    color: #fff;
+  }
+  .dark-theme footer {
+    background-color: #363636!important;
+  }
+  .dark-theme .message {
+    background-color: #363636!important;
+  }
+  .dark-theme .message.is-link .message-body {
+    border-color: #3850b7!important;
+  }
+  .dark-theme .message.is-info .message-body {
+    border-color: #296fa8!important;
+  }
+
+  .dark-theme .message-body {
+    color: #f5f5f5!important;
+  }
+  .dark-theme .menu-list a:hover {
+    background-color: #121212!important;
+  }
+
   .content h4 {
     text-align: center;
   }
@@ -223,6 +265,7 @@
 
   .pagenav {
     text-align: left;
+    flex-wrap: wrap;
   }
 
   .pagenav span {
