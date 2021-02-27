@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <div id="pjax-main" class="columns is-centered is-size-5" style="overflow: hidden;">
+  <div id="pjax-main" class="columns is-paddingless is-gapless is-centered is-size-5" style="overflow: hidden;">
     <div class="column is-three-quarters is-full-mobile">
       
 <script>
@@ -69,9 +69,9 @@
     
       <div class="column is-full-mobile is-half-tablet">
         <article class="message is-info">
-          <div class="message-body has-text-centered">
-            <p>给群里的炙华酱写的番外，世界观依旧是妹吻世界观。</p>
-<p>关于傲娇魅魔姐姐和腹黑天使妹妹的小故事，不定期更新。</p>
+          <div class="message-body">
+            <p>　　给群里的炙华酱写的番外，世界观依旧是妹吻世界观。</p>
+<p>　　关于傲娇魅魔姐姐和腹黑天使妹妹的小故事，不定期更新。</p>
 
           </div>
         </article>
@@ -151,15 +151,16 @@
   });
 </script>
 <style>
+  .content h4 {
+    text-align: center;
+  }
   .is-paddingless-horizontal {
     padding-left: 0;
     padding-right: 0;
   }
 
   .pagenav {
-    display: flex;
     text-align: left;
-    flex-wrap: wrap;
   }
 
   .pagenav span {
@@ -171,19 +172,10 @@
     font-style: normal;
   }
 
-  .prevbtn {
+  .pagenav .button {
     white-space: normal !important;
     height: auto !important;
-    padding: .75em 1.25em !important;
-    margin-left: 0;
-  }
-
-  .nextbtn {
-    white-space: normal !important;
-    height: auto !important;
-    padding: .75em 1.25em !important;
-    margin-left: auto;
-    margin-right: 0
+    margin-bottom: 12px !important;
   }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">

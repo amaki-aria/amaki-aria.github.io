@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <div id="pjax-main" class="columns is-centered is-size-5" style="overflow: hidden;">
+  <div id="pjax-main" class="columns is-paddingless is-gapless is-centered is-size-5" style="overflow: hidden;">
     <div class="column is-three-quarters is-full-mobile">
       
 <script>
@@ -36,6 +36,9 @@
 
 
     next: '\/novel\/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2\/14-%E4%B8%8D%E4%B8%80%E8%88%AC%E7%9A%84%E7%94%9F%E6%97%A5%E7%A4%BC%E7%89%A9.txt\/',
+
+
+    parent: '\/novel\/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2\/',
 
   }
 </script>
@@ -191,11 +194,11 @@
   </div>
 </section>
 
+
 <section class="section is-paddingless-horizontal" style="padding-top: 0;">
-  <nav class="pagenav">
+  <nav class="level pagenav">
     
-    
-    <a id="prevlink" class="button prevbtn is-size-5" href="../../../novel/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/12-%E5%A7%90%E5%A6%B9%E6%B8%B8%E6%88%8F.txt/" onclick="pjax.loadUrl('\/novel\/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2\/12-%E5%A7%90%E5%A6%B9%E6%B8%B8%E6%88%8F.txt\/');return false;">
+    <a id="prevlink" class="level-left button is-size-5 is-narrow" href="../../../novel/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/12-%E5%A7%90%E5%A6%B9%E6%B8%B8%E6%88%8F.txt/" onclick="pjax.loadUrl('\/novel\/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2\/12-%E5%A7%90%E5%A6%B9%E6%B8%B8%E6%88%8F.txt\/');return false;">
       <span>
         <strong>上一章</strong>
         <em>12-姐妹游戏</em>
@@ -203,7 +206,15 @@
     </a>
     
     
-    <a id="nextlink" class="button nextbtn is-size-5" href="../../../novel/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/14-%E4%B8%8D%E4%B8%80%E8%88%AC%E7%9A%84%E7%94%9F%E6%97%A5%E7%A4%BC%E7%89%A9.txt/" onclick="pjax.loadUrl('\/novel\/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2\/14-%E4%B8%8D%E4%B8%80%E8%88%AC%E7%9A%84%E7%94%9F%E6%97%A5%E7%A4%BC%E7%89%A9.txt\/');return false;">
+    <a class="level-item button is-size-5 is-narrow" href="../../../novel/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/" onclick="pjax.loadUrl('\/novel\/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2\/');return false;">
+      <span>
+        <strong>返回</strong>
+        <em>白珍珠的泡沫恋曲</em>
+      </span>
+    </a>
+    
+    
+    <a id="nextlink" class="level-right button is-size-5 is-narrow" href="../../../novel/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2/14-%E4%B8%8D%E4%B8%80%E8%88%AC%E7%9A%84%E7%94%9F%E6%97%A5%E7%A4%BC%E7%89%A9.txt/" onclick="pjax.loadUrl('\/novel\/%E7%99%BD%E7%8F%8D%E7%8F%A0%E7%9A%84%E6%B3%A1%E6%B2%AB%E6%81%8B%E6%9B%B2\/14-%E4%B8%8D%E4%B8%80%E8%88%AC%E7%9A%84%E7%94%9F%E6%97%A5%E7%A4%BC%E7%89%A9.txt\/');return false;">
       <span>
         <strong>下一章</strong>
         <em>14-不一般的生日礼物</em>
@@ -257,15 +268,16 @@
   });
 </script>
 <style>
+  .content h4 {
+    text-align: center;
+  }
   .is-paddingless-horizontal {
     padding-left: 0;
     padding-right: 0;
   }
 
   .pagenav {
-    display: flex;
     text-align: left;
-    flex-wrap: wrap;
   }
 
   .pagenav span {
@@ -277,19 +289,10 @@
     font-style: normal;
   }
 
-  .prevbtn {
+  .pagenav .button {
     white-space: normal !important;
     height: auto !important;
-    padding: .75em 1.25em !important;
-    margin-left: 0;
-  }
-
-  .nextbtn {
-    white-space: normal !important;
-    height: auto !important;
-    padding: .75em 1.25em !important;
-    margin-left: auto;
-    margin-right: 0
+    margin-bottom: 12px !important;
   }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">

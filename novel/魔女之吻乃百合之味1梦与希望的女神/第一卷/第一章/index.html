@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <div id="pjax-main" class="columns is-centered is-size-5" style="overflow: hidden;">
+  <div id="pjax-main" class="columns is-paddingless is-gapless is-centered is-size-5" style="overflow: hidden;">
     <div class="column is-three-quarters is-full-mobile">
       
 <script>
@@ -34,6 +34,9 @@
 
 
     next: '\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%B8%80%E5%8D%B7\/%E7%AC%AC%E4%BA%8C%E7%AB%A0\/',
+
+
+    parent: '\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%B8%80%E5%8D%B7\/',
 
   }
 </script>
@@ -216,12 +219,20 @@
   </div>
 </section>
 
+
 <section class="section is-paddingless-horizontal" style="padding-top: 0;">
-  <nav class="pagenav">
+  <nav class="level pagenav">
     
     
+    <a class="level-item button is-size-5 is-narrow" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%B8%80%E5%8D%B7/" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%B8%80%E5%8D%B7\/');return false;">
+      <span>
+        <strong>返回</strong>
+        <em>第一卷 梦幻物语</em>
+      </span>
+    </a>
     
-    <a id="nextlink" class="button nextbtn is-size-5" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%B8%80%E5%8D%B7/%E7%AC%AC%E4%BA%8C%E7%AB%A0/" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%B8%80%E5%8D%B7\/%E7%AC%AC%E4%BA%8C%E7%AB%A0\/');return false;">
+    
+    <a id="nextlink" class="level-right button is-size-5 is-narrow" href="../../../../novel/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E/%E7%AC%AC%E4%B8%80%E5%8D%B7/%E7%AC%AC%E4%BA%8C%E7%AB%A0/" onclick="pjax.loadUrl('\/novel\/%E9%AD%94%E5%A5%B3%E4%B9%8B%E5%90%BB%E4%B9%83%E7%99%BE%E5%90%88%E4%B9%8B%E5%91%B31%E6%A2%A6%E4%B8%8E%E5%B8%8C%E6%9C%9B%E7%9A%84%E5%A5%B3%E7%A5%9E\/%E7%AC%AC%E4%B8%80%E5%8D%B7\/%E7%AC%AC%E4%BA%8C%E7%AB%A0\/');return false;">
       <span>
         <strong>下一章</strong>
         <em>第二章 当妹妹变成小猫娘</em>
@@ -275,15 +286,16 @@
   });
 </script>
 <style>
+  .content h4 {
+    text-align: center;
+  }
   .is-paddingless-horizontal {
     padding-left: 0;
     padding-right: 0;
   }
 
   .pagenav {
-    display: flex;
     text-align: left;
-    flex-wrap: wrap;
   }
 
   .pagenav span {
@@ -295,19 +307,10 @@
     font-style: normal;
   }
 
-  .prevbtn {
+  .pagenav .button {
     white-space: normal !important;
     height: auto !important;
-    padding: .75em 1.25em !important;
-    margin-left: 0;
-  }
-
-  .nextbtn {
-    white-space: normal !important;
-    height: auto !important;
-    padding: .75em 1.25em !important;
-    margin-left: auto;
-    margin-right: 0
+    margin-bottom: 12px !important;
   }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">

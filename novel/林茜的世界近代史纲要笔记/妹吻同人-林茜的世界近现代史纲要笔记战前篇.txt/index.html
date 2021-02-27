@@ -25,13 +25,16 @@
 </head>
 
 <body>
-  <div id="pjax-main" class="columns is-centered is-size-5" style="overflow: hidden;">
+  <div id="pjax-main" class="columns is-paddingless is-gapless is-centered is-size-5" style="overflow: hidden;">
     <div class="column is-three-quarters is-full-mobile">
       
 <script>
   window.$pagedata = {
     type: 'single',
 
+
+
+    parent: '\/novel\/%E6%9E%97%E8%8C%9C%E7%9A%84%E4%B8%96%E7%95%8C%E8%BF%91%E4%BB%A3%E5%8F%B2%E7%BA%B2%E8%A6%81%E7%AC%94%E8%AE%B0\/',
 
   }
 </script>
@@ -170,9 +173,17 @@
   </div>
 </section>
 
+
 <section class="section is-paddingless-horizontal" style="padding-top: 0;">
-  <nav class="pagenav">
+  <nav class="level pagenav">
     
+    
+    <a class="level-item button is-size-5 is-narrow" href="../../../novel/%E6%9E%97%E8%8C%9C%E7%9A%84%E4%B8%96%E7%95%8C%E8%BF%91%E4%BB%A3%E5%8F%B2%E7%BA%B2%E8%A6%81%E7%AC%94%E8%AE%B0/" onclick="pjax.loadUrl('\/novel\/%E6%9E%97%E8%8C%9C%E7%9A%84%E4%B8%96%E7%95%8C%E8%BF%91%E4%BB%A3%E5%8F%B2%E7%BA%B2%E8%A6%81%E7%AC%94%E8%AE%B0\/');return false;">
+      <span>
+        <strong>返回</strong>
+        <em>林茜的《世界近代史纲要》笔记</em>
+      </span>
+    </a>
     
     
   </nav>
@@ -222,15 +233,16 @@
   });
 </script>
 <style>
+  .content h4 {
+    text-align: center;
+  }
   .is-paddingless-horizontal {
     padding-left: 0;
     padding-right: 0;
   }
 
   .pagenav {
-    display: flex;
     text-align: left;
-    flex-wrap: wrap;
   }
 
   .pagenav span {
@@ -242,19 +254,10 @@
     font-style: normal;
   }
 
-  .prevbtn {
+  .pagenav .button {
     white-space: normal !important;
     height: auto !important;
-    padding: .75em 1.25em !important;
-    margin-left: 0;
-  }
-
-  .nextbtn {
-    white-space: normal !important;
-    height: auto !important;
-    padding: .75em 1.25em !important;
-    margin-left: auto;
-    margin-right: 0
+    margin-bottom: 12px !important;
   }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">

@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <div id="pjax-main" class="columns is-centered is-size-5" style="overflow: hidden;">
+  <div id="pjax-main" class="columns is-paddingless is-gapless is-centered is-size-5" style="overflow: hidden;">
     <div class="column is-three-quarters is-full-mobile">
       
 <script>
@@ -69,13 +69,13 @@
     
       <div class="column is-full-mobile is-half-tablet">
         <article class="message is-info">
-          <div class="message-body has-text-centered">
+          <div class="message-body">
             <p><strong>本文为其他作者所写的同人文，特地收入至图书馆</strong></p>
-<p>原作者为<a href="https://www.pixiv.net/users/9992872">远方的白桦林</a></p>
-<p>注：本文为对《魔女之吻乃百合之味》小说位面的世界近现代历史的简要整理，</p>
-<p>其中的绝大部分为演绎与推理的结果，</p>
-<p>绝不代表现实世界中的历史，也绝不代表作者同意或鼓吹其中某种特定的意识形态思想。</p>
-<p>如与现实世界有所雷同，纯属脑洞，请勿对号入座。</p>
+<p>　　原作者为<a href="https://www.pixiv.net/users/9992872">远方的白桦林</a></p>
+<p>　　注：本文为对《魔女之吻乃百合之味》小说位面的世界近现代历史的简要整理，</p>
+<p>　　其中的绝大部分为演绎与推理的结果，</p>
+<p>　　绝不代表现实世界中的历史，也绝不代表作者同意或鼓吹其中某种特定的意识形态思想。</p>
+<p>　　如与现实世界有所雷同，纯属脑洞，请勿对号入座。</p>
 
           </div>
         </article>
@@ -131,15 +131,16 @@
   });
 </script>
 <style>
+  .content h4 {
+    text-align: center;
+  }
   .is-paddingless-horizontal {
     padding-left: 0;
     padding-right: 0;
   }
 
   .pagenav {
-    display: flex;
     text-align: left;
-    flex-wrap: wrap;
   }
 
   .pagenav span {
@@ -151,19 +152,10 @@
     font-style: normal;
   }
 
-  .prevbtn {
+  .pagenav .button {
     white-space: normal !important;
     height: auto !important;
-    padding: .75em 1.25em !important;
-    margin-left: 0;
-  }
-
-  .nextbtn {
-    white-space: normal !important;
-    height: auto !important;
-    padding: .75em 1.25em !important;
-    margin-left: auto;
-    margin-right: 0
+    margin-bottom: 12px !important;
   }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
