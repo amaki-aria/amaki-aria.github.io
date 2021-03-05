@@ -9,6 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.0.0/dist/js-yaml.min.js" integrity="sha256-YXvV+EkP0LayqETd0op4OHoJwquFmL0jNTQ9rgmoF3k=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,13 +32,55 @@
         </div>
       </section>
       <section id="app">
+        <section>
+          <div class="field">
+            <label class="label">目录</label>
+            <p>注意，如果你要新建目录，只需在这里输入，不需要额外操作。</p>
+            <p>比如，现在已经有 content/novel/abc 目录，你想新建 content/novel/abc/def/ghi.md</p>
+            <p>只需要在这里输入 content/novel/abc/def/ 即可（并在“文件名”输入 ghi） </p>
+            <div class="control">
+              <input class="input" type="text" v-model="directory">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">文件名（自动加 .md 后缀）</label>
+            <div class="control">
+              <input class="input" type="text" v-model="filename">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">title</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="标题" v-model="title">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">weight</label>
+            <div class="control">
+              <input class="input" type="number" placeholder="可留空" v-model="weight">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">author</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="可留空" v-model="author">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">date 可留空</label>
+            <div class="control">
+              <input class="input" type="date" placeholder="可留空" v-model="date">
+            </div>
+          </div>
+        </section>
         <button class="button" v-on:click="copy">复制到剪切板</button>
+        <button class="button" v-on:click="addfile">一键添加到 GitHub</button>
         <div class="columns is-multiline">
           <div class="column is-full-mobile is-half-tablet">
             <textarea v-model="content" class="textarea" placeholder="文章写这里"></textarea>
           </div>
           <div class="column is-full-mobile is-half-tablet">
-            <pre>{{ translate }}</pre>
+            <pre>{{ addyaml }}</pre>
           </div>
           <div class="column is-full">
             <h2 class="title">
@@ -45,7 +88,7 @@
             </h2>
           </div>
           <div class="column is-full">
-            <div v-html="rendered" class="content">
+            <div v-html="rendered" class="content" style="border:solid">
             </div>
           </div>
         </div>
@@ -124,15 +167,35 @@
       content = format(content)
       return content
     }
-
+    function getParameterByName(name, url = window.location.href) {
+      name = name.replace(/[\[\]]/g, '\\$&');
+      var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
     var app = new Vue({
       el: '#app',
       data: {
-        content: ''
+        content: '',
+        title: null,
+        weight: null,
+        author: null,
+        date: null,
+        directory: getParameterByName('directory') || null,
+        filename: "",
       },
       methods: {
         copy: function () {
-          copyStringToClipboard(this.translate)
+          copyStringToClipboard(this.addyaml)
+        },
+        addfile: function() {
+          if (!this.directory) alert("目录为空！")
+          let filename = this.directory;
+          if (filename.slice(-1) != '/') filename = filename + '/'
+          filename = filename + this.filename + '.md';
+          window.open(`https://github.com/amaki-aria/amaki-aria.github.io/new/master?filename=${encodeURIComponent(filename)}&value=${encodeURIComponent(this.addyaml)}`)
         }
       },
       computed: {
@@ -146,6 +209,21 @@
           result = result.replace(/\n{2}\n+/g, '\n\n')
 
           return markdownFormat(result);
+        },
+        addyaml: function () {
+          const metadata = {
+            title: this.title
+          };
+          if (this.author) {
+            metadata.author = this.author
+          }
+          if (this.date) {
+            metadata.date = this.date
+          }
+          if (this.weight) {
+            metadata.weight = Number(this.weight)
+          }
+          return `---\n${jsyaml.dump(metadata)}---\n${this.translate}`
         },
         rendered: function () {
           return marked(this.translate)
