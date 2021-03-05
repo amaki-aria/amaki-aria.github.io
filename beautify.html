@@ -35,6 +35,9 @@
         <section>
           <div class="field">
             <label class="label">目录</label>
+            <p>注意，如果你要新建目录，只需在这里输入，不需要额外操作。</p>
+            <p>比如，现在已经有 content/novel/abc 目录，你想新建 content/novel/abc/def/ghi.md</p>
+            <p>只需要在这里输入 content/novel/abc/def/ 即可（并在“文件名”输入 ghi） </p>
             <div class="control">
               <input class="input" type="text" v-model="directory">
             </div>
@@ -71,7 +74,7 @@
           </div>
         </section>
         <button class="button" v-on:click="copy">复制到剪切板</button>
-        <button class="button" v-on:click="addfile">添加到 GitHub</button>
+        <button class="button" v-on:click="addfile">一键添加到 GitHub</button>
         <div class="columns is-multiline">
           <div class="column is-full-mobile is-half-tablet">
             <textarea v-model="content" class="textarea" placeholder="文章写这里"></textarea>
