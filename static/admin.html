@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>目录小工具</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./data.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+</head>
+<body>
+  <div class="columns is-centered">
+    <div class="column is-three-quarters is-full-mobile">
+      <section class="section">
+        <div class="container">
+          <h1 class="title">
+            目录小工具
+          </h1>
+        </div>
+      </section>
+  
+      <section id="app">
+        <nav class="panel">
+          <p class="panel-heading">
+            Repositories
+          </p>
+          <div class="panel-block">
+            <button class="button is-link is-outlined is-fullwidth" v-on:click="goparent">
+              上一级
+            </button>
+            <button class="button is-link is-outlined is-fullwidth" v-on:click="addfile">
+              添加文件
+            </button>
+          </div>
+          <a class="panel-block is-active" v-on:click="go" v-for="item in current.childs" v-bind:id="item._idx">
+            <span class="panel-icon">
+              <i v-if="item.childs" class="fa fa-folder" aria-hidden="true"></i>
+              <i v-else class="fa fa-file" aria-hidden="true"></i>
+            </span>
+            {{ item.base }}
+            <span style="color:grey">
+              weight: {{ item.weight }}
+              title: {{ item.title }}
+            </span>
+          </a>
+        </nav>
+      </section>
+    </div>
+  </div>
+  <script>
+    function sortByWeight(arr) {
+      arr = arr.map(x => {
+        if (x.childs) {
+          x.childs = sortByWeight(x.childs);
+        }
+        return x;
+      });
+      arr = arr.sort((a, b) => {
+        const x = a.weight || 0, y = b.weight || 0;
+        return x-y;
+      })
+      for(let i = 0; i < arr.length; i++){
+        arr[i]._idx = i;
+      }
+      return arr;
+    }
+    window.DATA.childs = sortByWeight(window.DATA.childs)
+    var app = new Vue({
+      el: '#app',
+      data: {
+        root: window.DATA,
+        path: [],
+      },
+      methods: {
+        addfile: function() {
+          let base = 'content/novel/'
+          let cur = this.root;
+          for(let idx of this.path) {
+            cur = cur.childs[idx];
+            base = base + cur.base + '/';
+          }
+          window.open(`./beautify.html?directory=${encodeURIComponent(base)}`, '_blank')
+        },
+        goparent: function(){
+          if (this.path.length >= 1) {
+            this.path.pop();
+          }
+        },
+        go: function(event) {
+          if (this.current.childs[event.currentTarget.id].childs) {
+            this.path.push(event.currentTarget.id)            
+          }
+        }
+      },
+      computed: {
+        current: function() {
+          let res = this.root;
+          for(const p of this.path) {
+            res = res.childs[p];
+          }
+          return res;
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

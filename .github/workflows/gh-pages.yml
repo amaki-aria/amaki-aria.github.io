@@ -37,6 +37,7 @@ jobs:
       - run: yarn install
         working-directory: build
       - run: node --unhandled-rejections=strict --trace-warnings build/add-navdata.js
+      - run: node --unhandled-rejections=strict --trace-warnings build/buildIndex.js
 
       - name: Patch html
         run: |
