@@ -201,6 +201,8 @@
       computed: {
         translate: function () {
           var result = this.content
+
+          result = result.replace(/^\s+（(\d+)）.*/mg, '#### $1')
           result = result.replace(/\r\n/g, '\n')
           result = result.replace(/\r/g, '\n')
 
