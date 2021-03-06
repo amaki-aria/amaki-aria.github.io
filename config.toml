@@ -14,6 +14,7 @@ enableGitInfo = true
   maintainer = "Yrr0r & Gesrua"
   dateFormat = "2006-01-02"
   gitRepo = "https://github.com/amaki-aria/amaki-aria.github.io"
+  advancedNav = true
   footer1 = "Awesome Books"
   footer2 = ":)"
 
