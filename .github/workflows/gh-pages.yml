@@ -38,6 +38,7 @@ jobs:
         working-directory: build
       - run: node --unhandled-rejections=strict --trace-warnings build/add-navdata.js
       - run: node --unhandled-rejections=strict --trace-warnings build/buildIndex.js
+      - run: node --unhandled-rejections=strict --trace-warnings build/build-txt.js
 
       - name: Patch html
         run: |
