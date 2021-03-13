@@ -16,6 +16,7 @@ enableGitInfo = true
   dateFormat = "2006-01-02"
   gitRepo = "https://github.com/amaki-aria/amaki-aria.github.io"
   advancedNav = true
+  sponsor = "https://afdian.net/@amaki-aria"
   footer1 = "Awesome Books"
   footer2 = ":)"
 
