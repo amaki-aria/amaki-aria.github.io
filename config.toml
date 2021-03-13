@@ -1,5 +1,6 @@
 baseURL = ""
 RelativeURLs=true
+defaultContentLanguage = "zh"
 languageCode = "zh-cn"
 theme = "yuripages"
 title = "梦之图书馆"
