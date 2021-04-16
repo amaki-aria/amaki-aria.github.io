@@ -163,8 +163,8 @@
       content = content.replace(/[^—]——[^—]/g, s => `${s[0]}\u2E3A${s[3]}`)
       content = content.replace(/[^—]——[^—]/g, s => `${s[0]}\u2E3A${s[3]}`)
       content = content.replace(/[^—]——[^—]/g, s => `${s[0]}\u2E3A${s[3]}`)
-      content = content.replace(/\u2E3A/, '——')
       content = format(content)
+      content = content.replace(/\u2E3A/g, '——')
       content = content.replace(/抖 M /g, '抖M')
       content = content.replace(/抖 S /g, '抖S')
       return content
