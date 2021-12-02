@@ -1,0 +1,65 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - master  # Set a branch to deploy
+
+jobs:
+  deploy:
+    timeout-minutes: 10
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout amaki-aria.github.io
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Checkout yuripages
+        uses: actions/checkout@v2
+        with:
+          repository: Yrr0r/yuripages
+          path: themes/yuripages
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '15.8.0'
+      - uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: build/node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('auto-build/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+      - run: yarn install
+        working-directory: build
+      - run: node --unhandled-rejections=strict --trace-warnings build/add-navdata.js
+      - run: node --unhandled-rejections=strict --trace-warnings build/buildIndex.js
+      - run: node --unhandled-rejections=strict --trace-warnings build/build-txt.js
+
+      - name: Patch html
+        run: |
+          mkdir -p layouts/section
+          cp themes/yuripages/layouts/index.html layouts/section/blocklist.html.html
+          cp content/index.html layouts/index.html
+      - name: Reset mtime
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8.6'
+      - run: python3 git_reset_mtime.py
+
+      - name: Hugo
+        uses: Gesrua/actions-hugo@a2ea8a8071afdd392cb2e1c638ec9a6f4be0c636
+        with:
+          version: '0.80.0'
+          image: 'ext-alpine'
+          command: ./build/build.sh
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
