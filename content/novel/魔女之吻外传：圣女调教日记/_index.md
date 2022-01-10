@@ -3,6 +3,9 @@ title: 魔女之吻乃百合之味 外传（RX）：圣女调教日记
 author: 蝶天希
 date: 2020-04-20T00:00:00.000Z
 weight: 21
+resources:
+  - name: TXT 下载
+    link: /resources/魔女之吻外传：圣女调教日记.txt
 ---
 　　魔女之吻乃百合之味，诺霖和诺汐的外传，一本小说之中的小说《圣女调教日记》
 
