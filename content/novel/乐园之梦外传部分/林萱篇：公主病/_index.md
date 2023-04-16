@@ -1,5 +1,5 @@
 +++ 
-title = "林萱篇：公主病"
+title = "乐园外传林萱篇-公主病"
 author = "amaki-aria"
-date = "2022-8-8"
+date = "2023-1-30"
 +++ 
