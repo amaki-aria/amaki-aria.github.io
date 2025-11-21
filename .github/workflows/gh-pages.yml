@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
     timeout-minutes: 10
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout amaki-aria.github.io
         uses: actions/checkout@v2
