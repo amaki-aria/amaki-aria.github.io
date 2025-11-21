@@ -11,12 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout amaki-aria.github.io
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Checkout yuripages
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
         with:
           repository: Yrr0r/yuripages
           path: themes/yuripages
@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '18'
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         env:
           cache-name: cache-node-modules
         with:
@@ -46,9 +46,9 @@ jobs:
           cp themes/yuripages/layouts/index.html layouts/section/blocklist.html.html
           cp content/index.html layouts/index.html
       - name: Reset mtime
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.8.6'
+          python-version: '3.13'
       - run: python3 git_reset_mtime.py
 
       - name: Hugo
