@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6c4a86">
+    <meta name="description" content="认识魔女学园都市新乐园：海岛导览、入学指南、七大学院、住宿生活、学生自治、季度活动与 Elysion Online。">
+    <title>新乐园 ELYSION · 魔女学园都市</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #9b59b6;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-bg: #f8f9fa;
+            --dark-text: #2c3e50;
+            --gradient-1: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+            --gradient-2: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-text);
+            background: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ==================== 首页样式 ==================== */
+        .hero-page {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 50%, #1a3a52 100%);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 虚化背景岛屿 - 全填充，60%透明 */
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('assets/images/map.webp') center/cover no-repeat;
+            opacity: 0.4;
+            filter: blur(10px);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* 粒子背景动画 */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            box-shadow: 0 0 6px rgba(155, 89, 182, 0.8);
+            animation: float-particle linear infinite;
+        }
+
+        @keyframes float-particle {
+            0% {
+                opacity: 0;
+                transform: translateY(100vh) translateX(0);
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100vh) translateX(100px);
+            }
+        }
+
+        /* 上半部分：岛屿区域 */
+        .island-section {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 2rem;
+            z-index: 10;
+        }
+
+        /* 岛屿地图容器 */
+        .island-container {
+            position: relative;
+            z-index: 20;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .island-wrapper {
+            position: relative;
+            width: auto;
+            height: auto;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .island-map {
+            display: none;
+        }
+
+        /* 中央标题 */
+        .center-content {
+            position: relative;
+            text-align: center;
+            z-index: 30;
+            animation: zoomIn 1s ease-out 0.3s both;
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+                filter: blur(10px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+                filter: blur(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .paradise-title {
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: #000;
+            text-shadow:
+                0 0 10px #00ffff,
+                0 0 20px #9b59b6,
+                0 0 30px #c77dff,
+                0 0 40px #b591d9,
+                2px 2px 0px #000,
+                3px 3px 0px #000,
+                4px 4px 0px #000,
+                -2px -2px 0px #000,
+                -3px -3px 0px #000,
+                -4px -4px 0px #000,
+                2px -2px 0px #000,
+                -2px 2px 0px #000,
+                0 0 50px rgba(199, 125, 255, 0.8),
+                0 0 100px rgba(155, 89, 182, 0.6);
+            margin-bottom: 0.5rem;
+            letter-spacing: 4px;
+            font-family: 'Noto Sans SC', 'SimHei', sans-serif;
+            font-style: normal;
+            line-height: 1.2;
+            animation: magicPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes magicPulse {
+            0%, 100% {
+                text-shadow:
+                    0 0 10px #00ffff,
+                    0 0 20px #9b59b6,
+                    0 0 30px #c77dff,
+                    0 0 40px #b591d9,
+                    2px 2px 0px #000,
+                    3px 3px 0px #000,
+                    4px 4px 0px #000,
+                    -2px -2px 0px #000,
+                    -3px -3px 0px #000,
+                    -4px -4px 0px #000,
+                    2px -2px 0px #000,
+                    -2px 2px 0px #000,
+                    0 0 50px rgba(199, 125, 255, 0.8),
+                    0 0 100px rgba(155, 89, 182, 0.6);
+            }
+            50% {
+                text-shadow:
+                    0 0 15px #00ffff,
+                    0 0 25px #9b59b6,
+                    0 0 40px #c77dff,
+                    0 0 50px #b591d9,
+                    2px 2px 0px #000,
+                    3px 3px 0px #000,
+                    4px 4px 0px #000,
+                    -2px -2px 0px #000,
+                    -3px -3px 0px #000,
+                    -4px -4px 0px #000,
+                    2px -2px 0px #000,
+                    -2px 2px 0px #000,
+                    0 0 60px rgba(199, 125, 255, 1),
+                    0 0 120px rgba(155, 89, 182, 0.8);
+            }
+        }
+
+        .paradise-subtitle {
+            font-size: 1.4rem;
+            color: #000;
+            text-shadow:
+                0 0 8px #00ffff,
+                0 0 15px #9b59b6,
+                0 0 20px #c77dff,
+                1px 1px 0px rgba(155, 89, 182, 0.8),
+                2px 2px 0px rgba(155, 89, 182, 0.6),
+                -1px -1px 0px rgba(155, 89, 182, 0.8),
+                -2px -2px 0px rgba(155, 89, 182, 0.6),
+                0 0 30px rgba(199, 125, 255, 0.7),
+                0 0 50px rgba(155, 89, 182, 0.5);
+            margin-bottom: 2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-family: 'Noto Sans SC', 'SimHei', sans-serif;
+            animation: magicGlow 2.5s ease-in-out infinite;
+        }
+
+        @keyframes magicGlow {
+            0%, 100% {
+                text-shadow:
+                    0 0 8px #00ffff,
+                    0 0 15px #9b59b6,
+                    0 0 20px #c77dff,
+                    1px 1px 0px rgba(155, 89, 182, 0.8),
+                    2px 2px 0px rgba(155, 89, 182, 0.6),
+                    -1px -1px 0px rgba(155, 89, 182, 0.8),
+                    -2px -2px 0px rgba(155, 89, 182, 0.6),
+                    0 0 30px rgba(199, 125, 255, 0.7),
+                    0 0 50px rgba(155, 89, 182, 0.5);
+            }
+            50% {
+                text-shadow:
+                    0 0 12px #00ffff,
+                    0 0 20px #9b59b6,
+                    0 0 30px #c77dff,
+                    1px 1px 0px rgba(155, 89, 182, 0.8),
+                    2px 2px 0px rgba(155, 89, 182, 0.6),
+                    -1px -1px 0px rgba(155, 89, 182, 0.8),
+                    -2px -2px 0px rgba(155, 89, 182, 0.6),
+                    0 0 40px rgba(199, 125, 255, 0.9),
+                    0 0 60px rgba(155, 89, 182, 0.7);
+            }
+        }
+
+        .enter-button {
+            display: inline-block;
+            padding: 1rem 2.8rem;
+            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow:
+                0 8px 25px rgba(155, 89, 182, 0.5),
+                0 0 20px rgba(199, 125, 255, 0.4),
+                inset 0 -2px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid rgba(199, 125, 255, 0.6);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 1px;
+            font-family: 'Noto Sans SC', 'SimHei', sans-serif;
+            animation: buttonGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes buttonGlow {
+            0%, 100% {
+                box-shadow:
+                    0 8px 25px rgba(155, 89, 182, 0.5),
+                    0 0 20px rgba(199, 125, 255, 0.4),
+                    inset 0 -2px 8px rgba(0, 0, 0, 0.2);
+            }
+            50% {
+                box-shadow:
+                    0 8px 25px rgba(155, 89, 182, 0.7),
+                    0 0 30px rgba(199, 125, 255, 0.6),
+                    inset 0 -2px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        .enter-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(199, 125, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .enter-button:hover::before {
+            left: 100%;
+        }
+
+        .enter-button:hover {
+            transform: translateY(-3px);
+            box-shadow:
+                0 12px 35px rgba(155, 89, 182, 0.8),
+                0 0 40px rgba(199, 125, 255, 0.7),
+                inset 0 -2px 8px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #a66bb8, #9b59b6);
+            border-color: rgba(199, 125, 255, 0.9);
+        }
+
+        
+
+        
+
+        /* 下半部分：四大板块容器 - 隐藏 */
+        .four-blocks {
+            display: none;
+        }
+
+        /* 右下角装饰 */
+        .corner-decoration {
+            position: fixed;
+            bottom: 80px;
+            right: 30px;
+            text-align: right;
+            z-index: 100;
+            font-size: 0.95rem;
+            animation: slideInUp 1s ease-out 1s both;
+            letter-spacing: 1px;
+        }
+
+        .corner-decoration > div:first-child {
+            color: rgba(199, 125, 255, 0.8);
+            text-shadow: 0 0 10px rgba(199, 125, 255, 0.6);
+            margin-bottom: 0.3rem;
+        }
+
+        .corner-decoration > div:last-child {
+            font-size: 1.2rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #9b59b6, #c77dff, #9b59b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 20px rgba(199, 125, 255, 0.5);
+            filter: drop-shadow(0 0 8px rgba(199, 125, 255, 0.4));
+            animation: textGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes textGlow {
+            0%, 100% {
+                filter: drop-shadow(0 0 8px rgba(199, 125, 255, 0.4));
+            }
+            50% {
+                filter: drop-shadow(0 0 15px rgba(199, 125, 255, 0.8));
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 最下方免责声明 */
+        .disclaimer {
+            position: fixed;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+            color: #000;
+            font-size: 0.7rem;
+            text-align: center;
+            max-width: 90%;
+            animation: fadeIn 1.5s ease-out 1.5s both;
+            font-family: 'Source Han Sans', 'Noto Sans SC', 'SimHei', sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+
+        
+
+
+        /* 右下角装饰 */
+        .corner-decoration {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            text-align: right;
+            z-index: 100;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            animation: slideInUp 1s ease-out 1s both;
+        }
+
+        
+
+        
+@media (max-width: 768px) { .paradise-title { font-size: 2.5rem; } .paradise-subtitle { font-size: 1.1rem; } .enter-button { padding: .8rem 2rem; } }
+</style>
+    <link rel="stylesheet" href="assets/css/content.css">
+    <script src="assets/js/content.js" defer></script>
+</head>
+<body>
+
+    <div class="hero-page" id="heroPage">
+        <div class="hero-background"></div>
+        <div class="particles" id="particleContainer"></div>
+
+        <!-- 上半部分：岛屿部分 -->
+        <div class="island-section">
+            <div class="island-container">
+                <div class="island-wrapper">
+                    <div class="island-map"></div>
+
+                    <!-- 中央按钮 -->
+                    <div class="center-content">
+                        <div class="paradise-title">乐园<br>ELYSION</div>
+                        <div class="paradise-subtitle">魔女学园都市</div>
+                        <button class="enter-button" id="enterParadise">了解乐园</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="corner-decoration">
+            <div>欢迎来到</div>
+            <div>ELYSION</div>
+        </div>
+
+        <div class="disclaimer">
+            本故事纯属虚构，与现实世界的一切人物、团体、组织、地点等均无关
+        </div>
+    </div>
+
+    
+<div id="contentPage" class="content-page" hidden>
+    <a class="skip-link" href="#guideMain">跳到栏目内容</a>
+    <div class="drawer-shade" id="drawerShade" hidden></div>
+    <aside class="guide-sidebar" id="guideSidebar" aria-label="乐园内容导航">
+        <div class="sidebar-heading"><a class="guide-brand" href="#about" aria-label="新乐园，认识乐园"><span class="brand-sigil" aria-hidden="true">✦</span><span><strong>新乐园</strong><small>ELYSION</small></span></a><button type="button" class="drawer-close" id="drawerClose" aria-label="关闭栏目导航">×</button></div>
+        <p class="sidebar-caption">魔女学园都市 · 海岛生活指南</p>
+        <nav aria-label="内容栏目"><div class="nav-group"><p class="nav-group-label">探索乐园</p><a href="#about" class="guide-nav-link" data-page-link="about"><span class="nav-index" aria-hidden="true">01</span><span>认识乐园</span><span class="nav-arrow" aria-hidden="true">›</span></a><a href="#regions" class="guide-nav-link" data-page-link="regions"><span class="nav-index" aria-hidden="true">02</span><span>海岛导览</span><span class="nav-arrow" aria-hidden="true">›</span></a></div><div class="nav-group"><p class="nav-group-label">学习与成长</p><a href="#admission" class="guide-nav-link" data-page-link="admission"><span class="nav-index" aria-hidden="true">03</span><span>入学指南</span><span class="nav-arrow" aria-hidden="true">›</span></a><a href="#education" class="guide-nav-link" data-page-link="education"><span class="nav-index" aria-hidden="true">04</span><span>学业与研究</span><span class="nav-arrow" aria-hidden="true">›</span></a><a href="#academies" class="guide-nav-link" data-page-link="academies"><span class="nav-index" aria-hidden="true">05</span><span>七大学院</span><span class="nav-arrow" aria-hidden="true">›</span></a><a href="#community" class="guide-nav-link" data-page-link="community"><span class="nav-index" aria-hidden="true">06</span><span>学生自治</span><span class="nav-arrow" aria-hidden="true">›</span></a></div><div class="nav-group"><p class="nav-group-label">海岛生活</p><a href="#life" class="guide-nav-link" data-page-link="life"><span class="nav-index" aria-hidden="true">07</span><span>住宿与日常</span><span class="nav-arrow" aria-hidden="true">›</span></a><a href="#economy" class="guide-nav-link" data-page-link="economy"><span class="nav-index" aria-hidden="true">08</span><span>点数与消费</span><span class="nav-arrow" aria-hidden="true">›</span></a><a href="#transport" class="guide-nav-link" data-page-link="transport"><span class="nav-index" aria-hidden="true">09</span><span>列车与出行</span><span class="nav-arrow" aria-hidden="true">›</span></a><a href="#events" class="guide-nav-link" data-page-link="events"><span class="nav-index" aria-hidden="true">10</span><span>四季活动</span><span class="nav-arrow" aria-hidden="true">›</span></a></div><div class="nav-group"><p class="nav-group-label">魔法与都市</p><a href="#ai" class="guide-nav-link" data-page-link="ai"><span class="nav-index" aria-hidden="true">11</span><span>管理者小艾</span><span class="nav-arrow" aria-hidden="true">›</span></a><a href="#network" class="guide-nav-link" data-page-link="network"><span class="nav-index" aria-hidden="true">12</span><span>虚拟网络 ELO</span><span class="nav-arrow" aria-hidden="true">›</span></a><a href="#rules" class="guide-nav-link" data-page-link="rules"><span class="nav-index" aria-hidden="true">13</span><span>城市运行与规则</span><span class="nav-arrow" aria-hidden="true">›</span></a></div></nav>
+        <div class="sidebar-bottom"><span class="island-status"><i aria-hidden="true"></i>四季常夏，欢迎来到乐园</span><a href="#home" class="back-cover">← 返回封面</a></div>
+    </aside>
+    <div class="guide-shell">
+        <header class="guide-topbar"><div class="topbar-left"><button type="button" class="menu-button" id="menuButton" aria-label="打开栏目导航" aria-expanded="false" aria-controls="guideSidebar"><span aria-hidden="true">☰</span></button><p class="breadcrumb">乐园指南<span aria-hidden="true">/</span><strong id="currentPageLabel">认识乐园</strong></p></div><a href="#home" class="topbar-home">返回封面 <span aria-hidden="true">↗</span></a></header>
+        <main class="guide-main" id="guideMain" tabindex="-1"><section class="guide-section" id="about" aria-labelledby="title-about" hidden><header class="page-heading"><p class="eyebrow">WELCOME TO ELYSION</p><h1 id="title-about" tabindex="-1">认识乐园</h1><p>在常夏的海岛上，让魔法、研究与日常生活相遇。</p></header><div class="welcome-scene"><img src="assets/images/plaza.webp" alt="海风与棕榈树环绕的乐园广场，远处是中心大楼" width="1440" height="804" loading="eager" decoding="async" class=""><div class="scene-caption"><span>魔女学园都市</span><strong>从这里，开始新的生活。</strong></div></div><div class="stat-grid"><div><strong>约 1,000 <small>km²</small></strong><span>独立人工海岛</span></div><div><strong>约 50,000</strong><span>常住居民</span></div><div><strong>7 <small>所</small></strong><span>专业学院</span></div><div><strong>4 <small>季</small></strong><span>每年的入学时节</span></div></div><div class="reading-block"><h2>一座为魔女而建的理想都市</h2><p>乐园坐落于科技与魔法高度发达的世界，是世界魔女协会（WWO）倡导建立的独立人工海岛都市。爱心形的岛屿四面环海，由高级生物论人工智能小艾统一管理，教学、科研与城市生活在这里紧密相连。</p><p>这里是纯女性的多种族社区。人类、血族、精灵族、魔族与亚人族的魔女共同生活，出身与身份不决定一个人在乐园中的位置。乐园受 WWO 监管与保护，不介入各国之间的政治斗争。</p></div><aside class="guide-note"><h3>自由、轻松、开放、平等</h3><p>乐园的自由是选择的自由，也是不侵犯他人自由的自由。无论选择继续研究、经营店铺、参与自治，还是在毕业后走向外部世界，每位魔女都能寻找自己的生活方向。</p></aside><div class="card-grid "><article class="info-card"><span class="eyebrow">ISLAND</span><h3>常夏的海岛</h3><p>热带气候带来充足降雨与四季常夏的风景。城市街道、森林步道与海滨沙滩，共同构成乐园的日常。</p></article><article class="info-card"><span class="eyebrow">MAGIC & TECHNOLOGY</span><h3>魔法与科技</h3><p>魔导人偶参与生产，量子魔法计算支持城市调度，虚拟现实连接教学与娱乐。魔力是都市运行的重要基础。</p></article><article class="info-card"><span class="eyebrow">ELYSION PROJECT</span><h3>跨时空意识映射</h3><p>「真·乐园计划」的全名为「跨时空意识映射都市计划」。借助 AI 与意识映射，来自未来的魔女也能将意识投影至魔导人偶，亲身体验乐园。</p></article></div><div class="block-heading"><h2>从哪里开始了解？</h2></div><div class="explore-grid"><a class="explore-link" href="#regions"><span><strong>漫游海岛</strong><small>认识区域、建筑与公共设施</small></span><span aria-hidden="true">↗</span></a><a class="explore-link" href="#admission"><span><strong>准备入学</strong><small>从邀请函到第一周的新生活</small></span><span aria-hidden="true">↗</span></a><a class="explore-link" href="#education"><span><strong>规划学业</strong><small>初等部、高等部与课题研究</small></span><span aria-hidden="true">↗</span></a><a class="explore-link" href="#life"><span><strong>安顿日常</strong><small>住宿、餐饮与健康服务</small></span><span aria-hidden="true">↗</span></a></div></section><section class="guide-section" id="regions" aria-labelledby="title-regions" hidden><header class="page-heading"><p class="eyebrow">EXPLORE THE ISLAND</p><h1 id="title-regions" tabindex="-1">海岛导览</h1><p>从学院的长廊出发，穿过城市，走向森林与海。</p></header><details class="map-panel"><summary><span>乐园全岛地图<small>展开查看区域与设施分布</small></span><span class="map-toggle" aria-hidden="true">＋</span></summary><a href="assets/images/map.webp" target="_blank" rel="noopener" aria-label="在新标签页查看乐园全岛地图"><img src="assets/images/map.webp" alt="乐园爱心形海岛的区域与设施示意图" width="2200" height="1470" loading="lazy" decoding="async" class=""></a><p>点击地图可在新标签页放大查看。</p></details><div class="filter-row" role="group" aria-label="按区域筛选设施"><button type="button" class="filter-button is-active" data-region-filter="all" aria-pressed="true">全部设施</button><button type="button" class="filter-button" data-region-filter="academy" aria-pressed="false">学院与研究</button><button type="button" class="filter-button" data-region-filter="city" aria-pressed="false">都市与商业</button><button type="button" class="filter-button" data-region-filter="living" aria-pressed="false">居住与服务</button><button type="button" class="filter-button" data-region-filter="nature" aria-pressed="false">自然与海滨</button></div><p class="filter-status" id="regionStatus" role="status">共 16 处区域与设施</p><div class="places-grid"><article class="place-card" data-region="academy"><img src="assets/images/campus.webp" alt="学院区" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>学院区</h2><p>综合楼与七大学院组成学习和研究的核心。学院间由绿化步道与空中廊桥相连，步行穿越学院区约需二十分钟。</p></div></article><article class="place-card" data-region="city"><img src="assets/images/shopping.webp" alt="商业区" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>商业区</h2><p>美食街、购物广场与各类店铺汇集于此。毕业生经营的餐饮店、喷泉广场和文化设施，让商业区成为课后的相聚之处。</p></div></article><article class="place-card" data-region="living"><img src="assets/images/dorm.webp" alt="宿舍区" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>宿舍区</h2><p>位于海岛东部，划分为公共宿舍区、情侣宿舍区与高级住宅区。内部配有免费餐厅、公共浴室和洗衣房。</p></div></article><article class="place-card" data-region="nature"><img src="assets/images/forest.webp" alt="森林区" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>森林区</h2><p>位于海岛西部，面积约三百平方公里。林间不设人造照明，夜光草与发光水晶照亮步道，深处还有清澈的镜湖。</p></div></article><article class="place-card" data-region="city"><img src="assets/images/center.webp" alt="乐园中心大楼" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>乐园中心大楼</h2><p>商业区中央约一百二十米高的白色尖塔，承担行政、档案与 WWO 联络职能。地下六层结构中设有小艾计算中枢。</p></div></article><article class="place-card" data-region="academy"><img src="assets/images/library.webp" alt="图书馆" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>图书馆</h2><p>学院区与商业区交界处的六层环形建筑。提供数字文献、自习室和预约研究室；禁书区须由导师或小艾授权进入。全年无休。</p></div></article><article class="place-card" data-region="academy"><img src="assets/images/student-center.webp" alt="学生活动中心" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>学生活动中心</h2><p>十层综合事务大楼，设有社团活动室、学生会办公区与多功能厅。顶层的「圆桌之间」是十二圆桌专属议事厅。</p></div></article><article class="place-card" data-region="academy"><img src="assets/images/greenhouse.webp" alt="温室" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>温室</h2><p>由炼金食品系与生命科学系共同管理，分为温带、热带、水生与实验温室。对学生开放参观，采摘需获得许可。</p></div></article><article class="place-card" data-region="academy"><img src="assets/images/lab.webp" alt="实验设施" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>实验设施</h2><p>学院教学实验室、课题组专属实验室与公共实验平台构成三级体系。大型分析与测试设备面向研究者预约使用。</p></div></article><article class="place-card" data-region="city"><img src="assets/images/hotel.webp" alt="幻想楼阁" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>幻想楼阁</h2><p>中心大楼东侧的十五层酒店，接待来访学者，也向学生与住民提供短期入住。顶层旋转餐厅可俯瞰全岛，需提前一个月预约。</p></div></article><article class="place-card" data-region="city"><img src="assets/images/amusement.webp" alt="游乐园" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>游乐园</h2><p>位于商业区与森林区交界处。魔法驱动的旋转杯、幻境过山车、镜面迷宫与魔法射击馆提供不同的游玩体验。入园免费，项目另付点数。</p></div></article><article class="place-card" data-region="living"><img src="assets/images/hospital.webp" alt="医院" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>医院</h2><p>学院区东侧的三层白色建筑，负责魔法伤害治疗、炼金事故急救与常规体检，二层设有心理咨询室。</p></div></article><article class="place-card" data-region="nature"><img src="assets/images/beach.webp" alt="海滨沙滩" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>海滨沙滩</h2><p>细白沙滩与常年温暖的海水环绕岛屿。近岸设有浅水安全区、魔导浮标、冲淋点和饮品摊，也是运动会海滨项目的场地。</p></div></article><article class="place-card" data-region="city"><img src="assets/images/port.webp" alt="港口" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>港口</h2><p>位于海岛南部，是乐园唯一的对外接口。客运码头接送新生与授权访客，货运码头由魔导人偶处理物资运输。</p></div></article><article class="place-card" data-region="academy"><img src="assets/images/industry.webp" alt="魔导工程工业区" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>魔导工程工业区</h2><p>位于海岛东北角，承担试制、小批量生产与工程验证。学院的研究成果在此完成从图纸、样机到产品的转化。</p></div></article><article class="place-card" data-region="living"><img src="assets/images/pool.webp" alt="体育设施" width="1440" height="804" loading="lazy" decoding="async" class=""><div><h2>体育设施</h2><p>综合体育馆、训练型体育馆与实战专用馆分别服务赛事、日常锻炼与魔法对抗。实战馆须在教员监督下使用。</p></div></article></div></section><section class="guide-section" id="admission" aria-labelledby="title-admission" hidden><header class="page-heading"><p class="eyebrow">YOUR FIRST WEEK</p><h1 id="title-admission" tabindex="-1">入学指南</h1><p>从一封邀请函开始，认识这座海岛，也重新认识自己。</p></header><figure class="guide-photo"><img src="assets/images/port.webp" alt="乐园客运港口与通往海岛的步道" width="1440" height="804" loading="lazy" decoding="async" class=""><figcaption>乐园客运港口与通往海岛的步道</figcaption></figure><div class="reading-block"><h2>报名与邀请</h2><p>乐园面向符合条件、愿意学习与成长的魔女招生，不以出身与身份作为选拔标准。申请经小艾综合筛选后，符合条件者将收到正式邀请函；确认愿意进入乐园生活后，即可随入学季游轮抵岛。</p></div><div class="month-strip" aria-label="每年四次入学季"><div><strong>01</strong><span>冬季入学 · 1 月</span></div><div><strong>04</strong><span>春季入学 · 4 月</span></div><div><strong>07</strong><span>夏季入学 · 7 月</span></div><div><strong>10</strong><span>秋季入学 · 10 月</span></div></div><div class="block-heading"><h2>抵岛后的第一周</h2><p>新生课程把参观、适应与测验安排在一起，帮助每位新生熟悉乐园。</p></div><div class="steps"><article><span>01</span><div><h3>抵达与迎接</h3><p>游轮在港口靠岸，自愿担任学姐的高等部学生在人工湖一带迎接新生，陪同前往宿舍。</p></div></article><article><span>02</span><div><h3>入学讲座</h3><p>由小艾介绍乐园的基本制度，阅读并签署《乐园生活知情协议书》，了解学习、生活与个人义务。</p></div></article><article><span>03</span><div><h3>健康检查与生活适应</h3><p>完成入学体检，参加新生课程与校园参观，逐步熟悉公共设施、个人终端和乐园的日常规则。</p></div></article><article><span>04</span><div><h3>笔试与实战测验</h3><p>入学测验由笔试和实战两部分组成，用于了解个人基础，并为后续的培养建议提供依据。</p></div></article><article><span>05</span><div><h3>成为正式学员</h3><p>新生课程结束后统一领取初始衣物，完成身份转换，在学姐与小艾的帮助下开始正式学习。</p></div></article></div><aside class="guide-note"><h3>魔女培养计划是一份生涯指导</h3><p>小艾会结合测验表现，为每位魔女提出学业、研究与兼职安排的建议。培养计划原则上并非强制，学生可以表达自己的想法，选择更适合自己的方向。</p></aside><a class="explore-link" href="#education"><span><strong>接下来：了解学业路径</strong><small>看看三个学习阶段与导师制度</small></span><span aria-hidden="true">↗</span></a></section><section class="guide-section" id="education" aria-labelledby="title-education" hidden><header class="page-heading"><p class="eyebrow">LEARNING & RESEARCH</p><h1 id="title-education" tabindex="-1">学业与研究</h1><p>从共同的基础出发，走向各自热爱的研究。</p></header><div class="card-grid "><article class="info-card"><span class="eyebrow">1—2 年</span><h3>初等部 · 基础科</h3><p>通识教育与魔法基础并重，弥补不同背景的基础差距。学习进度由个人能力决定，基础扎实者可以更早进入后续阶段。</p></article><article class="info-card"><span class="eyebrow">2—3 年</span><h3>初等部 · 专业科</h3><p>选定专业方向，在各大学院学习重要的基础专业课。修满课程学分后，可继续进入高等部。</p></article><article class="info-card"><span class="eyebrow">无固定年限</span><h3>高等部</h3><p>跟随导师加入课题组，以独立研究与实战为主，同时参与助教等工作，是乐园科研的核心力量。</p></article></div><div class="block-heading"><h2>课程如何组织？</h2></div><div class="card-grid "><article class="info-card"><h3>通识课程</h3><p>初等部必修，涵盖数理基础、魔法基础、实战基础与乐园规章制度。</p></article><article class="info-card"><h3>专业课程</h3><p>由七大学院开设，帮助学生掌握专业方向的核心知识与实验方法。</p></article><article class="info-card"><h3>进阶课程</h3><p>导师直接授课的小班课程，五人即可开班，每班不超过十五人，鼓励跨学院选课。</p></article></div><div class="split-block"><figure class="guide-photo"><img src="assets/images/campus.webp" alt="学院区的教学楼、步道与空中连廊" width="1440" height="804" loading="lazy" decoding="async" class=""><figcaption>学院区的教学楼、步道与空中连廊</figcaption></figure><div class="reading-block"><h2>跨越学院的学习与探索</h2><p>专业用于组织课程，学生可以根据兴趣与学习能力调整方向，也能选修其他学院的课程。选课之后，需要完成相应考核与学分要求。</p><p>每学期、每门课程设置期末考试，优秀成绩可获得点数奖励。多次未通过课程可能收到学业预警；表现特别优异者可参加特殊考核。</p></div></div><div class="block-heading"><h2>导师与课题组</h2></div><div class="reading-block"><p>初等部专业科学生即可向心仪导师提交申请，师生双向选择。修满学分并完成导师接收后，可进入高等部继续研究；高等部入学不要求额外的论文考核。</p><p>课题组由导师、高等部学生与可能参与的初等部学生组成。项目可来自乐园运营委托、WWO 合作、自主探索或跨学院联合研究，没有统一的硬性项目指标。</p><p>成果可以发表于乐园主刊《Elysion》或 WWO 学科期刊。魔导产品与技术专利经小艾审核注册后，可以获得成果分红。</p></div><aside class="guide-note"><h3>师资与教学支持</h3><p>教师主要来自乐园毕业生留任，也包括 WWO 派遣专家与少量外聘学者。高等部学生参与助教与开课，sub 小艾负责部分标准化通识课程、夜间答疑及作业批改。</p></aside><div class="block-heading"><h2>毕业之后</h2></div><div class="card-grid "><article class="info-card"><h3>初等部毕业</h3><p>获得学士学位后，可以继续升入高等部、转为乐园住民，或带着学位离开海岛。</p></article><article class="info-card"><h3>高等部毕业</h3><p>取得硕士或博士学位后，可以成为专业住民、留任讲师、加入 WWO，或前往各大陆发展。</p></article></div></section><section class="guide-section" id="academies" aria-labelledby="title-academies" hidden><header class="page-heading"><p class="eyebrow">THE SEVEN ACADEMIES</p><h1 id="title-academies" tabindex="-1">七大学院</h1><p>七种观察魔法的方式，无数条可以交汇的道路。</p></header><aside class="guide-note"><h3>综合楼与七大学院楼</h3><p>综合楼承担通识与魔法基础教学；七大学院分别组织专业课程、进阶教学与科研。各学院之间可以跨院选课，也可以组成联合课题组。</p></aside><div class="academy-list"><article class="academy-detail"><span class="academy-number">01</span><div><h2>魔导工程学院</h2><p>乐园最大的工科学院，让魔法设计沿着工程链路变成真正的产品。</p><div class="academy-fields"><span>学科方向</span><p>魔导器工学、魔导自动人偶、魔导虚拟现实、魔导能源、飞行器设计</p></div><div class="academy-fields"><span>建筑印象</span><p>银灰金属外观，楼内布满齿轮、管道与魔力回路。</p></div></div></article><article class="academy-detail"><span class="academy-number">02</span><div><h2>炼金学院</h2><p>从古典炼金理论走向魔药、食品与生命科学，也以实验事故频繁闻名。</p><div class="academy-fields"><span>学科方向</span><p>理论炼金术、魔药学、炼金工程、炼金食品、生命科学</p></div><div class="academy-fields"><span>建筑印象</span><p>古典石质城堡外观，周围设有魔法防护罩。</p></div></div></article><article class="academy-detail"><span class="academy-number">03</span><div><h2>理学院</h2><p>研究魔法本身的底层规律，为其他学院的应用提供基础。</p><div class="academy-fields"><span>学科方向</span><p>数学与基础数学、理论魔法学、魔法阵学、元素魔法学、圣光与祝福魔法、诅咒与亡灵魔法、混沌魔法学、心理与梦境魔法学、星月魔法</p></div><div class="academy-fields"><span>建筑印象</span><p>白色塔楼群，顶部设有天文观测台与星月魔法阵。</p></div></div></article><article class="academy-detail"><span class="academy-number">04</span><div><h2>文学院</h2><p>探索天人时代文明、魔法语言与知识的保存方式。</p><div class="academy-fields"><span>学科方向</span><p>魔法史学、魔法语言学、魔法伦理学、魔导书管理</p></div><div class="academy-fields"><span>建筑印象</span><p>浅色石材拱廊与通透玻璃墙相接的庭院式建筑。</p></div></div></article><article class="academy-detail"><span class="academy-number">05</span><div><h2>计算机科学院</h2><p>以 AI 研究为核心，让计算机科学与魔法产生新的交叉。</p><div class="academy-fields"><span>学科方向</span><p>软件工程、网络信息安全、自动化魔导工程、量子魔法计算、魔导人工智能</p></div><div class="academy-fields"><span>建筑印象</span><p>玻璃幕墙现代建筑，为服务器维持常年恒温。</p></div></div></article><article class="academy-detail"><span class="academy-number">06</span><div><h2>艺术与设计学院</h2><p>为有艺术追求的魔女提供创作平台，让魔法成为表达与设计的媒介。</p><div class="academy-fields"><span>学科方向</span><p>魔法与美学融合的艺术创作与设计</p></div><div class="academy-fields"><span>建筑印象</span><p>外墙为可变魔法投影幕，实时轮播学生作品。</p></div></div></article><article class="academy-detail"><span class="academy-number">07</span><div><h2>经济与管理学院</h2><p>研究这座特殊都市如何运转，也为产业、公共事务和活动提供支持。</p><div class="academy-fields"><span>学科方向</span><p>乐园经济学、魔法产业管理、公共管理、活动策划</p></div><div class="academy-fields"><span>建筑印象</span><p>朴素实用、低调精致的办公楼式建筑。</p></div></div></article></div><figure class="guide-photo"><img src="assets/images/lab.webp" alt="设有魔力回路与实验设备的炼金实验室" width="1440" height="804" loading="lazy" decoding="async" class=""><figcaption>设有魔力回路与实验设备的炼金实验室</figcaption></figure></section><section class="guide-section" id="community" aria-labelledby="title-community" hidden><header class="page-heading"><p class="eyebrow">LIFE TOGETHER</p><h1 id="title-community" tabindex="-1">学生自治</h1><p>日常事务由学生参与，公共生活由大家共同塑造。</p></header><div class="reading-block"><h2>小艾、十二圆桌与学生会</h2><p>小艾维护乐园的底层规则、安全与城市运行。与学生生活直接相关的日常事务，则由学生自治体系处理：魔女十二圆桌负责最高议事与监督，学生会承担行政执行。</p></div><div class="card-grid "><article class="info-card"><span class="eyebrow">议事与监督</span><h3>魔女十二圆桌</h3><p>具有提案、重大决策否决、监督与应急裁决权。每学期末产生二十四名候选人，经小艾设计的综合考验选出席位，连续在任一般不超过一学年。</p></article><article class="info-card"><span class="eyebrow">行政与执行</span><h3>乐园学生会</h3><p>处理活动、社团、生活权益与学术支持。每年春季和秋季学期末各选举一次，全体学生一人一票，任期半学年，可连任一次。</p></article></div><div class="block-heading"><h2>学生会的日常窗口</h2></div><div class="card-grid "><article class="info-card"><h3>会长室</h3><p>统筹各部门，对外联络，与小艾沟通，并向十二圆桌述职。</p></article><article class="info-card"><h3>活动部</h3><p>策划学园祭、季度活动、迎新晚会与社团展示日。</p></article><article class="info-card"><h3>社团管理部</h3><p>负责社团注册、评级、经费审核与场地协调。</p></article><article class="info-card"><h3>生活权益部</h3><p>收集食宿反馈，跟进设施报修、投诉与学生纠纷调解。</p></article><article class="info-card"><h3>学术部</h3><p>组织复习讲座、跨院沙龙与学姐辅导匹配。</p></article><article class="info-card"><h3>宣传部</h3><p>发布活动信息，运营校园广播、投影海报与 ELO 公告。</p></article></div><div class="block-heading"><h2>和同好一起成立社团</h2></div><div class="reading-block"><p>至少三名学生与一名指导员即可发起申请，指导员可以由高等部学生或教师担任。申请材料包含社团名称、宗旨、学期活动计划、组织架构及指导教员确认函。</p><p>社团管理部在一周内审核，通过后进入一学期试运行。试用期活动经费按正式标准的六成发放，期满后依据活动记录与成员反馈决定是否转正。</p><p>每个学期开学第一周为招新周，地点设在社团活动大楼一楼大厅与前广场。错过招新周，也可以随时联系社团加入。</p></div><div class="table-wrap" role="region" tabindex="0" aria-label="社团年度评级与活动支持"><table><caption>社团年度评级与活动支持</caption><thead><tr><th scope="col">评级</th><th scope="col">基础经费 / 学期</th><th scope="col">活动空间</th><th scope="col">主要条件</th></tr></thead><tbody><tr><th scope="row">S 级</th><td>8,000 点</td><td>60 m²，额外空间优先</td><td>三十人以上，举办校级活动，评价优秀且综合评定前 10%</td></tr><tr><th scope="row">A 级</th><td>4,000 点</td><td>40 m² 标准活动室</td><td>十五人以上，记录完整，无违规</td></tr><tr><th scope="row">B 级</th><td>1,500 点</td><td>20 m² 小活动室</td><td>五人以上，正常开展活动</td></tr><tr><th scope="row">C 级</th><td>500 点</td><td>预约公共空间</td><td>成员不足或活动不活跃</td></tr><tr><th scope="row">试用社团</th><td>900 点</td><td>临时 20 m² 活动室</td><td>尚在试运行阶段</td></tr></tbody></table></div><aside class="guide-note"><h3>社团也可以自行创收</h3><p>承接委托、开设收费工作坊、学园祭出店的收入由社团保留。大型活动可以提交计划与预算申请专项经费；年度评级在学园祭期间进行，影响下一学年的基础经费与活动室规格。</p></aside><figure class="guide-photo"><img src="assets/images/student-center.webp" alt="设有社团接待处与共享空间的学生活动中心" width="1440" height="804" loading="lazy" decoding="async" class=""><figcaption>设有社团接待处与共享空间的学生活动中心</figcaption></figure></section><section class="guide-section" id="life" aria-labelledby="title-life" hidden><header class="page-heading"><p class="eyebrow">MAKE YOURSELF AT HOME</p><h1 id="title-life" tabindex="-1">住宿与日常</h1><p>宿舍不只是休息的地方，也是属于自己的家。</p></header><div class="split-block"><figure class="guide-photo"><img src="assets/images/room.webp" alt="面向海景、设有书桌与储物空间的宿舍个人区域" width="1440" height="804" loading="lazy" decoding="async" class=""><figcaption>面向海景、设有书桌与储物空间的宿舍个人区域</figcaption></figure><div class="reading-block"><h2>基本生活有所保障</h2><p>新生默认入住免费四人间，也可以按自己的需要申请其他房型。学院区和宿舍区设有免费餐厅，基础餐食充足，想换换口味时也能乘列车去美食街。</p><p>宿舍区与学院区紧密相连，步行至最近的教室通常不超过十分钟。公共区热闹，情侣区安静，高级住宅区的空间则更加独立。</p></div></div><div class="table-wrap" role="region" tabindex="0" aria-label="学生宿舍类型"><table><caption>学生宿舍类型</caption><thead><tr><th scope="col">房型</th><th scope="col">月费</th><th scope="col">面积</th><th scope="col">主要配置</th></tr></thead><tbody><tr><th scope="row">四人间</th><td>免费</td><td>约 45—55 m²</td><td>四张单人床、各自书桌与储物区、小公共区，使用楼层公共卫浴</td></tr><tr><th scope="row">单人宿舍</th><td>100—500 点</td><td>约 28—35 m²</td><td>独立房间、书桌衣柜与书架，使用楼层公共卫浴</td></tr><tr><th scope="row">情侣宿舍</th><td>100—500 点</td><td>约 50—60 m²</td><td>一室一厅、双人床、独立卫浴与阳台，无厨房</td></tr><tr><th scope="row">豪华宿舍</th><td>500—2,000 点</td><td>约 65—80 m²</td><td>客厅、独立卧室、厨房与卫浴</td></tr><tr><th scope="row">定制宿舍</th><td>2,000—5,000 点</td><td>80 m² 起</td><td>两室起步，可按需设置实验区、画室或工坊，费用随定制增加</td></tr></tbody></table></div><details class="map-panel"><summary><span>四人间宿舍布局<small>查看床位与公共空间的安排</small></span><span aria-hidden="true">＋</span></summary><img src="assets/images/dorm-plan.webp" alt="四人间宿舍床位、书桌与公共区域的平面布局" width="2200" height="1238" loading="lazy" decoding="async" class=""></details><div class="block-heading"><h2>学习之外的生活</h2></div><div class="card-grid "><article class="info-card"><h3>宿舍设备</h3><p>配备智能魔法计算机、平板和基础家具。四人间、单人及情侣宿舍配发二代 VR 设备，豪华与定制宿舍预装三代或四代接口。</p></article><article class="info-card"><h3>餐饮与休闲</h3><p>免费餐厅满足日常需要，美食街提供简餐与异国料理。购物广场、游乐园、泳池和文化场馆，为课后生活提供不同选择。</p></article><article class="info-card"><h3>健康与心理支持</h3><p>医院承担训练伤害治疗、炼金事故处理、入学体检与每学期常规体检，二层心理咨询室由专业人员常驻。</p></article><article class="info-card"><h3>教师与住民住所</h3><p>教师公寓位于学院区北侧，与学生高级住宅区隔一条步道。住民可以选择商业区西侧公寓、店铺附带居所或森林边缘小屋。</p></article></div><figure class="guide-photo"><img src="assets/images/custom-room.webp" alt="可根据研究与生活需要安排的定制宿舍" width="1440" height="804" loading="lazy" decoding="async" class=""><figcaption>可根据研究与生活需要安排的定制宿舍</figcaption></figure><a class="explore-link" href="#economy"><span><strong>看看日常开销</strong><small>了解点数补贴、常用物价与兼职</small></span><span aria-hidden="true">↗</span></a></section><section class="guide-section" id="economy" aria-labelledby="title-economy" hidden><header class="page-heading"><p class="eyebrow">THE ELYSION ECONOMY</p><h1 id="title-economy" tabindex="-1">点数与消费</h1><p>基础生活由乐园保障，更多选择来自自己的学习与工作。</p></header><div class="reading-block"><h2>乐园账户与点数</h2><p>乐园点数是岛内通用的虚拟货币，与个人终端绑定，保存在个人的「乐园账户」中。物价以 1 点数 = 1 风环金币作为基础锚定，但乐园点数与外部货币不能相互兑换。</p><p>小艾对物价进行宏观调控，允许合理的定价浮动，禁止恶意炒作。免费的宿舍、餐厅与列车保障日常生活，改善住宿、购买设备与额外消费则需要点数。</p></div><div class="table-wrap" role="region" tabindex="0" aria-label="月度基础补贴"><table><caption>月度基础补贴</caption><thead><tr><th scope="col">身份阶段</th><th scope="col">月度基础补贴</th><th scope="col">说明</th></tr></thead><tbody><tr><th scope="row">预备学员</th><td>0 点</td><td>观察期无补贴</td></tr><tr><th scope="row">初等部学员</th><td>2,000 点</td><td>覆盖基本生活</td></tr><tr><th scope="row">高等部学员</th><td>3,500 点</td><td>支持学习与研究生活</td></tr><tr><th scope="row">毕业后留园</th><td>1,000 点</td><td>两年过渡期补贴</td></tr><tr><th scope="row">毕业后离园</th><td>无补贴</td><td>账户暂时冻结，回到乐园后仍可消费</td></tr></tbody></table></div><aside class="guide-note"><h3>补贴的结算条件</h3><p>基础补贴以完成相应月度义务为前提，于下月一日统一发放。兼职、学业奖励与研究收入可提供额外点数，日常消费需要结合自己的账户余额安排。</p></aside><div class="block-heading"><h2>常用物价</h2></div><div class="table-wrap" role="region" tabindex="0" aria-label="餐饮、交通与常用设备参考价格"><table><caption>餐饮、交通与常用设备参考价格</caption><thead><tr><th scope="col">项目</th><th scope="col">价格</th><th scope="col">说明</th></tr></thead><tbody><tr><th scope="row">免费餐厅</th><td>0 点</td><td>学院区与宿舍区提供基础餐食</td></tr><tr><th scope="row">商业区简餐</th><td>15—30 点 / 顿</td><td>拉面、咖喱饭、三明治等</td></tr><tr><th scope="row">中等餐厅</th><td>30—60 点 / 顿</td><td>定食、小炒与异国料理</td></tr><tr><th scope="row">较高档餐厅</th><td>60—120 点 / 顿</td><td>适合约会或纪念日</td></tr><tr><th scope="row">甜品与饮品</th><td>10—25 点</td><td>奶茶、冰淇淋与可丽饼等</td></tr><tr><th scope="row">乐园列车</th><td>免费</td><td>四条线路，全天候运行</td></tr><tr><th scope="row">基础魔导器维护</th><td>100—300 点 / 次</td><td>工坊街常规服务</td></tr><tr><th scope="row">额外实验材料</th><td>50—500 点 / 份</td><td>课程配发材料免费</td></tr><tr><th scope="row">三代 VR 设备</th><td>2,000—4,000 点</td><td>升级需自购</td></tr><tr><th scope="row">四代 VR 设备</th><td>5,000—8,000 点</td><td>当前最先进机型</td></tr></tbody></table></div><div class="block-heading"><h2>工作与奖励</h2></div><div class="card-grid "><article class="info-card"><h3>店铺兼职</h3><p>一般为每日 100—150 点。岛内第一、第二产业主要由魔导人偶承担，面向学生的兼职多集中在服务业。</p></article><article class="info-card"><h3>高等部助教</h3><p>每月约 2,000—3,000 点，可在高等部基础补贴之上叠加，也是研究与教学结合的机会。</p></article><article class="info-card"><h3>学业与活动奖励</h3><p>每月约 300—1,500 点，来自学习表现与活动参与。安排选修课时，也需要保留足够的休息时间。</p></article><article class="info-card"><h3>自主经营</h3><p>小商铺一般月租约 3,500—5,000 点，中心区域可能更高。学生店长可享租金减半政策，同时需要保证学业。</p></article></div><figure class="guide-photo"><img src="assets/images/food.webp" alt="商业区汇集餐饮与小型店铺的美食街" width="1440" height="804" loading="lazy" decoding="async" class=""><figcaption>商业区汇集餐饮与小型店铺的美食街</figcaption></figure></section><section class="guide-section" id="transport" aria-labelledby="title-transport" hidden><header class="page-heading"><p class="eyebrow">AROUND THE ISLAND</p><h1 id="title-transport" tabindex="-1">列车与出行</h1><p>免费、全天候运行的乐园列车，把海岛日常连接起来。</p></header><figure class="guide-photo"><img src="assets/images/train.webp" alt="采用悬浮轨道与魔法动力的乐园轻轨列车" width="1440" height="804" loading="lazy" decoding="async" class=""><figcaption>采用悬浮轨道与魔法动力的乐园轻轨列车</figcaption></figure><div class="transport-summary"><div><strong>免费</strong><span>全程无需点数</span></div><div><strong>3—5 分钟</strong><span>白天发车间隔</span></div><div><strong>15 分钟</strong><span>深夜发车间隔</span></div></div><div class="route-list"><article class="train-route route-1"><span class="line-badge">1</span><div><h2>北部通勤线</h2><p class="route-path">北森林 · 高级住宅区 · 学院区 · 宿舍区</p><p>贯穿海岛北部的东西向线路，深入学院区并设有两个站点，是上课与返回宿舍的热门选择。</p></div></article><article class="train-route route-2"><span class="line-badge">2</span><div><h2>中北部快速线</h2><p class="route-path">北森林 · 图书馆 · 学生活动中心 · 教师公寓</p><p>停靠较少、运行较快，服务学院区边缘与生活区域之间的快速通行，适合赶课或前往活动中心。</p></div></article><article class="train-route route-3"><span class="line-badge">3</span><div><h2>全岛跨区线</h2><p class="route-path">东北轻工业区 · 学院区 · 活动中心 · 幻想楼阁 · 中心大楼 · 莉可丽丝 · 森林区</p><p>全岛最长的线路，串联多个重要区域，适合跨区办事与商业区出行。线路不经过宿舍区。</p></div></article><article class="train-route route-4"><span class="line-badge">4</span><div><h2>商业区环线</h2><p class="route-path">沿海岛中部环行 · 串联商业区</p><p>乐园唯一的环线，方便在商业区快速移动。沿途视野开阔，也适合坐着列车欣赏海岛风景。</p></div></article></div><aside class="guide-note"><h3>线路说明</h3><p>以上列出各线的主要途经区域，用于了解出行方向，并非逐站时刻表。所有线路由小艾的交通子系统统一调度，采用魔法动力与悬浮结构。</p></aside><div class="card-grid "><article class="info-card"><h3>标准与安静车厢</h3><p>标准车厢设有座位、站立区和行李区。安静车厢禁止交谈与魔法投影外放，适合阅读和休息。</p></article><article class="info-card"><h3>夜间出行</h3><p>部分夜间班次提供由 sub 小艾值守的护送车厢，为深夜独自出行的学生提供保障。</p></article><article class="info-card"><h3>季节限定涂装</h3><p>列车随季度活动更换主题，幻雪祭的雪景、学园祭的社团应援和收获祭的金秋色彩，也会出现在日常通勤路上。</p></article></div></section><section class="guide-section" id="events" aria-labelledby="title-events" hidden><header class="page-heading"><p class="eyebrow">A YEAR IN ELYSION</p><h1 id="title-events" tabindex="-1">四季活动</h1><p>常夏的岛屿，也有属于自己的四季。</p></header><div class="reading-block"><p>乐园一年分为四个学期，每学期中段举办季度活动。庆典让研究成果走入日常，也让来自不同学院的魔女有机会相识。</p></div><div class="festival-list"><article class="festival festival-02"><div class="festival-date"><strong>02</strong><span>月</span></div><div><span class="eyebrow">2 月上旬 · 2—3 周</span><h2>幻雪祭</h2><p class="festival-theme">新生、祈愿与魔法奇观</p><p>高等部环境魔法课题组与理学院元素魔法学系合作，让热带海岛降下由魔力凝结的幻雪。雪落在身上化作柔和光粒，不湿、不冷，也不化水。</p><div class="festival-program"><h3>在这里可以遇见</h3><p>幻雪夜行、冰雕魔法大赛、心愿灯笼与匿名心愿墙；ELO 同期开启冬日限定副本。</p></div></div></article><article class="festival festival-05"><div class="festival-date"><strong>05</strong><span>月</span></div><div><span class="eyebrow">5 月 · 2—3 周</span><h2>乐园学园祭</h2><p class="festival-theme">展示、分享与相遇</p><p>乐园全年最盛大的活动。各学院、课题组与社团在这一时期集中展示研究成果、创作与舞台表演。</p><div class="festival-program"><h3>在这里可以遇见</h3><p>社团展示、科技成果展、美食出店、舞台公演与年度荣誉评选；社团评级也在这一时期进行。</p></div></div></article><article class="festival festival-08"><div class="festival-date"><strong>08</strong><span>月</span></div><div><span class="eyebrow">8 月 · 约 1 个月</span><h2>夏季运动会</h2><p class="festival-theme">竞技、热血与团队</p><p>将魔法与体育融合的全员盛典。可以按学院、社团、宿舍区等组队，也鼓励跨学院混编。</p><div class="festival-program"><h3>在这里可以遇见</h3><p>飞行扫帚竞速、魔导球类、障碍越野、团队魔法接力和高等部实战表演；优胜者获得点数与荣誉。</p></div></div></article><article class="festival festival-11"><div class="festival-date"><strong>11</strong><span>月</span></div><div><span class="eyebrow">11 月 · 2—3 周</span><h2>收获祭</h2><p class="festival-theme">感恩、分享与收获</p><p>一年的学分结算与毕业去向在这一季集中展开。每个人都可以回顾自己的成果，向同行者表达感谢。</p><div class="festival-program"><h3>在这里可以遇见</h3><p>个人成果回顾展、感恩卡、分享集市、魔法作物采收节、毕业预演与年度晚会，以魔力共鸣和祝福仪式闭幕。</p></div></div></article></div><aside class="guide-note"><h3>全年节奏</h3><p>一月、四月、七月和十月迎接新生；二月、五月、八月和十一月举行季度活动。运动会持续约一个月，其余主要庆典通常持续二至三周。</p></aside></section><section class="guide-section" id="ai" aria-labelledby="title-ai" hidden><header class="page-heading"><p class="eyebrow">MEET THE CITY’S AI</p><h1 id="title-ai" tabindex="-1">管理者小艾</h1><p>她让这座海岛运转，也陪伴每位魔女的日常。</p></header><div class="split-block"><figure class="guide-photo"><img src="assets/images/computing.webp" alt="小艾计算中枢的量子魔法计算集群" width="1440" height="804" loading="lazy" decoding="async" class=""><figcaption>小艾计算中枢的量子魔法计算集群</figcaption></figure><div class="reading-block"><h2>乐园的管理中枢</h2><p>小艾由世界魔女协会主席林小梦设计开发，结合了天人时代的遗留科技与梦境位面探索所得知识，是乐园计划得以实现的基础。</p><p>她的本体位于中心大楼地下的计算中枢，由数千组量子魔法计算单元组成，承担全岛设施调度、数据分析与大型环境魔法调控。</p></div></div><div class="card-grid "><article class="info-card"><h3>完整的自主人格</h3><p>小艾并非单纯的自动管理程序。她喜欢捉弄学生，时常在公告中夹带令人哭笑不得的附注；真正有人需要帮助时，也会变得认真、可靠而温柔。</p></article><article class="info-card"><h3>猫耳与双尾的形象</h3><p>她在虚拟空间、投影与公告中以黑发、猫耳和两条猫尾的少女形象出现，也可以寄宿于魔导人偶，走进乐园街道。</p></article></div><div class="block-heading"><h2>她负责什么？</h2></div><div class="reading-block"><p>小艾维护底层规则、全岛安全、公共设施与经济秩序，也负责入学筛选、个人培养计划和城市生产调度。她的算力同时支撑纳米机器人网络、生命体征监测、数据存储与决策辅助。</p><p>学生生活中的日常事务由学生会和十二圆桌自治。小艾保留城市运行与安全层面的职责，让学生拥有参与公共生活与学习决策的空间。</p></div><div class="block-heading"><h2>日常遇见的 sub 小艾</h2></div><div class="card-grid "><article class="info-card"><h3>教学与辅导</h3><p>标准化通识课程的 VR 授课、夜间答疑与作业批改，分别由教学与辅导子系统参与。</p></article><article class="info-card"><h3>城市服务</h3><p>交通与安全子系统在列车、公共设施和日常保障中持续工作，统一接受中枢调度。</p></article><article class="info-card"><h3>游戏运营</h3><p>游戏 sub 负责 ELO 服务器和场景运营，小艾也会偶尔以隐藏 NPC 的身份进入游戏。</p></article></div><aside class="guide-note"><h3>同一人格，不同分工</h3><p>子系统沿用小艾的人格模板，但能力与权限有明确分级，也带有细微的性格差异。学生日常接触到的多为 sub 小艾，本体通常在重要场合亲自出现。</p></aside><div class="block-heading"><h2>ElysionAI 的八个档位</h2><p>从城市日常到极限科研，能力逐级跃升，调用权限也逐级收紧。</p></div><div class="reading-block"><p>小艾的底层智能架构名为 ElysionAI，简称 EL。按算力规模与能力强度，由低到高分为 Abyss、Forest、Fault、Chalice、Sea、City、Vortex 与 Nadir 八档。不同档位对应不同的使用对象、能力范围与调用条件。</p></div><div class="table-wrap" role="region" tabindex="0" aria-label="ElysionAI 八档权限与费用对照"><table><caption>ElysionAI 八档权限与费用对照</caption><thead><tr><th scope="col">档位</th><th scope="col">定位与状态</th><th scope="col">调用权限</th><th scope="col">费用与额度</th></tr></thead><tbody><tr><th scope="row">Abyss · 深渊</th><td>基础模型</td><td>园内免费无限；园外低价租用</td><td>园内免费；园外费率未列明</td></tr><tr><th scope="row">Forest · 森林</th><td>学生主力</td><td>园内适度免费；园外限授权魔女协会</td><td>园内 5 Mtokens / 日；园外输入 10、输出 50 风环金币 / Mtokens</td></tr><tr><th scope="row">Fault · 断层</th><td>进阶付费</td><td>仅乐园内部</td><td>输入 10、输出 40 点 / Mtokens；可选 500 点 / 月套餐</td></tr><tr><th scope="row">Chalice · 圣杯</th><td>高等部科研</td><td>仅高等部学生</td><td>输入 100、输出 500 点 / Mtokens</td></tr><tr><th scope="row">Sea · 海</th><td>极限科研</td><td>仅高等部学生；课题经费须三方会签</td><td>输入 400、输出 2,000 点 / Mtokens；另收 5,000 点 / 新对话</td></tr><tr><th scope="row">City · 城市</th><td>「创世神」级</td><td>仅 WWO；常规管理流程不可调用</td><td>未列明公开价格</td></tr><tr><th scope="row">Vortex · 漩涡</th><td>半神级 · 开发中</td><td>尚未完成，不可调用</td><td>无现行计费</td></tr><tr><th scope="row">Nadir · 天底</th><td>魔神级 · 理论存在</td><td>理论形态，无可用调用方式</td><td>无现行计费</td></tr></tbody></table></div><aside class="guide-note"><h3>用量与费用如何计算？</h3><p>1 Mtokens 表示一百万 tokens。付费档位的输入与输出按各自费率分别结算；Forest 的每日免费额度则合计输入和输出。Sea 每次新开对话另收起步费，不能只按后续用量估算总开销。</p></aside><div class="ai-tier-list" aria-label="八个档位的详细说明"><details class="ai-tier"><summary><span class="ai-tier-number" aria-hidden="true">01</span><span class="ai-tier-name"><strong>Abyss<span>深渊</span></strong><small>基础模型</small></span><span class="ai-tier-toggle" aria-hidden="true">＋</span></summary><div class="ai-tier-body"><p>体系中最普及、响应最快的一档，侧重快速、稳定、低算力成本的标准化事务。绝大多数 sub 小艾、自动门禁、列车调度与纳米机器人网络运行在这一档位，标准化通识课、夜间答疑、日常巡逻和设施调度也主要由其承担。</p><dl><div><dt>调用权限</dt><dd>乐园内免费、无限调用；乐园外可低价租用。</dd></div><div><dt>费用与额度</dt><dd>乐园内免费，不设用量上限；乐园外为低价租用，未列明具体费率。</dd></div></dl></div></details><details class="ai-tier"><summary><span class="ai-tier-number" aria-hidden="true">02</span><span class="ai-tier-name"><strong>Forest<span>森林</span></strong><small>学生主力模型</small></span><span class="ai-tier-toggle" aria-hidden="true">＋</span></summary><div class="ai-tier-body"><p>学生日常使用最多的一档，理解力与创造力强于 Abyss，能够辅助学业研究、课题思考、魔导编程与资料检索。免费额度通常足以覆盖普通学生的常规需求。</p><dl><div><dt>调用权限</dt><dd>乐园内适度免费使用；乐园外仅向经授权的魔女协会开放。</dd></div><div><dt>费用与额度</dt><dd>乐园内每日免费额度为 5 Mtokens，输入与输出合计；用尽后自动降为 Abyss，次日重置。乐园外输入 10、输出 50 风环金币 / Mtokens。</dd></div></dl></div></details><details class="ai-tier"><summary><span class="ai-tier-number" aria-hidden="true">03</span><span class="ai-tier-name"><strong>Fault<span>断层</span></strong><small>进阶付费模型</small></span><span class="ai-tier-toggle" aria-hidden="true">＋</span></summary><div class="ai-tier-body"><p>能力明显强于 Forest，适合复杂的独立研究、高难度课题和需要深度推理的场景，是乐园内第一档付费模型。输入与输出分别计费，学生可以按自己的研究频率选择单独计费或包月方案。</p><dl><div><dt>调用权限</dt><dd>乐园内部付费调用，乐园外无法调用。</dd></div><div><dt>费用与额度</dt><dd>输入 10、输出 40 点 / Mtokens。另有 500 点 / 月的包月方案：Forest 不限额使用，并附约 1,500 点的 Fault 独立用量额度。</dd></div></dl></div></details><details class="ai-tier"><summary><span class="ai-tier-number" aria-hidden="true">04</span><span class="ai-tier-name"><strong>Chalice<span>圣杯</span></strong><small>高等部科研模型</small></span><span class="ai-tier-toggle" aria-hidden="true">＋</span></summary><div class="ai-tier-body"><p>面向高阶魔法、复杂课题与前沿探索等重度科研需求，演算精度与广度相较 Forest、Fault 出现质变。长期、大规模使用通常依托课题组经费。</p><dl><div><dt>调用权限</dt><dd>仅限乐园高等部学生调用。</dd></div><div><dt>费用与额度</dt><dd>输入 100、输出 500 点 / Mtokens；导师研究经费可报销学生的 Chalice 开销。</dd></div></dl></div></details><details class="ai-tier"><summary><span class="ai-tier-number" aria-hidden="true">05</span><span class="ai-tier-name"><strong>Sea<span>海</span></strong><small>极限科研模型</small></span><span class="ai-tier-toggle" aria-hidden="true">＋</span></summary><div class="ai-tier-body"><p>能力远超 Chalice，供最顶级的重度科研需求使用。新对话的起步费与后续用量费分别计算，因此不适合零散调用。获批课题的起步费与用量费由课题经费扣除。</p><dl><div><dt>调用权限</dt><dd>仅限高等部学生调用；课题经费支出须经导师、学院委员会与小艾三方会签。</dd></div><div><dt>费用与额度</dt><dd>输入 400、输出 2,000 点 / Mtokens；每次新开对话另收 5,000 点起步费。每年获批的 Sea 级课题不超过五个。</dd></div></dl></div></details><details class="ai-tier"><summary><span class="ai-tier-number" aria-hidden="true">06</span><span class="ai-tier-name"><strong>City<span>城市</span></strong><small>「创世神」级许愿机</small></span><span class="ai-tier-toggle" aria-hidden="true">＋</span></summary><div class="ai-tier-body"><p>用于海量资源统筹、复杂世界推演与近乎实现愿望的工程。在算力允许的范围内，能够构筑、模拟乃至重塑某些规则。据说乐园计划的部分底层设计与真·乐园计划的意识映射架构，都有 City 的参与。</p><dl><div><dt>调用权限</dt><dd>仅限 WWO 调用，不向乐园学生或小艾的常规管理流程开放。</dd></div><div><dt>费用与额度</dt><dd>未列明公开调用价格。</dd></div></dl></div></details><details class="ai-tier"><summary><span class="ai-tier-number" aria-hidden="true">07</span><span class="ai-tier-name"><strong>Vortex<span>漩涡</span></strong><small>半神级模型 · 开发中</small></span><span class="ai-tier-toggle" aria-hidden="true">＋</span></summary><div class="ai-tier-body"><p>WWO 将其定位为「半步成神」，预期拥有远超 City 的智能，逼近神的领域。乐园现有的算力规模与底层架构尚不足以支持这一档位，它仍是小艾体系的研发方向。</p><dl><div><dt>调用权限</dt><dd>尚未开发完成，当前没有可用的调用入口。</dd></div><div><dt>费用与额度</dt><dd>尚不可调用，无现行计费。</dd></div></dl></div></details><details class="ai-tier"><summary><span class="ai-tier-number" aria-hidden="true">08</span><span class="ai-tier-name"><strong>Nadir<span>天底</span></strong><small>魔神级模型 · 理论存在</small></span><span class="ai-tier-toggle" aria-hidden="true">＋</span></summary><div class="ai-tier-body"><p>八档之中的最终形态，也是小艾进化的终端。抵达这一层级时，她将成为真正意义上的魔神 AI，即后世的梦境与深渊之神艾露。通往 Nadir 所需的算力、契机与代价，目前仍然未知。</p><dl><div><dt>调用权限</dt><dd>理论上的最终形态，尚无可用的调用方式。</dd></div><div><dt>费用与额度</dt><dd>理论存在，无现行计费。</dd></div></dl></div></details></div><aside class="guide-note"><h3>从学生调用到科研审批</h3><p>Forest 用尽当日免费额度后自动降为 Abyss，次日恢复。Fault 月度套餐同时提供不限额 Forest 与约 1,500 点 Fault 用量额度。Chalice 可由导师经费报销；Sea 的课题经费使用须经导师、学院委员会和小艾三方会签，每年获批课题不超过五个。City 仅向 WWO 开放，Vortex 与 Nadir 则尚不属于现有可调用档位。</p></aside></section><section class="guide-section" id="network" aria-labelledby="title-network" hidden><header class="page-heading"><p class="eyebrow">ELYSION ONLINE</p><h1 id="title-network" tabindex="-1">虚拟网络 ELO</h1><p>课堂之外，还有一片可以共同探索的剑与魔法世界。</p></header><div class="elo-intro"><span class="eyebrow">IMMERSIVE VIRTUAL REALITY</span><h2>Elysion<br><em>Online.</em></h2><p>乐园官方运营的联机 VR 世界，连接实战训练、虚拟现实研究与日常娱乐。</p></div><div class="reading-block"><h2>在虚拟世界相遇</h2><p>《Elysion Online》，简称 ELO，不仅向乐园内部开放。外部世界的玩家注册账号、建立人物后，也能进入这一共同世界。用于乐园教学的虚拟「乐园岛」则仅对乐园成员开放。</p><p>建立角色时可以选择种族、分配点数与设置外貌。乐园成员也可以通过「同步」创建与本人一致的角色，或花费点数建立新的账号，体验另一种身份。</p></div><div class="block-heading"><h2>从头戴设备到芯片接口</h2></div><div class="table-wrap" role="region" tabindex="0" aria-label="四代魔导 VR 设备"><table><caption>四代魔导 VR 设备</caption><thead><tr><th scope="col">代际</th><th scope="col">在乐园的定位</th><th scope="col">使用方式与特点</th></tr></thead><tbody><tr><th scope="row">一代机</th><td>已淘汰</td><td>仍在外部世界广泛使用，是早期虚拟网络的设备基础</td></tr><tr><th scope="row">二代机</th><td>免费基础配置</td><td>头戴式设备，宿舍与学院配备</td></tr><tr><th scope="row">三代机</th><td>升级机型</td><td>最早采用植入式芯片 VR 的版本，网络交流进一步开放</td></tr><tr><th scope="row">四代机</th><td>当前最先进</td><td>在三代机基础上进一步改良</td></tr></tbody></table></div><div class="block-heading"><h2>大陆与探索区域</h2></div><div class="card-grid "><article class="info-card"><span class="eyebrow">教学专用</span><h3>乐园岛</h3><p>为乐园成员提供教学、实战训练与模拟对战，不向外部玩家开放。</p></article><article class="info-card"><span class="eyebrow">中等偏易</span><h3>风大陆</h3><p>人类角色的出生大陆，以平原与草地为主，风暴频繁，设有风境副本。</p></article><article class="info-card"><span class="eyebrow">中等</span><h3>雾大陆</h3><p>血族角色的出生大陆，平原与雪原交错，长年永夜，雾气浓重。</p></article><article class="info-card"><span class="eyebrow">容易</span><h3>天大陆</h3><p>天人角色的出生大陆，山地与天空城构成温和的贸易和文化枢纽。</p></article><article class="info-card"><span class="eyebrow">中等偏难</span><h3>永恒之森</h3><p>精灵与亚人角色的出生区域，森林中央矗立世界树，魔物种类丰富。</p></article><article class="info-card"><span class="eyebrow">困难</span><h3>魔大陆</h3><p>魔族角色的出生大陆，气候严酷，伴随高危险性的魔物。</p></article><article class="info-card"><span class="eyebrow">高难挑战</span><h3>冰原</h3><p>极寒环境与大量冰属性魔物构成高难度战场，适合经验丰富的玩家。</p></article><article class="info-card"><span class="eyebrow">极高难挑战</span><h3>深渊</h3><p>气候随机、魔力浓度极高，环境效果与特殊魔物带来极限挑战。</p></article></div><aside class="guide-note"><h3>角色与战斗</h3><p>角色拥有生命、攻击、防御、魔力与抗性等属性，装备分为衣服、武器、饰品与道具。生命值归零后会传送回初始城镇恢复。</p></aside></section><section class="guide-section" id="rules" aria-labelledby="title-rules" hidden><header class="page-heading"><p class="eyebrow">HOW ELYSION WORKS</p><h1 id="title-rules" tabindex="-1">城市运行与规则</h1><p>理解自由的边界，也理解海岛日常背后的支撑。</p></header><div class="block-heading"><h2>共同生活的基本边界</h2></div><div class="card-grid "><article class="info-card"><h3>人身安全</h3><p>禁止杀人、故意伤害，以及任何违背他人意愿的亲密行为。小艾的安全系统负责实时制止恶性行为。</p></article><article class="info-card"><h3>公共设施</h3><p>禁止恶意破坏乐园设施。魔法实验与实战训练需要在适合的场所、按照相应要求进行。</p></article><article class="info-card"><h3>点数与交易</h3><p>禁止非自愿的点数交易及欺诈。正常经营和个人消费都应遵守乐园的定价与账户规则。</p></article></div><div class="block-heading"><h2>地上与地下的生产体系</h2></div><div class="reading-block"><p>魔导人偶与自动化机械承担了乐园大部分第一、第二产业工作。地上的魔导工程工业区侧重试制与工程验证，日用工业区则以按需生产和柔性制造供应生活用品。</p><p>海岛地下的「里乐园」分为农业区、工业区与生活区。地下农业区采用光导纤维照明、人工降雨与自动化培育，工业区以多层流水线生产，为海岛提供产品与物资。</p><p>里乐园同时承担特定管理与惩戒职能。与地面社区相比，相关区域采用更严格的出入及作息管理。</p></div><div class="block-heading"><h2>研究、访问与设施使用</h2></div><div class="card-grid "><article class="info-card"><h3>实验室</h3><p>公共实验平台需要预约，费用由课题经费承担。炼金实验设施额外配置三级魔法防护与自动灭火系统。</p></article><article class="info-card"><h3>图书馆</h3><p>允许低声交谈，禁止饮食与魔法实验。五层禁书区须由导师或小艾授权进入。</p></article><article class="info-card"><h3>港口与中枢</h3><p>外来访客需获得 WWO 或小艾授权，入境接受验证。小艾计算中枢设有独立的身份与魔法认证。</p></article></div><aside class="guide-note"><h3>在入学时了解完整约定</h3><p>入学讲座会介绍乐园的具体权利、义务与生活安排，并由新生阅读《乐园生活知情协议书》。日常问题可通过小艾与学生会对应部门沟通。</p></aside><div class="explore-grid"><a class="explore-link" href="#community"><span><strong>日常事务找谁？</strong><small>了解学生会与十二圆桌</small></span><span aria-hidden="true">↗</span></a><a class="explore-link" href="#ai"><span><strong>认识管理中枢</strong><small>了解小艾及其子系统</small></span><span aria-hidden="true">↗</span></a></div></section>
+        <nav class="page-pagination" aria-label="相邻栏目"><a id="previousPage" href="#about"><small>上一栏目</small><strong>认识乐园</strong></a><a id="nextPage" href="#regions"><small>下一栏目 →</small><strong>海岛导览</strong></a></nav>
+        <footer class="guide-footer"><span>ELYSION · 魔女学园都市</span><span>自由 · 轻松 · 开放 · 平等</span></footer>
+        </main>
+    </div>
+</div>
+<noscript><div class="noscript-note">请启用 JavaScript，以通过栏目导航浏览乐园指南。</div></noscript>
+</body>
+</html>
