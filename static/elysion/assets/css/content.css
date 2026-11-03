@@ -92,7 +92,7 @@ body.drawer-open { overflow: hidden; }
 .explore-link small { display: block; font-size: 11px; color: #9b8ca5; margin-top: 5px; line-height: 1.8; }
 .explore-link > span:last-child { color: #a88cbd; font-size: 19px; }
 .guide-photo { margin: 24px 0; min-width: 0; }
-.guide-photo img { display: block; width: 100%; aspect-ratio: 2.2; object-fit: cover; border-radius: 12px; background: #eee8f2; }
+.guide-photo img { display: block; width: 100%; height: auto; aspect-ratio: 2.2; object-fit: cover; border-radius: 12px; background: #eee8f2; }
 .guide-photo figcaption { margin-top: 9px; color: #a99baf; font-size: 10px; text-align: right; line-height: 1.8; }
 .split-block { display: grid; grid-template-columns: 1.1fr 1fr; gap: 30px; align-items: center; margin: 28px 0; }
 .split-block .guide-photo { margin: 0; }
@@ -114,7 +114,7 @@ body.drawer-open { overflow: hidden; }
 .filter-status { margin: 15px 0 18px; color: #ac9cb6; font-size: 10px; }
 .places-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 23px; }
 .place-card { border: 1px solid var(--guide-line); border-radius: 12px; background: white; overflow: hidden; }
-.place-card > img { display: block; width: 100%; aspect-ratio: 1.9; object-fit: cover; background: #e9e4ef; }
+.place-card > img { display: block; width: 100%; height: auto; aspect-ratio: 1.9; object-fit: cover; background: #e9e4ef; }
 .place-card > div { padding: 22px; }
 .place-card h2 { font-size: 17px; font-weight: 600; color: #624c74; margin-bottom: 9px; }
 .place-card p { font-size: 12px; color: #8a7d94; line-height: 2; }
