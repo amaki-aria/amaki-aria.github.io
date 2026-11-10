@@ -209,7 +209,23 @@ body.drawer-open { overflow: hidden; }
 .ai-tier-body dl > div + div { margin-top: 13px; }
 .ai-tier-body dt { font-size: 11px; color: #90759f; }
 .ai-tier-body dd { margin: 4px 0 0; font-size: 13px; overflow-wrap: anywhere; }
+.ai-profile-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; border: 0; align-items: start; }
+.ai-profile { min-width: 0; border: 1px solid var(--guide-line); background: white; border-radius: 14px; overflow: hidden; }
+.ai-portrait-link { display: block; background: #eeedf5; }
+.ai-portrait-link img { display: block; width: 100%; height: auto; object-fit: contain; }
+.ai-portrait-link:focus-visible { outline-offset: -4px; }
+.ai-portrait-caption { display: flex; justify-content: space-between; gap: 10px; padding: 12px 18px; color: #6f537f; font-size: 12px; border-bottom: 1px solid var(--guide-line); }
+.ai-portrait-caption > span { color: #81728b; font-size: 10px; }
+.ai-profile .ai-tier { border: 0; }
+.ai-profile .ai-tier summary { padding: 20px; gap: 12px; }
+.ai-profile .ai-tier-number { width: 27px; font-size: 22px; }
+.ai-profile .ai-tier-name strong { font-size: 19px; gap: 8px; }
+.ai-profile .ai-tier-body { padding: 0 20px 22px; }
+@media (max-width: 1000px) and (min-width: 801px) {
+    .ai-profile-grid { grid-template-columns: minmax(0, 1fr); }
+}
 @media (max-width: 540px) {
+    .ai-profile-grid { grid-template-columns: minmax(0, 1fr); gap: 22px; }
     .ai-tier summary { gap: 12px; padding: 20px 4px; }
     .ai-tier-number { width: 25px; font-size: 22px; }
     .ai-tier-body { padding: 0 4px 22px; }
